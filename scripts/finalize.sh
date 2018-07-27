@@ -20,7 +20,7 @@ if [$TRAVIS_PULL_REQUEST_BRANCH -eq '']
 	git push -f -q origin staging
   git push -q origin --tags
 	#echo 'START SERVER DEPLOYMENT.';
-	#npm run build:ultimate-list -- --prod
+	#npm run build:ultimate-list-demo -- --prod
   #cd dist/ultimate-list
   #ls
   #for i in $(ls); 

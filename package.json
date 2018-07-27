@@ -4,9 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "build:ultimate-list": "ng build ultimate-list",
-    "test": "ng test",
+    "build": "ng build ultimate-list",
+    "test": "ng test ultimate-list",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
