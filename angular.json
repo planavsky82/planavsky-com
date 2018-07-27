@@ -24,7 +24,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "./node_modules/font-awesome/scss/font-awesome.scss",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -183,7 +184,8 @@
               "projects/ultimate-list-demo/src/assets"
             ],
             "styles": [
-              "projects/ultimate-list-demo/src/styles.css"
+              "projects/ultimate-list-demo/src/styles.scss",
+              "./node_modules/font-awesome/scss/font-awesome.scss"
             ],
             "scripts": []
           },
@@ -232,7 +234,7 @@
             "tsConfig": "projects/ultimate-list-demo/tsconfig.spec.json",
             "karmaConfig": "projects/ultimate-list-demo/karma.conf.js",
             "styles": [
-              "projects/ultimate-list-demo/src/styles.css"
+              "projects/ultimate-list-demo/src/styles.scss"
             ],
             "scripts": [],
             "assets": [

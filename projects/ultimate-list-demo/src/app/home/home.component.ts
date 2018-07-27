@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SampleComponent } from '../../sample.component';
-import { UlimateListItem } from '../list';
+import { SampleComponent } from '../sample.component';
+import { UlimateListItem } from '../../../../ultimate-list/src/lib/list';
 
 @Component({
   selector: 'ultimate-home',

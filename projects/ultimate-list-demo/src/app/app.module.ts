@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
-import { TextboxModule } from './modules/textbox/textbox.module';
-import { DropdownModule } from './modules/dropdown/dropdown.module';
-import { ButtonModule } from './modules/button/button.module';
-import { FormModule } from './modules/form/form.module';
-import { NavigationModule } from './modules/navigation/navigation.module';
+import { TextboxModule } from '../../../ultimate-list/src/lib/textbox/textbox.module';
+import { DropdownModule } from '../../../ultimate-list/src/lib/dropdown/dropdown.module';
+import { ButtonModule } from '../../../ultimate-list/src/lib/button/button.module';
+import { FormModule } from '../../../ultimate-list/src/lib/form/form.module';
+import { NavigationModule } from '../../../ultimate-list/src/lib/navigation/navigation.module';
 
-import { HomeModule, HomeComponent } from './modules/home';
-import { FormDemoModule, FormDemoComponent } from './modules/form-demo';
-import { NavDemoModule, NavDemoComponent } from './modules/nav-demo';
+import { HomeModule, HomeComponent } from './home';
+import { FormDemoModule, FormDemoComponent } from './form-demo';
+import { NavDemoModule, NavDemoComponent } from './nav-demo';
 
 import { AppComponent } from './app.component';
 import { SampleComponent } from './sample.component';

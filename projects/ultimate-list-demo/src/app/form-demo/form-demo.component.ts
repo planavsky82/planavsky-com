@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 
-import { forbiddenStringValidator } from '../textbox';
-import { UlFormConfig, SAMPLE_CONFIG } from '../form';
+import { forbiddenStringValidator } from '../../../../ultimate-list/src/lib/textbox';
+import { UlFormConfig, SAMPLE_CONFIG } from '../../../../ultimate-list/src/lib/form';
 
 @Component({
   selector: 'ultimate-form-demo',
