@@ -46,7 +46,7 @@ after_deploy:
 - NEW=$(npm view ultimate-list version) && echo $NEW
 - PACKAGE_VERSION=$(node -p "require('./package.json').version")
 - echo $PACKAGE_VERSION
-- "./scripts/finalize.sh;"
+- "../../scripts/finalize.sh;"
 env:
   global:
   - secure: X8eiNr6nP8eN7nWAiOfPyo22D03NBT7mJ7hrakZLQVqGWuVieo5MtIJNkGT9Bh+EIgXTzNhmPKPgEY0z6OD18ZRe9+g3crz1FC3j6q14MFnAhxWnmSQFJWj5LtPARff/GSpp6YdXiCUD9UPtki1n9vTa2UKah0DGUYBydHuNQrOAbQNoVnJv2bXxhjonGvBJosG8JSpxBNQfCmMdyrV5wdSXFyASUBZkxoV8jNQiaqrP4sxSraGN/VYq46s9RLAdxW/UCWFAYh0QXWcA20rsD4my71DFFdvAn694UzTgj5mH2BobWTqWPK0RAqgMymj3UTnYfIZXIRsGtcoSOye6Zk+1FVpP0umZCwqkpw2bAMLgRcCubFtgNkXCE8gbI0vUaekZmoYlOw/t+GXre5iq8f96Alxqdvvj/002PVSkaR1oeCTg4tQNejXdIqErwMQ6Rs3t1BJzGF+YFYtcFhk7RfmBjNkpAvyhMmIFoBN/lpDXLvkAeI3y2C/OvvrhCFK7EPCYzuyoolOdJgJlPXcWL+UH9IKs1vdbDVziysqTiijBp1YjL8Qzu2IuVabANsWWJzFDgEeNuF40TE+T+caGA0Gh9RKnc3AsAg+1N+yLp20qcIDfZLXnOROa/bFq09EyZKG0ssvpDbO5cIsE01EgdOYIBDltw93rTMsxeAVxmw8=
