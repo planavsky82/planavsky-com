@@ -7,15 +7,13 @@ if [$TRAVIS_PULL_REQUEST_BRANCH -eq '']
 	echo "RUN VERSION UPDATE."
 	git status
 	git remote rm origin
-	git remote add origin https://planavsky82:${GH_TOKEN}@github.com/planavsky82/planavsky-com.git
+	git remote add origin https://planavsky82:${GH_TOKEN_2}@github.com/planavsky82/planavsky-com.git
 	git config --global user.email "travis"
 	git config --global user.name "travis"
 	git fetch
 	git checkout staging --force
 	git status
   ls
-  cd projects
-  cd ultimate-list
 	npm version patch -m "Upgrade to %s + patch for next version [ci skip]"
 	git status
 	git show --name-only
