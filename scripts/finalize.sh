@@ -13,6 +13,7 @@ if [$TRAVIS_PULL_REQUEST_BRANCH -eq '']
 	git fetch
 	git checkout staging --force
 	git status
+  ls
   cd projects
   cd ultimate-list
 	npm version patch -m "Upgrade to %s + patch for next version [ci skip]"
