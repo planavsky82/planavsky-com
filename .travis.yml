@@ -23,6 +23,8 @@ after_success:
 before_deploy:
 - echo 'PRE DEPLOYMENT'
 - ls
+- npm run build
+- ls
 - cd dist
 - cd ultimate-list
 deploy:
