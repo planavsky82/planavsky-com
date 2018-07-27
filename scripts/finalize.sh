@@ -13,15 +13,16 @@ if [$TRAVIS_PULL_REQUEST_BRANCH -eq '']
 	git fetch
 	git checkout staging --force
 	git status
+  cd projects/ultimate-list
 	npm version patch -m "Upgrade to %s + patch for next version [ci skip]"
 	git status
 	git show --name-only
 	git push -f -q origin staging
   git push -q origin --tags
-	echo 'START SERVER DEPLOYMENT.';
-	nom run build:ultimate-list -- --prod
-  cd dist/ultimate-list
-  ls
+	#echo 'START SERVER DEPLOYMENT.';
+	#npm run build:ultimate-list -- --prod
+  #cd dist/ultimate-list
+  #ls
   #for i in $(ls); 
   #do curl --ftp-create-dirs -Q "DELE $i" -u $FTP_USER_TCI:$FTP_PWD_TCI ftp://192.169.200.149/temp-dir/
   #done;
