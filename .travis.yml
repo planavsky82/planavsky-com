@@ -19,10 +19,10 @@ branches:
   - master
 after_success:
 - ORIGINAL=$(npm view ultimate-list version) && echo $ORIGINAL
-- ./scripts/package.sh
+#- ./scripts/package.sh
 before_deploy:
 - echo 'PRE DEPLOYMENT'
-- cd dist
+- cd dist/ultimate-list
 deploy:
   provider: npm
   email: planavsky82@gmail.com
