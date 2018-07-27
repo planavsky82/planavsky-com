@@ -22,7 +22,9 @@ after_success:
 #- ./scripts/package.sh
 before_deploy:
 - echo 'PRE DEPLOYMENT'
-- cd dist/ultimate-list
+- ls
+- cd dist
+- cd ultimate-list
 deploy:
   provider: npm
   email: planavsky82@gmail.com
