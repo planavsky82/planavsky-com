@@ -39,6 +39,9 @@ deploy:
 after_deploy:
 - echo 'POST DEPLOYMENT'
 - cd ..
+- cd ..
+- cd projects
+- cd ultimate-list
 - echo $ORIGINAL
 - NEW=$(npm view ultimate-list version) && echo $NEW
 - PACKAGE_VERSION=$(node -p "require('./package.json').version")
