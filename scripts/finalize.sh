@@ -7,7 +7,7 @@ if [$TRAVIS_PULL_REQUEST_BRANCH -eq '']
 	echo "RUN VERSION UPDATE."
 	git status
 	git remote rm origin
-	git remote add origin https://planavsky82:${GH_TOKEN}@github.com/planavsky82/ultimate-list.git
+	git remote add origin https://planavsky82:${GH_TOKEN}@github.com/planavsky82/planavsky-com.git
 	git config --global user.email "travis"
 	git config --global user.name "travis"
 	git fetch
@@ -19,8 +19,8 @@ if [$TRAVIS_PULL_REQUEST_BRANCH -eq '']
 	git push -f -q origin staging
   git push -q origin --tags
 	echo 'START SERVER DEPLOYMENT.';
-	npm run build -- --prod
-  cd dist
+	nom run build:ultimate-list -- --prod
+  cd dist/ultimate-list
   ls
   #for i in $(ls); 
   #do curl --ftp-create-dirs -Q "DELE $i" -u $FTP_USER_TCI:$FTP_PWD_TCI ftp://192.169.200.149/temp-dir/

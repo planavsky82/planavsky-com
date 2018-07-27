@@ -32,7 +32,7 @@ deploy:
   on:
     tags: false
     branch: master
-    repo: planavsky82/ultimate-list
+    repo: planavsky82/planavsky-com
 after_deploy:
 - echo 'POST DEPLOYMENT'
 - cd ..
