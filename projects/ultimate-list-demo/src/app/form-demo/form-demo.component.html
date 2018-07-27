@@ -1,0 +1,22 @@
+<p>A metadata configuration form component ...</p>
+<ul-form [config]="config"
+  (formSubmit)="submit($event)"
+  (formChange)="formChangeEvent($event)"
+  (formLoaded)="loaded()"></ul-form>
+
+<form
+  [formGroup]="form"
+  (submit)="handleSubmit($event)">
+  <div class="form-element">
+    <h2>Standalone Text Component</h2>
+    <ul-textbox formControlName="name"></ul-textbox>
+  </div>
+  <div class="form-element">
+    <h2>Standalone Select Component</h2>
+    <ul-dropdown formControlName="options" [options]="options"></ul-dropdown>
+  </div>
+  <div class="form-element">
+    <h2>Standalone Button Component</h2>
+    <ul-button type="submit">Submit</ul-button>
+  </div>
+</form>

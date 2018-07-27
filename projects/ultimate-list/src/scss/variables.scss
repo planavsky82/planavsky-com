@@ -1,0 +1,41 @@
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/_variables";
+
+// colors
+$black: #000;
+$white: #fff;
+$green: #04B709;
+
+$hover: #33D4FF;
+
+// greys
+$greys: ();
+$i: 0;
+@while $i < 100 {
+  $i: $i + 5;
+  $greys: append($greys, lighten($black, $i));
+}
+
+$label: nth($greys, 6);
+$field: $black;
+$error: #ff0000;
+
+// font family
+$font-family: Helvetica, Arial, sans-serif;
+
+// font weights
+$font-weight-bold: 700;
+$font-weight-semibold: 500;
+$font-weight-base: 300;
+$font-weight-light: 100;
+
+// font sizes
+$font-size-xlarge: 20px;
+$font-size-large: 18px;
+$font-size-medium: 16px;
+$font-size-base: 14px;
+
+// padding
+$padding-xlarge: 32px;
+$padding-large: 24px;
+$padding-medium: 16px;
+$padding-base: 8px;

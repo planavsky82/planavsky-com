@@ -1,0 +1,10 @@
+<nav>
+ 	<ul>
+ 		<li *ngFor="let item of items; let i = index;"
+ 			[ngClass]="{ 'active': active === i }"
+ 			(click)="activate(i, item.id)">
+			{{ item.name }}
+		</li>
+ 	</ul>
+</nav>
+

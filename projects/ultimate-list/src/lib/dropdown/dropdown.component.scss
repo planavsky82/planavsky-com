@@ -1,0 +1,37 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+$background: nth($greys, 9);
+
+.ul-dropdown-wrapper {  
+  .ul-dropdown-align {
+    display: inline-block;
+    position: relative;
+
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: 1px solid nth($greys, 16);
+      font-size: $font-size-base;
+      padding: $padding-base;
+      padding-right: $padding-xlarge;
+      @include border-radius(0);
+      cursor: pointer;
+    }
+
+    .ul-dropdown-icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 33px;
+      width: 25px;
+      line-height: 33px;
+      text-align: center;
+      background: nth($greys, 16);
+      border-left: 1px solid nth($greys, 14);
+      margin: 1px;
+      pointer-events: none;      
+    }
+  }
+}

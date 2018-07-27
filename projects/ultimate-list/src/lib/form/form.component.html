@@ -1,0 +1,26 @@
+<form
+  [formGroup]="form"
+  (mouseup)="checkState()"
+  (keyup)="checkState()"
+  (submit)="handleSubmit($event)">
+  <div class="ul-form-field ul-form-field-{{i}} ul-form-field-type-{{field.type}}"
+    [ngClass]="{
+      'ul-form-field-button-control': field.type === 'button'
+    }"
+    [attr.data-index]="i"
+    *ngFor="let field of config; let i = index">
+    <div class="ul-form-field-label" *ngIf="field.type !== 'button'"
+      [ngClass]="{
+        'ul-form-field-error': form.get(field.name).status === 'INVALID'
+      }">{{ getLabel(field.label, field, form.get(field.name).errors) }}</div>
+      <ng-container
+        ulFormField
+        [config]="field"
+        [group]="form"
+        [form]="form"
+        [index]="i"
+        [total]="config.length"
+        (formFieldLoaded)="loaded($event)">
+      </ng-container>
+    </div>
+</form>

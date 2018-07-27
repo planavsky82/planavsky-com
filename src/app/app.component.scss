@@ -1,0 +1,42 @@
+@import "../assets/scss/variables";
+
+.top {
+  width: 100%;
+  height: 50px;
+  background: $base;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  background: $white url('../assets/images/logo-main.png') no-repeat left;
+  background-size: 160px 160px;
+  border-bottom: 8px solid $base;
+
+  div {
+    text-transform: uppercase;
+    font-family: impact;
+    font-weight: 100;
+    width: calc(100%);
+    height: 150px;
+    line-height: 150px;
+    text-align: right;
+    font-size: 170px;
+    margin: auto;
+    background: $white;
+    color: $black;
+    opacity: 0.2;
+
+    span {
+      text-transform: lowercase;
+    }
+  }
+}
+
+section {
+
+}
+
+footer {
+
+}

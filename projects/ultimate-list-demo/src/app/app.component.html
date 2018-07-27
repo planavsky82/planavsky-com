@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <h1>
+    <div class="logo"></div>
+    <div class="title">Ultimate List</div>
+  </h1>
+
+  <ul-navigation [items]="nav" (change)="changeRoute($event)"></ul-navigation>
+  <router-outlet></router-outlet>
+</div>

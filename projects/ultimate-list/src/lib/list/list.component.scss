@@ -1,0 +1,257 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+$ul: '.ultimate-list-';
+$ul-state: '#{$ul}state-';
+$breakpoint: 700px;
+
+:host ul {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  font-weight: $font-weight-base;
+  
+  &.active {
+    position: fixed;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .active-mode-hidden {
+      display: none;
+    }
+  }
+
+  li {
+    list-style: none;
+    border: 2px solid nth($greys, 16);
+    padding: 0px;
+    margin-bottom: 2px;
+    background: $white;
+
+    &.inactive {
+      background: nth($greys, 16);
+    }
+
+    &.grid-container {
+      display: grid;
+      grid-column-gap: 10px;
+      grid-template-rows: 1fr;      
+      @include grid-columns(10px 9em 1fr 60px);   
+
+      @media (max-width: $breakpoint) {
+        @include grid-columns(5px 1fr 60px);   
+      }    
+
+      .grid-marker {
+        @include grid-block(1, 2, 1, 1);   
+        background: lighten(nth($greys, 15), 15%); 
+      }
+
+      .grid-image {
+        @include grid-block(1, 2, 2, 1); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 7px 0;
+
+        i {
+          font-size: 4em;
+        }  
+      }
+
+      .grid-title {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 7px 0;
+        color: $black;
+        @include grid-block(1, 1, 3, 1); 
+        
+        @media (max-width: $breakpoint) {
+          @include grid-block(1, 1, 2, 1);   
+        } 
+
+        div {
+          width: 100%;
+        }
+
+        // title
+        div:nth-child(1) {
+          font-size: 1.25em;
+          font-weight: $font-weight-base;
+        }
+
+        // desc
+        div:nth-child(2) {
+          color: nth($greys, 10);
+        }
+      }
+
+      .grid-content {
+        color: $black;
+        @include grid-block(2, 1, 3, 1); 
+
+        @media (max-width: $breakpoint) {
+          @include grid-block(2, 1, 2, 1);   
+        } 
+      }
+
+      .ultimate-list-item-control {
+        position: relative;
+        color: $black;
+        @include grid-block(1, 2, 4, 1); 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        padding: 3px 0;
+
+        i {
+          cursor: pointer;
+        }
+      }
+
+      .exit-control {
+        position: absolute;
+        bottom: -10px;
+        right: 70px;
+        font-size: 0.5em;
+        padding: 3px 10px; 
+        border: 1px solid $green;
+        background: lighten(green, 30%);
+        cursor: pointer;
+        display: none;
+        @include border-radius(5px);
+        width: 60px;
+        transition: all .2s ease-in-out;
+
+        i, span { 
+          display: inline;
+        }
+
+        &:hover {
+          transform: scale(1.25);
+          
+          i, span {
+            color: $black;
+          }
+        }
+      }
+    }
+
+    &.active {
+      .exit-control {
+        display: block;
+      }
+
+      .ultimate-list-item-control {
+        i {
+          &:hover {
+            color: $hover;
+          }
+          @media (hover: none) {
+            &:hover { color: inherit; }
+          }
+        }
+      }
+    }
+
+    &.inactive {
+      .ultimate-list-item-control {
+        color: nth($greys, 12);
+      }
+    }
+
+    &:not(.inactive):not(.active), &.inactive {
+      .ultimate-list-item-control {
+        &:hover {
+          i {
+            color: $hover;
+          }
+        }
+        @media (hover: none) {
+          &:hover { 
+            i {
+              color: inherit; 
+            }
+          }
+        }
+      }
+    }
+
+    #{$ul}img {
+      height: 6em;
+      width: 9em;
+    }
+
+    // layout states
+
+    &#{$ul-state}title:not(#{$ul-state}desc):not(#{$ul-state}content),
+    &#{$ul-state}title:not(#{$ul-state}content) {
+      .grid-title {
+        font-size: 1.2em;
+        align-items: center;
+        font-weight: $font-weight-light;
+      }
+    }
+
+    &:not(#{$ul-state}img):not(#{$ul-state}icon) {
+      &.grid-container {
+        @include grid-columns(10px 1fr 60px);
+
+        @media (max-width: $breakpoint) {
+          @include grid-columns(5px 1fr 60px);
+        } 
+
+        .grid-image {
+          display: none;
+        }
+
+        .ultimate-list-item-control {
+          @include grid-block(1, 2, 3, 1); 
+        }
+      }
+    }
+
+    &#{$ul-state}icon {
+      &.grid-container {
+        @include grid-columns(10px 5em 1fr 60px);
+
+        @media (max-width: $breakpoint) {
+          @include grid-columns(5px 1fr 60px);
+        } 
+      }
+    }
+
+    &#{$ul-state}img, &#{$ul-state}icon {
+      &.grid-container {
+        .grid-image {
+          @media (max-width: $breakpoint) {
+            display: none;
+          }
+        }
+
+        @media (max-width: $breakpoint) {
+          .ultimate-list-item-control {
+            @include grid-block(1, 2, 3, 1); 
+          }
+        }
+      }
+    }
+  }
+}
+
+:host .ultimate-list-overlay {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: $black;
+  z-index: 1;
+}

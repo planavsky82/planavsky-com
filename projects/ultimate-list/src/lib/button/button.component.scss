@@ -1,0 +1,12 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+button {
+  background: $field;
+  color: $white;
+  padding: $padding-base;
+  font-size: $font-size-large;
+  @include border-radius(8px);  
+  cursor: pointer;
+  border: 2px solid nth($greys, 8);
+}

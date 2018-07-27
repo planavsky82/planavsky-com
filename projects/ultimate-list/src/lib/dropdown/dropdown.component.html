@@ -1,0 +1,13 @@
+<div role="combobox"
+    class="ul-dropdown-wrapper">
+  <div class="ul-dropdown-align">
+    <select class="ul-dropdown-select" 
+      [(ngModel)]="internalValue" 
+      (ngModelChange)="onChange()"
+      (blur)="onBlur()">
+      <option *ngIf="!internalValue" [ngValue]="undefined">{{ placeholder }}</option>
+      <option *ngFor="let option of options" [ngValue]="option.value">{{ option.name }}</option>
+    </select>
+    <div class="ul-dropdown-icon fa fa-chevron-circle-down"></div>
+  </div>
+</div> 

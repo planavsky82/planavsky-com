@@ -1,0 +1,28 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin grid-columns($values) {
+  grid-template-columns: $values;
+  -ms-grid-columns: $values;      
+}
+
+@mixin grid-block($row: 1, $row-span: 1, $col: 1, $col-span: 1) {
+  grid-column: $col / span $col-span;
+  -ms-grid-column: $col;
+  -ms-grid-col-span: $col-span;
+  grid-row: $row / span $row-span; 
+  -ms-grid-row: $row;
+  -ms-grid-row-span: $row-span;
+}
+
+// mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}

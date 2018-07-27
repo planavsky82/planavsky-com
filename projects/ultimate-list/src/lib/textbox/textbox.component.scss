@@ -1,0 +1,9 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+input {
+  border: 1px solid nth($greys, 16);
+  border-bottom: 3px solid $field;
+  padding: $padding-base;
+  font-size: $font-size-base;
+}

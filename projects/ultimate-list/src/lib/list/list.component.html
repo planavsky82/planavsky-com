@@ -1,0 +1,59 @@
+<div class="ultimate-list-overlay" 
+  [@overlayState]="activeMode"
+  (@overlayState.done)="scroll()"></div>
+  
+<ul class="ultimate-list"
+  [ngStyle]="{ 
+    'font-size': fontSize,
+    'color': color }"
+  (mouseup)="mouseup()"
+  [ngClass]="{ 'active': activeMode === 'enabled' }">
+  <li *ngFor="let item of displayItems; let i = index" 
+      [attr.data-index]="i"
+      id="ultimate-list-item-{{ i }}"
+      class="grid-container {{ constructStateClasses(item) }}"
+      [ngStyle]="{ 'color': item.color }"
+      [ngClass]="{ 'active': item.state === 'active' && activeMode === 'enabled',
+        'inactive': item.state === 'inactive' && activeMode === 'enabled',
+        'active-mode-display': activeModeDisplay(i),
+        'active-mode-hidden': !activeModeDisplay(i),
+        'first': i === 0,
+        'last': i === displayItems.length - 1,
+        'ultimate-list-item-active': i === active }">
+    <div class="grid-item grid-marker"
+      [ngStyle]="{ 'background-color': color || item.color,
+        'opacity': (color || item.color) ? '0.35' : undefined }">
+    </div>
+    <div class="grid-item grid-title">
+      <div>{{ item.title }}</div>
+      <div>{{ item.desc }}</div>      
+    </div>
+    <div class="grid-item grid-content">
+      <ng-container ultimate-list-component 
+        *ngIf="item.component && item.data" 
+        [component]="item.component"
+        [data]="item.data"></ng-container>
+    </div>
+    <div class="grid-item grid-image">
+      <i *ngIf="item.icon" class="fa {{ item.icon }}"></i>
+      <div *ngIf="item.img" class="ultimate-list-img" 
+         [ngStyle]="{'background': 'url(' + item.img + ')'}"></div>
+    </div>
+    <div class="grid-item ultimate-list-item-control"
+      *ngIf="!readOnly">
+      <i class="fa fa-arrow-circle-o-up" 
+        [@controlStateTop]="item.state"
+        (mousedown)="activate(i, 'up', false)" (mouseup)="mouseup()"
+        (tap)="activate(i, 'up', true)" (pressup)="mouseup()"
+        *ngIf="i !== 0"></i> 
+      <i class="fa fa-arrow-circle-o-down"
+        [@controlStateBtm]="item.state"
+        (mousedown)="activate(i, 'down', false)"
+        (tap)="activate(i, 'down', true)" 
+        *ngIf="i !== displayItems.length - 1"></i>
+      <div class="exit-control" (click)="done()">
+        <i class="fa fa-check"></i> <span>Done</span>
+      </div>
+    </div>
+  </li>
+</ul>

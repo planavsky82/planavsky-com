@@ -1,0 +1,11 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+form {
+  margin-top: 40px;
+  border-top: 1px solid nth($greys, 10);  
+}
+
+.form-element {
+  margin: 30px 0;
+}

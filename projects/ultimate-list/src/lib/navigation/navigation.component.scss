@@ -1,0 +1,62 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+nav {
+	float: none;
+	width: 100%;
+	height: 39px;
+	font-family: $font-family;
+  font-weight: $font-weight-base;
+
+	ul {
+		padding: 0 0 0 0;
+		border-bottom: 1px solid nth($greys, 10);
+		width: 100%;
+		float: left;
+
+		li {
+			float: left;
+			list-style: none;
+			color: $black;
+			font-weight: $font-weight-semibold;
+			padding: 10px 20px;
+			cursor: pointer;
+
+			&.active {
+				color: $black;
+				border-bottom: 3px solid nth($greys, 2);
+			}
+
+			&:hover {
+				color: nth($greys, 2);
+				border-bottom: 3px solid $hover;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $screen-tablet) {
+	nav {
+		height: auto;
+
+		ul {
+			padding: 0 0 0 0;
+			margin-bottom: 20px;
+			float: none;
+			border-bottom: 0;
+
+			li {
+				width: 100%;
+				padding: 8px 5px;
+				float: none;
+				border-bottom: 1px solid nth($greys, 10);
+
+				&.active {
+					color: $white;
+					background: nth($greys, 2);
+					border-bottom: 0;
+				}
+			}
+		}
+	}
+}

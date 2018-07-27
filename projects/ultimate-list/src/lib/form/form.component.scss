@@ -1,0 +1,30 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+:host {
+  font-family: $font-family;
+
+  .ul-field-hidden {
+    display: none;
+  }
+  
+  .ul-form-field {
+    padding-bottom: $padding-base * 3;
+
+    .ul-form-field-label {
+      color: $label;
+      padding: 0 0 $padding-base * 0.25;
+      font-size: $font-size-base;
+      font-weight: $font-weight-semibold;
+
+      &.ul-form-field-error {
+        color: $error;
+      }
+    }
+
+    &.ul-form-field-button-control {
+      padding-top: $padding-large * 0.3;
+      padding-bottom: 0;
+    }
+  }
+}
