@@ -20,6 +20,8 @@ if [$TRAVIS_PULL_REQUEST_BRANCH -eq '']
 	git status
 	git show --name-only
   echo "START PUSH."
+  git add package.json
+  git commit -m 'Upgrade to %s + patch for next version [ci skip]'
 	git push -f -q origin staging
   git push -q origin --tags
 	#echo 'START SERVER DEPLOYMENT.';
