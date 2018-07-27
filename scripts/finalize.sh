@@ -13,10 +13,13 @@ if [$TRAVIS_PULL_REQUEST_BRANCH -eq '']
 	git fetch
 	git checkout staging --force
 	git status
+  echo "STATUS COMPLETE."
   ls
+  echo "BUMP PATCH."
 	npm version patch -m "Upgrade to %s + patch for next version [ci skip]"
 	git status
 	git show --name-only
+  echo "START PUSH."
 	git push -f -q origin staging
   git push -q origin --tags
 	#echo 'START SERVER DEPLOYMENT.';
