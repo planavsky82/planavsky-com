@@ -1,0 +1,48 @@
+language: node_js
+node_js:
+- node
+notifications:
+  email:
+  - planavsky82@gmail.com
+sudo: required
+addons:
+  chrome: stable
+  apt:
+    packages:
+    - sshpass
+before_script:
+- export CHROME_BIN=chromium-browser
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+branches:
+  only:
+  - master
+after_success:
+- ORIGINAL=$(npm view ultimate-list version) && echo $ORIGINAL
+- ./scripts/package.sh
+before_deploy:
+- echo 'PRE DEPLOYMENT'
+- cd dist
+deploy:
+  provider: npm
+  email: planavsky82@gmail.com
+  api_key:
+    secure: Fc18Ro9j9NSUSDgctLaTlJYFrCOjAOfKocDbjySDQNJYtfMECMpVe0p+givr9oG/s3NQi36QmuZciFddkFpbaNua5gRCSq4E2AGaNor2RxaD13WPXsD8WBpRIdW/gxQsJyjv/PhEjJWNQmfXlbI2bFw3gjHdj/KG8+S75zXGddfv6hDMfgq5b9q7yzf63t3VlNF1Wh6L3mwPFWrLmWBWChZTlDaNFsJ7fCoyZgmZ7nSkVyGgCizT//2VAVb0vDN7Tz6imXCiGgmgfo6wqYpKRCsjiig8okO+z+D0Y8XQpy2qNVHEt4E5OsRyrwm/Wic7UXpmk0/rq/jbNYVF2k5UeDZZ7UGgfPWnXZvGMv1dzzoN5v4HNCWPeXA5a/5bzVqH922CElP7MZV2zzC0Ncc1bXJowrakurtTYM48Vmfe0IyqoMtvQi7g+YMya7v4NEVQO//R9tQPtbYA92NBLuUYaYgU/jg5wmjNt36DEXeleKGbQt9+XUMONbjvz/2wyEXNFtWbfDLjttnE+pdvHVTOyeJpCUSIxWeMBjZJVrMgB9tlOLol9WS+8OiAhJ1PppbGAHolQtzzC4gtdfVm9aJ82f2RMWsZ+5n0J1fGN6C7InfZPxXyKNhT3dVunMTMfxN2hPL9ymlfX8nc5T4iaR0DvgzPIBDuiVNE625NfgOgIeE=
+  skip_cleanup: true
+  on:
+    tags: false
+    branch: master
+    repo: planavsky82/ultimate-list
+after_deploy:
+- echo 'POST DEPLOYMENT'
+- cd ..
+- echo $ORIGINAL
+- NEW=$(npm view ultimate-list version) && echo $NEW
+- PACKAGE_VERSION=$(node -p "require('./package.json').version")
+- echo $PACKAGE_VERSION
+- ./scripts/finalize.sh;
+env:
+  global:
+  - secure: X8eiNr6nP8eN7nWAiOfPyo22D03NBT7mJ7hrakZLQVqGWuVieo5MtIJNkGT9Bh+EIgXTzNhmPKPgEY0z6OD18ZRe9+g3crz1FC3j6q14MFnAhxWnmSQFJWj5LtPARff/GSpp6YdXiCUD9UPtki1n9vTa2UKah0DGUYBydHuNQrOAbQNoVnJv2bXxhjonGvBJosG8JSpxBNQfCmMdyrV5wdSXFyASUBZkxoV8jNQiaqrP4sxSraGN/VYq46s9RLAdxW/UCWFAYh0QXWcA20rsD4my71DFFdvAn694UzTgj5mH2BobWTqWPK0RAqgMymj3UTnYfIZXIRsGtcoSOye6Zk+1FVpP0umZCwqkpw2bAMLgRcCubFtgNkXCE8gbI0vUaekZmoYlOw/t+GXre5iq8f96Alxqdvvj/002PVSkaR1oeCTg4tQNejXdIqErwMQ6Rs3t1BJzGF+YFYtcFhk7RfmBjNkpAvyhMmIFoBN/lpDXLvkAeI3y2C/OvvrhCFK7EPCYzuyoolOdJgJlPXcWL+UH9IKs1vdbDVziysqTiijBp1YjL8Qzu2IuVabANsWWJzFDgEeNuF40TE+T+caGA0Gh9RKnc3AsAg+1N+yLp20qcIDfZLXnOROa/bFq09EyZKG0ssvpDbO5cIsE01EgdOYIBDltw93rTMsxeAVxmw8=
+  - secure: EayT+LmrJqul0t1tOMV7wukH937+V/4gEgXy1ovuPALxLP0VS2xQ7lCk4UpNt1gQKTfNvUWI6MwXzMEYEz5DYARxvH8S7R5DY6OZdHNHqiRcr2OJ50xvbDT+Y7AFhPpa3za+EoWSwbOSjmlhkfjZjbWDpsB+hxYHPiLwbvXf4G6L5lExpx+K/xrj7HOS/eqYZtSAS005f1Dt5rbbhBOW/VqPqD8RtfPoRC8qs3fMfHWTuqBLug8C7OUqG6/c9lE+B+J1eM3PotPyi3A2k1W9ihA9ZO3qTpZPnnJVqCdkvjz7hYKtxJfLiEpjEcNWntoT7Ch46SPrTSqerE1lGXbw4K3ihD2/Cc8rxyLdmeBDuf0WYgkjRNqFY5KpSBez/wfz/A3J3fzcsmzEDCVneEpeb0BFkYs9LgL1d8DEr/aP+HAGDenwkVtusLnXOOXBDfmb4mnoRNTutsKS7N1F+NxBX6SNqB5HKVTL5sdnU/Ey6NntUMTy4Ni49H3/1S7PXLZEYp1WmYM1/Xr2FUdtazpWMCSuxu0u1piB2eCIyVE+SH3YLaEGo2Et6VyczKrxc2NWkErJfKqeLC3+L5w3R/hTlKrpOz9t9fRYwdP3YffAi9sFCJzVg2TtvPRJqzb8+Og4Gq15gi9WyPS2/eX5XBnUfwTthYh+XekV4qTHq97x8Qs=
+  - secure: Mvh2ixbHxoYH8StiybJFJ1BOePZ6z5upcUy9mMOMBxoRSTr/KWnEzgTkKaX1rRaTiQXHb7RYxPpb2wGtVofIQKFdXtQmae1ekKdPKFxNe2exxH5X5DYWS/kPF9AfvN33Vye+3fE5WMDLR1CX/V1xJVBzI7oKZW+SUCEAlOHlO6Nd7k/Mst3boEGVLJ3Lo+uJ3dALq+IsJvyguMx3dMBcDh5s3lZGwEF8i9Ac1Op85/G6Lf5ALkonvy8nvX3Xvk+gBCGjw1rUIaM4xrwoNHQJwY5BqsZRW1mwICdhy21V4SmDg65pFsvruP0ipeKMgOY2eV4uzWMXxmdTBWBuJuD8oDE6cXKKL0oYn7cewqpBRrjQLnXdIQ31eK8iObxr2c5yKBZLu7Ou7fbrhqV8bQXiQBNts95Aul9my8uG7VQ4Jd9RWnVIS2DLlvlcWsxEm56SJV2T2VNy9Wq47k4/y7Avk/kvKf7fZmBgH1u4bpiKHq7pdBLPSvTtNUIgIl0x5Dt44pdBAtX28H9SLTsocvMoFut/sNHvh+wWOKp2R//VNI/uTH9paG1gDPQ+Me6XwLSn4pxtz5jnk7iObEBjKnvReeMvSf76xf1oJW42JNh8TmsrzxN/wJZLycb5ybxwSie0w26nQHoOLgCUsG1JCrfgi2iVQBNya6c6RWHpvhLH+60=
