@@ -1,10 +1,6 @@
 #!/usr/bin/env sh
 
 echo 'FINALIZE DEPLOYMENT...';
-echo 'xxxxxxxxxxxxxxx';
-echo $ORIGINAL
-echo $NEW
-echo $PACKAGE_VERSION;
 echo $TRAVIS_PULL_REQUEST_BRANCH;
 if [$TRAVIS_PULL_REQUEST_BRANCH -eq '']
   then
@@ -43,8 +39,6 @@ if [$TRAVIS_PULL_REQUEST_BRANCH -eq '']
   #for i in $(ls); 
   #do curl --upload-file "$i" -u $FTP_USER_TCI:$FTP_PWD_TCI ftp://192.169.200.149/temp-dir/
   #done;
-else
-
 fi  
 
 echo 'CI Process Complete.';

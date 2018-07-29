@@ -17,6 +17,7 @@ before_script:
 branches:
   only:
   - master
+  - release-ultimate-list
 after_success:
 - ORIGINAL=$(npm view ultimate-list version) && echo $ORIGINAL
 before_deploy:
@@ -34,7 +35,7 @@ deploy:
   skip_cleanup: true
   on:
     tags: false
-    branch: master
+    branch: release-ultimate-list
     repo: planavsky82/planavsky-com
 after_deploy:
 - echo 'POST DEPLOYMENT'
