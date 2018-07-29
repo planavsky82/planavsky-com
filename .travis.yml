@@ -16,6 +16,7 @@ before_script:
 - sh -e /etc/init.d/xvfb start
 branches:
   only:
+  - master
   - release-ultimate-list
 after_success:
 - ORIGINAL=$(npm view ultimate-list version) && echo $ORIGINAL
