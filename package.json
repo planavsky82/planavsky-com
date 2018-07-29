@@ -7,7 +7,9 @@
     "build": "ng build ultimate-list",
     "test": "ng test ultimate-list --watch=false",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:mffr": "ng build mffr --prod",
+    "build:ul-demo": "ng build ultimate-list-demo --prod"
   },
   "private": true,
   "dependencies": {
