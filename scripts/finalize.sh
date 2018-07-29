@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
 echo 'FINALIZE DEPLOYMENT...';
-echo 'xxxxxxxxxxxxxxx';
 echo $TRAVIS_PULL_REQUEST_BRANCH;
 if [$TRAVIS_PULL_REQUEST_BRANCH -eq '']
   then
