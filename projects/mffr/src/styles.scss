@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/_variables";
+@import "scss/neon";
+
+// colors
+$white: #fff;
+.color-white {
+	color: $white;
+}
+$black: #000;
+.color-black {
+	color: $black;
+}
+// alt grays
+$gray-alt: #999;
+$gray-alt-2: #444;
+
+// colors
+$core-blue: #0055eb;
+$core-gold: #f5ba25;
+
+// font weights
+$font-weight-bold: 500;
+$font-weight-normal: normal;
+$font-weight-thin: 300;
+$font-weight-thinnest: 100;
+
+// overrides
+$body-bg: $gray-dark;
+$text-color: $white;
+
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+// need to include the font-awesome css for the font files to load
+@import "~font-awesome/scss/_variables";
+@import "~font-awesome/scss/_mixins";
+@import "~font-awesome/scss/_icons";
+
+// global styles
+body {
+	margin: 0 10px;
+
+	.plan-shell {
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+}
+
+/* variables */
+$gray-1: #888;
+$gray-2: #444;
+$blue-1: #024699;
+$blue-2: #558ecf;
+$gold-1: #f5ba25;
+$green-1: #21b012;
+$brown-1: #663300;
+
+html {
+  	background-color: $black;
+
+  	body {
+  		margin: 0;
+  	}
+}

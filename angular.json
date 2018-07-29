@@ -304,7 +304,8 @@
               "projects/mffr/src/assets"
             ],
             "styles": [
-              "projects/mffr/src/styles.css"
+              "projects/mffr/src/styles.scss",
+              "./node_modules/font-awesome/scss/font-awesome.scss"
             ],
             "scripts": []
           },
