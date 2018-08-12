@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { NavigationModule } from 'ultimate-list';
+import { ButtonModule } from 'ultimate-list';
 
 import { AppComponent } from './app.component';
 import { MainModule } from './main/main.module';
