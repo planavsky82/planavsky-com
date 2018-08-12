@@ -7,6 +7,19 @@ cd planavsky-com-deploy
 echo 'npm install ...'
 npm i
 
+# planavsky-com ...
+echo 'planavsky-com ...'
+npm run build:planavsky
+cd dist/planavsky-com
+echo 'deleting current files ...'
+ssh planavsky_ftp@192.169.200.149 'cd planavsky.com/public_html && rm -rf *'
+echo 'copying new files ...'
+for i in $(ls); 
+do scp -r $i planavsky_ftp@192.169.200.149:/var/www/planavsky.com/public_html;
+done;
+cd ..
+cd ..
+
 # ultimate list demo
 echo 'ultimate list demo ...'
 npm run build:ul-demo
@@ -34,14 +47,3 @@ do scp -r $i planavsky_ftp@192.169.200.149:/var/www/myfantasyfootballrankings.co
 done;
 cd ..
 cd ..
-
-# planavsky-com ...
-echo 'planavsky-com ...'
-npm run build:planavsky
-cd dist/planavsky-com
-echo 'deleting current files ...'
-ssh planavsky_ftp@192.169.200.149 'cd planavsky.com/public_html && rm -rf *'
-echo 'copying new files ...'
-for i in $(ls); 
-do scp -r $i planavsky_ftp@192.169.200.149:/var/www/planavsky.com/public_html;
-done;
