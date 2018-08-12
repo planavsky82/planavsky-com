@@ -26,8 +26,8 @@ npm run build:ul-demo
 cd dist/ultimate-list-demo
 echo 'replace main image path ...'
 sed -i "" "s|/./assets|./assets|" main.*
-echo 'deleting current files ...'
-ssh planavsky_ftp@192.169.200.149 'cd planavsky.com/public_html/ultimate-list && rm -rf *'
+echo 'make new ultimate list directory ...'
+ssh planavsky_ftp@192.169.200.149 'mkdir planavsky.com/public_html/ultimate-list'
 echo 'copying new files ...'
 for i in $(ls); 
 do scp -r $i planavsky_ftp@192.169.200.149:/var/www/planavsky.com/public_html/ultimate-list;
