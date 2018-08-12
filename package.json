@@ -4,13 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build ultimate-list",
+    "build": "ng build --prod ultimate-list",
     "test": "ng test ultimate-list --watch=false",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:mffr": "ng build mffr --prod",
     "build:ul-demo": "ng build ultimate-list-demo --prod --base-href ./",
-    "build:planavsky": "ng build planavsky-com --prod"
+    "build:planavsky": "ng build --prod ultimate-list && ng build planavsky-com --prod"
   },
   "private": true,
   "dependencies": {
