@@ -4,6 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:ul-demo": "ng serve ultimate-list-demo",
+    "start:mffr": "ng serve mffr",
     "build": "ng build --prod ultimate-list",
     "test": "ng test ultimate-list --watch=false",
     "lint": "ng lint",
