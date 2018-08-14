@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { ButtonModule } from 'ultimate-list';
+import { NavigationModule } from 'ultimate-list';
 
 import { AppComponent } from './app.component';
 import { MainModule } from './main/main.module';
@@ -12,7 +12,8 @@ import { MainModule } from './main/main.module';
   ],
   imports: [
     BrowserModule,
-    MainModule
+    MainModule,
+    NavigationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

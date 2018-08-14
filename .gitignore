@@ -34,6 +34,7 @@ yarn-error.log
 testem.log
 /typings
 /scripts/planavsky-com-deploy
+/scripts/ng-step
 
 # System Files
 .DS_Store
