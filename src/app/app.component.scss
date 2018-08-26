@@ -18,18 +18,10 @@
         font-size: 2em;
         height: 50px;
         line-height: 50px;
-
-        @media (max-width: $screen-xs-max) { 
-          font-size: 1.5em;
-        }
   
         &.name {
           padding: 0 $padding * 2 0 $padding / 2;
           font-size: 1em;
-
-          @media (max-width: $screen-xs-max) { 
-            font-size: 0.75em;
-          }
         }
       }
 
