@@ -111,6 +111,13 @@
 
     &.subtitle {
       height: 120px;
+      display: flex;
+      justify-content: space-between;
+
+      .icons {
+        display: flex; 
+        justify-content: flex-end;
+      }
     }
   }
 
