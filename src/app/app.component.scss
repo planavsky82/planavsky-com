@@ -1,7 +1,7 @@
 @import "../assets/scss/variables";
 
 :host {
-  background: $base-dark;
+  background: $base-darker;
 
   .top {
     width: 100%;
@@ -103,7 +103,7 @@
   }
 
   section {
-    background: $base-dark;
+    background: $base-darker;
     color: $white;
     padding: $padding;
     max-width: 1270px;
@@ -114,9 +114,33 @@
       display: flex;
       justify-content: space-between;
 
+      .text {
+        text-align: center;
+
+        .name {
+          color: $base-light;
+          font-size: 2em;
+        }
+
+        .portfolio {
+          color: $base;
+          font-size: 1em;
+        }
+      }
+
       .icons {
         display: flex; 
         justify-content: flex-end;
+        color: $base-dark;
+        font-size: 6em;
+
+        fa-icon {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          margin: 0 15px;
+        }
       }
     }
   }
