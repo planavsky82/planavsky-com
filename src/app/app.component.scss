@@ -114,25 +114,21 @@
       display: flex;
       justify-content: space-between;
 
-      .text {
-        text-align: center;
-
-        .name {
-          color: $base-light;
-          font-size: 2em;
-        }
-
-        .portfolio {
-          color: $base;
-          font-size: 1em;
-        }
-      }
-
       .icons {
-        display: flex; 
-        justify-content: flex-end;
+        display: flex;
+        width: 50%;        
         color: $base-dark;
         font-size: 6em;
+
+        &.left {
+          justify-content: flex-end;
+          padding-right: 70px;
+        }
+
+        &.right {
+          justify-content: flex-start;   
+          padding-left: 70px;       
+        }
 
         fa-icon {
           display: flex;
