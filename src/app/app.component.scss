@@ -1,7 +1,7 @@
 @import "../assets/scss/variables";
 
 :host {
-  background: $base-dark;
+  background: $base-darker;
 
   .top {
     width: 100%;
@@ -103,14 +103,52 @@
   }
 
   section {
-    background: $base-dark;
+    background: $base-darker;
     color: $white;
     padding: $padding;
-    max-width: 1270px;
     margin: 0 auto;
 
+    &.content {
+      max-width: 1270px;
+    }
+
     &.subtitle {
-      height: 120px;
+      height: 110px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $base-dark;
+      overflow: hidden;
+      background: $black;
+      padding-bottom: 20px;
+
+      @media (max-width: $screen-xs-max) { 
+        display: none;
+      }
+
+      .icons {
+        display: flex;
+        width: 50%;        
+        color: $base-darker;
+        font-size: 6em;
+
+        &.left {
+          justify-content: flex-end;
+          padding-right: 70px;
+        }
+
+        &.right {
+          justify-content: flex-start;   
+          padding-left: 70px;       
+        }
+
+        fa-icon {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          margin: 0 15px;
+        }
+      }
     }
   }
 
