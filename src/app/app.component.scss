@@ -106,18 +106,29 @@
     background: $base-darker;
     color: $white;
     padding: $padding;
-    max-width: 1270px;
     margin: 0 auto;
 
+    &.content {
+      max-width: 1270px;
+    }
+
     &.subtitle {
-      height: 120px;
+      height: 110px;
       display: flex;
       justify-content: space-between;
+      border-bottom: 1px solid $base-dark;
+      overflow: hidden;
+      background: $black;
+      padding-bottom: 20px;
+
+      @media (max-width: $screen-xs-max) { 
+        display: none;
+      }
 
       .icons {
         display: flex;
         width: 50%;        
-        color: $base-dark;
+        color: $base-darker;
         font-size: 6em;
 
         &.left {

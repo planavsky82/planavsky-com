@@ -8,7 +8,7 @@ import { MainModule } from './main/main.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faAngular, faGithub, faJs, faCss3Alt, faHtml5, 
-  faNodeJs, faJenkins, faNpm, faGit } from '@fortawesome/free-brands-svg-icons';
+  faNodeJs, faJenkins, faNpm, faGit, faSass, faLess, faLinux } from '@fortawesome/free-brands-svg-icons';
 
 library.add(faAngular);
 library.add(faGithub);
@@ -19,6 +19,9 @@ library.add(faNodeJs);
 library.add(faJenkins);
 library.add(faNpm);
 library.add(faGit);
+library.add(faSass);
+library.add(faLess);
+library.add(faLinux);
 
 @NgModule({
   declarations: [
