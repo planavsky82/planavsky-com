@@ -12,6 +12,7 @@ import { NavigationModule } from '../../../ultimate-list/src/lib/navigation/navi
 import { HomeModule, HomeComponent } from './home';
 import { FormDemoModule, FormDemoComponent } from './form-demo';
 import { NavDemoModule, NavDemoComponent } from './nav-demo';
+import { CardDemoModule, CardDemoComponent } from './card-demo';
 
 import { AppComponent } from './app.component';
 import { SampleComponent } from './sample.component';
@@ -20,6 +21,7 @@ const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'form', component: FormDemoComponent },
   { path: 'nav', component: NavDemoComponent },
+  { path: 'card', component: CardDemoComponent },
   { path: '**', redirectTo: '/', pathMatch: 'full' },  
 ]; 
 
@@ -34,6 +36,7 @@ const appRoutes: Routes = [
     HomeModule,
     FormDemoModule,
     NavDemoModule,
+    CardDemoModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
