@@ -61,3 +61,8 @@ do scp -r $i planavsky_ftp@192.169.200.149:/var/www/planavsky.com/public_html/ng
 done;
 cd ..
 cd ..
+
+# set up DB on server
+ssh planavsky_ftp@192.169.200.149 'cp ./setup-db && ./setup-db'
+
+# populate MFFR data
