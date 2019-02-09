@@ -66,3 +66,5 @@ cd ..
 ssh planavsky_ftp@192.169.200.149 'cp ./setup-db && ./setup-db'
 
 # populate MFFR data
+
+# set up API
