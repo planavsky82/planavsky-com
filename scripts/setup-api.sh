@@ -9,9 +9,6 @@ cd ..
 cd api
 rm -rf node_modules
 npm i
-cd ..
-chmod -R 755 api
-cd api
 echo 'deleting current files ...'
 ssh planavsky_ftp@192.169.200.149 'rm -rf api'
 ssh planavsky_ftp@192.169.200.149 'mkdir api'
