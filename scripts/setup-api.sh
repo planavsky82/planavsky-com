@@ -14,5 +14,5 @@ ssh planavsky_ftp@192.169.200.149 'rm -rf api'
 ssh planavsky_ftp@192.169.200.149 'mkdir api'
 echo 'copying new files ...'
 for i in $(ls); 
-do scp -r $i planavsky_ftp@192.169.200.149:/var/www;
+do scp -r $i planavsky_ftp@192.169.200.149:/var/www/planavsky.com;
 done;
