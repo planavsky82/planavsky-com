@@ -8,6 +8,8 @@ ssh-keygen
 ssh-copy-id planavsky@192.169.200.149
 
 # bash profile and rc
+scp -r ./bash-config/.bashrc planavsky@192.169.200.149:~
+scp -r ./bash-config/.bash_profile planavsky@192.169.200.149:~
 
 # nvm
 ssh planavsky@192.169.200.149 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
