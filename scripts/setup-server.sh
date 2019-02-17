@@ -18,6 +18,7 @@ ssh planavsky@192.169.200.149 'node -v'
 # nginx (setup and create www directories)
 
 # start nginx
+ssh planavsky@192.169.200.149 'nx-start'
 
 # client apps
 ./deploy.sh
