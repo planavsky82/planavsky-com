@@ -13,7 +13,7 @@ alias bp='vi ~/.bash_profile'
 # https://www.godaddy.com/garage/how-to-install-and-configure-nginx-on-centos-7/
 alias nx='cd /etc/nginx'
 alias nx-config='cd /etc/nginx/conf.d && vi default.conf'
-alias nx-start='service httpd stop && service nginx start && service mongod start'
+alias nx-start='service httpd stop | true && service nginx start && service mongod stop && service mongod start'
 alias nx-www='cd /usr/share/nginx/html'
 alias nx-public-html='cd /var/www'
 alias nx-global-site-config='vi /etc/nginx/nginx.conf'
