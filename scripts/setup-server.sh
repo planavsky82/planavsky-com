@@ -20,6 +20,10 @@ ssh root@192.169.200.149 'nvm install node'
 ssh root@192.169.200.149 'node -v'
 
 # nginx (setup and create www directories)
+ssh root@192.169.200.149 'yum install epel-release'
+ssh root@192.169.200.149 'yum install nginx'
+
+# configure nginx 
 
 # start nginx
 # ssh root@192.169.200.149 'nx-start'
