@@ -27,6 +27,3 @@ function folder_details() {
 function vs-set-permission() {
   chown planavsky_ftp: $1 && sudo chmod u+w $1 && service vsftpd restart;
 }
-
-export NVM_DIR=~/.nvm
-source ~/.nvm/nvm.sh
