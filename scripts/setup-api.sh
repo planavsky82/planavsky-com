@@ -10,9 +10,9 @@ cd api
 rm -rf node_modules
 npm i
 echo 'deleting current files ...'
-ssh planavsky@192.169.200.149 'rm -rf /var/www/planavsky.com/api'
-ssh planavsky@192.169.200.149 'mkdir /var/www/planavsky.com/api'
+ssh root@192.169.200.149 'rm -rf /var/www/planavsky.com/api'
+ssh root@192.169.200.149 'mkdir /var/www/planavsky.com/api'
 echo 'copying new files ...'
 for i in $(ls); 
-do scp -r $i planavsky@192.169.200.149:/var/www/planavsky.com/api;
+do scp -r $i root@192.169.200.149:/var/www/planavsky.com/api;
 done;
