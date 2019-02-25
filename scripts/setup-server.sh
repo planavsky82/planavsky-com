@@ -34,9 +34,6 @@ fi
 # configure nginx 
 # move config files to server
 
-# start nginx
-# ssh root@192.169.200.149 'nx-start' from .bashrc
-
 # client apps
 if [ $1 = "client" ] || [ $1 = "" ]; then 
   ./deploy.sh
@@ -52,3 +49,9 @@ fi
 # ssh root@192.169.200.149 'cp ./setup-db && ./setup-db'
 
 # populate data
+
+# start nginx and mongodb
+# ssh root@192.169.200.149 'nx-start' from .bashrc
+if [ $1 = "start" ] || [ $1 = "" ]; then 
+  ssh root@192.169.200.149 'fuser -k 80/tcp && service httpd stop | true && service nginx start && service mongod stop && service mongod start'
+fi
