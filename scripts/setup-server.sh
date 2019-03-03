@@ -13,8 +13,8 @@ fi
 
 # bash profile and rc
 if [ $1 = "bash" ] || [ $1 = "" ]; then 
-  scp -r ./bash-config/.bashrc root@192.169.200.149:~
-  scp -r ./bash-config/.bash_profile root@192.169.200.149:~
+  scp -r ./config/.bashrc root@192.169.200.149:~
+  scp -r ./config/.bash_profile root@192.169.200.149:~
 fi
 
 # nvm
@@ -39,14 +39,27 @@ if [ $1 = "client" ] || [ $1 = "" ]; then
   ./deploy.sh
 fi
 
-# api
+# setup api
 if [ $1 = "api" ] || [ $1 = "" ]; then
   ./setup-api.sh
 fi
 
+# start api
+if [ $1 = "start-api" ] || [ $1 = "" ]; then
+  ssh root@192.169.200.149 'npm install -g pm2'
+  ssh root@192.169.200.149 'pm2 start /var/www/planavsky.com/api/server.js'
+  ssh root@192.169.200.149 'pm2 list'
+fi
+
 # database
 # set up service to run db
-# ssh root@192.169.200.149 'cp ./setup-db && ./setup-db'
+# https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/
+if [ $1 = "db" ] || [ $1 = "" ]; then
+  scp -r ./config/mongodb-org-4.0.repo root@192.169.200.149:/etc/yum.repos.d/
+  ssh root@192.169.200.149 'yum install -y mongodb-org'
+  ssh root@192.169.200.149 'mkdir -p /data/db'
+  ssh root@192.169.200.149 'service mongod start'
+fi
 
 # populate data
 
