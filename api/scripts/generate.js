@@ -4,7 +4,8 @@ const puppeteer = require('puppeteer');
 const $ = require('cheerio');
 
 async function run() {
-  const browser = await puppeteer.launch();
+  console.log('test');
+  /* const browser = await puppeteer.launch();
   const page = await browser.newPage();
   
   await page.goto('https://sports.yahoo.com/nfl/players/');
@@ -17,7 +18,7 @@ async function run() {
     })
   });
   
-  console.log(teams);
+  console.log(teams); */
 
   /* await page.goto('https://www.google.com');
   await teams.forEach(async function(team) {
@@ -33,7 +34,7 @@ async function run() {
     console.log($(this));
   }); */
 
-  browser.close();
+  //browser.close();
 }
 
 run();
