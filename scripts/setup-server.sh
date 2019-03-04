@@ -62,6 +62,11 @@ if [ $1 = "db" ] || [ $1 = "" ]; then
 fi
 
 # populate data
+if [ $1 = "generate-api" ] || [ $1 = "" ]; then
+  ssh root@192.169.200.149 'npm install -g pm2'
+  ssh root@192.169.200.149 'pm2 start /var/www/planavsky.com/api/server.js'
+  ssh root@192.169.200.149 'pm2 list'
+fi
 
 # start nginx and mongodb
 # ssh root@192.169.200.149 'nx-start' from .bashrc
