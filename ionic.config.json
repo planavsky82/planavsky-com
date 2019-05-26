@@ -1,0 +1,14 @@
+{
+  "name": "Planavsky.com",
+  "integrations": {},
+  "type": "angular",
+  "defaultProject": "mffr",
+  "projects": {
+    "mffr": {
+      "name": "My Fantasy Football Rankings",
+      "integrations": {},
+      "type": "angular",
+      "root": "projects/mffr"
+    }
+  }
+}
