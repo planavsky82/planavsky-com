@@ -6,6 +6,7 @@
     "start": "ng serve",
     "start:ul-demo": "ng serve ultimate-list-demo",
     "start:mffr": "ng serve mffr",
+    "start:mffr:mobile": "ionic serve --project=mffr -l --open",
     "build": "ng build --prod ultimate-list",
     "test": "ng test ultimate-list --watch=false",
     "lint": "ng lint",
