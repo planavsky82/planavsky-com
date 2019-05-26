@@ -374,6 +374,30 @@
               "**/node_modules/**"
             ]
           }
+        },
+        "ionic-cordova-build": {
+          "builder": "@ionic/angular-toolkit:cordova-build",
+          "options": {
+            "browserTarget": "mffr:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "mffr:build:production"
+            }
+          }
+        },
+        "ionic-cordova-serve": {
+          "builder": "@ionic/angular-toolkit:cordova-serve",
+          "options": {
+            "cordovaBuildTarget": "mffr:ionic-cordova-build",
+            "devServerTarget": "mffr:serve"
+          },
+          "configurations": {
+            "production": {
+              "cordovaBuildTarget": "mffr:ionic-cordova-build:production",
+              "devServerTarget": "mffr:serve:production"
+            }
+          }
         }
       }
     },
@@ -405,5 +429,16 @@
       }
     }
   },
-  "defaultProject": "planavsky-com"
+  "defaultProject": "planavsky-com",
+  "cli": {
+    "defaultCollection": "@ionic/angular-toolkit"
+  },
+  "schematics": {
+    "@ionic/angular-toolkit:component": {
+      "styleext": "scss"
+    },
+    "@ionic/angular-toolkit:page": {
+      "styleext": "scss"
+    }
+  }
 }

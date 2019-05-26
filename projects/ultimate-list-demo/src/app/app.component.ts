@@ -20,6 +20,10 @@ export class AppComponent {
     { 
       name: 'Navigation Utility',
       id: 'nav'
+    },
+    { 
+      name: 'Card',
+      id: 'card'
     }
   ];
   
