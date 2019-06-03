@@ -37,6 +37,7 @@ testem.log
 /scripts/planavsky-com-deploy
 /scripts/ng-step
 /CordovaMobileApp/node_modules
+/web-components/node_modules
 
 # System Files
 .DS_Store
