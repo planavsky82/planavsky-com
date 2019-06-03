@@ -38,6 +38,7 @@ testem.log
 /scripts/ng-step
 /CordovaMobileApp/node_modules
 /web-components/node_modules
+/web-components/dist
 
 # System Files
 .DS_Store
