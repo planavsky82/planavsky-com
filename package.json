@@ -8,6 +8,7 @@
     "start:mffr": "ng serve mffr",
     "start:mffr:mobile": "ionic serve --project=mffr -l --open",
     "start:mffr:cordova": "ng build mffr --prod --base-href . --output-path ./CordovaMobileApp/www/ && cd CordovaMobileApp && cordova platform add ios || true && cordova emulate ios",
+    "build:mffr:cordova": "cordova build ios --device --release --buildConfig build.json",
     "build": "ng build --prod ultimate-list",
     "test": "ng test ultimate-list --watch=false",
     "lint": "ng lint",
