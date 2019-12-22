@@ -17,7 +17,10 @@
     "build:mffr": "ng build mffr --prod",
     "build:ul-demo": "ng build ultimate-list-demo --prod --base-href ./",
     "build:planavsky": "ng build --prod ultimate-list && ng build planavsky-com --prod",
-    "add:component": "function add() { ng g module $1 --project=ultimate-list && ng g component $1 --project=ultimate-list; }; add"
+    "add:component": "function add() { ng g module $1 --project=ultimate-list && ng g component $1 --project=ultimate-list; }; add",
+    "firebase:deploy": "npm run build:mffr && firebase deploy",
+    "firebase:login": "firebase login",
+    "firebase:setup": "npm i -g firebase-tools && firebase init"
   },
   "private": true,
   "dependencies": {
