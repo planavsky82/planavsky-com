@@ -20,7 +20,9 @@
     "add:component": "function add() { ng g module $1 --project=ultimate-list && ng g component $1 --project=ultimate-list; }; add",
     "firebase:deploy": "npm run build:mffr && firebase deploy",
     "firebase:login": "firebase login",
-    "firebase:setup": "npm i -g firebase-tools && firebase init"
+    "firebase:setup": "npm i -g firebase-tools && firebase init",
+    "firebase:serve:api": "cd functions && npm run build && firebase serve",
+    "firebase:deploy:api": "cd functions && npm run build && firebase deploy"
   },
   "private": true,
   "dependencies": {
@@ -78,5 +80,8 @@
     "tslib": "^1.7.1",
     "tslint": "~5.9.1",
     "typescript": "~2.7.2"
+  },
+  "engines": {
+    "node": "11"
   }
 }
