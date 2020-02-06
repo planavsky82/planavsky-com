@@ -22,7 +22,8 @@
     "firebase:login": "firebase login",
     "firebase:setup": "npm i -g firebase-tools && firebase init",
     "firebase:serve:api": "cd functions && npm run build && firebase serve",
-    "firebase:deploy:api": "cd functions && npm run build && firebase deploy"
+    "firebase:deploy:api": "cd functions && npm run build && firebase deploy",
+    "firebase:set:db:var": "export GOOGLE_APPLICATION_CREDENTIALS=\"./planavsky-com-7dafdf5fd67c.json\""
   },
   "private": true,
   "dependencies": {

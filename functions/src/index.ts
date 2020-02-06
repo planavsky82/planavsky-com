@@ -1,7 +1,13 @@
 import * as functions from 'firebase-functions';
+import * as admin from 'firebase-admin';
 import * as express from 'express';
 const app: express.Application = express();
 const port = 3000;
+
+admin.initializeApp({
+    credential: admin.credential.applicationDefault(),
+    databaseURL: 'https://planavsky-com.firebaseio.com/'
+});  //by adding your credentials, you get authorized to read and write from the database
 
 app.listen(port, () => {
     console.log('Listening to port: ' + port);
