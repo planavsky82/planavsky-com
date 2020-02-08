@@ -14,7 +14,7 @@ app.listen(port, () => {
 });
 
 app.get('/ping', (req, res) => {
-    res.send('Response!!!!!!!!!!!!!!!!!!!!');
+    res.send('Response NEW!!!!!!!!!!!!!!!!!!!!');
 });
 
 exports.app = functions.https.onRequest(app);
