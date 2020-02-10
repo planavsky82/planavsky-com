@@ -14,7 +14,27 @@ app.listen(port, () => {
 });
 
 app.get('/ping', (req, res) => {
-    res.send('Response NEW!!!!!!!!!!!!!!!!!!!!');
+    // Get a database reference to our blog
+    const db = admin.database();
+    const ref = db.ref('users');
+
+    const usersRef = ref.child("data");
+    usersRef.set({
+        user1: {
+          username: "user1",
+          password: "pwd"
+        },
+        user2: {
+          username: "user2",
+          password: "pwd"
+        }
+    })
+    .then(() => {
+        res.send('Response NEW 3333!!!!!!!!!!!!!!!!!!!!');
+        console.log('this will succeed');
+    })
+    .catch(err => console.log('error'));
+    
 });
 
 exports.app = functions.https.onRequest(app);
