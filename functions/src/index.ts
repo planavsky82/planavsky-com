@@ -14,7 +14,6 @@ app.listen(port, () => {
 });
 
 app.get('/ping', (req, res) => {
-    // Get a database reference to our blog
     const db = admin.database();
     const ref = db.ref('users');
 
@@ -35,6 +34,14 @@ app.get('/ping', (req, res) => {
     })
     .catch(err => console.log('error'));
     
+});
+
+app.get('/user', (req, res) => {
+    const db = admin.database();
+    const ref = db.ref('/users/data/user1');
+    ref.on('value', function(snapshot: any) {
+        res.send(snapshot);
+    });
 });
 
 exports.app = functions.https.onRequest(app);
