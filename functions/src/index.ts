@@ -6,8 +6,8 @@ const app: express.Application = express();
 const port = 3000;
 
 admin.initializeApp({
-    credential: admin.credential.applicationDefault(),
-    databaseURL: 'https://planavsky-com.firebaseio.com/'
+  credential: admin.credential.applicationDefault(),
+  databaseURL: 'https://planavsky-com.firebaseio.com/'
 });  //by adding your credentials, you get authorized to read and write from the database
 
 app.listen(port, () => {
@@ -15,36 +15,66 @@ app.listen(port, () => {
 });
 
 app.get('/ping', (req, res) => {
-    const db = admin.database();
-    const ref = db.ref('users');
+  const db = admin.database();
+  const ref = db.ref('users');
 
-    const usersRef = ref.child("data");
-    usersRef.set({
-        user1: {
-          username: "user1",
-          password: "pwd"
-        },
-        user2: {
-          username: "user2",
-          password: "pwd"
-        }
-    })
-    .then(() => {
-        res.send('Response NEW 3333!!!!!!!!!!!!!!!!!!!!');
-        console.log('this will succeed');
-    })
-    .catch(err => console.log('error'));
-    
+  const usersRef = ref.child("data");
+  usersRef.set({
+      user1: {
+        username: "user1",
+        password: "pwd"
+      },
+      user2: {
+        username: "user2",
+        password: "pwd"
+      }
+  })
+  .then(() => {
+    console.log('this will succeed');
+  })
+  .catch(err => console.log('error'));
 });
 
 app.get('/user', (req, res) => {
-    const db = admin.database();
-    const ref = db.ref('/users/data/user1');
-    ref.on('value', function(snapshot: any) {
-      return cors()(req, res, () => {
-        res.send(snapshot);
-      });
+  const db = admin.database();
+  const ref = db.ref('/users/data/user1');
+  ref.on('value', function(snapshot: any) {
+    return cors()(req, res, () => {
+      res.send(snapshot);
     });
+  });
+});
+
+app.post('/user', (req, res) => {
+  /* const db = admin.database();
+
+  // https://firebase.google.com/docs/database/web/read-and-write
+
+  let updates: any;
+
+  //cors()(req, res, () => {
+    
+  //});
+
+  updates['/users/data/user2'] = { postData: 'xyz' };
+  //db.ref().update(updates);
+  //res.send('added!');
+
+  db.ref().update(updates).then(value => {
+    return res.send('added!');
+  }, reason => {
+    return res.send('error!');
+  }); */
+  const db = admin.database();
+  return db.ref('/users/data/user3').set({ 
+    postData: 'xyz' 
+  }, function(error) {
+    if (error) {
+      res.send('error: ' + error);
+    } else {
+      res.send('added!');
+    }
+  });
 });
 
 exports.app = functions.https.onRequest(app);
