@@ -37,7 +37,7 @@ app.get('/ping', (req, res) => {
 
 app.get('/user', (req, res) => {
   const db = admin.database();
-  const ref = db.ref('/users/data/user1');
+  const ref = db.ref('/users');
   ref.on('value', function(snapshot: any) {
     return cors()(req, res, () => {
       res.send(snapshot);
@@ -66,8 +66,9 @@ app.post('/user', (req, res) => {
     return res.send('error!');
   }); */
   const db = admin.database();
-  return db.ref('/users/data/user3').set({ 
-    postData: 'xyz' 
+  return db.ref('/users').set({ 
+    name: 'xyz',
+    pwd: 'abc'
   }, function(error) {
     if (error) {
       res.send('error: ' + error);
