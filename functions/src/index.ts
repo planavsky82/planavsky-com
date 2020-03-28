@@ -46,27 +46,9 @@ app.get('/user', (req, res) => {
 });
 
 app.post('/user', (req, res) => {
-  /* const db = admin.database();
-
   // https://firebase.google.com/docs/database/web/read-and-write
-
-  let updates: any;
-
-  //cors()(req, res, () => {
-    
-  //});
-
-  updates['/users/data/user2'] = { postData: 'xyz' };
-  //db.ref().update(updates);
-  //res.send('added!');
-
-  db.ref().update(updates).then(value => {
-    return res.send('added!');
-  }, reason => {
-    return res.send('error!');
-  }); */
   const db = admin.database();
-  return db.ref('/users').set({ 
+  return db.ref('/users').push({ 
     name: 'xyz',
     pwd: 'abc'
   }, function(error) {
