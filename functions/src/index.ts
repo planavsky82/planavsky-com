@@ -2,8 +2,13 @@ import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import * as express from 'express';
 import * as cors from 'cors';
+import { Authentication } from './app/authentication';
+
+//var usr = require('./app/user');
+
 const app: express.Application = express();
 const port = 3000;
+let authentication = new Authentication();
 
 admin.initializeApp({
   credential: admin.credential.applicationDefault(),
@@ -13,6 +18,9 @@ admin.initializeApp({
 app.listen(port, () => {
     console.log('Listening to port: ' + port);
 });
+
+authentication.authenticateUser();
+authentication.runMiddleware();
 
 app.get('/ping', (req, res) => {
   const db = admin.database();
