@@ -1,13 +1,13 @@
-import * as jwt from 'jsonwebtoken';
-import { User } from '../models/user';
+//import * as jwt from 'jsonwebtoken';
+//import { User } from '../models/user';
 
 export class Authentication {
 	authenticateUser() {
-
+		return true;
 	}
 
 	runMiddleware() {
-		
+		return true;
 	}
 }
 
