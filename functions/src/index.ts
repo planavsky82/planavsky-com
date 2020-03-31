@@ -1,7 +1,6 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import * as express from 'express';
-import * as cors from 'cors';
 import { Authentication } from './app/authentication';
 
 //var usr = require('./app/user');
@@ -16,41 +15,11 @@ admin.initializeApp({
 });  //by adding your credentials, you get authorized to read and write from the database
 
 app.listen(port, () => {
-    console.log('Listening to port: ' + port);
+  console.log('Listening to port: ' + port);
 });
 
-authentication.authenticateUser();
-authentication.runMiddleware();
-
-app.get('/ping', (req, res) => {
-  const db = admin.database();
-  const ref = db.ref('users');
-
-  const usersRef = ref.child("data");
-  usersRef.set({
-      user1: {
-        username: "user1",
-        password: "pwd"
-      },
-      user2: {
-        username: "user2",
-        password: "pwd"
-      }
-  })
-  .then(() => {
-    console.log('this will succeed');
-  })
-  .catch(err => console.log('error'));
-});
-
-app.get('/user', (req, res) => {
-  const db = admin.database();
-  const ref = db.ref('/users');
-  ref.on('value', function(snapshot: any) {
-    return cors()(req, res, () => {
-      res.send(snapshot);
-    });
-  });
+app.get('/authenticate', (req, res) => {
+  authentication.authenticateUser(admin.database(), req, res);
 });
 
 app.post('/user', (req, res) => {
@@ -66,6 +35,10 @@ app.post('/user', (req, res) => {
       res.send('added!');
     }
   });
+});
+
+app.post('/users', (req, res) => {
+  authentication.runLoggedInCheck(); 
 });
 
 exports.app = functions.https.onRequest(app);

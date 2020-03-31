@@ -1,12 +1,18 @@
 //import * as jwt from 'jsonwebtoken';
 //import { User } from '../models/user';
+import * as cors from 'cors';
 
 export class Authentication {
-	authenticateUser() {
-		return true;
+	authenticateUser(adminDb: any, req: any, res: any) { // TODO: remove 'any' type
+		const ref = adminDb.ref('/users');
+		ref.on('value', function(snapshot: any) {
+			return cors()(req, res, () => {
+				res.send(snapshot);
+			});
+		});
 	}
 
-	runMiddleware() {
+	runLoggedInCheck() {
 		return true;
 	}
 }
