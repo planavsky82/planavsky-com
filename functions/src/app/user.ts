@@ -1,6 +1,7 @@
 import { UserModel } from '../models/user';
 //import { test } from 'owasp-password-strength-test';
 import * as cors from 'cors';
+import * as _ from 'lodash';
 
 export class User {
   postUser() {
@@ -11,10 +12,9 @@ export class User {
     const ref = adminDb.ref('/users');
     return ref.on('value', function(snapshot: any) {
       return cors()(req, res, () => {
-        /* res.send(snapshot.filter((user: UserModel) => {
-          return user.name === 'xyz';
-        })); */
-        res.send(snapshot);
+        //const result = _.filter(snapshot, function(o) { return o.name === 'name1'; })
+        const result = snapshot;
+        res.send(result);
       });
     });
   }
