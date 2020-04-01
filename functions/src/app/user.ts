@@ -1,6 +1,32 @@
-//var User = require('../models/user');
-//ar owasp = require('owasp-password-strength-test');
-//var http = require('http');
+import { UserModel } from '../models/user';
+//import { test } from 'owasp-password-strength-test';
+import * as cors from 'cors';
+
+export class User {
+  postUser() {
+    return true;
+  }
+
+  getUser(adminDb: any, req: any, res: any): UserModel {
+    const ref = adminDb.ref('/users');
+    return ref.on('value', function(snapshot: any) {
+      return cors()(req, res, () => {
+        /* res.send(snapshot.filter((user: UserModel) => {
+          return user.name === 'xyz';
+        })); */
+        res.send(snapshot);
+      });
+    });
+  }
+
+  getUserByIdAdmin() {
+    return true;
+  }
+
+  getUserRankings() {
+    return true;
+  }
+}
 
 /* 
     POST

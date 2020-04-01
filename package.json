@@ -50,6 +50,7 @@
     "core-js": "^2.5.4",
     "firebase": "^7.3.0",
     "hammerjs": "^2.0.8",
+    "owasp-password-strength-test": "1.3.0",
     "rxjs": "^6.0.0",
     "ultimate-list": "^0.10.41",
     "web-push": "^3.2.5",

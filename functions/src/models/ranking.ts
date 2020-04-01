@@ -1,4 +1,4 @@
-export interface Ranking {
+export interface RankingModel {
   userid: number; 
   playerid: number;
 }

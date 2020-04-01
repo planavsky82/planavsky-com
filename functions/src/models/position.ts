@@ -1,4 +1,4 @@
-export interface Position {
+export interface PositionModel {
   id: string;
   name: string;
 }

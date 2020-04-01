@@ -2,12 +2,12 @@ import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import * as express from 'express';
 import { Authentication } from './app/authentication';
-
-//var usr = require('./app/user');
+import { User } from './app/user';
 
 const app: express.Application = express();
 const port = 3000;
-let authentication = new Authentication();
+const authentication = new Authentication();
+const user = new User();
 
 admin.initializeApp({
   credential: admin.credential.applicationDefault(),
@@ -18,16 +18,20 @@ app.listen(port, () => {
   console.log('Listening to port: ' + port);
 });
 
-app.get('/authenticate', (req, res) => {
+app.post('/authenticate', (req, res) => {
   authentication.authenticateUser(admin.database(), req, res);
+});
+
+app.get('/user', (req, res) => {
+  user.getUser(admin.database(), req, res);
 });
 
 app.post('/user', (req, res) => {
   // https://firebase.google.com/docs/database/web/read-and-write
   const db = admin.database();
   return db.ref('/users').push({ 
-    name: 'xyz',
-    pwd: 'abc'
+    name: 'name1',
+    pwd: '123'
   }, function(error) {
     if (error) {
       res.send('error: ' + error);
@@ -38,7 +42,7 @@ app.post('/user', (req, res) => {
 });
 
 app.post('/users', (req, res) => {
-  authentication.runLoggedInCheck(); 
+  authentication.runLoggedInCheck(app); 
 });
 
 exports.app = functions.https.onRequest(app);
