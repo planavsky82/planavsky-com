@@ -12,42 +12,6 @@ export class User {
     const ref = adminDb.ref('/users');
     return ref.on('value', function(snapshot: any) {
       return cors()(req, res, () => {
-        //const result = _.filter(snapshot, function(o) { return o.name === 'name1'; })
-        //const result = snapshot;
-        /* res.send(_.filter({
-            "-M3UcuAmF8iInlZxHqtP": {
-                "name": "xyz",
-                "pwd": "abc"
-            },
-            "-M3UcvH2nsV9Frsl0_AE": {
-                "name": "name1",
-                "pwd": "abc"
-            },
-            "-M3UczPCeUPKYuyp3X7g": {
-                "name": "xyz",
-                "pwd": "abc"
-            },
-            "-M3ixk8JFhSqLA0hs1iM": {
-                "name": "xyz",
-                "pwd": "abc"
-            },
-            "-M3ixr5hIa0DQV2cfVPm": {
-                "name": "xyz",
-                "pwd": "abc"
-            },
-            "-M3mmXPAuj-I6UQ65zNg": {
-                "name": "xyz",
-                "pwd": "abc"
-            },
-            "-M3mmaS_9yUR2cWGOtGX": {
-                "name": "xyz",
-                "pwd": "abc"
-            },
-            "-M3mmcGjC4CjlJ1weblc": {
-                "name": "xyz",
-                "pwd": "abc"
-            }
-        }, function(o) { return o.name === 'name1'; })); */
         res.send(snapshot);
       });
     });

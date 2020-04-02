@@ -29,7 +29,7 @@ app.get('/user', (req, res) => {
 app.post('/user', (req, res) => {
   // https://firebase.google.com/docs/database/web/read-and-write
   const db = admin.database();
-  return db.ref('/users').push({ 
+  return db.ref('/users/' + req.param('name')).push({ 
     name: 'name1',
     pwd: '123'
   }, function(error) {
