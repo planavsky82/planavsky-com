@@ -1,12 +1,10 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import * as express from 'express';
-import { Authentication } from './app/authentication';
 import { User } from './app/user';
 
 const app: express.Application = express();
 const port = 3000;
-const authentication = new Authentication();
 const user = new User();
 
 admin.initializeApp({
@@ -31,7 +29,7 @@ app.post('/user', (req, res) => {
 });
 
 app.post('/users', (req, res) => {
-  authentication.runLoggedInCheck(app); 
+  user.runLoggedInMiddleware(app); 
 });
 
 exports.app = functions.https.onRequest(app);

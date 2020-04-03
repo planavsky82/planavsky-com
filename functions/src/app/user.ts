@@ -1,8 +1,11 @@
 import * as cors from 'cors';
 import * as _ from 'lodash';
 //import { test } from 'owasp-password-strength-test';
+//import * as jwt from 'jsonwebtoken';
 
 import { UserModel } from '../models/user';
+
+// TODO: remove 'any' types
 
 export class User {
   postUser(adminDb: any, req: any, res: any) {
@@ -16,6 +19,51 @@ export class User {
         res.send('user added!');
         }
     });
+
+    /* // create a user (accessed at POST http://localhost:8080/api/users)
+        .post(function(req, res) {
+
+            var user = new User();      // create a new instance of the User model
+            user.name = req.body.name;  // set the user's name (comes from the request)
+            user.password = req.body.password; 
+            user.password2 = req.body.password2; 
+            user.email = req.body.email;
+
+            // check for pre-existing user names
+            User.findOne({ name: req.body.name }, function(err, existingUser) {
+                User.findOne({ email: req.body.email }, function(err, existingEmail) {
+                    if (user.name && user.password && user.email) {
+                        if (user.password === user.password2) {
+                            if (!existingUser) {
+                                if (!existingEmail) {
+                                    var passwordResult = owasp.test(user.password);
+                                    if (passwordResult.errors.length === 0) {
+                                        // save the user and check for errors
+                                        user.save(function(err) {
+                                            if (err)
+                                                res.send(err);
+                    
+                                            res.json({ message: 'User created!' });
+                                        });
+                                    } else {
+                                        res.send({ message: passwordResult.errors });
+                                    }
+                                } else {
+                                    res.send({ message: 'Email already exists.' });
+                                }
+                            } else {
+                                res.send({ message: 'User Name already exists.' });
+                            }
+                        } else {
+                            res.send({ message: 'Passwords do not match.' });
+                        }
+                    } else {
+                        res.send({ message: 'User Name, Password, and Email are required.' });
+                    }
+                });
+            });
+        });
+    */
   }
 
   getUser(adminDb: any, req: any, res: any): UserModel {
@@ -25,6 +73,32 @@ export class User {
         res.send(snapshot);
       });
     });
+    /* .get(function(req, res) {
+            User.find(function(err, users) {
+                if (err)
+                    res.send(err);
+    
+                res.json(users);
+            });
+        });
+    */
+   /* 
+    GET(single)
+    */
+    /* exports.processUserById = function (router) {
+        // on routes that end in /users/:user_id
+        // ----------------------------------------------------
+        return router.route('/users/:user_id')
+
+            // get the user with that id (accessed at GET http://localhost:8080/api/users/:user_id)
+            .get(function(req, res) {
+                User.findById(req.params.user_id, function(err, user) {
+                    if (err)
+                        res.send(err);
+                    res.json(user);
+                });
+            });
+    }; */
   }
 
   getUserByIdAdmin() {
@@ -77,173 +151,130 @@ export class User {
         }
     }); */
   }
-}
 
-/* 
-    POST
-*/  
-/* exports.postUser = function (router) {
-    return router.route('/users')
-        // create a user (accessed at POST http://localhost:8080/api/users)
-        .post(function(req, res) {
+  runLoggedInMiddleware(app: any) {
+    return true;
 
-            var user = new User();      // create a new instance of the User model
-            user.name = req.body.name;  // set the user's name (comes from the request)
-            user.password = req.body.password; 
-            user.password2 = req.body.password2; 
-            user.email = req.body.email;
+    // route middleware to verify a token
+    // return router.use(function(req, res, next) {
 
-            // check for pre-existing user names
-            User.findOne({ name: req.body.name }, function(err, existingUser) {
-                User.findOne({ email: req.body.email }, function(err, existingEmail) {
-                    if (user.name && user.password && user.email) {
-                        if (user.password === user.password2) {
-                            if (!existingUser) {
-                                if (!existingEmail) {
-                                    var passwordResult = owasp.test(user.password);
-                                    if (passwordResult.errors.length === 0) {
-                                        // save the user and check for errors
-                                        user.save(function(err) {
-                                            if (err)
-                                                res.send(err);
-                    
-                                            res.json({ message: 'User created!' });
-                                        });
-                                    } else {
-                                        res.send({ message: passwordResult.errors });
-                                    }
-                                } else {
-                                    res.send({ message: 'Email already exists.' });
-                                }
-                            } else {
-                                res.send({ message: 'User Name already exists.' });
-                            }
-                        } else {
-                            res.send({ message: 'Passwords do not match.' });
-                        }
-                    } else {
-                        res.send({ message: 'User Name, Password, and Email are required.' });
-                    }
-                });
-            });
+    /* // check header or url parameters or post parameters for token
+    var token = req.body.token || req.query.token || req.headers['x-access-token'];
+
+    // decode token
+    if (token) {
+
+        // verifies secret and checks exp
+        jwt.verify(token, app.get('superSecret'), function(err, decoded) {      
+        if (err) {
+            return res.json({ success: false, message: 'Failed to authenticate token.' });    
+        } else {
+            // if everything is good, save to request for use in other routes
+            req.decoded = decoded;    
+            next();
+        }
         });
-}; */
 
-/* 
-    GET
-*/  
-/* exports.processUsers = function (router) {
-    return router.route('/users')
-        .get(function(req, res) {
-            User.find(function(err, users) {
-                if (err)
-                    res.send(err);
-    
-                res.json(users);
-            });
+    } else {
+
+        // if there is no token
+        // return an error
+        return res.status(403).send({ 
+            success: false, 
+            message: 'No token provided.' 
         });
-}; */
 
+    } */
+  }
 
-/* 
-    GET(single)
-*/
-/* exports.processUserById = function (router) {
-    // on routes that end in /users/:user_id
-    // ----------------------------------------------------
-    return router.route('/users/:user_id')
-
-        // get the user with that id (accessed at GET http://localhost:8080/api/users/:user_id)
-        .get(function(req, res) {
-            User.findById(req.params.user_id, function(err, user) {
-                if (err)
-                    res.send(err);
-                res.json(user);
-            });
-        });
-}; */
-
-/* 
+  editDelete() {
+    return true;
+    /* 
     PUT, DELETE
-*/
-/* exports.processUserByIdAdmin = function (router) {
-    // on routes that end in /users/:user_id
-    // ----------------------------------------------------
-    return router.route('/users/:user_id')
+    */
+    /* exports.processUserByIdAdmin = function (router) {
+        // on routes that end in /users/:user_id
+        // ----------------------------------------------------
+        return router.route('/users/:user_id')
 
-        // update the user with this id (accessed at PUT http://localhost:8080/api/users/:user_id)
-        .put(function(req, res) {
-            // use our user model to find the user we want
-            \/* User.findById(req.params.user_id, function(err, user) {
+            // update the user with this id (accessed at PUT http://localhost:8080/api/users/:user_id)
+            .put(function(req, res) {
+                // use our user model to find the user we want
+                \/* User.findById(req.params.user_id, function(err, user) {
 
-                if (err)
-                    res.send(err);
-
-                user.name = req.body.name;  // update the users info
-
-                // save the user
-                user.save(function(err) {
                     if (err)
                         res.send(err);
 
-                    res.json({ message: 'User updated!' });
-                });
+                    user.name = req.body.name;  // update the users info
 
-            }); *\/
-        })
+                    // save the user
+                    user.save(function(err) {
+                        if (err)
+                            res.send(err);
 
-        // delete the user with this id (accessed at DELETE http://localhost:8080/api/users/:user_id)
-        .delete(function(req, res) {
-            /* User.remove({
-                _id: req.params.user_id
-            }, function(err, user) {
-                if (err)
-                    res.send(err);
+                        res.json({ message: 'User updated!' });
+                    });
 
-                res.json({ message: 'Successfully deleted' });
-            }); *\/
-        });
-}; */
+                }); *\/
+            })
 
-/* exports.getUserRankings = function (router) {
-    // on routes that end in /users/:user_id
-    // ----------------------------------------------------
-    return router.route('/users/:user_id/rankings')
+            // delete the user with this id (accessed at DELETE http://localhost:8080/api/users/:user_id)
+            .delete(function(req, res) {
+                /* User.remove({
+                    _id: req.params.user_id
+                }, function(err, user) {
+                    if (err)
+                        res.send(err);
 
-        .get(function(req, res) {
+                    res.json({ message: 'Successfully deleted' });
+                }); *\/
+            });
+    }; */
+  }
 
-            var options = {
-                host: 'api.fantasy.nfl.com',
-                path: '/v1/players/stats?statType=seasonProjectedStats&position=QB',
-                method: 'GET'
-            };
-            
-            var reqData = http.request(options, function(resData) {
-                console.log('STATUS: ' + resData.statusCode);
-                console.log('HEADERS: ' + JSON.stringify(resData.headers));
-                resData.setEncoding('utf8');
-                resData.on('data', function (chunk) {
-                    console.log('BODY: ' + chunk);
-                    resData.json({
-                        rankings: [chunk]
+  getRankings() {
+    return true;
+    /* exports.getUserRankings = function (router) {
+        // on routes that end in /users/:user_id
+        // ----------------------------------------------------
+        return router.route('/users/:user_id/rankings')
+
+            .get(function(req, res) {
+
+                var options = {
+                    host: 'api.fantasy.nfl.com',
+                    path: '/v1/players/stats?statType=seasonProjectedStats&position=QB',
+                    method: 'GET'
+                };
+                
+                var reqData = http.request(options, function(resData) {
+                    console.log('STATUS: ' + resData.statusCode);
+                    console.log('HEADERS: ' + JSON.stringify(resData.headers));
+                    resData.setEncoding('utf8');
+                    resData.on('data', function (chunk) {
+                        console.log('BODY: ' + chunk);
+                        resData.json({
+                            rankings: [chunk]
+                        });
                     });
                 });
+                
+                reqData.on('error', function(e) {
+                    console.log('problem with request: ' + e.message);
+                });
+                
+                // write data to request body
+                reqData.write('data\n');
+                reqData.write('data\n');
+                reqData.end();
+                
+                /* User.findById(req.params.user_id, function(err, user) {
+                    if (err)
+                        res.send(err);
+                    res.json(user);
+                }); *\/
+                
             });
-            
-            reqData.on('error', function(e) {
-                console.log('problem with request: ' + e.message);
-            });
-            
-            // write data to request body
-            reqData.write('data\n');
-            reqData.write('data\n');
-            reqData.end();
-            
-            /* User.findById(req.params.user_id, function(err, user) {
-                if (err)
-                    res.send(err);
-                res.json(user);
-            }); *\/
-            
-        });
-}; */
+    }; */
+  }
+}
