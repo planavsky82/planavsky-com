@@ -19,7 +19,7 @@ app.listen(port, () => {
 });
 
 app.post('/authenticate', (req, res) => {
-  authentication.authenticateUser(admin.database(), req, res);
+  user.authenticate(admin.database(), req, res);
 });
 
 app.get('/user', (req, res) => {
@@ -27,18 +27,7 @@ app.get('/user', (req, res) => {
 });
 
 app.post('/user', (req, res) => {
-  // https://firebase.google.com/docs/database/web/read-and-write
-  const db = admin.database();
-  return db.ref('/users/' + req.param('name')).push({ 
-    name: 'name1',
-    pwd: '123'
-  }, function(error) {
-    if (error) {
-      res.send('error: ' + error);
-    } else {
-      res.send('added!');
-    }
-  });
+  user.postUser(admin.database(), req, res);
 });
 
 app.post('/users', (req, res) => {
