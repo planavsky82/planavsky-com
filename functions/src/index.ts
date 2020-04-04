@@ -28,7 +28,7 @@ app.post('/user', (req, res) => {
   user.postUser(admin.database(), req, res);
 });
 
-app.post('/users', (req, res) => {
+app.get('/users', (req, res) => {
   user.runLoggedInMiddleware(app); 
 });
 
