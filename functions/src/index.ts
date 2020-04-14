@@ -16,20 +16,39 @@ app.listen(port, () => {
   console.log('Listening to port: ' + port);
 });
 
+// authenticate
 app.post('/authenticate', (req, res) => {
   user.authenticate(admin.database(), req, res);
 });
 
+// get single user
 app.get('/user', (req, res) => {
   user.getUser(admin.database(), req, res);
 });
 
+// register user
 app.post('/user', (req, res) => {
   user.postUser(admin.database(), req, res);
 });
 
+// get all users, run middleware first
 app.get('/users', (req, res) => {
   user.runLoggedInMiddleware(app); 
+});
+
+// get user rankings
+app.get('/rankings', (req, res) => {
+
+});
+
+// post user rankings
+app.post('/rankings', (req, res) => {
+
+});
+
+// edit user rankings
+app.put('/rankings', (req, res) => {
+
 });
 
 exports.app = functions.https.onRequest(app);
