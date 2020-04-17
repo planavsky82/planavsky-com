@@ -14,21 +14,22 @@ admin.initializeApp({
 
 app.listen(port, () => {
   console.log('Listening to port: ' + port);
+  user.connect(admin.database()); 
 });
 
 // authenticate
 app.post('/authenticate', (req, res) => {
-  user.authenticate(admin.database(), req, res);
+  user.authenticate(req, res);
 });
 
 // get single user
 app.get('/user', (req, res) => {
-  user.getUser(admin.database(), req, res);
+  user.getUser(req, res);
 });
 
 // register user
 app.post('/user', (req, res) => {
-  user.postUser(admin.database(), req, res);
+  user.postUser(req, res);
 });
 
 // get all users, run middleware first
@@ -38,17 +39,17 @@ app.get('/users', (req, res) => {
 
 // get user rankings
 app.get('/rankings', (req, res) => {
-
+  console.log('process');
 });
 
 // post user rankings
 app.post('/rankings', (req, res) => {
-
+  console.log('process');
 });
 
 // edit user rankings
 app.put('/rankings', (req, res) => {
-
+  console.log('process');  
 });
 
 exports.app = functions.https.onRequest(app);

@@ -8,16 +8,34 @@ import { UserModel } from '../models/user';
 // TODO: remove 'any' types
 
 export class User {
-  postUser(adminDb: any, req: any, res: any) {
+  public db: any;
+
+  connect(adminDb: any){
+    this.db = adminDb;
+  }
+
+  postUser(req: any, res: any) {
     // https://firebase.google.com/docs/database/web/read-and-write
-    return adminDb.ref('/users/' + req.param('name')).set({ 
+
+    const user: UserModel = {
+      name: req.param('name'),
+      password: req.param('pwd'),
+      admin: false,
+      email: req.param('email')
+    };
+
+    if (this.userExists(user)) {
+      res.send('wwwwwwwwww');
+    }
+
+    return this.db.ref('/users/' + req.param('name')).set({ 
         pwd: req.param('pwd')
     }, function(error: any) {
-        if (error) {
+      if (error) {
         res.send('error: ' + error);
-        } else {
+      } else {
         res.send('user added!');
-        }
+      }
     });
 
     /* // create a user (accessed at POST http://localhost:8080/api/users)
@@ -66,8 +84,12 @@ export class User {
     */
   }
 
-  getUser(adminDb: any, req: any, res: any): UserModel {
-    const ref = adminDb.ref('/users');
+  userExists(user: UserModel) {
+    return false;
+  }
+
+  getUser(req: any, res: any): UserModel {
+    const ref = this.db.ref('/users/' + req.param('name'));
     return ref.on('value', function(snapshot: any) {
       return cors()(req, res, () => {
         res.send(snapshot);
@@ -109,8 +131,8 @@ export class User {
     return true;
   }
 
-  authenticate(adminDb: any, req: any, res: any) {
-    const ref = adminDb.ref('/users');
+  authenticate(req: any, res: any) {
+    const ref = this.db.ref('/users');
     ref.on('value', function(snapshot: any) {
       return cors()(req, res, () => {
         res.send(snapshot);
