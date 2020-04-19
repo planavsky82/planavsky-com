@@ -24,19 +24,20 @@ export class User {
       email: req.param('email')
     };
 
-    if (this.userExists(user)) {
-      res.send('wwwwwwwwww');
-    }
-
-    return this.db.ref('/users/' + req.param('name')).set({ 
+    res.send(this.userExists(user, req, res));
+    if (this.userExists(user, req, res)) {
+      //res.send('Username already exists.');
+    } else {
+      return this.db.ref('/users/' + req.param('name')).set({ 
         pwd: req.param('pwd')
-    }, function(error: any) {
-      if (error) {
-        res.send('error: ' + error);
-      } else {
-        res.send('user added!');
-      }
-    });
+      }, function(error: any) {
+        if (error) {
+          res.send('error: ' + error);
+        } else {
+          res.send('user added!');
+        }
+      });
+    }
 
     /* // create a user (accessed at POST http://localhost:8080/api/users)
         .post(function(req, res) {
@@ -84,8 +85,14 @@ export class User {
     */
   }
 
-  userExists(user: UserModel) {
-    return false;
+  userExists(user: UserModel, req: any, res: any) {
+    //const ref = this.db.ref('/users/' + user.name);
+    return 'user';
+    /* return ref.on('value', function(snapshot: any) {
+      return cors()(req, res, () => {
+        res.send(snapshot);
+      });
+    }); */
   }
 
   getUser(req: any, res: any): UserModel {
