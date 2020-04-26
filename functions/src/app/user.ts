@@ -17,15 +17,28 @@ export class User {
   postUser(req: any, res: any) {
     // https://firebase.google.com/docs/database/web/read-and-write
 
-    const user: UserModel = {
+    /* const user: UserModel = {
       name: req.param('name'),
       password: req.param('pwd'),
       admin: false,
       email: req.param('email')
-    };
+    }; */
 
-    res.send(this.userExists(user, req, res));
-    if (this.userExists(user, req, res)) {
+    /* res.send(this.userExists(user, req, res));
+
+    this.userExists(user, req, res).then((appUser: any) => {
+      res.send(appUser);
+    }); */
+
+    this.userExists(req.param('name')).then((user: any) => {
+      if (user !== null) {
+        res.send('Username already exists!!!!!!!!!!');
+      } else {
+        res.send('Add user!!!!!!!');
+      } 
+    });
+
+    /* if (this.userExists(user, req, res)) {
       //res.send('Username already exists.');
     } else {
       return this.db.ref('/users/' + req.param('name')).set({ 
@@ -37,7 +50,7 @@ export class User {
           res.send('user added!');
         }
       });
-    }
+    } */
 
     /* // create a user (accessed at POST http://localhost:8080/api/users)
         .post(function(req, res) {
@@ -85,21 +98,18 @@ export class User {
     */
   }
 
-  userExists(user: UserModel, req: any, res: any) {
-    //const ref = this.db.ref('/users/' + user.name);
-    return 'user';
-    /* return ref.on('value', function(snapshot: any) {
-      return cors()(req, res, () => {
-        res.send(snapshot);
-      });
-    }); */
+  userExists(userName: UserModel) {
+    const ref = this.db.ref('/users/' + userName);
+    return ref.once('value').then(function(dataSnapshot: any) {
+      return dataSnapshot;
+    });
   }
 
   getUser(req: any, res: any): UserModel {
     const ref = this.db.ref('/users/' + req.param('name'));
     return ref.on('value', function(snapshot: any) {
       return cors()(req, res, () => {
-        res.send(snapshot);
+        return snapshot;
       });
     });
     /* .get(function(req, res) {
