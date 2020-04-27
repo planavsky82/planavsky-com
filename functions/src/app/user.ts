@@ -24,18 +24,37 @@ export class User {
       email: req.param('email')
     };
 
-    this.userExists(req.param('name'), res).then((appUser: any) => {
-      if (appUser) {
-        res.send('Username already exists.');
+    /* this.userEmailExists(req.param('email')).then((exists: any) => {
+      res.send('email');
+    }); */
+
+    this.userExists(req.param('name')).then((exists: any) => {
+      let requiredMsg = ' field(s) required.'
+      if (!user.name || user.name === '') {
+        requiredMsg = 'Name ' + requiredMsg;
+      }
+      if (!user.pwd || user.pwd === '') {
+        requiredMsg = 'Password ' + requiredMsg;
+      }
+      if (!user.email || user.email === '') {
+        requiredMsg = 'Email ' + requiredMsg;
+      }
+
+      if (requiredMsg !== ' field(s) required.') {
+        res.send(requiredMsg);
       } else {
-        return this.db.ref('/users/' + req.param('name')).set(user, 
-          function(error: any) {
-            if (error) {
-              res.send('error: ' + error);
-            } else {
-              res.send('User added.');
-            }
-        });
+        if (exists) {
+            res.send('Username already exists.');
+        } else {
+            return this.db.ref('/users/' + req.param('name')).set(user, 
+            function(error: any) {
+                if (error) {
+                res.send('error: ' + error);
+                } else {
+                res.send('User added.');
+                }
+            });
+        }
       }
     });
 
@@ -85,10 +104,17 @@ export class User {
     */
   }
 
-  userExists(userName: UserModel, res: any) {
+  userExists(userName: string) {
     const ref = this.db.ref('/users/' + userName);
-    return ref.once('value').then(function(dataSnapshot: any) {
-      return dataSnapshot.exists();
+    return ref.once('value').then(function(snapshot: any) {
+      return snapshot.exists();
+    });
+  }
+
+  userEmailExists(email: string) {
+    const ref = this.db.ref('/users');
+    return ref.orderByChild('email').equalTo(email).on("child_added", (snapshot: any) => {
+      return snapshot.key;
     });
   }
 
