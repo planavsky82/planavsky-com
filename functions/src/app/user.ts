@@ -10,7 +10,7 @@ import { UserModel } from '../models/user';
 export class User {
   public db: any;
 
-  connect(adminDb: any){
+  connect(adminDb: any) {
     this.db = adminDb;
   }
 
@@ -24,38 +24,40 @@ export class User {
       email: req.param('email')
     };
 
-    /* this.userEmailExists(req.param('email')).then((exists: any) => {
-      res.send('email');
-    }); */
-
     this.userExists(req.param('name')).then((exists: any) => {
-      let requiredMsg = ' field(s) required.'
-      if (!user.name || user.name === '') {
-        requiredMsg = 'Name ' + requiredMsg;
-      }
-      if (!user.pwd || user.pwd === '') {
-        requiredMsg = 'Password ' + requiredMsg;
-      }
-      if (!user.email || user.email === '') {
-        requiredMsg = 'Email ' + requiredMsg;
-      }
-
-      if (requiredMsg !== ' field(s) required.') {
-        res.send(requiredMsg);
-      } else {
-        if (exists) {
-            res.send('Username already exists.');
-        } else {
-            return this.db.ref('/users/' + req.param('name')).set(user, 
-            function(error: any) {
-                if (error) {
-                res.send('error: ' + error);
-                } else {
-                res.send('User added.');
-                }
-            });
+      this.userEmailExists(req.param('email')).then((email: any) => {
+        let requiredMsg = ' field(s) required.'
+        if (!user.name || user.name === '') {
+          requiredMsg = 'Name ' + requiredMsg;
         }
-      }
+        if (!user.pwd || user.pwd === '') {
+          requiredMsg = 'Password ' + requiredMsg;
+        }
+        if (!user.email || user.email === '') {
+          requiredMsg = 'Email ' + requiredMsg;
+        }
+
+        if (requiredMsg !== ' field(s) required.') {
+          res.send(requiredMsg);
+        } else {
+          if (exists) {
+            res.send('Username already exists.');
+          } else {
+            if (email) {
+              res.send('Email already exists.');
+            } else {
+              return this.db.ref('/users/' + req.param('name')).set(user,
+                function (error: any) {
+                  if (error) {
+                    res.send('error: ' + error);
+                  } else {
+                    res.send('User added.');
+                  }
+                });
+            }
+          }
+        }
+      });
     });
 
     /* // create a user (accessed at POST http://localhost:8080/api/users)
@@ -63,8 +65,8 @@ export class User {
 
             var user = new User();      // create a new instance of the User model
             user.name = req.body.name;  // set the user's name (comes from the request)
-            user.password = req.body.password; 
-            user.password2 = req.body.password2; 
+            user.password = req.body.password;
+            user.password2 = req.body.password2;
             user.email = req.body.email;
 
             // check for pre-existing user names
@@ -80,7 +82,7 @@ export class User {
                                         user.save(function(err) {
                                             if (err)
                                                 res.send(err);
-                    
+
                                             res.json({ message: 'User created!' });
                                         });
                                     } else {
@@ -106,21 +108,21 @@ export class User {
 
   userExists(userName: string) {
     const ref = this.db.ref('/users/' + userName);
-    return ref.once('value').then(function(snapshot: any) {
+    return ref.once('value').then(function (snapshot: any) {
       return snapshot.exists();
     });
   }
 
   userEmailExists(email: string) {
-    const ref = this.db.ref('/users');
-    return ref.orderByChild('email').equalTo(email).on("child_added", (snapshot: any) => {
-      return snapshot.key;
+    const ref = this.db.ref('/users').orderByChild('email').equalTo(email);
+    return ref.once('value', (snapshot: any) => {
+      return snapshot.exists();
     });
   }
 
   getUser(req: any, res: any): UserModel {
     const ref = this.db.ref('/users/' + req.param('name'));
-    return ref.on('value', function(snapshot: any) {
+    return ref.on('value', function (snapshot: any) {
       return cors()(req, res, () => {
         return snapshot;
       });
@@ -129,14 +131,14 @@ export class User {
             User.find(function(err, users) {
                 if (err)
                     res.send(err);
-    
+
                 res.json(users);
             });
         });
     */
-   /* 
-    GET(single)
-    */
+    /*
+     GET(single)
+     */
     /* exports.processUserById = function (router) {
         // on routes that end in /users/:user_id
         // ----------------------------------------------------
@@ -163,7 +165,7 @@ export class User {
 
   authenticate(req: any, res: any) {
     const ref = this.db.ref('/users');
-    ref.on('value', function(snapshot: any) {
+    ref.on('value', function (snapshot: any) {
       return cors()(req, res, () => {
         res.send(snapshot);
       });
@@ -190,7 +192,7 @@ export class User {
                 var token = jwt.sign(user, app.get('superSecret'), {
                     expiresIn: 60*60*24 // expires in 24 hours
                 });
-                
+
                 // return the information including token as JSON
                 res.json({
                     success: true,
@@ -198,7 +200,7 @@ export class User {
                     token: token,
                     id: user._id
                 });
-            }   
+            }
 
         }
     }); */
@@ -217,12 +219,12 @@ export class User {
     if (token) {
 
         // verifies secret and checks exp
-        jwt.verify(token, app.get('superSecret'), function(err, decoded) {      
+        jwt.verify(token, app.get('superSecret'), function(err, decoded) {
         if (err) {
-            return res.json({ success: false, message: 'Failed to authenticate token.' });    
+            return res.json({ success: false, message: 'Failed to authenticate token.' });
         } else {
             // if everything is good, save to request for use in other routes
-            req.decoded = decoded;    
+            req.decoded = decoded;
             next();
         }
         });
@@ -231,9 +233,9 @@ export class User {
 
         // if there is no token
         // return an error
-        return res.status(403).send({ 
-            success: false, 
-            message: 'No token provided.' 
+        return res.status(403).send({
+            success: false,
+            message: 'No token provided.'
         });
 
     } */
@@ -241,7 +243,7 @@ export class User {
 
   editDelete() {
     return true;
-    /* 
+    /*
     PUT, DELETE
     */
     /* exports.processUserByIdAdmin = function (router) {
@@ -298,7 +300,7 @@ export class User {
                     path: '/v1/players/stats?statType=seasonProjectedStats&position=QB',
                     method: 'GET'
                 };
-                
+
                 var reqData = http.request(options, function(resData) {
                     console.log('STATUS: ' + resData.statusCode);
                     console.log('HEADERS: ' + JSON.stringify(resData.headers));
@@ -310,22 +312,22 @@ export class User {
                         });
                     });
                 });
-                
+
                 reqData.on('error', function(e) {
                     console.log('problem with request: ' + e.message);
                 });
-                
+
                 // write data to request body
                 reqData.write('data\n');
                 reqData.write('data\n');
                 reqData.end();
-                
+
                 /* User.findById(req.params.user_id, function(err, user) {
                     if (err)
                         res.send(err);
                     res.json(user);
                 }); *\/
-                
+
             });
     }; */
   }
