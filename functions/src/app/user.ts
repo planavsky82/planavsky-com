@@ -1,6 +1,6 @@
 import * as cors from 'cors';
 import * as _ from 'lodash';
-//import { test } from 'owasp-password-strength-test';
+import { test } from 'owasp-password-strength-test';
 //import * as jwt from 'jsonwebtoken';
 
 import { UserModel } from '../models/user';
@@ -15,6 +15,7 @@ export class User {
   }
 
   postUser(req: any, res: any) {
+    // create a user (accessed at POST https://us-central1-planavsky-com.cloudfunctions.net/app/user)
     // https://firebase.google.com/docs/database/web/read-and-write
 
     const user: UserModel = {
@@ -52,14 +53,19 @@ export class User {
                 if (user.pwd !== req.param('pwd2')) {
                   res.send('Passwords do not match.');
                 } else {
-                  return this.db.ref('/users/' + req.param('name')).set(user,
-                    function (error: any) {
-                      if (error) {
-                        res.send('error: ' + error);
-                      } else {
-                        res.send('User added.');
-                      }
-                    });
+                  const passwordResult = test(user.pwd);
+                  if (passwordResult.errors.length === 0) {
+                    return this.db.ref('/users/' + req.param('name')).set(user,
+                      function (error: any) {
+                        if (error) {
+                          res.send('error: ' + error);
+                        } else {
+                          res.send('User added.');
+                        }
+                      });
+                  } else {
+                    res.send({ message: passwordResult.errors });
+                  }
                 }
               }
             }
@@ -67,26 +73,6 @@ export class User {
         }
       });
     });
-
-    /* // create a user (accessed at POST http://localhost:8080/api/users)
-        .post(function(req, res) {
-
-                                    var passwordResult = owasp.test(user.password);
-                                    if (passwordResult.errors.length === 0) {
-                                        // save the user and check for errors
-                                        user.save(function(err) {
-                                            if (err)
-                                                res.send(err);
-
-                                            res.json({ message: 'User created!' });
-                                        });
-                                    } else {
-                                        res.send({ message: passwordResult.errors });
-                                    }
-                });
-            });
-        });
-    */
   }
 
   userExists(userName: string) {
