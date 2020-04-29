@@ -46,14 +46,22 @@ export class User {
             if (email) {
               res.send('Email already exists.');
             } else {
-              return this.db.ref('/users/' + req.param('name')).set(user,
-                function (error: any) {
-                  if (error) {
-                    res.send('error: ' + error);
-                  } else {
-                    res.send('User added.');
-                  }
-                });
+              if (user.email !== req.param('email2')) {
+                res.send('Email addresses do not match.');
+              } else {
+                if (user.pwd !== req.param('pwd2')) {
+                  res.send('Passwords do not match.');
+                } else {
+                  return this.db.ref('/users/' + req.param('name')).set(user,
+                    function (error: any) {
+                      if (error) {
+                        res.send('error: ' + error);
+                      } else {
+                        res.send('User added.');
+                      }
+                    });
+                }
+              }
             }
           }
         }
@@ -63,19 +71,6 @@ export class User {
     /* // create a user (accessed at POST http://localhost:8080/api/users)
         .post(function(req, res) {
 
-            var user = new User();      // create a new instance of the User model
-            user.name = req.body.name;  // set the user's name (comes from the request)
-            user.password = req.body.password;
-            user.password2 = req.body.password2;
-            user.email = req.body.email;
-
-            // check for pre-existing user names
-            User.findOne({ name: req.body.name }, function(err, existingUser) {
-                User.findOne({ email: req.body.email }, function(err, existingEmail) {
-                    if (user.name && user.password && user.email) {
-                        if (user.password === user.password2) {
-                            if (!existingUser) {
-                                if (!existingEmail) {
                                     var passwordResult = owasp.test(user.password);
                                     if (passwordResult.errors.length === 0) {
                                         // save the user and check for errors
@@ -88,18 +83,6 @@ export class User {
                                     } else {
                                         res.send({ message: passwordResult.errors });
                                     }
-                                } else {
-                                    res.send({ message: 'Email already exists.' });
-                                }
-                            } else {
-                                res.send({ message: 'User Name already exists.' });
-                            }
-                        } else {
-                            res.send({ message: 'Passwords do not match.' });
-                        }
-                    } else {
-                        res.send({ message: 'User Name, Password, and Email are required.' });
-                    }
                 });
             });
         });
@@ -115,7 +98,7 @@ export class User {
 
   userEmailExists(email: string) {
     const ref = this.db.ref('/users').orderByChild('email').equalTo(email);
-    return ref.once('value', (snapshot: any) => {
+    return ref.once('value').then(function (snapshot: any) {
       return snapshot.exists();
     });
   }
