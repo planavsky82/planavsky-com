@@ -32,5 +32,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 https://www.positronx.io/deploy-angular-8-app-to-firebase/
 https://console.firebase.google.com/
+https://firebase.google.com/docs/cli
 
 You need to be logged into the firebase account locally to deploy.
+
+
