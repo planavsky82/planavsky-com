@@ -16,6 +16,7 @@ admin.initializeApp({
 // so with this setup, you need to deploy to firebase functions to test code
 // there is a way to define credentials locally in this link as well. not sure
 // yet if that makes things easier or not, consider the realtime database is still remote.
+// Also look into this link for testing locally: https://firebase.google.com/docs/hosting/deploying
 
 app.listen(port, () => {
   console.log('Listening to port: ' + port);
