@@ -133,10 +133,14 @@ export class User {
   }
 
   authenticate(req: any, res: any) {
-    const ref = this.db.ref('/users');
+    const ref = this.db.ref('/users/' + req.param('name'));
     ref.on('value', function (snapshot: any) {
       return cors()(req, res, () => {
-        res.send(snapshot);
+        if (snapshot.exists() && snapshot.val().pwd === req.param('pwd')) {
+          res.send('Login successful.');
+        } else {
+          res.json({ success: false, message: 'Authentication failed. User not found.' });
+        }
       });
     });
 
@@ -208,51 +212,6 @@ export class User {
         });
 
     } */
-  }
-
-  editDelete() {
-    return true;
-    /*
-    PUT, DELETE
-    */
-    /* exports.processUserByIdAdmin = function (router) {
-        // on routes that end in /users/:user_id
-        // ----------------------------------------------------
-        return router.route('/users/:user_id')
-
-            // update the user with this id (accessed at PUT http://localhost:8080/api/users/:user_id)
-            .put(function(req, res) {
-                // use our user model to find the user we want
-                \/* User.findById(req.params.user_id, function(err, user) {
-
-                    if (err)
-                        res.send(err);
-
-                    user.name = req.body.name;  // update the users info
-
-                    // save the user
-                    user.save(function(err) {
-                        if (err)
-                            res.send(err);
-
-                        res.json({ message: 'User updated!' });
-                    });
-
-                }); *\/
-            })
-
-            // delete the user with this id (accessed at DELETE http://localhost:8080/api/users/:user_id)
-            .delete(function(req, res) {
-                /* User.remove({
-                    _id: req.params.user_id
-                }, function(err, user) {
-                    if (err)
-                        res.send(err);
-
-                    res.json({ message: 'Successfully deleted' });
-                }); *\/
-            });
-    }; */
   }
 
   getRankings() {
