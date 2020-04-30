@@ -11,10 +11,15 @@ admin.initializeApp({
   credential: admin.credential.applicationDefault(),
   databaseURL: 'https://planavsky-com.firebaseio.com/'
 });  //by adding your credentials, you get authorized to read and write from the database
+// https://cloud.google.com/docs/authentication/production
+// applicationDefault() will use the credentials on the firebase server,
+// so with this setup, you need to deploy to firebase functions to test code
+// there is a way to define credentials locally in this link as well. not sure
+// yet if that makes things easier or not, consider the realtime database is still remote.
 
 app.listen(port, () => {
   console.log('Listening to port: ' + port);
-  user.connect(admin.database()); 
+  user.connect(admin.database());
 });
 
 // authenticate
@@ -34,7 +39,7 @@ app.post('/user', (req, res) => {
 
 // get all users, run middleware first
 app.get('/users', (req, res) => {
-  user.runLoggedInMiddleware(app); 
+  user.runLoggedInMiddleware(app);
 });
 
 // get user rankings
@@ -49,7 +54,7 @@ app.post('/rankings', (req, res) => {
 
 // edit user rankings
 app.put('/rankings', (req, res) => {
-  console.log('process');  
+  console.log('process');
 });
 
 exports.app = functions.https.onRequest(app);
