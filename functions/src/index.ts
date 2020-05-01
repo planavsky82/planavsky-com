@@ -33,14 +33,20 @@ app.post('/user', (req, res) => {
   user.postUser(req, res);
 });
 
-// get all users, run middleware first
-app.get('/users', (req, res) => {
-  user.runLoggedInMiddleware(app);
+// run middleware
+app.use((req, res, next) => {
+  user.isLoggedIn(req, res, next)
 });
 
 // get user rankings
 app.get('/rankings', (req, res) => {
-  console.log('process');
+  res.send({
+    players: [
+      { player: 'Name1' },
+      { player: 'Name2' },
+      { player: 'Name3' }
+    ]
+  });
 });
 
 // post user rankings

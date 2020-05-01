@@ -114,39 +114,30 @@ export class User {
     });
   }
 
-  runLoggedInMiddleware(app: any) {
-    return true;
-
-    // route middleware to verify a token
-    // return router.use(function(req, res, next) {
-
-    /* // check header or url parameters or post parameters for token
-    var token = req.body.token || req.query.token || req.headers['x-access-token'];
+  isLoggedIn(req: any, res: any, next: any) {
+    // check header or url parameters or post parameters for token
+    let token = req.body.token || req.query.token || req.headers['x-access-token'];
+    const config = require('../../config'); // get config file
 
     // decode token
     if (token) {
-
-        // verifies secret and checks exp
-        jwt.verify(token, app.get('superSecret'), function(err, decoded) {
+      // verifies secret and checks exp
+      jwt.verify(token, config.secret, (err: any, decoded: any) => {
         if (err) {
-            return res.json({ success: false, message: 'Failed to authenticate token.' });
+          return res.json({ success: false, message: 'Failed to authenticate token.' });
         } else {
-            // if everything is good, save to request for use in other routes
-            req.decoded = decoded;
-            next();
+          // if everything is good, save to request for use in other routes
+          req.decoded = decoded;
+          next();
         }
-        });
-
+      });
     } else {
-
-        // if there is no token
-        // return an error
-        return res.status(403).send({
-            success: false,
-            message: 'No token provided.'
-        });
-
-    } */
+      // if there is no token
+      return res.status(403).send({
+        success: false,
+        message: 'No token provided.'
+      });
+    }
   }
 
   getRankings() {
