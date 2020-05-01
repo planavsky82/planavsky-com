@@ -28,11 +28,6 @@ app.post('/authenticate', (req, res) => {
   user.authenticate(req, res);
 });
 
-// get single user
-app.get('/user', (req, res) => {
-  user.getUser(req, res);
-});
-
 // register user
 app.post('/user', (req, res) => {
   user.postUser(req, res);

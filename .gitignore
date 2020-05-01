@@ -39,6 +39,7 @@ testem.log
 /CordovaMobileApp/node_modules
 /web-components/node_modules
 /web-components/dist
+/functions/config.js
 
 # System Files
 .DS_Store

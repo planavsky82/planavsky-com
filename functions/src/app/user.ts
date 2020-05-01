@@ -1,7 +1,7 @@
 import * as cors from 'cors';
 import * as _ from 'lodash';
 import { test } from 'owasp-password-strength-test';
-//import * as jwt from 'jsonwebtoken';
+import * as jwt from 'jsonwebtoken';
 
 import { UserModel } from '../models/user';
 
@@ -89,94 +89,29 @@ export class User {
     });
   }
 
-  getUser(req: any, res: any): UserModel {
-    const ref = this.db.ref('/users/' + req.param('name'));
-    return ref.on('value', function (snapshot: any) {
-      return cors()(req, res, () => {
-        return snapshot;
-      });
-    });
-    /* .get(function(req, res) {
-            User.find(function(err, users) {
-                if (err)
-                    res.send(err);
-
-                res.json(users);
-            });
-        });
-    */
-    /*
-     GET(single)
-     */
-    /* exports.processUserById = function (router) {
-        // on routes that end in /users/:user_id
-        // ----------------------------------------------------
-        return router.route('/users/:user_id')
-
-            // get the user with that id (accessed at GET http://localhost:8080/api/users/:user_id)
-            .get(function(req, res) {
-                User.findById(req.params.user_id, function(err, user) {
-                    if (err)
-                        res.send(err);
-                    res.json(user);
-                });
-            });
-    }; */
-  }
-
-  getUserByIdAdmin() {
-    return true;
-  }
-
-  getUserRankings() {
-    return true;
-  }
-
   authenticate(req: any, res: any) {
+    // authenticate a user (accessed at POST https://us-central1-planavsky-com.cloudfunctions.net/app/authenticate)
+
+    const config = require('../../config'); // get config file
     const ref = this.db.ref('/users/' + req.param('name'));
     ref.on('value', function (snapshot: any) {
       return cors()(req, res, () => {
         if (snapshot.exists() && snapshot.val().pwd === req.param('pwd')) {
-          res.send('Login successful.');
+          // create a token
+          let token = jwt.sign(req.param('name'), config.secret, {
+            expiresIn: 60*60*24 // expires in 24 hours
+          });
+          res.json({
+            success: true,
+            message: 'Enjoy your token!',
+            token: token,
+            id: req.param('name')
+          });
         } else {
-          res.json({ success: false, message: 'Authentication failed. User not found.' });
+          res.json({ success: false, message: 'Authentication failed. Username and/or password do not match.' });
         }
       });
     });
-
-    // find the user
-    /* User.findOne({
-        name: req.body.name
-    }, function(err, user) {
-
-        if (err) throw err;
-
-        if (!user) {
-            res.json({ success: false, message: 'Authentication failed. User not found.' });
-        } else if (user) {
-
-            // check if password matches
-            if (user.password != req.body.password) {
-                res.json({ success: false, message: 'Authentication failed. Wrong password.' });
-            } else {
-
-                // if user is found and password is right
-                // create a token
-                var token = jwt.sign(user, app.get('superSecret'), {
-                    expiresIn: 60*60*24 // expires in 24 hours
-                });
-
-                // return the information including token as JSON
-                res.json({
-                    success: true,
-                    message: 'Enjoy your token!',
-                    token: token,
-                    id: user._id
-                });
-            }
-
-        }
-    }); */
   }
 
   runLoggedInMiddleware(app: any) {
