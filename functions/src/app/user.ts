@@ -98,7 +98,7 @@ export class User {
       return cors()(req, res, () => {
         if (snapshot.exists() && snapshot.val().pwd === req.param('pwd')) {
           // create a token
-          let token = jwt.sign(req.param('name'), config.secret, {
+          let token = jwt.sign({ user: req.param('name') }, config.secret, {
             expiresIn: 60*60*24 // expires in 24 hours
           });
           res.json({
