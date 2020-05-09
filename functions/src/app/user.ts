@@ -2,6 +2,8 @@ import * as cors from 'cors';
 import * as _ from 'lodash';
 import { test } from 'owasp-password-strength-test';
 import * as jwt from 'jsonwebtoken';
+import * as bcrypt from 'bcrypt';
+import * as EmailValidator from 'email-validator';
 
 import { UserModel } from '../models/user';
 
@@ -18,6 +20,7 @@ export class User {
     // create a user (accessed at POST https://us-central1-planavsky-com.cloudfunctions.net/app/user)
     // https://firebase.google.com/docs/database/web/read-and-write
 
+    const saltRounds = 10;
     const user: UserModel = {
       name: req.param('name'),
       pwd: req.param('pwd'),
@@ -50,22 +53,33 @@ export class User {
               if (user.email !== req.param('email2')) {
                 res.send('Email addresses do not match.');
               } else {
-                if (user.pwd !== req.param('pwd2')) {
-                  res.send('Passwords do not match.');
-                } else {
-                  const passwordResult = test(user.pwd);
-                  if (passwordResult.errors.length === 0) {
-                    return this.db.ref('/users/' + req.param('name')).set(user,
-                      function (error: any) {
-                        if (error) {
-                          res.send('error: ' + error);
-                        } else {
-                          res.send('User added.');
-                        }
-                      });
+                if (EmailValidator.validate(user.email)) {
+                  if (user.pwd !== req.param('pwd2')) {
+                    res.send('Passwords do not match.');
                   } else {
-                    res.send({ message: passwordResult.errors });
+                    const passwordResult = test(user.pwd);
+                    if (passwordResult.errors.length === 0) {
+                      const db = this.db;
+                      // encrypt password
+                      bcrypt.hash(user.pwd, saltRounds).then((hash) => {
+                        user.pwd = hash;
+                        return db.ref('/users/' + req.param('name')).set(user,
+                          function (error: any) {
+                            if (error) {
+                              res.send('error: ' + error);
+                            } else {
+                              res.send('User added.');
+                            }
+                        });
+                      }, (err: any) => {
+                        res.send(err);
+                      });
+                    } else {
+                      res.send({ message: passwordResult.errors });
+                    }
                   }
+                } else {
+                  res.send('Email addresses is invalid.');
                 }
               }
             }
@@ -92,31 +106,45 @@ export class User {
   authenticate(req: any, res: any) {
     // authenticate a user (accessed at POST https://us-central1-planavsky-com.cloudfunctions.net/app/authenticate)
 
+    const error = { success: false, message: 'Authentication failed. Username and/or password do not match.' };
     const config = require('../../config'); // get config file
     const ref = this.db.ref('/users/' + req.param('name'));
     ref.on('value', function (snapshot: any) {
-      return cors()(req, res, () => {
-        if (snapshot.exists() && snapshot.val().pwd === req.param('pwd')) {
-          // create a token
-          let token = jwt.sign({ user: req.param('name') }, config.secret, {
-            expiresIn: 60*60*24 // expires in 24 hours
-          });
-          res.json({
-            success: true,
-            message: 'Enjoy your token!',
-            token: token,
-            id: req.param('name')
-          });
-        } else {
-          res.json({ success: false, message: 'Authentication failed. Username and/or password do not match.' });
-        }
-      });
+      if (snapshot.exists()) {
+        return cors()(req, res, () => {
+          if (snapshot.val().pwd) {
+            bcrypt.compare(req.param('pwd'), snapshot.val().pwd).then((result: any) => {
+              if (result === true) {
+                // create a token
+                const token = jwt.sign({ user: req.param('name') }, config.secret, {
+                  expiresIn: 60*60*24 // expires in 24 hours
+                });
+                res.json({
+                  success: true,
+                  message: 'Enjoy your token!',
+                  token: token,
+                  id: req.param('name'),
+                  match: result
+                });
+              } else {
+                res.json(error);
+              }
+            }, () => {
+              res.send(error);
+            });
+          } else {
+            res.json(error);
+          }
+        });
+      } else {
+        res.json(error);
+      }
     });
   }
 
   isLoggedIn(req: any, res: any, next: any) {
     // check header or url parameters or post parameters for token
-    let token = req.body.token || req.query.token || req.headers['x-access-token'];
+    const token = req.body.token || req.query.token || req.headers['x-access-token'];
     const config = require('../../config'); // get config file
 
     // decode token
