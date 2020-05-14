@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ElementRef, Renderer } from '@angular/core';
+import { Component, OnInit, OnDestroy, ElementRef, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ export class AppComponent implements OnInit, OnDestroy {
   public targetOn: boolean = true;
 
   constructor(private elementRef: ElementRef,
-              private renderer: Renderer) {}
+              private renderer: Renderer2) {}
 
   ngOnInit() {
     this.animateTarget(4000);
@@ -45,7 +45,7 @@ export class AppComponent implements OnInit, OnDestroy {
       }
 
       this.targetOn = !this.targetOn;
-      this.renderer.setElementClass(target, "blue-highlight-on", !this.targetOn);
+      !this.targetOn ? this.renderer.addClass(target, "blue-highlight-on") : this.renderer.removeClass(target, "blue-highlight-on");
       if (timeNew !== 0) {
         this.animateTarget(timeNew);
       }

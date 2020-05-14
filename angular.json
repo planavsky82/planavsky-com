@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/planavsky-com",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -31,6 +32,12 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -139,7 +146,8 @@
           "configurations": {
             "production": {
               "project": "projects/ultimate-list/ng-package.prod.json"
-            }
+            ,              "tsConfig": "projects/ultimate-list/tsconfig.lib.prod.json"
+}
           }
         },
         "test": {
@@ -174,6 +182,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/ultimate-list-demo",
             "index": "projects/ultimate-list-demo/src/index.html",
             "main": "projects/ultimate-list-demo/src/main.ts",
@@ -191,6 +200,12 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "projects/ultimate-list-demo/src/environments/environment.ts",
@@ -294,6 +309,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/mffr",
             "index": "projects/mffr/src/index.html",
             "main": "projects/mffr/src/main.ts",
@@ -311,6 +327,12 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "projects/mffr/src/environments/environment.ts",
