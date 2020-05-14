@@ -36,4 +36,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 You need to be logged into the firebase account locally using `firebase login` to deploy.
 
+## Firebase Deployment
+- https://firebase.google.com/docs/hosting/deploying
+
 
