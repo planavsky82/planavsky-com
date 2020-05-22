@@ -39,4 +39,6 @@ You need to be logged into the firebase account locally using `firebase login` t
 ## Firebase Deployment
 - https://firebase.google.com/docs/hosting/deploying
 
+keep local config.js file
+
 
