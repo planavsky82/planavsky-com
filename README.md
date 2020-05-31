@@ -11,7 +11,7 @@ This repo contains the following projects:
 
 ## Firebase
 
-Projects in this repo utilize Firebase. Run the following commands to initialize:
+Projects in this repo utilize [Firebase](https://www.npmjs.com/package/firebase-tools). Run the following commands to initialize:
 
 `npm run firebase:install` 
 
