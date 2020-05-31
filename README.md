@@ -11,17 +11,17 @@ This repo contains the following projects:
 
 ## Firebase
 
-`npm install -g firebase-tools`
+Projects in this repo utilize Firebase. Run the following commands to initialize:
 
-- https://www.positronx.io/deploy-angular-8-app-to-firebase/
-- https://console.firebase.google.com/
-- https://firebase.google.com/docs/cli
+`npm run firebase:install`
+`npm run firebase:login`
 
-You need to be logged into the firebase account locally using `firebase login` to deploy.
+## Other Prerequisites
 
-## Firebase Deployment
-- https://firebase.google.com/docs/hosting/deploying
+- [NVM](https://github.com/nvm-sh/nvm)
+  - Node 12 (`nvm install 12 && nvm use 12`)
+  - Node 10 (`nvm install 10 && nvm use 10`)
 
-keep local config.js file
+
 
 
