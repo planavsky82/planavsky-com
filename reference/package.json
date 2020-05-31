@@ -1,0 +1,16 @@
+{
+  "name": "planavsky-com",
+  "version": "0.0.0",
+  "scripts": {
+    "firebase:login": "firebase login",
+    "firebase:setup": "npm i -g firebase-tools && firebase init",
+    "firebase:set:db:var": "export GOOGLE_APPLICATION_CREDENTIALS=\"./planavsky-com-7dafdf5fd67c.json\""
+  },
+  "private": true,
+  "devDependencies": {
+    "firebase": "^7.3.0"
+  },
+  "engines": {
+    "node": "12"
+  }
+}
