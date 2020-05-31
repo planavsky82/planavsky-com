@@ -14,6 +14,7 @@ This repo contains the following projects:
 Projects in this repo utilize Firebase. Run the following commands to initialize:
 
 `npm run firebase:install` 
+
 `npm run firebase:login`
 
 ## Other Prerequisites
