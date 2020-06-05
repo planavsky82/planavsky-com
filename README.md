@@ -23,6 +23,6 @@ Projects in this repo utilize [Firebase](https://www.npmjs.com/package/firebase-
   - Node 12 (`nvm install 12 && nvm use 12`)
   - Node 10 (`nvm install 10 && nvm use 10`)
 
+## Deployment Config
 
-
-
+A root-level config.js file is needed to deploy to Firebase.
