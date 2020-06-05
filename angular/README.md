@@ -1,6 +1,6 @@
-# PlanavskyCom
+# Angular Apps
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
 
 ## Development server
 
@@ -26,19 +26,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## Firebase
+## Other Commands
 
-`npm install -g firebase-tools`
-
-- https://www.positronx.io/deploy-angular-8-app-to-firebase/
-- https://console.firebase.google.com/
-- https://firebase.google.com/docs/cli
-
-You need to be logged into the firebase account locally using `firebase login` to deploy.
-
-## Firebase Deployment
-- https://firebase.google.com/docs/hosting/deploying
-
-keep local config.js file
-
-
+- **Generate a New Component:** `npm run add:component`
+- **Start MFFR:** `npm run start:mffr`
+- **Build MFFR:** `npm run build:mffr`
+- **Deploy MFFR:** `npm run firebase:deploy`
+- **Start Ultimate List Demo:** `npm run start:ul-demo`
+- **Build Ultimate List Library:** `npm run build`
+- **Start Planavsky.com:** `npm run build:planavsky`

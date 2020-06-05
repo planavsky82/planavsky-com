@@ -4,10 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start:api": "ts-node -P ./projects/api/server.tsconfig.json ./projects/api/server.ts",
     "start:ul-demo": "ng serve ultimate-list-demo",
     "start:mffr": "ng serve mffr --proxy-config ./proxy.json",
-    "start:mffr:mobile": "ionic serve --project=mffr -l --open",
     "build": "ng build --prod ultimate-list",
     "test": "ng test ultimate-list --watch=false",
     "lint": "ng lint",
