@@ -31,7 +31,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - **Generate a New Component:** `npm run add:component`
 - **Start MFFR:** `npm run start:mffr`
 - **Build MFFR:** `npm run build:mffr`
-- **Deploy MFFR:** `npm run firebase:deploy`
 - **Start Ultimate List Demo:** `npm run start:ul-demo`
 - **Build Ultimate List Library:** `npm run build`
 - **Start Planavsky.com:** `npm run build:planavsky`
