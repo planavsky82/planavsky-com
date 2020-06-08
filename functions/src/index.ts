@@ -2,10 +2,18 @@ import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import * as express from 'express';
 import { User } from './app/user';
+import * as cors from 'cors';
 
 const app: express.Application = express();
 const port = 3000;
 const user = new User();
+
+app.use(cors({
+  "origin": "*",
+  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+  "preflightContinue": false,
+  "optionsSuccessStatus": 204
+}));
 
 admin.initializeApp({
   credential: admin.credential.applicationDefault(),
@@ -40,13 +48,7 @@ app.use((req, res, next) => {
 
 // get user rankings
 app.get('/rankings', (req, res) => {
-  res.send({
-    players: [
-      { player: 'Name1' },
-      { player: 'Name2' },
-      { player: 'Name3' }
-    ]
-  });
+  user.getRankings(req, res);
 });
 
 // post user rankings

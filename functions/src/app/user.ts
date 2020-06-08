@@ -105,40 +105,39 @@ export class User {
 
   authenticate(req: any, res: any) {
     // authenticate a user (accessed at POST https://us-central1-planavsky-com.cloudfunctions.net/app/authenticate)
-
-    const error = { success: false, message: 'Authentication failed. Username and/or password do not match.' };
-    const config = require('../../config'); // get config file
-    const ref = this.db.ref('/users/' + req.param('name'));
-    ref.on('value', function (snapshot: any) {
-      if (snapshot.exists()) {
-        return cors()(req, res, () => {
-          if (snapshot.val().pwd) {
-            bcrypt.compare(req.param('pwd'), snapshot.val().pwd).then((result: any) => {
-              if (result === true) {
-                // create a token
-                const token = jwt.sign({ user: req.param('name') }, config.secret, {
-                  expiresIn: 60*60*24 // expires in 24 hours
-                });
-                res.json({
-                  success: true,
-                  message: 'Enjoy your token!',
-                  token: token,
-                  id: req.param('name'),
-                  match: result
-                });
-              } else {
-                res.json(error);
-              }
-            }, () => {
-              res.send(error);
-            });
+    return cors()(req, res, () => {
+      const error = { success: false, message: 'Authentication failed. Username and/or password do not match.' };
+      const config = require('../../config'); // get config file
+      const ref = this.db.ref('/users/' + req.param('name'));
+      ref.on('value', function (snapshot: any) {
+          if (snapshot.exists()) {
+            if (snapshot.val().pwd) {
+              bcrypt.compare(req.param('pwd'), snapshot.val().pwd).then((result: any) => {
+                if (result === true) {
+                  // create a token
+                  const token = jwt.sign({ user: req.param('name') }, config.secret, {
+                    expiresIn: 60*60*24 // expires in 24 hours
+                  });
+                  res.json({
+                    success: true,
+                    message: 'Enjoy your token!',
+                    token: token,
+                    id: req.param('name'),
+                    match: result
+                  });
+                } else {
+                  res.json(error);
+                }
+              }, () => {
+                res.send(error);
+              });
+            } else {
+              res.json(error);
+            }
           } else {
             res.json(error);
           }
-        });
-      } else {
-        res.json(error);
-      }
+      });
     });
   }
 
@@ -168,8 +167,16 @@ export class User {
     }
   }
 
-  getRankings() {
-    return true;
+  getRankings(req: any, res: any) {
+    return cors()(req, res, () => {
+      res.send({
+        players: [
+          { player: 'Name1' },
+          { player: 'Name2' },
+          { player: 'Name3' }
+        ]
+      });
+    });
     /* exports.getUserRankings = function (router) {
         // on routes that end in /users/:user_id
         // ----------------------------------------------------
