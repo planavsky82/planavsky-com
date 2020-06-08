@@ -24,12 +24,12 @@ export class HomeComponent {
   }
 
   getConfig() {
-    console.log(this.http.post<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/authenticate',
+    this.http.post<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/authenticate',
       { name: 'U10133', pwd: 'e3$f!rt78UNml90!' }, this.httpOptions)
       .subscribe((data: any) => {
-        console.log(this.http.get<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/rankings',
+        this.http.get<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/rankings',
         { params: { 'token': data.token } })
-        .subscribe((data: any) => console.log(data)));
-      }));
+        .subscribe((data: any) => console.log(data));
+      });
   }
 }
