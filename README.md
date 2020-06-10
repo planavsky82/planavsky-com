@@ -26,6 +26,7 @@ Projects in this repo utilize [Firebase](https://www.npmjs.com/package/firebase-
 ## Commands
 
 - **Deploy:** `npm run firebase:deploy`
+- **NPM install for all projects:** `npm run install:all`
 
 ## Deployment Config
 
