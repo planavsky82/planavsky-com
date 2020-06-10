@@ -31,5 +31,15 @@ export class HomeComponent {
         { params: { 'token': data.token } })
         .subscribe((data: any) => console.log(data));
       });
+    this.http.post<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/user',
+      { name: 'planavsky845',
+        email: 'planavsky890033@gmail.com',
+        email2: 'planavsky890033@gmail.com',
+        pwd: 'e3$f!rt78UNml90!',
+        pwd2: 'e3$f!rt78UNml90!'
+      }, this.httpOptions)
+      .subscribe((data: any) => {
+        console.log(data);
+      });
   }
 }

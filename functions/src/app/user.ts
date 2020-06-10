@@ -19,72 +19,73 @@ export class User {
   postUser(req: any, res: any) {
     // create a user (accessed at POST https://us-central1-planavsky-com.cloudfunctions.net/app/user)
     // https://firebase.google.com/docs/database/web/read-and-write
+    return cors()(req, res, () => {
+      const saltRounds = 10;
+      const user: UserModel = {
+        name: req.param('name'),
+        pwd: req.param('pwd'),
+        admin: false,
+        email: req.param('email')
+      };
 
-    const saltRounds = 10;
-    const user: UserModel = {
-      name: req.param('name'),
-      pwd: req.param('pwd'),
-      admin: false,
-      email: req.param('email')
-    };
+      this.userExists(req.param('name')).then((exists: any) => {
+        this.userEmailExists(req.param('email')).then((email: any) => {
+          let requiredMsg = ' field(s) required.'
+          if (!user.name || user.name === '') {
+            requiredMsg = 'Name ' + requiredMsg;
+          }
+          if (!user.pwd || user.pwd === '') {
+            requiredMsg = 'Password ' + requiredMsg;
+          }
+          if (!user.email || user.email === '') {
+            requiredMsg = 'Email ' + requiredMsg;
+          }
 
-    this.userExists(req.param('name')).then((exists: any) => {
-      this.userEmailExists(req.param('email')).then((email: any) => {
-        let requiredMsg = ' field(s) required.'
-        if (!user.name || user.name === '') {
-          requiredMsg = 'Name ' + requiredMsg;
-        }
-        if (!user.pwd || user.pwd === '') {
-          requiredMsg = 'Password ' + requiredMsg;
-        }
-        if (!user.email || user.email === '') {
-          requiredMsg = 'Email ' + requiredMsg;
-        }
-
-        if (requiredMsg !== ' field(s) required.') {
-          res.send(requiredMsg);
-        } else {
-          if (exists) {
-            res.send('Username already exists.');
+          if (requiredMsg !== ' field(s) required.') {
+            res.send(requiredMsg);
           } else {
-            if (email) {
-              res.send('Email already exists.');
+            if (exists) {
+              res.send('Username already exists.');
             } else {
-              if (user.email !== req.param('email2')) {
-                res.send('Email addresses do not match.');
+              if (email) {
+                res.send('Email already exists.');
               } else {
-                if (EmailValidator.validate(user.email)) {
-                  if (user.pwd !== req.param('pwd2')) {
-                    res.send('Passwords do not match.');
-                  } else {
-                    const passwordResult = test(user.pwd);
-                    if (passwordResult.errors.length === 0) {
-                      const db = this.db;
-                      // encrypt password
-                      bcrypt.hash(user.pwd, saltRounds).then((hash) => {
-                        user.pwd = hash;
-                        return db.ref('/users/' + req.param('name')).set(user,
-                          function (error: any) {
-                            if (error) {
-                              res.send('error: ' + error);
-                            } else {
-                              res.send('User added.');
-                            }
-                        });
-                      }, (err: any) => {
-                        res.send(err);
-                      });
-                    } else {
-                      res.send({ message: passwordResult.errors });
-                    }
-                  }
+                if (user.email !== req.param('email2')) {
+                  res.send('Email addresses do not match.');
                 } else {
-                  res.send('Email addresses is invalid.');
+                  if (EmailValidator.validate(user.email)) {
+                    if (user.pwd !== req.param('pwd2')) {
+                      res.send('Passwords do not match.');
+                    } else {
+                      const passwordResult = test(user.pwd);
+                      if (passwordResult.errors.length === 0) {
+                        const db = this.db;
+                        // encrypt password
+                        bcrypt.hash(user.pwd, saltRounds).then((hash) => {
+                          user.pwd = hash;
+                          return db.ref('/users/' + req.param('name')).set(user,
+                            function (error: any) {
+                              if (error) {
+                                res.send('error: ' + error);
+                              } else {
+                                res.send('User added.');
+                              }
+                          });
+                        }, (err: any) => {
+                          res.send(err);
+                        });
+                      } else {
+                        res.send({ message: passwordResult.errors });
+                      }
+                    }
+                  } else {
+                    res.send('Email addresses is invalid.');
+                  }
                 }
               }
             }
           }
-        }
+        });
       });
     });
   }
