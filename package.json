@@ -4,7 +4,8 @@
   "scripts": {
     "firebase:login": "firebase login",
     "firebase:setup": "npm i -g firebase-tools && firebase init",
-    "firebase:deploy": "./scripts/deploy.sh"
+    "firebase:deploy": "./scripts/deploy.sh",
+    "install:all": "cd angular && npm i && cd ../stencil-web-components && npm i && cd ../functions && npm i"
   },
   "private": true,
   "engines": {
