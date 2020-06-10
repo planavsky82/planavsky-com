@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavigationService } from '../shared/navigation.service'
-import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',

@@ -6,7 +6,7 @@ import { Component, OnInit, OnDestroy, ElementRef, Renderer2 } from '@angular/co
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, OnDestroy {
-  
+
   public timeoutId: any;
   public targetOn: boolean = true;
 
@@ -15,13 +15,13 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.animateTarget(4000);
-  }  
+  }
 
   animateTarget(time: number) {
     let target = this.elementRef.nativeElement.querySelector('.fantasy-football');
     let timeNew;
 
-    this.timeoutId = setTimeout(() => {  
+    this.timeoutId = setTimeout(() => {
 
       switch(time) {
         case 4000:
