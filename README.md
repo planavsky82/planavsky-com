@@ -34,7 +34,7 @@ A root-level config.js file is needed to deploy to Firebase.
 
 ## Firebase URLs
 
-[https://myfantasyfootballrankings.web.app/](https://myfantasyfootballrankings.web.app/)
-[https://blog-planavsky-com.web.app/](https://blog-planavsky-com.web.app/)
-[https://power-web-components.web.app/stencil-web-components/stencil-web-components.js](Web Components JS)
-[https://power-web-components.web.app/stencil-web-components/stencil-web-components.esm.js](Web Components ESM)
+- [https://myfantasyfootballrankings.web.app/](https://myfantasyfootballrankings.web.app/)
+- [https://blog-planavsky-com.web.app/](https://blog-planavsky-com.web.app/)
+- [https://power-web-components.web.app/stencil-web-components/stencil-web-components.js](Web Components JS)
+- [https://power-web-components.web.app/stencil-web-components/stencil-web-components.esm.js](Web Components ESM)

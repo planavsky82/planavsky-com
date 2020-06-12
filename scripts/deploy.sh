@@ -15,6 +15,11 @@ mkdir -p web-components
 cd ../stencil-web-components
 npm run build
 mv dist ../dist/web-components
+cd ../dist/mffr
+mkdir -p web-components
+cd ../../stencil-web-components
+npm run build
+mv dist ../dist/mffr/web-components
 cd ../dist
 mkdir -p blog
 cd ../blog
