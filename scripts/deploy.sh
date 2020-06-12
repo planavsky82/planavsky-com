@@ -10,13 +10,13 @@ rm -rf dist
 mkdir -p dist
 cd angular
 mv dist/mffr ../dist
-cd ../dist/mffr
+cd ../dist
 mkdir -p web-components
-cd ../../stencil-web-components
+cd ../stencil-web-components
 npm run build
-mv dist ../dist/mffr/web-components
-cd ../dist/mffr
+mv dist ../dist/web-components
+cd ../dist
 mkdir -p blog
-cd ../../blog
-mv dist ../dist/mffr/blog
+cd ../blog
+mv public ../dist/blog
 firebase deploy

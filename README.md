@@ -32,6 +32,9 @@ Projects in this repo utilize [Firebase](https://www.npmjs.com/package/firebase-
 
 A root-level config.js file is needed to deploy to Firebase.
 
-## Firebase URL
+## Firebase URLs
 
-[https://planavsky-com.firebaseapp.com/](https://planavsky-com.firebaseapp.com/)
+[https://myfantasyfootballrankings.web.app/](https://myfantasyfootballrankings.web.app/)
+[https://blog-planavsky-com.web.app/](https://blog-planavsky-com.web.app/)
+[https://power-web-components.web.app/stencil-web-components/stencil-web-components.js](Web Components JS)
+[https://power-web-components.web.app/stencil-web-components/stencil-web-components.esm.js](Web Components ESM)
