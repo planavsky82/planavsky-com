@@ -1,4 +1,5 @@
 import { Component, ComponentInterface, Host, h } from '@stencil/core';
+import { iOS } from '../../utils/client';
 
 @Component({
   tag: 'power-pwa-indicator',
@@ -7,20 +8,12 @@ import { Component, ComponentInterface, Host, h } from '@stencil/core';
 })
 export class PowerPwaIndicator implements ComponentInterface {
 
-  constructor() {
-
-  }
-
-  isEnabled(): boolean {
-    return !(window.matchMedia('(display-mode: standalone)').matches)
-      || ((window.navigator as any).standalone)
-      || document.referrer.includes('android-app://')
-  }
+  constructor() {}
 
   render() {
     return (
       <Host class={{
-        'display': this.isEnabled()
+        'display': iOS()
       }}>
         Power PWA Indicator
         <slot></slot>
