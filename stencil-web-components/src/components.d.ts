@@ -23,6 +23,7 @@ export namespace Components {
     interface PowerLogin {
     }
     interface PowerPwaIndicator {
+        "display": boolean;
     }
 }
 declare global {
@@ -68,6 +69,7 @@ declare namespace LocalJSX {
     interface PowerLogin {
     }
     interface PowerPwaIndicator {
+        "display"?: boolean;
     }
     interface IntrinsicElements {
         "my-component": MyComponent;

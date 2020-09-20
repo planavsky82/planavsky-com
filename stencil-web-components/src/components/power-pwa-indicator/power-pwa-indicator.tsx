@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Host, h } from '@stencil/core';
+import { Component, ComponentInterface, Host, h, Prop } from '@stencil/core';
 import { iOS } from '../../utils/client';
 
 @Component({
@@ -7,17 +7,23 @@ import { iOS } from '../../utils/client';
   shadow: true,
 })
 export class PowerPwaIndicator implements ComponentInterface {
+  @Prop() display: boolean = iOS();
 
   constructor() {}
+
+  handleClick(event: UIEvent) {
+    console.log(event);
+    this.display = false;
+  }
 
   render() {
     return (
       <Host class={{
-        'display': iOS()
+        'display': this.display
       }}>
         <div class="container">
           CLICK
-          <div class="close">&times;</div>
+          <div class="close" onClick={this.handleClick.bind(this)}>&times;</div>
         </div>
         <div class="pointer"></div>
         <slot></slot>
