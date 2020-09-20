@@ -15,7 +15,8 @@
   animation-timing-function: linear;
 }
 
-div:first-of-type {
+div.container {
+  position: relative;
   border: 1px solid var(--black);
   width: 90%;
   background: var(--white);
@@ -34,6 +35,15 @@ div.pointer {
   border-left: var(--spacing-lg) solid transparent;
   border-right: var(--spacing-lg) solid transparent;
   border-top: calc(var(--spacing-lg) * 2) solid var(--white);
+}
+
+div.close {
+  position: absolute;
+  color: var(--black);
+  top: var(--spacing-base);
+  right: var(--spacing-md);
+  font-size: calc(var(--font-size-xxl) * 2);
+  line-height: var(--font-size-xxl);
 }
 
 :host(:not(.display)) {
