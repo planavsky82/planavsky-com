@@ -1,12 +1,32 @@
 :host(.display) {
-  display: block;
-  border: 1px solid #000;
+  display: flex;
   text-align: center;
   position: fixed;
+  justify-content: center;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 20px;
+  padding-bottom: var(--spacing-xxl);
+}
+
+div:first-of-type {
+  border: 1px solid var(--black);
+  width: 90%;
+  background: var(--white);
+  color: var(--black);
+  border-radius: var(--radius);
+  padding: var(--spacing-xl) 0;
+}
+
+div.pointer {
+  display: flex;
+  position: fixed;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  border-left: var(--spacing-lg) solid transparent;
+  border-right: var(--spacing-lg) solid transparent;
+  border-top: calc(var(--spacing-lg) * 2) solid var(--white);
 }
 
 :host(:not(.display)) {

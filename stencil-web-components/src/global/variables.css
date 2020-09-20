@@ -1,0 +1,17 @@
+:root {
+  --black: #000;
+  --white: #fff;
+
+  --spacing-base: 5px;
+  --spacing-md: calc(var(--spacing-base) * 2);
+  --spacing-lg: calc(var(--spacing-base) * 3);
+  --spacing-xl: calc(var(--spacing-base) * 4);
+  --spacing-xxl: calc(var(--spacing-base) * 5);
+
+  --radius: 5px;
+
+  /* not yet supported */
+  --mixin-rounded: {
+    border-radius: var(--radius);
+  }
+}
