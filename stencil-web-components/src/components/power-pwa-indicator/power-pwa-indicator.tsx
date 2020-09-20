@@ -15,7 +15,7 @@ export class PowerPwaIndicator implements ComponentInterface {
       <Host class={{
         'display': iOS()
       }}>
-        <div>SSSS</div>
+        <div>CLICK</div>
         <div class="pointer"></div>
         <slot></slot>
       </Host>

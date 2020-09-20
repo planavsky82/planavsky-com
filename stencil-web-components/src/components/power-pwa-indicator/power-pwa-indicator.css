@@ -7,6 +7,12 @@
   left: 0;
   width: 100%;
   padding-bottom: var(--spacing-xxl);
+
+  animation-duration: 0.75s;
+  animation-iteration-count: 4;
+  transform-origin: bottom;
+  animation-name: bounce-1;
+  animation-timing-function: linear;
 }
 
 div:first-of-type {
@@ -16,6 +22,7 @@ div:first-of-type {
   color: var(--black);
   border-radius: var(--radius);
   padding: var(--spacing-xl) 0;
+  background-image: linear-gradient(var(--primary), var(--white) 90%);
 }
 
 div.pointer {
@@ -31,4 +38,10 @@ div.pointer {
 
 :host(:not(.display)) {
   display: none;
+}
+
+@keyframes bounce-1 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
