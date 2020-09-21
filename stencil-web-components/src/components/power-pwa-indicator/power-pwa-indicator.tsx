@@ -1,5 +1,5 @@
 import { Component, ComponentInterface, Host, h, Prop } from '@stencil/core';
-import { iOS } from '../../utils/client';
+import { iOS, isIPad } from '../../utils/client';
 
 @Component({
   tag: 'power-pwa-indicator',
@@ -8,6 +8,8 @@ import { iOS } from '../../utils/client';
 })
 export class PowerPwaIndicator implements ComponentInterface {
   @Prop() display: boolean = iOS();
+
+  private isIPad: boolean = isIPad();
 
   constructor() {}
 
@@ -19,7 +21,8 @@ export class PowerPwaIndicator implements ComponentInterface {
   render() {
     return (
       <Host class={{
-        'display': this.display
+        'display': this.display,
+        'ipad': this.isIPad
       }}>
         <div class="container">
           CLICK
