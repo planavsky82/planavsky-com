@@ -1,5 +1,3 @@
-const userAgent = window.navigator.userAgent.toLowerCase();
-
 export function iOS() {
 
   // Detects if device is in standalone mode
@@ -24,10 +22,6 @@ export function iOS() {
   } */
 }
 
-export function isIPhone() {
-  return /iphone|ipod/.test(userAgent);
-}
-
-export function isIPad() {
-  return /ipad/.test(userAgent);
+export function isIPad(): boolean {
+  return document.documentElement.clientWidth > 700;
 }
