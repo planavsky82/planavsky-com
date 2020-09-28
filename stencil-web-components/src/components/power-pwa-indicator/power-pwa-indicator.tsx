@@ -25,7 +25,7 @@ export class PowerPwaIndicator implements ComponentInterface {
         'ipad': this.isIPad
       }}>
         <div class="container">
-          CLICK
+          CLICK <div class="action-icon"></div>
           <div class="close" onClick={this.handleClick.bind(this)}>&times;</div>
         </div>
         <div class="pointer"></div>

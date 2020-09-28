@@ -19,6 +19,10 @@
   border: 1px solid red;
 }
 
+.action-icon {
+  background-image: url(Navigation_Action_2x.png);
+}
+
 div.container {
   position: relative;
   border: 1px solid var(--black);
