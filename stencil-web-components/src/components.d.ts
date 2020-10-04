@@ -24,6 +24,7 @@ export namespace Components {
     }
     interface PowerPwaIndicator {
         "display": boolean;
+        "image": string;
     }
 }
 declare global {
@@ -70,6 +71,7 @@ declare namespace LocalJSX {
     }
     interface PowerPwaIndicator {
         "display"?: boolean;
+        "image"?: string;
     }
     interface IntrinsicElements {
         "my-component": MyComponent;
