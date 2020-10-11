@@ -1,6 +1,8 @@
 import { Component, ComponentInterface, Host, h, Prop, getAssetPath } from '@stencil/core';
 import { iOS, isIPad } from '../../utils/client';
 
+// thanks to https://www.netguru.com/codestories/pwa-on-ios
+
 @Component({
   tag: 'power-pwa-indicator',
   styleUrl: 'power-pwa-indicator.css',
@@ -12,11 +14,12 @@ export class PowerPwaIndicator implements ComponentInterface {
   @Prop() image = "Navigation_Action_2x.png";
 
   private isIPad: boolean = isIPad();
+  private deviceName: 'iPhone' | 'iPad' = 'iPhone';
+  constructor() {
+    this.deviceName = this.isIPad ? 'iPad' : 'iPhone';
+  }
 
-  constructor() {}
-
-  handleClick(event: UIEvent) {
-    console.log(event);
+  handleClick(/* event: UIEvent */) {
     this.display = false;
   }
 
@@ -27,11 +30,18 @@ export class PowerPwaIndicator implements ComponentInterface {
         'ipad': this.isIPad
       }}>
         <div class="container">
-          CLICK <div class="action-icon"></div>
-          <img src={getAssetPath(`./assets/${this.image}`)} />
+          <div class="message">
+            Install this webapp on your {this.deviceName}: tap
+            <img class="action-icon" src={getAssetPath(`./assets/${this.image}`)} />
+            and then Add to Homescreen
+          </div>
+
           <div class="close" onClick={this.handleClick.bind(this)}>&times;</div>
         </div>
-        <div class="pointer"></div>
+        <div class={{
+          'pointer': true,
+          'iphone': !this.isIPad
+        }}></div>
         <slot></slot>
       </Host>
     );

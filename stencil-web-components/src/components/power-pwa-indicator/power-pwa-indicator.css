@@ -16,14 +16,13 @@
 }
 
 :host(.ipad) {
-  border: 1px solid red;
-}
-
-.action-icon {
-  background-image: url(./assets/Navigation_Action_2x.png);
+  bottom: auto;
+  top: 0;
 }
 
 div.container {
+  display: flex;
+  justify-content: center;
   position: relative;
   border: 1px solid var(--black);
   width: 90%;
@@ -32,9 +31,20 @@ div.container {
   border-radius: var(--radius);
   padding: var(--spacing-xl) 0;
   background-image: linear-gradient(var(--primary), var(--white) 90%);
+  font-size: var(--font-size-lg);
 }
 
-div.pointer {
+div.message {
+  width: 70%;
+}
+
+.action-icon {
+  margin: 0 var(--spacing-md) calc(var(--spacing-base) * -1);
+  display: inline-block;
+  height: var(--font-size-xxl);
+}
+
+div.pointer.iphone {
   display: flex;
   position: fixed;
   width: 0;

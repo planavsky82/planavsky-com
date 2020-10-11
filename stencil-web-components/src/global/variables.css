@@ -16,9 +16,10 @@
 
   --font-size-base: 14px;
   --font-size-md: calc(var(--font-size-base) * 1.25);
-  --font-size-lg: calc(var(--font-size-base) * 1.50);
-  --font-size-xl: calc(var(--font-size-base) * 1.75);
-  --font-size-xxl: calc(var(--font-size-base) * 2);
+  --font-size-lg: calc(var(--font-size-base) * 1.40);
+  --font-size-xl: calc(var(--font-size-base) * 1.50);
+  --font-size-xxl: calc(var(--font-size-base) * 1.75);
+  --font-size-xxxl: calc(var(--font-size-base) * 2);
 
   /* not yet supported */
   --mixin-rounded: {
