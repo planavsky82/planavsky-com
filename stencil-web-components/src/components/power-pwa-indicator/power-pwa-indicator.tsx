@@ -33,7 +33,7 @@ export class PowerPwaIndicator implements ComponentInterface {
           <div class="message">
             Install this webapp on your {this.deviceName}: tap
             <img class="action-icon" src={getAssetPath(`./assets/${this.image}`)} />
-            and then Add to Homescreen
+            and then <i>Add to Homescreen</i>
           </div>
 
           <div class="close" onClick={this.handleClick.bind(this)}>&times;</div>
