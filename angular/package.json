@@ -6,6 +6,7 @@
     "start": "ng serve",
     "start:ul-demo": "ng serve ultimate-list-demo",
     "start:mffr": "ng serve mffr --proxy-config ./proxy.json",
+    "start:mffr:vm": "ng serve mffr --proxy-config ./proxy.json --host 0.0.0.0 --port 4200 --disable-host-check --configuration=vm",
     "build": "ng build --prod ultimate-list",
     "test": "ng test ultimate-list --watch=false",
     "lint": "ng lint",
