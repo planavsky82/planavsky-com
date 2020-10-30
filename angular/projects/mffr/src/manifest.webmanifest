@@ -1,6 +1,6 @@
 {
-  "name": "mffr",
-  "short_name": "mffr",
+  "name": "MyFantasyFootballRankings",
+  "short_name": "MyFFRankings",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
