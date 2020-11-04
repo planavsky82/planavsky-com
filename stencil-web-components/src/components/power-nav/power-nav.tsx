@@ -1,5 +1,5 @@
 import { Component, ComponentInterface, Prop, Host, h } from '@stencil/core';
-import { Navigation } from '../../../models/navigation';
+import { Navigation } from '@models/navigation';
 
 @Component({
   tag: 'power-nav',

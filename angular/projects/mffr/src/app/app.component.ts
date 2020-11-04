@@ -1,7 +1,6 @@
 import { Component, OnInit, OnDestroy, ElementRef, Renderer2 } from '@angular/core';
 
-// TODO: figure out why tsconfig paths aren't working
-import { Navigation } from '../../../../../stencil-web-components/models/navigation';
+import { Navigation } from '@models/navigation';
 
 @Component({
   selector: 'app-root',

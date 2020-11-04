@@ -5,7 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { Navigation, } from "../models/navigation";
+import { Navigation, } from "@models/navigation";
 export namespace Components {
     interface MyComponent {
         /**

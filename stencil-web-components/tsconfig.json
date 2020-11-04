@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
+    "resolveJsonModule": true,
     "declaration": false,
+    "esModuleInterop": true,
     "experimentalDecorators": true,
     "lib": [
       "dom",
@@ -13,8 +16,14 @@
     "target": "es2017",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "noImplicitAny": true,
     "jsx": "react",
-    "jsxFactory": "h"
+    "jsxFactory": "h",
+    "skipLibCheck": true,
+    "paths": {
+      "@models": ["models"],
+      "@models/*": ["models/*"]
+    }
   },
   "include": [
     "src",

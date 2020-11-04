@@ -18,12 +18,8 @@
       "dom"
     ],
     "paths": {
-      "ultimate-list": [
-        "dist/ultimate-list"
-      ],
-      "ultimate-list/*": [
-        "dist/ultimate-list/*"
-      ]
+      "@models": ["../stencil-web-components/models"],
+      "@models/*": ["../stencil-web-components/models/*"]
     }
   }
 }
