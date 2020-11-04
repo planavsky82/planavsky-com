@@ -5,6 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { Navigation, } from "../models/navigation";
 export namespace Components {
     interface MyComponent {
         /**
@@ -21,6 +22,9 @@ export namespace Components {
         "middle": string;
     }
     interface PowerLogin {
+    }
+    interface PowerNav {
+        "data": Navigation;
     }
     interface PowerPwaIndicator {
         "display": boolean;
@@ -40,6 +44,12 @@ declare global {
         prototype: HTMLPowerLoginElement;
         new (): HTMLPowerLoginElement;
     };
+    interface HTMLPowerNavElement extends Components.PowerNav, HTMLStencilElement {
+    }
+    var HTMLPowerNavElement: {
+        prototype: HTMLPowerNavElement;
+        new (): HTMLPowerNavElement;
+    };
     interface HTMLPowerPwaIndicatorElement extends Components.PowerPwaIndicator, HTMLStencilElement {
     }
     var HTMLPowerPwaIndicatorElement: {
@@ -49,6 +59,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
         "power-login": HTMLPowerLoginElement;
+        "power-nav": HTMLPowerNavElement;
         "power-pwa-indicator": HTMLPowerPwaIndicatorElement;
     }
 }
@@ -69,6 +80,9 @@ declare namespace LocalJSX {
     }
     interface PowerLogin {
     }
+    interface PowerNav {
+        "data"?: Navigation;
+    }
     interface PowerPwaIndicator {
         "display"?: boolean;
         "image"?: string;
@@ -76,6 +90,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "my-component": MyComponent;
         "power-login": PowerLogin;
+        "power-nav": PowerNav;
         "power-pwa-indicator": PowerPwaIndicator;
     }
 }
@@ -85,6 +100,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "power-login": LocalJSX.PowerLogin & JSXBase.HTMLAttributes<HTMLPowerLoginElement>;
+            "power-nav": LocalJSX.PowerNav & JSXBase.HTMLAttributes<HTMLPowerNavElement>;
             "power-pwa-indicator": LocalJSX.PowerPwaIndicator & JSXBase.HTMLAttributes<HTMLPowerPwaIndicatorElement>;
         }
     }

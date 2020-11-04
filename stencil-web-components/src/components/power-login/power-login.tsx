@@ -13,7 +13,6 @@ export class PowerLogin implements ComponentInterface {
   render() {
     return (
       <Host>
-        Login 100
         <slot></slot>
       </Host>
     );

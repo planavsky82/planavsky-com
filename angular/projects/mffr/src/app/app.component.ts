@@ -1,5 +1,8 @@
 import { Component, OnInit, OnDestroy, ElementRef, Renderer2 } from '@angular/core';
 
+// TODO: figure out why tsconfig paths aren't working
+import { Navigation } from '../../../../../stencil-web-components/models/navigation';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,12 +12,39 @@ export class AppComponent implements OnInit, OnDestroy {
 
   public timeoutId: any;
   public targetOn: boolean = true;
+  public navigation: Navigation;
 
   constructor(private elementRef: ElementRef,
               private renderer: Renderer2) {}
 
   ngOnInit() {
     this.animateTarget(4000);
+    this.navigation = [
+      {
+        route: '/',
+        name: 'Home',
+        icon: 'user',
+        secure: false
+      },
+      {
+        route: '/',
+        name: 'Login',
+        icon: 'user',
+        secure: false
+      },
+      {
+        route: '/',
+        name: 'Profile',
+        icon: 'user',
+        secure: true
+      },
+      {
+        route: '/',
+        name: 'Rankings',
+        icon: 'user',
+        secure: true
+      }
+    ]
   }
 
   animateTarget(time: number) {
