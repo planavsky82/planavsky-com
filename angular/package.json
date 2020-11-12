@@ -14,7 +14,8 @@
     "build:mffr": "ng build mffr --prod",
     "build:ul-demo": "ng build ultimate-list-demo --prod --base-href ./",
     "build:planavsky": "ng build --prod ultimate-list && ng build planavsky-com --prod",
-    "add:component": "function add() { ng g module $1 --project=ultimate-list && ng g component $1 --project=ultimate-list; }; add"
+    "add:component": "function add() { ng g module $1 --project=ultimate-list && ng g component $1 --project=ultimate-list; }; add",
+    "move:fa": "cp -r node_modules/font-awesome projects/$PROJECT/src/assets"
   },
   "private": true,
   "dependencies": {

@@ -40,6 +40,7 @@ testem.log
 /web-components/node_modules
 /web-components/dist
 /functions/config.js
+**/assets/font-awesome
 
 # System Files
 .DS_Store

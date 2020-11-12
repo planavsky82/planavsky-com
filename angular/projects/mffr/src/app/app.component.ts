@@ -22,7 +22,7 @@ export class AppComponent implements OnInit, OnDestroy {
       {
         route: '/',
         name: 'Home',
-        icon: 'user',
+        icon: 'list-ol',
         secure: false
       },
       {
