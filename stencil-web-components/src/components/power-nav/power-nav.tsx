@@ -31,7 +31,6 @@ export class PowerNav implements ComponentInterface {
   private handleClick(navigationItem: NavigationItem) {
     this.selectedItem = navigationItem.route;
     this.selectItem.emit(navigationItem);
-    console.log(this.selectedItem);
   }
 
   render() {
