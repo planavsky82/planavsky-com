@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy, ElementRef, Renderer2 } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { Navigation } from '@models/navigation';
 
@@ -14,7 +15,8 @@ export class AppComponent implements OnInit, OnDestroy {
   public navigation: Navigation;
 
   constructor(private elementRef: ElementRef,
-              private renderer: Renderer2) {}
+              private renderer: Renderer2,
+              private router: Router) {}
 
   ngOnInit() {
     this.animateTarget(4000);
@@ -75,6 +77,10 @@ export class AppComponent implements OnInit, OnDestroy {
         this.animateTarget(timeNew);
       }
     }, time);
+  }
+
+  navigate(event: any) {
+    this.router.navigate([event.detail.route]);
   }
 
   ngOnDestroy() {

@@ -3,7 +3,7 @@
 <div class="main-content">
 	<div class="header"></div>
 	<div class="header-text"><i class="fa fa-list-ol"></i> My<span class="fantasy-football">FantasyFootball</span>Rankings.com</div>
-  <power-nav [data]="navigation"></power-nav>
+  <power-nav [data]="navigation" (selectItem)="navigate($event)"></power-nav>
 
 	<div class="content-container">
     <power-login></power-login>

@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Prop, Host, h } from '@stencil/core';
+import { Component, ComponentInterface, Prop, Host, h, EventEmitter, Event } from '@stencil/core';
 import { Navigation, NavigationItem } from '@models/navigation';
 
 @Component({
@@ -12,19 +12,34 @@ import { Navigation, NavigationItem } from '@models/navigation';
 export class PowerNav implements ComponentInterface {
   @Prop() data: Navigation;
 
-  private selected: string = '';
+  @Event() selectItem: EventEmitter<NavigationItem>;
 
-  private handleClick(event: any) {
-    console.log(event);
+  private _selected: string = '';
+
+  constructor() {
+    this.selectedItem = this.data[0].route;
+  }
+
+  set selectedItem(route: string) {
+    this._selected = route;
+  }
+
+  get selectedItem(): string {
+    return this._selected;
+  }
+
+  private handleClick(navigationItem: NavigationItem) {
+    this.selectedItem = navigationItem.route;
+    this.selectItem.emit(navigationItem);
+    console.log(this.selectedItem);
   }
 
   render() {
     return (
       <Host>
         {this.data.map((item: NavigationItem) =>
-          <a href={'/' + item.route}
-             onClick={this.handleClick.bind(this)}
-             class={this.selected}>{item.name}</a>
+          <a onClick={() => this.handleClick(item)}>{item.name}</a>
+          // class={this.isSelected(item.route) ? 'selected' : ''}
         )}
       </Host>
     );
