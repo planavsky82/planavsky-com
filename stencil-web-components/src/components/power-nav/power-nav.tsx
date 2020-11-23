@@ -12,15 +12,19 @@ import { Navigation, NavigationItem } from '@models/navigation';
 export class PowerNav implements ComponentInterface {
   @Prop() data: Navigation;
 
+  private selected: string = '';
+
+  private handleClick(event: any) {
+    console.log(event);
+  }
+
   render() {
     return (
       <Host>
         {this.data.map((item: NavigationItem) =>
-          <div>
-            <div>{item.name}</div>
-            <div>{item.route}</div>
-            <i class={'fa fa-' + item.icon}></i>
-          </div>
+          <a href={'/' + item.route}
+             onClick={this.handleClick.bind(this)}
+             class={this.selected}>{item.name}</a>
         )}
       </Host>
     );

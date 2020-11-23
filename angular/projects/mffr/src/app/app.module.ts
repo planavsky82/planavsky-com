@@ -12,6 +12,8 @@ import { environment } from '../environments/environment';
 
 const appRoutes: Routes = [
   { path: 'main', component: MainComponent },
+  { path: 'login', component: MainComponent },
+  { path: 'rankings', component: MainComponent },
   { path: '**', component: HomeComponent }
 ];
 

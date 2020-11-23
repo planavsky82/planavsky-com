@@ -20,27 +20,23 @@ export class AppComponent implements OnInit, OnDestroy {
     this.animateTarget(4000);
     this.navigation = [
       {
-        route: '/',
+        route: '',
         name: 'Home',
-        icon: 'list-ol',
         secure: false
       },
       {
-        route: '/',
+        route: 'login',
         name: 'Login',
-        icon: 'user',
         secure: false
       },
       {
-        route: '/',
+        route: 'main',
         name: 'Profile',
-        icon: 'user',
         secure: true
       },
       {
-        route: '/',
+        route: 'rankings',
         name: 'Rankings',
-        icon: 'user',
         secure: true
       }
     ]

@@ -6,6 +6,21 @@
   left: 0;
   top: 0;
   background: var(--grey-1);
+  justify-content: center;
+}
+
+a {
+  display: block;
+  color: var(--white);
+  text-decoration: none;
+  padding: var(--spacing-lg) var(--spacing-xxl);
+  font-size: var(--font-size-lg);
+  font-weight: var(--weight-thin);
+}
+
+a:hover, a.selected {
+  background: var(--selected);
+  color: var(--selected-inverse);
 }
 
 /* need to get breakpoints from bootstrap or a custom, shared definition */

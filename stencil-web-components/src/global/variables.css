@@ -7,6 +7,9 @@
   --grey-1: #111;
   --grey-2: #333;
 
+  --selected: #eee;
+  --selected-inverse: var(--grey-1);
+
   --spacing-base: 5px;
   --spacing-md: calc(var(--spacing-base) * 2);
   --spacing-lg: calc(var(--spacing-base) * 3);
@@ -17,6 +20,7 @@
 
   --weight-base: 300;
   --weight-semibold: 700;
+  --weight-thin: 200;
 
   --font-size-base: 14px;
   --font-size-md: calc(var(--font-size-base) * 1.25);
