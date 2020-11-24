@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Prop, Host, h, EventEmitter, Event } from '@stencil/core';
+import { Component, ComponentInterface, Prop, Host, h, EventEmitter, Event, State } from '@stencil/core';
 import { Navigation, NavigationItem } from '@models/navigation';
 
 @Component({
@@ -14,22 +14,14 @@ export class PowerNav implements ComponentInterface {
 
   @Event() selectItem: EventEmitter<NavigationItem>;
 
-  private _selected: string = '';
+  @State() selectedRoute: string = '';
 
   constructor() {
-    this.selectedItem = this.data[0].route;
-  }
-
-  set selectedItem(route: string) {
-    this._selected = route;
-  }
-
-  get selectedItem(): string {
-    return this._selected;
+    this.selectedRoute = this.data[0].route;
   }
 
   private handleClick(navigationItem: NavigationItem) {
-    this.selectedItem = navigationItem.route;
+    this.selectedRoute = navigationItem.route;
     this.selectItem.emit(navigationItem);
   }
 
@@ -37,8 +29,10 @@ export class PowerNav implements ComponentInterface {
     return (
       <Host>
         {this.data.map((item: NavigationItem) =>
-          <a onClick={() => this.handleClick(item)}>{item.name}</a>
-          // class={this.isSelected(item.route) ? 'selected' : ''}
+          <a onClick={() => this.handleClick(item)}
+             class={{
+               'selected': this.selectedRoute === item.route
+             }}>{item.name}</a>
         )}
       </Host>
     );
