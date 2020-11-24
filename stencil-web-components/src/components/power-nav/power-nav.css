@@ -37,5 +37,6 @@ a:hover, a.selected {
   a {
     padding: var(--spacing-lg) var(--spacing-lg);
     font-size: var(--font-size-md);
+    margin-bottom: var(--spacing-xxl);
   }
 }
