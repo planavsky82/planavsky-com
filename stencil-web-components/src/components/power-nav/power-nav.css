@@ -33,4 +33,9 @@ a:hover, a.selected {
     top: auto;
     border-top: 1px solid var(--grey-2);
   }
+
+  a {
+    padding: var(--spacing-lg) var(--spacing-lg);
+    font-size: var(--font-size-md);
+  }
 }

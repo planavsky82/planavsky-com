@@ -12,6 +12,13 @@
 | `data`   | --        |             | `NavigationItem[]` | `undefined` |
 
 
+## Events
+
+| Event        | Description | Type                          |
+| ------------ | ----------- | ----------------------------- |
+| `selectItem` |             | `CustomEvent<NavigationItem>` |
+
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*
