@@ -54,4 +54,8 @@ a:hover, a.selected {
     font-size: var(--font-size-md);
     margin-bottom: var(--spacing-xxl);
   }
+
+  ul:focus {
+    box-shadow: none;
+  }
 }
