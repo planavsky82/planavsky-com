@@ -3,6 +3,9 @@
   --black: #000;
   --white: #fff;
 
+  --focus: var(--primary);
+  --focus-shadow: 0 0 0 0 var(--focus), 0px 0px 3px 3px var(--focus);
+
   --grey-base: #222;
   --grey-1: #111;
   --grey-2: #333;

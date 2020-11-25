@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Prop, Host, h, EventEmitter, Event, State } from '@stencil/core';
+import { Component, ComponentInterface, Prop, Host, h, EventEmitter, Event, State, Listen } from '@stencil/core';
 import { Navigation, NavigationItem } from '@models/navigation';
 
 @Component({
@@ -14,26 +14,48 @@ export class PowerNav implements ComponentInterface {
 
   @Event() selectItem: EventEmitter<NavigationItem>;
 
-  @State() selectedRoute: string = '';
+  @State() focusedItem: NavigationItem;
+  @State() selectedIndex: number = 0;
 
-  constructor() {
-    this.selectedRoute = this.data[0].route;
+  @Listen('keydown')
+  handleKeyDown(ev: KeyboardEvent){
+    if (ev.key === 'Enter'){
+      this.select(this.selectedIndex);
+    }
+    if (ev.key === 'ArrowDown' || ev.key === 'ArrowRight'){
+      let newIndex = this.selectedIndex + 1;
+      if (newIndex < this.data.length) {
+        this.selectedIndex = newIndex;
+      }
+    }
+    if (ev.key === 'ArrowUp' || ev.key === 'ArrowLeft'){
+      let newIndex = this.selectedIndex - 1;
+      if (newIndex > -1) {
+        this.selectedIndex = newIndex;
+      }
+    }
   }
 
-  private handleClick(navigationItem: NavigationItem) {
-    this.selectedRoute = navigationItem.route;
-    this.selectItem.emit(navigationItem);
+  private select(index: number) {
+    this.selectedIndex = index;
+    this.selectItem.emit(this.data[index]);
   }
 
   render() {
     return (
-      <Host>
-        {this.data.map((item: NavigationItem) =>
-          <a onClick={() => this.handleClick(item)}
-             class={{
-               'selected': this.selectedRoute === item.route
-             }}>{item.name}</a>
-        )}
+      <Host role="navigation" aria-label="Site Navigation">
+        <ul tabindex="0">
+          {this.data.map((item: NavigationItem, index: number) =>
+            <li>
+              <a onClick={() => this.select(index)}
+                 aria-selected={this.selectedIndex === index}
+                 aria-label={item.name}
+                 class={{
+                  'selected': this.selectedIndex === index
+                 }}>{item.name}</a>
+            </li>
+          )}
+        </ul>
       </Host>
     );
   }

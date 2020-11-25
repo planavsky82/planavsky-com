@@ -9,6 +9,21 @@
   justify-content: center;
 }
 
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+ul:focus {
+  outline: none;
+  box-shadow: var(--focus-shadow);
+}
+
+li {
+  list-style: none;
+}
+
 a {
   display: block;
   color: var(--white);
