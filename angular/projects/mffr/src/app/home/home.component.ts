@@ -24,6 +24,7 @@ export class HomeComponent {
   }
 
   getConfig() {
+    // https://ngrx.io/guide/store
     this.http.post<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/authenticate',
       { name: 'U10133', pwd: 'e3$f!rt78UNml90!' }, this.httpOptions)
       .subscribe((data: any) => {
