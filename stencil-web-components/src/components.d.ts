@@ -30,6 +30,8 @@ export namespace Components {
         "display": boolean;
         "image": string;
     }
+    interface PowerReadMore {
+    }
 }
 declare global {
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
@@ -56,11 +58,18 @@ declare global {
         prototype: HTMLPowerPwaIndicatorElement;
         new (): HTMLPowerPwaIndicatorElement;
     };
+    interface HTMLPowerReadMoreElement extends Components.PowerReadMore, HTMLStencilElement {
+    }
+    var HTMLPowerReadMoreElement: {
+        prototype: HTMLPowerReadMoreElement;
+        new (): HTMLPowerReadMoreElement;
+    };
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
         "power-login": HTMLPowerLoginElement;
         "power-nav": HTMLPowerNavElement;
         "power-pwa-indicator": HTMLPowerPwaIndicatorElement;
+        "power-read-more": HTMLPowerReadMoreElement;
     }
 }
 declare namespace LocalJSX {
@@ -88,11 +97,14 @@ declare namespace LocalJSX {
         "display"?: boolean;
         "image"?: string;
     }
+    interface PowerReadMore {
+    }
     interface IntrinsicElements {
         "my-component": MyComponent;
         "power-login": PowerLogin;
         "power-nav": PowerNav;
         "power-pwa-indicator": PowerPwaIndicator;
+        "power-read-more": PowerReadMore;
     }
 }
 export { LocalJSX as JSX };
@@ -103,6 +115,7 @@ declare module "@stencil/core" {
             "power-login": LocalJSX.PowerLogin & JSXBase.HTMLAttributes<HTMLPowerLoginElement>;
             "power-nav": LocalJSX.PowerNav & JSXBase.HTMLAttributes<HTMLPowerNavElement>;
             "power-pwa-indicator": LocalJSX.PowerPwaIndicator & JSXBase.HTMLAttributes<HTMLPowerPwaIndicatorElement>;
+            "power-read-more": LocalJSX.PowerReadMore & JSXBase.HTMLAttributes<HTMLPowerReadMoreElement>;
         }
     }
 }

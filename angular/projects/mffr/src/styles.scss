@@ -42,6 +42,16 @@ $text-color: $white;
 @import "~font-awesome/scss/_mixins";
 @import "~font-awesome/scss/_icons";
 
+/* variables */
+$gray-1: #888;
+$gray-2: #444;
+$blue-1: #024699;
+$blue-2: #558ecf;
+$blue-3: #42C0FB;
+$gold-1: #f5ba25;
+$green-1: #21b012;
+$brown-1: #663300;
+
 // global styles
 body {
 	margin: 0 10px;
@@ -52,14 +62,10 @@ body {
 	}
 }
 
-/* variables */
-$gray-1: #888;
-$gray-2: #444;
-$blue-1: #024699;
-$blue-2: #558ecf;
-$gold-1: #f5ba25;
-$green-1: #21b012;
-$brown-1: #663300;
+a {
+  cursor: pointer;
+  color: $blue-3;
+}
 
 html {
   	background-color: $black;
