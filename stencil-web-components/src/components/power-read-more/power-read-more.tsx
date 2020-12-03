@@ -7,7 +7,7 @@ import { Component, ComponentInterface, Host, h, State } from '@stencil/core';
 })
 export class PowerReadMore implements ComponentInterface {
   @State() action: 'Read More' | 'Close' = 'Read More';
-  private open: boolean = false;
+  @State() open: boolean = false;
 
   private toggle(): void {
     this.open = !this.open;
@@ -21,8 +21,13 @@ export class PowerReadMore implements ComponentInterface {
   render() {
     return (
       <Host>
-        <slot></slot>
-        <a onClick={() => this.toggle()}>{this.action}</a>
+        <div class={{
+          'open': this.open,
+          'closed': !this.open
+        }}>
+          <slot></slot>
+        </div>
+        <a class="action" onClick={() => this.toggle()}>{this.action}</a>
       </Host>
     );
   }
