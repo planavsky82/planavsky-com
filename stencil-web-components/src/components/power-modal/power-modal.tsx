@@ -12,9 +12,8 @@ export class PowerModal implements ComponentInterface {
   @State() display: boolean = false;
 
   @Watch('opened')
-  open() {
-    console.log('9999999');
-    this.display = true;
+  open(display: any) {
+    this.display = display;
   }
 
   close() {
@@ -24,11 +23,13 @@ export class PowerModal implements ComponentInterface {
 
   render() {
     return (
-      <Host class={{
-        'opened': this.display,
-        'closed': !this.display
-      }}>
-        <div class="overlay" onClick={this.close.bind(this)}></div>
+      <Host>
+        <div onClick={this.close.bind(this)}
+          class={{
+            'opened': this.display,
+            'closed': !this.display,
+            'overlay': true
+          }}></div>
         <div class={{
             'opened': this.display,
             'closed': !this.display,
@@ -36,8 +37,8 @@ export class PowerModal implements ComponentInterface {
           }}>
           <div>
             <slot></slot>
+            <div class="close" onClick={this.close.bind(this)}>&#x2715;</div>
           </div>
-          <div class="close" onClick={this.close.bind(this)}>&#x2715;</div>
         </div>
       </Host>
     );
