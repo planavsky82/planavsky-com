@@ -25,8 +25,12 @@ export class HomeComponent {
     this.navigation.navigate('main');
   }
 
-  signup() {
+  openSignUp() {
     this.openModal = true;
+  }
+
+  closeSignUp() {
+    this.openModal = false;
   }
 
   getConfig() {

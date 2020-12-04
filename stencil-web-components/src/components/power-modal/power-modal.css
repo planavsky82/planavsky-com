@@ -30,6 +30,24 @@
   transform: translate(-50%, -50%);
   box-shadow: var(--modal-shadow);
   text-align: left;
+  transition: width 2s;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modal.opened {
+  animation-name: slide-up;
+}
+
+.modal.closed {
+  border: 1px solid red;
 }
 
 .close {

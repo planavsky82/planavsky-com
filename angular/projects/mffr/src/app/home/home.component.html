@@ -1,7 +1,7 @@
 <div class="intro">
-  Want to Manage Your Own Fantasy Football Rankings? <a (click)="signup()">Find Out How!</a>
+  Want to Manage Your Own Fantasy Football Rankings? <a (click)="openSignUp()">Find Out How!</a>
 
-  <power-modal [opened]="openModal">
+  <power-modal [opened]="openModal" (closed)="closeSignUp()">
     <a class="neon blue-highlight highlight" (click)="navigate()">Sign Up</a> and Manage Your Own Rankings
 
     <span>

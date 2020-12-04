@@ -100,6 +100,7 @@ declare namespace LocalJSX {
     interface PowerLogin {
     }
     interface PowerModal {
+        "onClosed"?: (event: CustomEvent<boolean>) => void;
         "opened"?: boolean;
     }
     interface PowerNav {

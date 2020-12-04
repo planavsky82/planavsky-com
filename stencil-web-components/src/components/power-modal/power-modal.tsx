@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Host, h, Prop, Watch, State } from '@stencil/core';
+import { Component, ComponentInterface, Host, h, Prop, Watch, State, Event, EventEmitter } from '@stencil/core';
 
 @Component({
   tag: 'power-modal',
@@ -7,6 +7,7 @@ import { Component, ComponentInterface, Host, h, Prop, Watch, State } from '@ste
 })
 export class PowerModal implements ComponentInterface {
   @Prop() opened: boolean = false;
+  @Event() closed: EventEmitter<boolean>;
 
   @State() display: boolean = false;
 
@@ -18,16 +19,21 @@ export class PowerModal implements ComponentInterface {
 
   close() {
     this.display = false;
+    this.closed.emit(true);
   }
 
   render() {
     return (
       <Host class={{
-        'open': this.display,
+        'opened': this.display,
         'closed': !this.display
       }}>
         <div class="overlay" onClick={this.close.bind(this)}></div>
-        <div class="modal">
+        <div class={{
+            'opened': this.display,
+            'closed': !this.display,
+            'modal': true
+          }}>
           <div>
             <slot></slot>
           </div>
