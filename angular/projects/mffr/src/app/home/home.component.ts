@@ -13,6 +13,8 @@ export class HomeComponent {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
 
+  public openModal: boolean = false;
+
   constructor(
     private navigation: NavigationService,
     private http: HttpClient) {
@@ -21,6 +23,10 @@ export class HomeComponent {
 
   navigate() {
     this.navigation.navigate('main');
+  }
+
+  signup() {
+    this.openModal = true;
   }
 
   getConfig() {

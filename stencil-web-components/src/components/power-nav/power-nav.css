@@ -37,6 +37,7 @@ a {
 a:hover, a.selected {
   background: var(--selected);
   color: var(--selected-inverse);
+  font-weight: var(--weight-base);
 }
 
 /* need to get breakpoints from bootstrap or a custom, shared definition */

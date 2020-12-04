@@ -1,14 +1,16 @@
 <div class="intro">
-  How Accurate are your Fantasy Football Rankings?
+  Want to Manage Your Own Fantasy Football Rankings? <a (click)="signup()">Find Out How!</a>
 
-  <power-read-more>
+  <power-modal [opened]="openModal">
+    <a class="neon blue-highlight highlight" (click)="navigate()">Sign Up</a> and Manage Your Own Rankings
+
     <span>
       If you are a Fantasy Football enthusiast, you probably have ranking resources around the web that you utilize
       to help make lineup and draft day decisions.
     </span>
 
     <span>
-      What if you were able to <a (click)="navigate()">manage your own rankings</a> to make your own lineup and draft day decisions,
+      What if you were able to manage your own rankings to make your own lineup and draft day decisions,
       help others determine their lineups by sharing your rankings,
       and see how accurate you are compared to the rest of the MyFantasyFootballRankings.com community in a little friendly competition?
     </span>
@@ -16,10 +18,8 @@
     <span>
       If that seems fun, <a (click)="navigate()">sign up and give it try</a>. Maybe you can become the next fantasy football expert!
     </span>
-  </power-read-more>
+  </power-modal>
 </div>
-
-<a class="neon blue-highlight highlight" (click)="navigate()">Manage Your Own Rankings</a>
 
 <div class="leaders">
   <h2>Leader Board</h2>

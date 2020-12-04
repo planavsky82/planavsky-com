@@ -23,6 +23,9 @@ export namespace Components {
     }
     interface PowerLogin {
     }
+    interface PowerModal {
+        "opened": boolean;
+    }
     interface PowerNav {
         "data": Navigation;
     }
@@ -46,6 +49,12 @@ declare global {
         prototype: HTMLPowerLoginElement;
         new (): HTMLPowerLoginElement;
     };
+    interface HTMLPowerModalElement extends Components.PowerModal, HTMLStencilElement {
+    }
+    var HTMLPowerModalElement: {
+        prototype: HTMLPowerModalElement;
+        new (): HTMLPowerModalElement;
+    };
     interface HTMLPowerNavElement extends Components.PowerNav, HTMLStencilElement {
     }
     var HTMLPowerNavElement: {
@@ -67,6 +76,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
         "power-login": HTMLPowerLoginElement;
+        "power-modal": HTMLPowerModalElement;
         "power-nav": HTMLPowerNavElement;
         "power-pwa-indicator": HTMLPowerPwaIndicatorElement;
         "power-read-more": HTMLPowerReadMoreElement;
@@ -89,6 +99,9 @@ declare namespace LocalJSX {
     }
     interface PowerLogin {
     }
+    interface PowerModal {
+        "opened"?: boolean;
+    }
     interface PowerNav {
         "data"?: Navigation;
         "onSelectItem"?: (event: CustomEvent<NavigationItem>) => void;
@@ -102,6 +115,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "my-component": MyComponent;
         "power-login": PowerLogin;
+        "power-modal": PowerModal;
         "power-nav": PowerNav;
         "power-pwa-indicator": PowerPwaIndicator;
         "power-read-more": PowerReadMore;
@@ -113,6 +127,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "power-login": LocalJSX.PowerLogin & JSXBase.HTMLAttributes<HTMLPowerLoginElement>;
+            "power-modal": LocalJSX.PowerModal & JSXBase.HTMLAttributes<HTMLPowerModalElement>;
             "power-nav": LocalJSX.PowerNav & JSXBase.HTMLAttributes<HTMLPowerNavElement>;
             "power-pwa-indicator": LocalJSX.PowerPwaIndicator & JSXBase.HTMLAttributes<HTMLPowerPwaIndicatorElement>;
             "power-read-more": LocalJSX.PowerReadMore & JSXBase.HTMLAttributes<HTMLPowerReadMoreElement>;

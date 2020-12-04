@@ -15,7 +15,10 @@ $black: #000;
 	color: $black;
 }
 
+$base-font-color: #eee;
+
 // alt grays
+$gray-alt-light: #ddd;
 $gray-alt-0: #bbb;
 $gray-alt: #999;
 $gray-alt-2: #444;
@@ -59,12 +62,19 @@ body {
 	.plan-shell {
 		max-width: 1400px;
 		margin: 0 auto;
-	}
+  }
+
+  color: $base-font-color;
+  letter-spacing: 0.85px;
 }
 
 a {
   cursor: pointer;
   color: $blue-3;
+}
+
+a:hover {
+  color: $core-gold;
 }
 
 html {

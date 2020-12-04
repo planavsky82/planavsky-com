@@ -7,6 +7,8 @@
   --focus: var(--primary);
   --focus-shadow: 0 0 0 0 var(--focus), 0px 0px 3px 3px var(--focus);
 
+  --modal-shadow: 0 0 0 0 var(--grey-2), 0px 0px 10px 5px var(--grey-2);
+
   --grey-base: #222;
   --grey-1: #111;
   --grey-2: #333;
@@ -19,12 +21,16 @@
   --spacing-lg: calc(var(--spacing-base) * 3);
   --spacing-xl: calc(var(--spacing-base) * 4);
   --spacing-xxl: calc(var(--spacing-base) * 5);
+  --spacing-xxxl: calc(var(--spacing-base) * 6);
 
   --radius: 5px;
 
-  --weight-base: 300;
-  --weight-semibold: 700;
+  --overlay-background-opacity: 0.75;
+
   --weight-thin: 200;
+  --weight-base: 300;
+  --weight-semibold: 500;
+  --weight-bold: 700;
 
   --font-size-base: 14px;
   --font-size-md: calc(var(--font-size-base) * 1.25);
