@@ -1,5 +1,5 @@
-import { Component, OnInit, OnDestroy, ElementRef, Renderer2 } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit, OnDestroy, ElementRef, Renderer2, } from '@angular/core';
+import { Router, RouterEvent, NavigationEnd } from '@angular/router';
 
 import { Navigation } from '@models/navigation';
 
@@ -13,10 +13,17 @@ export class AppComponent implements OnInit, OnDestroy {
   public timeoutId: any;
   public targetOn: boolean = true;
   public navigation: Navigation;
+  public route: string;
 
   constructor(private elementRef: ElementRef,
-              private renderer: Renderer2,
-              private router: Router) {}
+    private renderer: Renderer2,
+    private router: Router) {
+      router.events.subscribe((event: RouterEvent) => {
+        if (event instanceof NavigationEnd) {
+          this.route = event.url;
+        }
+    });
+  }
 
   ngOnInit() {
     this.animateTarget(4000);

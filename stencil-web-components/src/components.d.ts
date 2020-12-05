@@ -28,6 +28,7 @@ export namespace Components {
     }
     interface PowerNav {
         "data": Navigation;
+        "route": string;
     }
     interface PowerPwaIndicator {
         "display": boolean;
@@ -106,6 +107,7 @@ declare namespace LocalJSX {
     interface PowerNav {
         "data"?: Navigation;
         "onSelectItem"?: (event: CustomEvent<NavigationItem>) => void;
+        "route"?: string;
     }
     interface PowerPwaIndicator {
         "display"?: boolean;

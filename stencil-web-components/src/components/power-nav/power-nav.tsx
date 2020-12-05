@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Prop, Host, h, EventEmitter, Event, State, Listen } from '@stencil/core';
+import { Component, ComponentInterface, Prop, Host, h, EventEmitter, Event, State, Listen, Watch } from '@stencil/core';
 import { Navigation, NavigationItem } from '@models/navigation';
 
 @Component({
@@ -11,6 +11,7 @@ import { Navigation, NavigationItem } from '@models/navigation';
 })
 export class PowerNav implements ComponentInterface {
   @Prop() data: Navigation;
+  @Prop() route: string;
 
   @Event() selectItem: EventEmitter<NavigationItem>;
 
@@ -34,6 +35,12 @@ export class PowerNav implements ComponentInterface {
         this.selectedIndex = newIndex;
       }
     }
+  }
+
+  @Watch('route')
+  changeRoute(route: string) {
+    let index = this.data.findIndex((navItem: NavigationItem) => navItem.route === route.replace('/',''));
+    this.select(index);
   }
 
   private select(index: number) {
