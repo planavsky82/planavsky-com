@@ -39,13 +39,20 @@ export class PowerNav implements ComponentInterface {
 
   @Watch('route')
   changeRoute(route: string) {
-    let index = this.data.findIndex((navItem: NavigationItem) => navItem.route === route.replace('/',''));
-    this.select(index);
+    this.select(this.findIndex(route));
+  }
+
+  componentDidLoad() {
+    this.select(this.findIndex(this.route));
   }
 
   private select(index: number) {
     this.selectedIndex = index;
     this.selectItem.emit(this.data[index]);
+  }
+
+  private findIndex(route: string) {
+    return this.data.findIndex((navItem: NavigationItem) => navItem.route === route.replace('/',''));
   }
 
   render() {

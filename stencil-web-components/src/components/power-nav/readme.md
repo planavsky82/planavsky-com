@@ -10,6 +10,7 @@
 | Property | Attribute | Description | Type               | Default     |
 | -------- | --------- | ----------- | ------------------ | ----------- |
 | `data`   | --        |             | `NavigationItem[]` | `undefined` |
+| `route`  | `route`   |             | `string`           | `undefined` |
 
 
 ## Events
