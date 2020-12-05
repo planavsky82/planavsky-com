@@ -38,6 +38,9 @@ $font-weight-thinnest: 100;
 $body-bg: $gray-dark;
 $text-color: $white;
 
+$transparent-color: rgba(255,255,255,0.07);
+$transparent-color-dark: rgba(0,0,0,0.85);
+
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
 // need to include the font-awesome css for the font files to load

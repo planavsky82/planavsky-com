@@ -3,11 +3,11 @@
 :host {
 	.background-image {
 		background: $black url("../images/background.jpg") no-repeat top center;
-  		background-size: contain;
-  		height: 400px;
-  		width: 100%;
-  		position: absolute;
-  		z-index: 1;
+    background-size: contain;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
 	}
 
 	.background-gradient {
