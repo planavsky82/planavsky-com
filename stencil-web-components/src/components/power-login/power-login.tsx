@@ -14,6 +14,9 @@ export class PowerLogin implements ComponentInterface {
     return (
       <Host>
         <slot></slot>
+
+        <input type="text" value="" name="username"></input>
+        <input type="password" value="" name="pwd"></input>
       </Host>
     );
   }
