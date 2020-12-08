@@ -22,6 +22,8 @@ export namespace Components {
         "middle": string;
     }
     interface PowerLogin {
+        "labelPassword": string;
+        "labelUserName": string;
     }
     interface PowerModal {
         "opened": boolean;
@@ -99,6 +101,8 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface PowerLogin {
+        "labelPassword"?: string;
+        "labelUserName"?: string;
     }
     interface PowerModal {
         "onClosed"?: (event: CustomEvent<boolean>) => void;

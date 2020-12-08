@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Host, h } from '@stencil/core';
+import { Component, ComponentInterface, Host, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'power-login',
@@ -6,6 +6,9 @@ import { Component, ComponentInterface, Host, h } from '@stencil/core';
   shadow: true,
 })
 export class PowerLogin implements ComponentInterface {
+  @Prop() labelUserName: string = "Username / Email Address";
+  @Prop() labelPassword: string = "Password";
+
   constructor() {
     console.log('login');
   }
@@ -15,9 +18,9 @@ export class PowerLogin implements ComponentInterface {
       <Host>
         <slot></slot>
 
-        <label>Username:</label>
+        <label>{this.labelUserName}:</label>
         <input type="text" value="" name="username"></input>
-        <label>Password:</label>
+        <label>{this.labelPassword}:</label>
         <input type="password" value="" name="pwd"></input>
       </Host>
     );
