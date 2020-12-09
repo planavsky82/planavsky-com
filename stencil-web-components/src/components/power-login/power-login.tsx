@@ -6,7 +6,7 @@ import { Component, ComponentInterface, Host, h, Prop } from '@stencil/core';
   shadow: true,
 })
 export class PowerLogin implements ComponentInterface {
-  @Prop() labelUserName: string = "Username / Email Address";
+  @Prop() labelUserName: string = "Email Address";
   @Prop() labelPassword: string = "Password";
 
   constructor() {
@@ -26,7 +26,7 @@ export class PowerLogin implements ComponentInterface {
         <input type="password" value="" name="pwd"></input>
 
         <div class="signup">
-          <slot></slot>
+          <slot name="signup"></slot>
         </div>
       </Host>
     );

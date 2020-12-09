@@ -13,6 +13,7 @@ label {
 
 input {
   margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-lg);
 }
 
 .signup {
