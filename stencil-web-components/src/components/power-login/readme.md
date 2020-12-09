@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property        | Attribute         | Description | Type     | Default                      |
-| --------------- | ----------------- | ----------- | -------- | ---------------------------- |
-| `labelPassword` | `label-password`  |             | `string` | `"Password"`                 |
-| `labelUserName` | `label-user-name` |             | `string` | `"Username / Email Address"` |
+| Property        | Attribute         | Description | Type     | Default           |
+| --------------- | ----------------- | ----------- | -------- | ----------------- |
+| `labelPassword` | `label-password`  |             | `string` | `"Password"`      |
+| `labelUserName` | `label-user-name` |             | `string` | `"Email Address"` |
 
 
 ----------------------------------------------
