@@ -16,12 +16,18 @@ export class PowerLogin implements ComponentInterface {
   render() {
     return (
       <Host>
-        <slot></slot>
+        <div class="header">
+          <slot></slot>
+        </div>
 
         <label>{this.labelUserName}:</label>
         <input type="text" value="" name="username"></input>
         <label>{this.labelPassword}:</label>
         <input type="password" value="" name="pwd"></input>
+
+        <div class="signup">
+          <slot></slot>
+        </div>
       </Host>
     );
   }

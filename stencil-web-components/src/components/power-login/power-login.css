@@ -3,10 +3,18 @@
   flex-direction: column;
 }
 
+.header {
+  margin-bottom: var(--spacing-lg);
+}
+
 label {
   text-align: left;
 }
 
 input {
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.signup {
+  margin-top: var(--spacing-xxl);
 }
