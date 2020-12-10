@@ -40,6 +40,11 @@ export class AppComponent implements OnInit, OnDestroy {
         secure: false
       },
       {
+        route: 'signup',
+        name: 'Sign Up',
+        secure: false
+      },
+      {
         route: 'main',
         name: 'Profile',
         secure: true

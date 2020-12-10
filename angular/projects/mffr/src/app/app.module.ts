@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MainComponent } from './main/main.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { StoreModule } from '@ngrx/store';
@@ -16,6 +17,7 @@ import { reducers, metaReducers } from './reducers';
 const appRoutes: Routes = [
   { path: 'main', component: MainComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
   { path: 'rankings', component: MainComponent },
   { path: '**', component: HomeComponent }
 ];
@@ -25,7 +27,8 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     MainComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
