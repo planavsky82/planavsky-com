@@ -4,3 +4,9 @@ div:first-child {
   width: 40%;
   margin: 0 auto;
 }
+
+@media only screen and (max-width: $screen-sm) {
+  div:first-child {
+    width: 70%;
+  }
+}
