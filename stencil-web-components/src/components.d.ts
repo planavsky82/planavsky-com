@@ -22,8 +22,8 @@ export namespace Components {
         "middle": string;
     }
     interface PowerLogin {
+        "labelEmailAddress": string;
         "labelPassword": string;
-        "labelUserName": string;
     }
     interface PowerModal {
         "opened": boolean;
@@ -37,6 +37,11 @@ export namespace Components {
         "image": string;
     }
     interface PowerReadMore {
+    }
+    interface PowerSignup {
+        "labelEmailAddress": string;
+        "labelPassword1": string;
+        "labelPassword2": string;
     }
 }
 declare global {
@@ -76,6 +81,12 @@ declare global {
         prototype: HTMLPowerReadMoreElement;
         new (): HTMLPowerReadMoreElement;
     };
+    interface HTMLPowerSignupElement extends Components.PowerSignup, HTMLStencilElement {
+    }
+    var HTMLPowerSignupElement: {
+        prototype: HTMLPowerSignupElement;
+        new (): HTMLPowerSignupElement;
+    };
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
         "power-login": HTMLPowerLoginElement;
@@ -83,6 +94,7 @@ declare global {
         "power-nav": HTMLPowerNavElement;
         "power-pwa-indicator": HTMLPowerPwaIndicatorElement;
         "power-read-more": HTMLPowerReadMoreElement;
+        "power-signup": HTMLPowerSignupElement;
     }
 }
 declare namespace LocalJSX {
@@ -101,8 +113,8 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface PowerLogin {
+        "labelEmailAddress"?: string;
         "labelPassword"?: string;
-        "labelUserName"?: string;
     }
     interface PowerModal {
         "onClosed"?: (event: CustomEvent<boolean>) => void;
@@ -119,6 +131,11 @@ declare namespace LocalJSX {
     }
     interface PowerReadMore {
     }
+    interface PowerSignup {
+        "labelEmailAddress"?: string;
+        "labelPassword1"?: string;
+        "labelPassword2"?: string;
+    }
     interface IntrinsicElements {
         "my-component": MyComponent;
         "power-login": PowerLogin;
@@ -126,6 +143,7 @@ declare namespace LocalJSX {
         "power-nav": PowerNav;
         "power-pwa-indicator": PowerPwaIndicator;
         "power-read-more": PowerReadMore;
+        "power-signup": PowerSignup;
     }
 }
 export { LocalJSX as JSX };
@@ -138,6 +156,7 @@ declare module "@stencil/core" {
             "power-nav": LocalJSX.PowerNav & JSXBase.HTMLAttributes<HTMLPowerNavElement>;
             "power-pwa-indicator": LocalJSX.PowerPwaIndicator & JSXBase.HTMLAttributes<HTMLPowerPwaIndicatorElement>;
             "power-read-more": LocalJSX.PowerReadMore & JSXBase.HTMLAttributes<HTMLPowerReadMoreElement>;
+            "power-signup": LocalJSX.PowerSignup & JSXBase.HTMLAttributes<HTMLPowerSignupElement>;
         }
     }
 }
