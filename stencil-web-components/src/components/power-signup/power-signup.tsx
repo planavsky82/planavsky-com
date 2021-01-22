@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Host, h, Prop } from '@stencil/core';
+import { Component, ComponentInterface, Host, h, Prop, State } from '@stencil/core';
 
 @Component({
   tag: 'power-signup',
@@ -10,9 +10,21 @@ export class PowerSignup implements ComponentInterface {
   @Prop() labelPassword1: string = "Password";
   @Prop() labelPassword2: string = "Re-Enter Password";
 
+  @State() value: string;
+
+  handleSubmit(e: Event) {
+    e.preventDefault()
+    console.log(this.value);
+    // send data to our backend
+  }
+
+  handleChange(event: any) {
+    this.value = event.target.value;
+  }
+
   render() {
     return (
-      <Host>
+      <form onSubmit={(e) => this.handleSubmit(e)}>
         <div class="header">
           <slot></slot>
         </div>
@@ -23,9 +35,10 @@ export class PowerSignup implements ComponentInterface {
         <input type="password" value="" name="pwd1"></input>
         <label htmlFor="pwd2">{this.labelPassword2}:</label>
         <input type="password" value="" name="pwd2"></input>
-        <slot></slot>
-      </Host>
+
+        <power-button type="submit">Sign Up</power-button>
+        <slot name="footer"></slot>
+      </form>
     );
   }
-
 }

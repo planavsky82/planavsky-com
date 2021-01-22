@@ -1,4 +1,4 @@
-:host {
+form {
   display: flex;
   flex-direction: column;
 }
@@ -14,4 +14,8 @@ label {
 input {
   margin-bottom: var(--spacing-lg);
   font-size: var(--font-size-lg);
+}
+
+power-button {
+  margin: var(--spacing-lg) 0;
 }
