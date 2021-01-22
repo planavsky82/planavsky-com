@@ -25,6 +25,8 @@ export class PowerLogin implements ComponentInterface {
         <label htmlFor="pwd">{this.labelPassword}:</label>
         <input type="password" value="" name="pwd"></input>
 
+        <power-button type="submit">Login</power-button>
+
         <div class="signup">
           <slot name="signup"></slot>
         </div>

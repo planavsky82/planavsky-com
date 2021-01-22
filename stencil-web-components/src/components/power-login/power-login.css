@@ -16,6 +16,6 @@ input {
   font-size: var(--font-size-lg);
 }
 
-.signup {
-  margin-top: var(--spacing-xxl);
+power-button {
+  margin: var(--spacing-lg) 0;
 }
