@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Host, h, Prop, State } from '@stencil/core';
+import { Component, ComponentInterface, h, Prop, State } from '@stencil/core';
 
 @Component({
   tag: 'power-signup',
