@@ -7,11 +7,24 @@
 
 ## Properties
 
-| Property        | Attribute         | Description | Type     | Default           |
-| --------------- | ----------------- | ----------- | -------- | ----------------- |
-| `labelPassword` | `label-password`  |             | `string` | `"Password"`      |
-| `labelUserName` | `label-user-name` |             | `string` | `"Email Address"` |
+| Property            | Attribute             | Description | Type     | Default           |
+| ------------------- | --------------------- | ----------- | -------- | ----------------- |
+| `labelEmailAddress` | `label-email-address` |             | `string` | `"Email Address"` |
+| `labelPassword`     | `label-password`      |             | `string` | `"Password"`      |
 
+
+## Dependencies
+
+### Depends on
+
+- [power-button](../power-button)
+
+### Graph
+```mermaid
+graph TD;
+  power-login --> power-button
+  style power-login fill:#f9f,stroke:#333,stroke-width:4px
+```
 
 ----------------------------------------------
 
