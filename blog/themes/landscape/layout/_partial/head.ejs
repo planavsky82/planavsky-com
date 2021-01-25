@@ -34,36 +34,38 @@
   <% } %>
   <%- css('css/style') %>
   <style>
-    #header-title {
-      white-space: nowrap;
-      animation: marquee 27s linear infinite;
-      -webkit-animation: marquee 27s linear infinite;
-    }
-    #header-title:hover {
-      -webkit-animation-play-state: paused;
-      animation-play-state: paused;
-    }
-    #logo {
-      animation: animation 4s steps(5, start) infinite;
-      -webkit-animation: animation 4s steps(5, start) infinite;
-    }
-    @keyframes animation {
-      to {
-        visibility: hidden;
+    @media only screen and (min-width: 768px) {
+      #header-title {
+        white-space: nowrap;
+        animation: marquee 27s linear infinite;
+        -webkit-animation: marquee 27s linear infinite;
       }
-    }
-    @-webkit-keyframes animation {
-      to {
-        visibility: hidden;
+      #header-title:hover {
+        -webkit-animation-play-state: paused;
+        animation-play-state: paused;
       }
-    }
-    @keyframes marquee {
-      0%   { text-indent: 430px }
-      100% { text-indent: -485px }
-    }
-    @-webkit-keyframes marquee {
-      0%   { text-indent: 430px }
-      100% { text-indent: -485px }
+      #logo {
+        animation: animation 4s steps(5, start) infinite;
+        -webkit-animation: animation 4s steps(5, start) infinite;
+      }
+      @keyframes animation {
+        to {
+          visibility: hidden;
+        }
+      }
+      @-webkit-keyframes animation {
+        to {
+          visibility: hidden;
+        }
+      }
+      @keyframes marquee {
+        0%   { text-indent: 430px }
+        100% { text-indent: -485px }
+      }
+      @-webkit-keyframes marquee {
+        0%   { text-indent: 430px }
+        100% { text-indent: -485px }
+      }
     }
   </style>
 </head>
