@@ -59,8 +59,8 @@ git push tag
 
 ### Tutorial Resources
 
-- [Planit Repository](https://github.com/planavsky82/planit)
-- [Planit Container Component](https://github.com/planavsky82/planit/tree/master/src/components/planit-container)
+- [PlanIt Repository](https://github.com/planavsky82/planit)
+- [PlanIt Container Component](https://github.com/planavsky82/planit/tree/master/src/components/planit-container)
 
 ### Additional Resources
 
