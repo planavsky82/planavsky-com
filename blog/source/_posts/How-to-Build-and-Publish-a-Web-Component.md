@@ -58,16 +58,74 @@ You will be promoted to choose a project name, and that's it! `cd` into your pro
 
 #### Tailwind CSS
 
-We are going to be using [Tailwind CSS](https://tailwindcss.com/) as well, a versatile CSS framework packed with utility classes. Try it out if you haven't already. It's a really interesting perspective on the CSS framework concept.
+We are also going to be using [Tailwind CSS](https://tailwindcss.com/), a versatile CSS framework packed with utility classes. Try it out if you haven't already. It's a really interesting perspective on the CSS framework concept.
 
 ``` bash
 $ npm install tailwindcss --save
 ```
 
-A couple of Tailwind's peer dependencies will need to be installed as well:
+A couple of Tailwind's peer dependencies will need to be installed:
 
 ``` bash
 $ npm install postcss autoprefixer --save
+```
+
+Then create a `tailwind.config.js` file:
+
+``` bash
+npx tailwindcss init
+```
+
+Complete the tailwind setup by adding a few imports to the `stencil.config.ts` file:
+
+``` ts
+import { postcss } from '@stencil/postcss';
+import autoprefixer from 'autoprefixer';
+import tailwindcss from 'tailwindcss';
+```
+
+And then configure the `postcss` plugin configured with `autoprefixer` and `tailwindcss`:
+
+``` ts
+plugins: [
+  postcss({
+    plugins: [autoprefixer(), tailwindcss()]
+  })
+]
+```
+
+Your final `stencil.config.ts` will look like:
+
+``` ts
+import { Config } from '@stencil/core';
+import { postcss } from '@stencil/postcss';
+import autoprefixer from 'autoprefixer';
+import tailwindcss from 'tailwindcss';
+
+export const config: Config = {
+  namespace: 'planit-components',
+  outputTargets: [
+    {
+      type: 'dist',
+      esmLoaderPath: '../loader',
+    },
+    {
+      type: 'dist-custom-elements-bundle',
+    },
+    {
+      type: 'docs-readme',
+    },
+    {
+      type: 'www',
+      serviceWorker: null, // disable service workers
+    },
+  ],
+  plugins: [
+    postcss({
+      plugins: [autoprefixer(), tailwindcss()]
+    })
+  ]
+};
 ```
 
 ### Development
