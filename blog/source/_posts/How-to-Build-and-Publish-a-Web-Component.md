@@ -34,15 +34,46 @@ This tutorial will utilize Stencil. It's a build-time compiler that generates we
 
 ### The Component
 
-### Set Up a Github Repo
+We'll build a very simple `container` component as an example.
+
+![](How-to-Build-and-Publish-a-Web-Component/container.png)
+
+This will be nothing more than a wrapper for content that applies so basic style. It will be utilized as a building block for some other components on this blog. 
+
+Later posts will deal with more detailed patterns, but the focus now is the basics. Setup, a basic build, and publishing. 
 
 ### Install Dependencies
 
-### Development
+#### Stencil
+
+As explain in Stencil's [Getting Started documentation](https://stenciljs.com/docs/getting-started), all you need to do is run:
+
+``` bash
+$ npm init stencil
+```
+
+This command will walk you through the setup of a stencil project. You can set up an application, progressive web app, or a component. For this purpouse, we will be building a `component`. By choosing the `component` option, it will scaffold an environment where you can set up multiple components as a library.
+
+You will be promoted to choose a project name, and that's it! `cd` into your project directory, run `npm install`, then `npm start`. A browser tab will launch a demo app running with a sample web component displayed.
 
 #### Tailwind CSS
 
-#### The Code
+We are going to be using [Tailwind CSS](https://tailwindcss.com/) as well, a versatile CSS framework packed with utility classes. Try it out if you haven't already. It's a really interesting perspective on the CSS framework concept.
+
+``` bash
+$ npm install tailwindcss --save
+```
+
+A couple of Tailwind's peer dependencies will need to be installed as well:
+
+``` bash
+$ npm install postcss autoprefixer --save
+```
+
+### Development
+
+
+
 
 ### Publishing to NPM
 
