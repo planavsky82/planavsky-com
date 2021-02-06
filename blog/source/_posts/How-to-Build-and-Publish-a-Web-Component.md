@@ -61,13 +61,13 @@ You will be promoted to choose a project name, and that's it! `cd` into your pro
 We are also going to be using [Tailwind CSS](https://tailwindcss.com/), a versatile CSS framework packed with utility classes. Try it out if you haven't already. It's a really interesting perspective on the CSS framework concept.
 
 ``` bash
-$ npm install tailwindcss --save
+$ npm install tailwindcss --save-dev
 ```
 
 A couple of Tailwind's peer dependencies will need to be installed:
 
 ``` bash
-$ npm install postcss autoprefixer --save
+$ npm install postcss autoprefixer @stencil/postcss @types/autoprefixer --save-dev
 ```
 
 Then create a `tailwind.config.js` file:
@@ -127,6 +127,16 @@ export const config: Config = {
   ]
 };
 ```
+
+Now test out your progress so far. Start the server:
+
+``` bash
+npm start
+```
+
+And you should see Stencil's default web component render in the browser:
+
+![](How-to-Build-and-Publish-a-Web-Component/default-component.png)
 
 ### Development
 
