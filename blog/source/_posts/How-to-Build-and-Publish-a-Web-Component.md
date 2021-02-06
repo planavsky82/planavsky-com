@@ -140,7 +140,7 @@ And you should see Stencil's default web component render in the browser:
 
 ### Development
 
-
+Now its time to get to the actual development ...
 
 
 ### Publishing to NPM
