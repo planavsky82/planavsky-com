@@ -179,6 +179,38 @@ The first line of the component imports some core dependencies from the core Ste
 import { Component, Host, h } from '@stencil/core';
 ```
 
+Next is the component decorator that simply defines selector name (`tag`), the component's style sheet (`styleUrl`), and a `shadow` property that is set to `true`. This property specifies that the component will have its own encapsulated DOM that can't be affected by external style definitions. 
+
+> [Read more about the Shadow DOM on webcomponents.org](https://www.webcomponents.org/community/articles/introduction-to-shadow-dom).
+
+``` ts
+@Component({
+  tag: 'my-container',
+  styleUrl: 'my-container.css',
+  shadow: true,
+})
+```
+
+Then comes the Typescript class:
+
+``` ts
+export class PlanitContainer {
+  ...
+}
+```
+
+And finally, the render() function:
+
+``` ts
+render() {
+  return (
+    <Host>
+      <slot></slot>
+    </Host>
+  );
+}
+```
+
 ### Publishing to NPM
 
 npm init --scope=@planit
