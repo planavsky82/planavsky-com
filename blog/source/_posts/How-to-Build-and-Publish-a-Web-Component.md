@@ -142,6 +142,42 @@ And you should see Stencil's default web component render in the browser:
 
 Now its time to get to the actual development ...
 
+Stencil makes things easy for us again. It comes with a command to scaffold a web component for you, so that you don't need to remember all of the details and make sure everything is manually set up just right. Just run:
+
+``` bash
+npm run generate my-container
+```
+
+... replacing the `my` with whatever you'd like as your prefix. It is a requirement for your component selector to have a prefix and contain a dash.
+
+In your editor, you'll find your newly generated component under `src/container/my-container`. Witin the `my-container` directory, open `my-container.tsx` with your preferred editor. This is the main file we'll be editing to create the web component, and it will look something like this:
+
+``` ts
+import { Component, Host, h } from '@stencil/core';
+
+@Component({
+  tag: 'planit-container',
+  styleUrl: 'planit-container.css',
+  shadow: true,
+})
+export class PlanitContainer {
+
+  render() {
+    return (
+      <Host>
+        <slot></slot>
+      </Host>
+    );
+  }
+
+}
+```
+
+The first line of the component imports some core dependencies from the core Stencil package:
+
+``` ts
+import { Component, Host, h } from '@stencil/core';
+```
 
 ### Publishing to NPM
 
