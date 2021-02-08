@@ -236,7 +236,36 @@ Before we change the template, let's render an implementation of our new compone
 
 Now when `npm start` is executed, the browser demo will show your new component with its slotted content.
 
-The only thing left to do is style our container web component.
+The only thing left to do is style our container web component. Again, we will utilize Tailwind CSS to apply the visual look and feel for this example.
+
+Open up `my-container.css` in your editor and add these three Tailwind imports to the top of the file:
+
+``` css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+These imports are necessary in order for the component to recognize Tailwind classes. Now add a div around the slot with the following Tailwind classes: `shadow-md border-gray-300 rounded-lg border p-2 mb-1`. 
+
+``` ts
+render() {
+  return (
+    <Host>
+      <div class="shadow-md border-gray-300 rounded-lg border p-2 mb-1">
+        <slot></slot>
+      </div>
+    </Host>
+  );
+}
+```
+
+- `shadow-md` applies a medium shadow to the container.
+- `border-gray-300` applies a light grey border.
+- `rounded-lg` rounds the borders of the container.
+- `p-2` and `mb-1` define padding and margin.
+
+Take a look at this [Tailwind Cheat Sheet](https://nerdcave.com/tailwind-cheat-sheet) for great documentation on the CSS tokens.
 
 ### Publishing to NPM
 
