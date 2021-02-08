@@ -211,6 +211,33 @@ render() {
 }
 ```
 
+The render funcion contains the template for the web component. The container web component will be such a simple element that all of the work will be done within the template.
+
+The `Host` element is the root-level wrapper in the web component's DOM tree. The `slot` element is where markup that lives outside of the web component, within the app, can be included in the web component's rendered markup. You are passing content to a slot in the web component.
+
+Before we change the template, let's render an implementation of our new component within the `src/index.html` demo file. Just replace the default component that Stencil generated for us:
+
+``` html
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/my-components.esm.js"></script>
+    <script nomodule src="/build/my-components.js"></script>
+  </head>
+  <body>
+    <my-container>This is slotted content for the my-container web component.</my-container>
+  </body>
+</html>
+```
+
+Now when `npm start` is executed, the browser demo will show your new component with its slotted content.
+
+The only thing left to do is style our container web component.
+
 ### Publishing to NPM
 
 npm init --scope=@planit
