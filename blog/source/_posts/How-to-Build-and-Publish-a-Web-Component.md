@@ -267,6 +267,12 @@ render() {
 
 Take a look at this [Tailwind Cheat Sheet](https://nerdcave.com/tailwind-cheat-sheet) for great documentation on the CSS tokens.
 
+Now refresh the demo, and you'll see the style applied:
+
+![](How-to-Build-and-Publish-a-Web-Component/container-styled.png)
+
+That's it! You have a basic container web component developed. Now it's time to publish the component to the public NPM registry.
+
 ### Publishing to NPM
 
 npm init --scope=@planit
