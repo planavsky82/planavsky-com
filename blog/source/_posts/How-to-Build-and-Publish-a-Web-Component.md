@@ -299,6 +299,8 @@ Then simply run `npm run release-package patch` (or `minor`, or `major`) to buil
 
 ### Try Out Your Component
 
+Now that your web component is published, you are ready to try it out by installing the NPM package into an application!
+
 ## Development Resources
 
 ### Tutorial Resources
@@ -312,3 +314,6 @@ Then simply run `npm run release-package patch` (or `minor`, or `major`) to buil
 - [Web Components Libraries](https://www.webcomponents.org/libraries)
 - [Stencil](https://stenciljs.com/docs/introduction)
 - [Node Package Manager](https://www.npmjs.com/)
+- [Tailwind CSS]()
+- [Tailwind Cheat Sheet]()
+- [NPM Semantic Versioning](https://docs.npmjs.com/about-semantic-versioning)
