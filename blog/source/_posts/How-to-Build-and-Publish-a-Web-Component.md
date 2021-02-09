@@ -275,12 +275,27 @@ That's it! You have a basic container web component developed. Now it's time to 
 
 ### Publishing to NPM
 
-npm init --scope=@planit
-create publish script
-- git tag
-- move package.json
-- npm publish
-git push tag
+It's pretty simple to publish a package to the [NPM registry](https://www.npmjs.com/):
+
+1. Assuming you have already have [Node.js](https://nodejs.org/en/) installed on your machine, all you need to do is run `npm init`, and NPM will walk you through the process of setting up a `package.json` file. That said, Stencil already creates a `package.json` for you. It could be updated if you choose.
+
+> There is also the option to [scope your NPM packages](https://docs.npmjs.com/creating-and-publishing-scoped-public-packages#creating-a-scoped-public-package).
+
+2. You will need to regsiter with [npmjs.org](https://www.npmjs.com/signup), and after you have an account, login to the account locally in your terminal using the `npm adduser` command. This command will prompt you for your user name and password. After successfully logging in, you have access to publish!
+
+3. Before you publish, the web component library needs to be compiled by running `npm run build`.
+
+4. Bump the version of the package.json with `npm version <patch | minor | major>`. See [NPM Semantic Versioning documentation](https://docs.npmjs.com/about-semantic-versioning) for additional details.
+
+5. Run `npm publish --access public` to publish the build package to the registry.
+
+You can run steps #3 - #5 one-by-one, but its easier if you add an NPM script to your package.json that combines all of the commands into one.
+
+``` json 
+"release-package": "func() { npm run build && npm version \"$1\" && npm publish --access public; }; func"
+```
+
+Then simply run `npm run release-package patch` (or `minor`, or `major`) to build the library, bump the version, and publish the package.
 
 ### Try Out Your Component
 
