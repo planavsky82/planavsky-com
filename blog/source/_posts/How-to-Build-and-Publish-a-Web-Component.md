@@ -301,6 +301,35 @@ Then simply run `npm run release-package patch` (or `minor`, or `major`) to buil
 
 Now that your web component is published, you are ready to try it out by installing the NPM package into an application!
 
+Just create a new directory somewhere on your machine:
+
+``` bash
+mkdir sample-app
+```
+
+Within the `sample-app` directory, add an `index.html` file:
+
+``` html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sample App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  
+</body>
+</html>
+```
+
+Also within the `sample-app` directory, install the package that you published:
+
+``` bash
+npm i <your-npm-package>
+```
+
 ## Development Resources
 
 ### Tutorial Resources
