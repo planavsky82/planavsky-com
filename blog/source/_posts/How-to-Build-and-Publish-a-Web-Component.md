@@ -297,6 +297,7 @@ You can run steps #3 - #5 one-by-one, but its easier if you add an NPM script to
 
 Then simply run `npm run release-package patch` (or `minor`, or `major`) to build the library, bump the version, and publish the package.
 
+> [Read more](https://stenciljs.com/docs/publishing) about publishing a Stencil library to NPM.
 ### Try Out Your Component
 
 Now that your web component is published, you are ready to try it out by installing the NPM package into an application!
@@ -329,6 +330,43 @@ Also within the `sample-app` directory, install the package that you published:
 ``` bash
 npm i <your-npm-package>
 ```
+
+We are just going to load the library locally from the `node_moudles` folder for the purpose of this tutorial. In reality, you would load the library by importing the web component into your JS framework code, or from a CDN.
+
+> [Read the Stencil docs for distributing a component library](https://stenciljs.com/docs/distribution).
+
+Update your `index.html` file to include a script referencing the web component library that was installed into `node_modules`, and then add the container web component in the body of the file:
+
+
+``` html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sample App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script type="module" src="node_modules/<your-npm-package>/dist/<your-npm-package>/<your-npm-package>.esm.js"></script>
+</head>
+<body>
+  <my-container>This is text wrapped in a container.</my-container>
+</body>
+</html>
+```
+
+Now run a web server from the `sample-app` directory. Any web server will do. If you are on a Mac, you can run:
+
+``` bash
+python -m SimpleHTTPServer 8000
+```
+
+Then go to `http://localhost:8000/` to view the sample usage of the web component you just created:
+
+![](How-to-Build-and-Publish-a-Web-Component/sample-app.png)
+
+And that's it! You have created and published a Stencil web component. We'll dive deeper into a more complex web component that utilizes the container component in the next post. 
+
+Thanks for reading and following along!
 
 ## Development Resources
 
