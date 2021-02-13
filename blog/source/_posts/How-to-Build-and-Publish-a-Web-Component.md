@@ -1,6 +1,6 @@
 ---
 title: How to Build and Publish a Stencil Web Component
-date: 2021-01-24 15:01:38
+date: 2021-02-12 15:01:38
 tags:
 ---
 
@@ -38,7 +38,7 @@ We'll build a very simple `container` component as an example.
 
 ![](How-to-Build-and-Publish-a-Web-Component/container.png)
 
-This will be nothing more than a wrapper for content that applies so basic style. It will be utilized as a building block for some other components on this blog. 
+This will be nothing more than a wrapper for content that applies basic style. It will be utilized as a building block for some other components on this blog. 
 
 Later posts will deal with more detailed patterns, but the focus now is the basics. Setup, a basic build, and publishing. 
 
@@ -46,7 +46,7 @@ Later posts will deal with more detailed patterns, but the focus now is the basi
 
 #### Stencil
 
-As explain in Stencil's [Getting Started documentation](https://stenciljs.com/docs/getting-started), all you need to do is run:
+As explain in Stencil's [Getting Started documentation](https://stenciljs.com/docs/getting-started), as long as you have [Node.js](https://nodejs.org/en/) installed, all you need to do is run:
 
 ``` bash
 $ npm init stencil
@@ -64,7 +64,7 @@ We are also going to be using [Tailwind CSS](https://tailwindcss.com/), a versat
 $ npm install tailwindcss --save-dev
 ```
 
-A couple of Tailwind's peer dependencies will need to be installed:
+A few of Tailwind's peer dependencies will need to be installed:
 
 ``` bash
 $ npm install postcss autoprefixer @stencil/postcss @types/autoprefixer --save-dev
@@ -150,7 +150,7 @@ npm run generate my-container
 
 ... replacing the `my` with whatever you'd like as your prefix. It is a requirement for your component selector to have a prefix and contain a dash.
 
-In your editor, you'll find your newly generated component under `src/container/my-container`. Witin the `my-container` directory, open `my-container.tsx` with your preferred editor. This is the main file we'll be editing to create the web component, and it will look something like this:
+In your editor, you'll find your newly generated component under `src/components/my-container`. Witin the `my-container` directory, open `my-container.tsx` with your preferred editor. This is the main file we'll be editing to create the web component, and it will look something like this:
 
 ``` ts
 import { Component, Host, h } from '@stencil/core';
@@ -271,13 +271,13 @@ Now refresh the demo, and you'll see the style applied:
 
 ![](How-to-Build-and-Publish-a-Web-Component/container-styled.png)
 
-That's it! You have a basic container web component developed. Now it's time to publish the component to the public NPM registry.
+That's it! You have a basic container web component developed. It's time to publish the component to the public NPM registry.
 
 ### Publishing to NPM
 
 It's pretty simple to publish a package to the [NPM registry](https://www.npmjs.com/):
 
-1. Assuming you have already have [Node.js](https://nodejs.org/en/) installed on your machine, all you need to do is run `npm init`, and NPM will walk you through the process of setting up a `package.json` file. That said, Stencil already creates a `package.json` for you. It could be updated if you choose.
+1. Assuming you have already have [Node.js](https://nodejs.org/en/) installed on your machine, all you need to do is run `npm init`, and NPM will walk you through the process of setting up a `package.json` file. That said, Stencil already creates a `package.json` for you. It can be updated if you choose.
 
 > There is also the option to [scope your NPM packages](https://docs.npmjs.com/creating-and-publishing-scoped-public-packages#creating-a-scoped-public-package).
 
@@ -328,7 +328,7 @@ Within the `sample-app` directory, add an `index.html` file:
 Also within the `sample-app` directory, install the package that you published:
 
 ``` bash
-npm i <your-npm-package>
+npm install <your-npm-package>
 ```
 
 We are just going to load the library locally from the `node_moudles` folder for the purpose of this tutorial. In reality, you would load the library by importing the web component into your JS framework code, or from a CDN.
@@ -380,7 +380,8 @@ Thanks for reading and following along!
 - [WebComponents.org](https://www.webcomponents.org/libraries)
 - [Web Components Libraries](https://www.webcomponents.org/libraries)
 - [Stencil](https://stenciljs.com/docs/introduction)
+- [Node.js](https://nodejs.org/)
 - [Node Package Manager](https://www.npmjs.com/)
-- [Tailwind CSS]()
-- [Tailwind Cheat Sheet]()
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Tailwind Cheat Sheet](https://nerdcave.com/tailwind-cheat-sheet)
 - [NPM Semantic Versioning](https://docs.npmjs.com/about-semantic-versioning)
