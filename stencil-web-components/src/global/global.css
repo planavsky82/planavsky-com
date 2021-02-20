@@ -9,11 +9,14 @@
   --focus: var(--primary);
   --focus-shadow: 0 0 0 0 var(--focus), 0px 0px 3px 3px var(--focus);
 
-  --modal-shadow: 0 0 0 0 var(--grey-2), 0px 0px 10px 5px var(--grey-2);
+  --modal-shadow: 0 0 0 0 var(--grey-5), 0px 0px 10px 5px var(--grey-5);
 
   --grey-base: #222;
   --grey-1: #111;
   --grey-2: #333;
+  --grey-3: #777;
+  --grey-4: #999;
+  --grey-5: #aaa;
 
   --selected: #eee;
   --selected-inverse: var(--grey-1);

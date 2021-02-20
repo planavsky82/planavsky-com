@@ -18,6 +18,17 @@
     text-align: center;
     color: $black;
 
+    @media only screen and (min-width: $screen-md) {
+      a {
+        color: $blue-1;
+        font-weight: $font-weight-normal;
+      }
+
+      a:hover {
+        color: $blue-1;
+      }
+    }
+
 		span {
       display: block;
       margin-top: 30px;
@@ -68,6 +79,7 @@
       font-weight: 200;
       opacity: 1;
 
+
 			span {
         font-size: $font-size-h4;
         font-weight: 200;
@@ -78,6 +90,8 @@
   @media only screen and (max-width: $screen-md) {
     .intro {
       box-shadow: 0 0 0 0 $gray-1, 0px 0px 5px 1px $gray-1;
+      background: $transparent-color-light;
+      color: $white;
     }
 
     .leaders {

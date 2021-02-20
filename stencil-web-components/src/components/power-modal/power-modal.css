@@ -19,6 +19,7 @@
 
 .modal {
   background: var(--black);
+  color: var(--white);
   padding: var(--spacing-xxxl);
   max-width: 1000px;
   width: 80%;
