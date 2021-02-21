@@ -19,17 +19,19 @@
     color: $black;
 
     @media only screen and (min-width: $screen-md) {
-      a {
-        color: $blue-1;
-        font-weight: $font-weight-normal;
-      }
+      span.main {
+        a {
+          color: $blue-1;
+          font-weight: $font-weight-normal;
+        }
 
-      a:hover {
-        color: $blue-1;
+        a:hover {
+          color: $blue-1;
+        }
       }
     }
 
-		span {
+		span:not(.main) {
       display: block;
       margin-top: 30px;
 			font-size: $font-size-h4;
