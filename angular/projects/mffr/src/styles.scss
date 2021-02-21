@@ -76,7 +76,7 @@ a {
   color: $blue-3;
 }
 
-a:hover {
+a:hover, a:focus {
   color: $core-gold;
 }
 

@@ -21,8 +21,8 @@ export class HomeComponent {
     this.getConfig();
   }
 
-  navigate() {
-    this.navigation.navigate('main');
+  navigate(route: String) {
+    this.navigation.navigate(route);
   }
 
   openSignUp() {
