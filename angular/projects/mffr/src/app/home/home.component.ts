@@ -21,7 +21,7 @@ export class HomeComponent {
     this.getConfig();
   }
 
-  navigate(route: String) {
+  navigate(route: string) {
     this.navigation.navigate(route);
   }
 
