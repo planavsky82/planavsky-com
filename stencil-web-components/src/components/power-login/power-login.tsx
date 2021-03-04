@@ -1,4 +1,9 @@
-import { Component, ComponentInterface, Host, h, Prop } from '@stencil/core';
+import { Component, ComponentInterface, Host, h, Prop, Event, EventEmitter, State } from '@stencil/core';
+
+export interface LoginEvent {
+  email: string;
+  pwd: string;
+}
 
 @Component({
   tag: 'power-login',
@@ -9,8 +14,29 @@ export class PowerLogin implements ComponentInterface {
   @Prop() labelEmailAddress: string = "Email Address";
   @Prop() labelPassword: string = "Password";
 
-  constructor() {
-    console.log('login');
+  @Event() submitLogin: EventEmitter<LoginEvent>;
+
+  @State() email: string;
+  @State() pwd: string;
+
+  constructor() {}
+
+  handleSubmit(event: Event) {
+    event.preventDefault();
+    this.submitLogin.emit({
+      email: this.email,
+      pwd: this.pwd
+    })
+  }
+
+  handleEmailChange(event: Event) {
+    const target = event.target as HTMLInputElement;
+    this.email = target.value;
+  }
+
+  handlePwdChange(event: Event) {
+    const target = event.target as HTMLInputElement;
+    this.pwd = target.value;
   }
 
   render() {
@@ -20,12 +46,14 @@ export class PowerLogin implements ComponentInterface {
           <slot></slot>
         </div>
 
-        <label htmlFor="email">{this.labelEmailAddress}:</label>
-        <input type="text" value="" name="email"></input>
-        <label htmlFor="pwd">{this.labelPassword}:</label>
-        <input type="password" value="" name="pwd"></input>
+        <form>
+          <label htmlFor="email">{this.labelEmailAddress}:</label>
+          <input type="text" name="email" value={this.email} onInput={(event) => this.handleEmailChange(event)}></input>
+          <label htmlFor="pwd">{this.labelPassword}:</label>
+          <input type="password" name="pwd" onInput={(event) => this.handlePwdChange(event)}></input>
 
-        <power-button type="submit">Login</power-button>
+          <power-button type="submit" onClick={(event) => this.handleSubmit(event)}>Login</power-button>
+        </form>
 
         <div class="signup">
           <slot name="signup"></slot>

@@ -5,6 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { LoginEvent, } from "./components/power-login/power-login";
 import { Navigation, NavigationItem, } from "@models/navigation";
 export namespace Components {
     interface MyComponent {
@@ -128,6 +129,7 @@ declare namespace LocalJSX {
     interface PowerLogin {
         "labelEmailAddress"?: string;
         "labelPassword"?: string;
+        "onSubmitLogin"?: (event: CustomEvent<LoginEvent>) => void;
     }
     interface PowerModal {
         "onClosed"?: (event: CustomEvent<boolean>) => void;
