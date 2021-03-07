@@ -30,6 +30,7 @@ export class User {
 
       this.userExists(req.param('name')).then((exists: any) => {
         this.userEmailExists(req.param('email')).then((email: any) => {
+
           let requiredMsg = ' field(s) required.'
           if (!user.name || user.name === '') {
             requiredMsg = 'Name ' + requiredMsg;
@@ -42,20 +43,20 @@ export class User {
           }
 
           if (requiredMsg !== ' field(s) required.') {
-            res.send(requiredMsg);
+            res.json(requiredMsg);
           } else {
             if (exists) {
-              res.send('Username already exists.');
+              res.json('Username already exists.');
             } else {
               if (email) {
-                res.send('Email already exists.');
+                res.json('Email already exists.');
               } else {
                 if (user.email !== req.param('email2')) {
-                  res.send('Email addresses do not match.');
+                  res.json('Email addresses do not match.');
                 } else {
                   if (EmailValidator.validate(user.email)) {
                     if (user.pwd !== req.param('pwd2')) {
-                      res.send('Passwords do not match.');
+                      res.json('Passwords do not match.');
                     } else {
                       const passwordResult = test(user.pwd);
                       if (passwordResult.errors.length === 0) {
@@ -66,20 +67,20 @@ export class User {
                           return db.ref('/users/' + req.param('name')).set(user,
                             function (error: any) {
                               if (error) {
-                                res.send('error: ' + error);
+                                res.json('error: ' + error);
                               } else {
-                                res.send('User added.');
+                                res.json('User added.');
                               }
                           });
                         }, (err: any) => {
-                          res.send(err);
+                          res.json(err);
                         });
                       } else {
-                        res.send({ message: passwordResult.errors });
+                        res.json({ message: passwordResult.errors });
                       }
                     }
                   } else {
-                    res.send('Email addresses is invalid.');
+                    res.json('Email addresses is invalid.');
                   }
                 }
               }
@@ -130,7 +131,7 @@ export class User {
                   res.json(error);
                 }
               }, () => {
-                res.send(error);
+                res.json(error);
               });
             } else {
               res.json(error);
@@ -170,7 +171,7 @@ export class User {
 
   getRankings(req: any, res: any) {
     return cors()(req, res, () => {
-      res.send({
+      res.json({
         players: [
           { player: 'Name1' },
           { player: 'Name2' },
@@ -214,7 +215,7 @@ export class User {
 
                 /* User.findById(req.params.user_id, function(err, user) {
                     if (err)
-                        res.send(err);
+                        res.json(err);
                     res.json(user);
                 }); *\/
 

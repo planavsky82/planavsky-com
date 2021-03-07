@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { header } from '../shared/http/config';
 
 @Component({
   selector: 'app-signup',
@@ -8,7 +9,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class SignupComponent implements OnInit {
   public httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    headers: new HttpHeaders(header)
   };
 
   constructor(private http: HttpClient) { }
@@ -17,12 +18,13 @@ export class SignupComponent implements OnInit {
   }
 
   signUp(event: any) {
+    let name = event.detail.email ? event.detail.email.replace('.', 'dot') : event.detail.email;
     this.http.post<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/user',
-      { name: 'eeeeeeeeeee11223344554r',
-        email: 'eerrre33@gmail.com',
-        email2: 'eerrre33@gmail.com',
-        pwd: 'e3$f!rt78UNml90!',
-        pwd2: 'e3$f!rt78UNml90!'
+      { name: name,
+        email: event.detail.email,
+        email2: event.detail.email,
+        pwd: event.detail.pwd1,
+        pwd2: event.detail.pwd2
       }, this.httpOptions)
       .subscribe((data: any) => {
         console.log(data);
