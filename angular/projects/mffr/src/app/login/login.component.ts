@@ -9,7 +9,7 @@ import { header } from '../shared/http/config';
 })
 export class LoginComponent implements OnInit {
   public httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    headers: new HttpHeaders(header)
   };
 
   constructor(private http: HttpClient) { }
