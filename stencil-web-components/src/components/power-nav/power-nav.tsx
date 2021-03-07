@@ -42,7 +42,7 @@ export class PowerNav implements ComponentInterface {
     this.select(this.findIndex(route));
   }
 
-  componentDidLoad() {
+  componentWillLoad() {
     this.select(this.findIndex(this.route));
   }
 

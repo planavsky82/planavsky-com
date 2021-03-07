@@ -26,7 +26,7 @@ export class PowerLogin implements ComponentInterface {
     this.submitLogin.emit({
       email: this.email,
       pwd: this.pwd
-    })
+    });
   }
 
   handleEmailChange(event: Event) {

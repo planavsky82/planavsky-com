@@ -1,4 +1,10 @@
-import { Component, ComponentInterface, h, Prop, State } from '@stencil/core';
+import { Component, ComponentInterface, Host, h, Prop, Event, EventEmitter, State } from '@stencil/core';
+
+export interface SignUpEvent {
+  email: string;
+  pwd1: string;
+  pwd2: string;
+}
 
 @Component({
   tag: 'power-signup',
@@ -10,35 +16,55 @@ export class PowerSignup implements ComponentInterface {
   @Prop() labelPassword1: string = "Password";
   @Prop() labelPassword2: string = "Re-Enter Password";
 
-  @State() value: string;
+  @Event() submitSignup: EventEmitter<SignUpEvent>;
 
-  handleSubmit(e: Event) {
-    e.preventDefault()
-    console.log(this.value);
-    // send data to our backend
+  @State() email: string;
+  @State() pwd1: string;
+  @State() pwd2: string;
+
+  handleSubmit(event: Event) {
+    event.preventDefault();
+    this.submitSignup.emit({
+      email: this.email,
+      pwd1: this.pwd1,
+      pwd2: this.pwd2
+    });
   }
 
-  handleChange(event: any) {
-    this.value = event.target.value;
+  handleEmailChange(event: Event) {
+    const target = event.target as HTMLInputElement;
+    this.email = target.value;
+  }
+
+  handlePwd1Change(event: Event) {
+    const target = event.target as HTMLInputElement;
+    this.pwd1 = target.value;
+  }
+
+  handlePwd2Change(event: Event) {
+    const target = event.target as HTMLInputElement;
+    this.pwd2 = target.value;
   }
 
   render() {
     return (
-      <form onSubmit={(e) => this.handleSubmit(e)}>
+      <Host>
         <div class="header">
           <slot></slot>
         </div>
 
-        <label htmlFor="email">{this.labelEmailAddress}:</label>
-        <input type="text" value="" name="email"></input>
-        <label htmlFor="pwd1">{this.labelPassword1}:</label>
-        <input type="password" value="" name="pwd1"></input>
-        <label htmlFor="pwd2">{this.labelPassword2}:</label>
-        <input type="password" value="" name="pwd2"></input>
+        <form>
+          <label htmlFor="email">{this.labelEmailAddress}:</label>
+          <input type="text" value="" name="email" onInput={(event) => this.handleEmailChange(event)}></input>
+          <label htmlFor="pwd1">{this.labelPassword1}:</label>
+          <input type="password" value="" name="pwd1" onInput={(event) => this.handlePwd1Change(event)}></input>
+          <label htmlFor="pwd2">{this.labelPassword2}:</label>
+          <input type="password" value="" name="pwd2" onInput={(event) => this.handlePwd2Change(event)}></input>
+        </form>
 
-        <power-button type="submit">Sign Up</power-button>
+        <power-button type="submit" onClick={(event) => this.handleSubmit(event)}>Sign Up</power-button>
         <slot name="footer"></slot>
-      </form>
+      </Host>
     );
   }
 }

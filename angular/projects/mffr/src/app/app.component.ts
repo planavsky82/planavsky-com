@@ -20,7 +20,6 @@ export class AppComponent implements OnInit, OnDestroy {
     private router: Router) {
       router.events.subscribe((event: RouterEvent) => {
         if (event instanceof NavigationEnd) {
-          console.log(event);
           this.route = event.url;
         }
     });

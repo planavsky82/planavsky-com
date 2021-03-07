@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { LoginEvent, } from "./components/power-login/power-login";
 import { Navigation, NavigationItem, } from "@models/navigation";
+import { SignUpEvent, } from "./components/power-signup/power-signup";
 export namespace Components {
     interface MyComponent {
         /**
@@ -150,6 +151,7 @@ declare namespace LocalJSX {
         "labelEmailAddress"?: string;
         "labelPassword1"?: string;
         "labelPassword2"?: string;
+        "onSubmitSignup"?: (event: CustomEvent<SignUpEvent>) => void;
     }
     interface IntrinsicElements {
         "my-component": MyComponent;

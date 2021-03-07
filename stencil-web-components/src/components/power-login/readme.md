@@ -13,6 +13,13 @@
 | `labelPassword`     | `label-password`      |             | `string` | `"Password"`      |
 
 
+## Events
+
+| Event         | Description | Type                      |
+| ------------- | ----------- | ------------------------- |
+| `submitLogin` |             | `CustomEvent<LoginEvent>` |
+
+
 ## Dependencies
 
 ### Depends on
