@@ -14,6 +14,13 @@
 | `labelPassword2`    | `label-password-2`    |             | `string` | `"Re-Enter Password"` |
 
 
+## Events
+
+| Event          | Description | Type                       |
+| -------------- | ----------- | -------------------------- |
+| `submitSignup` |             | `CustomEvent<SignUpEvent>` |
+
+
 ## Dependencies
 
 ### Depends on

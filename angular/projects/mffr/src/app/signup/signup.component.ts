@@ -11,6 +11,7 @@ export class SignupComponent implements OnInit {
   public httpOptions = {
     headers: new HttpHeaders(header)
   };
+  public loading: boolean = false;
 
   constructor(private http: HttpClient) { }
 
@@ -18,6 +19,7 @@ export class SignupComponent implements OnInit {
   }
 
   signUp(event: any) {
+    this.loading = true;
     let name = event.detail.email ? event.detail.email.replace('.', 'dot') : event.detail.email;
     this.http.post<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/user',
       { name: name,
@@ -28,6 +30,7 @@ export class SignupComponent implements OnInit {
       }, this.httpOptions)
       .subscribe((data: any) => {
         console.log(data);
+        this.loading = false;
       });
   }
 }

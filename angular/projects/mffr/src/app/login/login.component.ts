@@ -11,12 +11,14 @@ export class LoginComponent implements OnInit {
   public httpOptions = {
     headers: new HttpHeaders(header)
   };
+  public loading: boolean = false;
 
   constructor(private http: HttpClient) { }
 
   ngOnInit() {}
 
   login(event: any) {
+    this.loading = true;
     // name: 'U10133', pwd: 'e3$f!rt78UNml90!'
     let name = event.detail.email ? event.detail.email.replace('.', 'dot') : event.detail.email;
     this.http.post<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/authenticate',
@@ -24,7 +26,10 @@ export class LoginComponent implements OnInit {
       .subscribe((data: any) => {
         this.http.get<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/rankings',
         { params: { 'token': data.token } })
-        .subscribe((data: any) => console.log(data));
+        .subscribe((data: any) => {
+          console.log(data);
+          this.loading = false;
+        });
       });
   }
 }
