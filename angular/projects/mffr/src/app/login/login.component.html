@@ -7,4 +7,8 @@
     </span>
   </power-login>
   <planit-loading-indicator [display]="loading"></planit-loading-indicator>
+
+  <div>
+    <div>{{ user | async | json }}</div>
+  </div>
 </div>

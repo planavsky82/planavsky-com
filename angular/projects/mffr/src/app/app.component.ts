@@ -1,5 +1,7 @@
 import { Component, OnInit, OnDestroy, ElementRef, Renderer2, } from '@angular/core';
 import { Router, RouterEvent, NavigationEnd } from '@angular/router';
+import { Store } from '@ngrx/store';
+import { AppState } from './app.state';
 
 import { Navigation } from '@models/navigation';
 
@@ -17,7 +19,8 @@ export class AppComponent implements OnInit, OnDestroy {
 
   constructor(private elementRef: ElementRef,
     private renderer: Renderer2,
-    private router: Router) {
+    private router: Router,
+    private store: Store<AppState>) {
       router.events.subscribe((event: RouterEvent) => {
         if (event instanceof NavigationEnd) {
           this.route = event.url;
@@ -53,7 +56,11 @@ export class AppComponent implements OnInit, OnDestroy {
         name: 'Rankings',
         secure: true
       }
-    ]
+    ];
+
+    this.store.select(state => state.user).subscribe(data => {
+      console.log(data);
+    });
   }
 
   animateTarget(time: number) {

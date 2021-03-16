@@ -12,7 +12,7 @@ import { SignupComponent } from './signup/signup.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { StoreModule } from '@ngrx/store';
-import { reducers, metaReducers } from './reducers';
+import { addUserReducer } from './reducers/user.reducer';
 
 const appRoutes: Routes = [
   { path: 'main', component: MainComponent },
@@ -37,8 +37,8 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    StoreModule.forRoot(reducers, {
-      metaReducers
+    StoreModule.forRoot({
+      user: addUserReducer
     })
   ],
   providers: [],

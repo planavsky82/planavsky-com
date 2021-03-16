@@ -19,7 +19,9 @@
     ],
     "paths": {
       "@models": ["../stencil-web-components/models"],
-      "@models/*": ["../stencil-web-components/models/*"]
+      "@models/*": ["../stencil-web-components/models/*"],
+      "@api-models": ["../functions/src/models"],
+      "@api-models/*": ["../functions/src/models/*"]
     }
   }
 }
