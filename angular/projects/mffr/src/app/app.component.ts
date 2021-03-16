@@ -1,8 +1,7 @@
-import { Component, OnInit, OnDestroy, ElementRef, Renderer2, } from '@angular/core';
+import { Component, OnInit, OnDestroy, ElementRef, Renderer2 } from '@angular/core';
 import { Router, RouterEvent, NavigationEnd } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { last } from 'rxjs/operators';
 import { AppState } from './app.state';
 import { Navigation } from '@models/navigation';
 import { User } from './shared/models/user';
@@ -18,11 +17,8 @@ export class AppComponent implements OnInit, OnDestroy {
   public targetOn: boolean = true;
   public navigation: Navigation;
   public route: string;
-  public user: any;
-  readonly user$: Observable<User[]> = this.store.select(state => state.user);
-
-  usernameString: User;
-  username$: Observable<User[]>;
+  public user: User;
+  public username$: Observable<User[]>;
 
   constructor(private elementRef: ElementRef,
     private renderer: Renderer2,
@@ -66,7 +62,7 @@ export class AppComponent implements OnInit, OnDestroy {
     ];
 
     this.username$ = this.store.select(state => state.user);
-    this.username$.subscribe(name => this.usernameString = name[0]);
+    this.username$.subscribe(name => this.user = name[0]);
   }
 
   animateTarget(time: number) {
