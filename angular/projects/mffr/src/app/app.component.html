@@ -2,9 +2,7 @@
 <div class="background-gradient"></div>
 <div class="main-content">
   <div class="header"></div>
-  <li *ngFor="let user of (user$ | async)">
-    {{ user.email }}
-  </li>
+  {{ usernameString?.email }}
 	<div class="header-text"><i class="fa fa-list-ol"></i> My<span class="fantasy-football">FantasyFootball</span>Rankings.com</div>
   <power-nav [data]="navigation" [route]="route" (selectItem)="navigate($event)"></power-nav>
 

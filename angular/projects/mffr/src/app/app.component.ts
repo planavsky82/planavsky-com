@@ -21,6 +21,9 @@ export class AppComponent implements OnInit, OnDestroy {
   public user: any;
   readonly user$: Observable<User[]> = this.store.select(state => state.user);
 
+  usernameString: User;
+  username$: Observable<User[]>;
+
   constructor(private elementRef: ElementRef,
     private renderer: Renderer2,
     private router: Router,
@@ -61,6 +64,9 @@ export class AppComponent implements OnInit, OnDestroy {
         secure: true
       }
     ];
+
+    this.username$ = this.store.select(state => state.user);
+    this.username$.subscribe(name => this.usernameString = name[0]);
   }
 
   animateTarget(time: number) {
