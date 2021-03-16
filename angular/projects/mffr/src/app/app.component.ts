@@ -1,9 +1,11 @@
 import { Component, OnInit, OnDestroy, ElementRef, Renderer2, } from '@angular/core';
 import { Router, RouterEvent, NavigationEnd } from '@angular/router';
 import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import { last } from 'rxjs/operators';
 import { AppState } from './app.state';
-
 import { Navigation } from '@models/navigation';
+import { User } from './shared/models/user';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +18,8 @@ export class AppComponent implements OnInit, OnDestroy {
   public targetOn: boolean = true;
   public navigation: Navigation;
   public route: string;
+  public user: any;
+  readonly user$: Observable<User[]> = this.store.select(state => state.user);
 
   constructor(private elementRef: ElementRef,
     private renderer: Renderer2,
@@ -57,10 +61,6 @@ export class AppComponent implements OnInit, OnDestroy {
         secure: true
       }
     ];
-
-    this.store.select(state => state.user).subscribe(data => {
-      console.log(data);
-    });
   }
 
   animateTarget(time: number) {
