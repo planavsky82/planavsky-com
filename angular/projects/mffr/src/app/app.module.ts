@@ -11,9 +11,11 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { StoreModule } from '@ngrx/store';
+import { StoreModule, MetaReducer, META_REDUCERS } from '@ngrx/store';
 import { addUserReducer } from './reducers/user.reducer';
-import { storageMetaReducer } from './storage.metareducer';
+import { storageMetaReducer } from './shared/state/storage.metareducer';
+import { ROOT_STORAGE_KEYS, ROOT_LOCAL_STORAGE_KEY } from './app.tokens';
+import { LocalStorageService } from './shared/state/local-storage.service';
 
 const appRoutes: Routes = [
   { path: 'main', component: MainComponent },
@@ -22,6 +24,14 @@ const appRoutes: Routes = [
   { path: 'rankings', component: MainComponent },
   { path: '**', component: HomeComponent }
 ];
+
+// factory meta-reducer configuration function
+export function getMetaReducers(saveKeys: string[],
+    localStorageKey: string,
+    storageService: LocalStorageService
+  ): MetaReducer<any>[] {
+  return [storageMetaReducer(saveKeys, localStorageKey, storageService)];
+}
 
 @NgModule({
   declarations: [
@@ -39,10 +49,18 @@ const appRoutes: Routes = [
     HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     StoreModule.forRoot(
-      { user: addUserReducer },
-    { metaReducers: [storageMetaReducer] })
+      { user: addUserReducer }
+    )
   ],
-  providers: [],
+  providers: [
+    { provide: ROOT_STORAGE_KEYS, useValue: ['user.name', 'user.pwd', 'user.admin', 'user.email'] },
+    { provide: ROOT_LOCAL_STORAGE_KEY, useValue: '__app_storage__'},
+    {
+      provide: META_REDUCERS,
+      deps: [ROOT_STORAGE_KEYS, ROOT_LOCAL_STORAGE_KEY, LocalStorageService],
+      useFactory: getMetaReducers
+    }
+  ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
