@@ -46,6 +46,10 @@ export class PowerLogin implements ComponentInterface {
           <slot></slot>
         </div>
 
+        <div class="error">
+          <slot name="error"></slot>
+        </div>
+
         <form>
           <label htmlFor="email">{this.labelEmailAddress}:</label>
           <input type="text" name="email" value={this.email} onInput={(event) => this.handleEmailChange(event)}></input>

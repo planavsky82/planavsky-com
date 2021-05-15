@@ -14,6 +14,7 @@ export class SignupComponent implements OnInit {
     headers: new HttpHeaders(header)
   };
   public loading: boolean = false;
+  public errorMessage: string;
 
   constructor(private http: HttpClient) { }
 
@@ -22,6 +23,7 @@ export class SignupComponent implements OnInit {
   signUp(event: any) {
     this.postSignup(event)
       .subscribe((data: any) => {
+        //this.errorMessage = data;
         console.log(data);
         this.loading = false;
       });

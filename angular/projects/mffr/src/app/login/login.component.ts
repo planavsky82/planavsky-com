@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
   };
   public loading: boolean = false;
   public user: Observable<User[]>;
+  public errorMessage: string;
 
   constructor(private http: HttpClient,
     private store: Store<AppState>) {
@@ -51,6 +52,9 @@ export class LoginComponent implements OnInit {
         this.http.get<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/rankings',
         { params: { 'token': data.token } })
         .subscribe((data: any) => {
+          if (!data.succes) {
+            this.errorMessage = data.message;
+          }
           console.log(data);
           this.loading = false;
         });
