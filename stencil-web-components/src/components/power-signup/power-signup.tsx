@@ -53,6 +53,10 @@ export class PowerSignup implements ComponentInterface {
           <slot></slot>
         </div>
 
+        <div class="error">
+          <slot name="error"></slot>
+        </div>
+
         <form>
           <label htmlFor="email">{this.labelEmailAddress}:</label>
           <input type="text" value="" name="email" onInput={(event) => this.handleEmailChange(event)}></input>
