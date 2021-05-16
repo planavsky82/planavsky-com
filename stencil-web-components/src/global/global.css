@@ -5,11 +5,13 @@
   --primary-darker: #3453b7;
   --black: #000;
   --white: #fff;
+  --error: var(--white);
+  --error-border: 2px solid #d30101;
 
   --focus: var(--primary);
   --focus-shadow: 0 0 0 0 var(--focus), 0px 0px 3px 3px var(--focus);
 
-  --modal-shadow: 0 0 0 0 var(--grey-5), 0px 0px 10px 5px var(--grey-5);
+  --modal-shadow: 0 0 0 0 var(--grey-5), 0px 0px 250px 0px var(--grey-5);
 
   --grey-base: #222;
   --grey-1: #111;
@@ -31,7 +33,9 @@
   --radius: 5px;
   --radius-md: calc(var(--radius) * 2);
 
-  --overlay-background-opacity: 0.75;
+  --low-opacity: 0.85;
+  --medium-opacity: 0.75;
+  --overlay-background-opacity: var(--medium-opacity);
 
   --weight-thin: 200;
   --weight-base: 300;

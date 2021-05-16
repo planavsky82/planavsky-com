@@ -1,0 +1,10 @@
+:host {
+  color: var(--error);
+  border: var(--error-border);
+  font-size: var(--font-size-base);
+  padding: var(--spacing-xl);
+  display: block;
+  margin-bottom: var(--spacing-md);
+  opacity: var(--low-opacity);
+  background: var(--grey-2);
+}

@@ -26,6 +26,8 @@ export namespace Components {
     interface PowerButton {
         "type": "button" | "submit" | "reset";
     }
+    interface PowerError {
+    }
     interface PowerLogin {
         "labelEmailAddress": string;
         "labelPassword": string;
@@ -61,6 +63,12 @@ declare global {
     var HTMLPowerButtonElement: {
         prototype: HTMLPowerButtonElement;
         new (): HTMLPowerButtonElement;
+    };
+    interface HTMLPowerErrorElement extends Components.PowerError, HTMLStencilElement {
+    }
+    var HTMLPowerErrorElement: {
+        prototype: HTMLPowerErrorElement;
+        new (): HTMLPowerErrorElement;
     };
     interface HTMLPowerLoginElement extends Components.PowerLogin, HTMLStencilElement {
     }
@@ -101,6 +109,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
         "power-button": HTMLPowerButtonElement;
+        "power-error": HTMLPowerErrorElement;
         "power-login": HTMLPowerLoginElement;
         "power-modal": HTMLPowerModalElement;
         "power-nav": HTMLPowerNavElement;
@@ -126,6 +135,8 @@ declare namespace LocalJSX {
     }
     interface PowerButton {
         "type"?: "button" | "submit" | "reset";
+    }
+    interface PowerError {
     }
     interface PowerLogin {
         "labelEmailAddress"?: string;
@@ -156,6 +167,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "my-component": MyComponent;
         "power-button": PowerButton;
+        "power-error": PowerError;
         "power-login": PowerLogin;
         "power-modal": PowerModal;
         "power-nav": PowerNav;
@@ -170,6 +182,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "power-button": LocalJSX.PowerButton & JSXBase.HTMLAttributes<HTMLPowerButtonElement>;
+            "power-error": LocalJSX.PowerError & JSXBase.HTMLAttributes<HTMLPowerErrorElement>;
             "power-login": LocalJSX.PowerLogin & JSXBase.HTMLAttributes<HTMLPowerLoginElement>;
             "power-modal": LocalJSX.PowerModal & JSXBase.HTMLAttributes<HTMLPowerModalElement>;
             "power-nav": LocalJSX.PowerNav & JSXBase.HTMLAttributes<HTMLPowerNavElement>;

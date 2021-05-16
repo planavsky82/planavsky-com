@@ -1,7 +1,7 @@
 <div>
   <power-login (submitLogin)="login($event)">
     <span slot="error">
-      {{errorMessage}}
+      <power-error *ngIf="errorMessage">{{errorMessage}}</power-error>
     </span>
     <span slot="signup">
       Not registered yet?

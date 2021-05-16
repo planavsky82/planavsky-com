@@ -1,7 +1,7 @@
 <div>
   <power-signup (submitSignup)="signUp($event)">
     <span slot="error">
-      {{errorMessage}}
+      <power-error *ngIf="errorMessage">{{errorMessage}}</power-error>
     </span>
     <div slot="footer">
       <a routerLink="/login">Already have an account?</a>
