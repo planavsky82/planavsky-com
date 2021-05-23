@@ -23,8 +23,8 @@ export class SignupComponent implements OnInit {
   signUp(event: any) {
     this.postSignup(event)
       .subscribe((data: any) => {
-        this.errorMessage = data;
-        console.log(data);
+        this.errorMessage = data.message;
+        //console.log(data.message);
         this.loading = false;
       });
   }

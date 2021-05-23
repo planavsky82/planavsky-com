@@ -43,20 +43,20 @@ export class User {
           }
 
           if (requiredMsg !== ' field(s) required.') {
-            res.json(requiredMsg);
+            res.json({ success: false, message: requiredMsg });
           } else {
             if (exists) {
-              res.json('This username already exists.');
+              res.json({ success: false, message: 'This username already exists.'});
             } else {
               if (email) {
-                res.json('This email address already exists.');
+                res.json({ success: false, message: 'This email address already exists.'});
               } else {
                 if (user.email !== req.param('email2')) {
-                  res.json('The email addresses fields do not match.');
+                  res.json({ success: false, message: 'The email addresses fields do not match.'});
                 } else {
                   if (EmailValidator.validate(user.email)) {
                     if (user.pwd !== req.param('pwd2')) {
-                      res.json('The password fields do not match.');
+                      res.json({ success: false, message: 'The password fields do not match.' });
                     } else {
                       const passwordResult = test(user.pwd);
                       if (passwordResult.errors.length === 0) {
@@ -67,20 +67,20 @@ export class User {
                           return db.ref('/users/' + req.param('name')).set(user,
                             function (error: any) {
                               if (error) {
-                                res.json('error: ' + error);
+                                res.json({ success: false, message: 'error: ' + error });
                               } else {
-                                res.json('User added.');
+                                res.json({ success: true, message: 'User added.' });
                               }
                           });
                         }, (err: any) => {
-                          res.json(err);
+                          res.json({ success: false, message: err });
                         });
                       } else {
                         res.json({ message: passwordResult.errors });
                       }
                     }
                   } else {
-                    res.json('The email addresses entered is invalid.');
+                    res.json({ success: false, message: 'The email addresses entered is invalid.'});
                   }
                 }
               }
