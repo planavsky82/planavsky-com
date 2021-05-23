@@ -1,7 +1,7 @@
 var jwt = require('jsonwebtoken'); // used to create, sign, and verify tokens
 var User = require('../models/user');
 
-/* 
+/*
 	POST: authenticate
 */
 exports.authenticateUser = function (router, app) {
@@ -29,7 +29,7 @@ exports.authenticateUser = function (router, app) {
 		        var token = jwt.sign(user, app.get('superSecret'), {
 		          expiresIn: 60*60*24 // expires in 24 hours
 		        });
-						
+
 		        // return the information including token as JSON
 		        res.json({
 		          success: true,
@@ -37,16 +37,16 @@ exports.authenticateUser = function (router, app) {
 							token: token,
 							id: user._id
 		        });
-		      }   
+		      }
 
 		    }
 
-		  }); 
+		  });
 		});
 };
 
 
-/* 
+/*
 	run middleware
 */
 exports.runMiddleware = function (router, app) {
@@ -60,12 +60,12 @@ exports.runMiddleware = function (router, app) {
 		  if (token) {
 
 		    // verifies secret and checks exp
-		    jwt.verify(token, app.get('superSecret'), function(err, decoded) {      
+		    jwt.verify(token, app.get('superSecret'), function(err, decoded) {
 		      if (err) {
-		        return res.json({ success: false, message: 'Failed to authenticate token.' });    
+		        return res.json({ success: false, message: 'Your username or password is incorrect.' });
 		      } else {
 		        // if everything is good, save to request for use in other routes
-		        req.decoded = decoded;    
+		        req.decoded = decoded;
 		        next();
 		      }
 		    });
@@ -74,9 +74,9 @@ exports.runMiddleware = function (router, app) {
 
 		    // if there is no token
 		    // return an error
-		    return res.status(403).send({ 
-		        success: false, 
-		        message: 'No token provided.' 
+		    return res.status(403).send({
+		        success: false,
+		        message: 'No token provided.'
 		    });
 
 		  }

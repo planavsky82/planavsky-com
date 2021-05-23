@@ -46,17 +46,17 @@ export class User {
             res.json(requiredMsg);
           } else {
             if (exists) {
-              res.json('Username already exists.');
+              res.json('This username already exists.');
             } else {
               if (email) {
-                res.json('Email already exists.');
+                res.json('This email address already exists.');
               } else {
                 if (user.email !== req.param('email2')) {
-                  res.json('Email addresses do not match.');
+                  res.json('The email addresses fields do not match.');
                 } else {
                   if (EmailValidator.validate(user.email)) {
                     if (user.pwd !== req.param('pwd2')) {
-                      res.json('Passwords do not match.');
+                      res.json('The password fields do not match.');
                     } else {
                       const passwordResult = test(user.pwd);
                       if (passwordResult.errors.length === 0) {
@@ -80,7 +80,7 @@ export class User {
                       }
                     }
                   } else {
-                    res.json('Email addresses is invalid.');
+                    res.json('The email addresses entered is invalid.');
                   }
                 }
               }
@@ -153,7 +153,7 @@ export class User {
       // verifies secret and checks exp
       jwt.verify(token, config.secret, (err: any, decoded: any) => {
         if (err) {
-          return res.json({ success: false, message: 'Failed to authenticate token.' });
+          return res.json({ success: false, message: 'Your username or password is incorrect.' });
         } else {
           // if everything is good, save to request for use in other routes
           req.decoded = decoded;
