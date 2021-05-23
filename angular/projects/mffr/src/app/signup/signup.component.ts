@@ -39,7 +39,7 @@ export class SignupComponent implements OnInit {
         pwd: event.detail.pwd1,
         pwd2: event.detail.pwd2
       }, this.httpOptions).pipe(
-        catchError(this.handleError<any>('There was a problem submitting your signup request. Please make sure all fields are filled out correctly.'))
+        catchError(this.handleError<any>({ success: false, message: 'There was a problem submitting your signup request. Please make sure all fields are filled out correctly.' }))
       );
   }
 
