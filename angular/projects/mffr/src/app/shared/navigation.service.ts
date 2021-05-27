@@ -1,7 +1,7 @@
 import { Router }  from '@angular/router';
 import { Injectable } from '@angular/core';
 
-@Injectable()
+@Injectable( { providedIn: 'root' } )
 export class NavigationService {
 
   constructor(private router: Router) { }

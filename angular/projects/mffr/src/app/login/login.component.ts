@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { User } from '../shared/models/user';
 import { Observable } from 'rxjs';
 import { header } from '../shared/http/config';
 import { AppState } from './../app.state';
+import { LoginService } from '../shared/login.service';
 
 @Component({
   selector: 'app-login',
@@ -20,7 +22,9 @@ export class LoginComponent implements OnInit {
   public errorMessage: string;
 
   constructor(private http: HttpClient,
-    private store: Store<AppState>) {
+    private store: Store<AppState>,
+    private router: Router,
+    private loginService: LoginService,) {
       this.user = this.store.select(state => state.user);
     }
 
@@ -48,6 +52,7 @@ export class LoginComponent implements OnInit {
       .subscribe((data: any) => {
         if (data.success) {
           this.addUser(event.detail.email);
+          this.router.navigate(['/']);
         }
         this.http.get<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/rankings',
         { params: { 'token': data.token } })
