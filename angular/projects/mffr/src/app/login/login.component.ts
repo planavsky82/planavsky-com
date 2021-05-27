@@ -31,16 +31,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {}
 
   addUser(email: string) {
-    this.store.dispatch({
-      type: 'ADD_USER',
-      payload: <User> {
-        name: email,
-        pwd: 'active',
-        admin: false,
-        email: email,
-        loggedIn: true
-      }
-    });
+    this.loginService.addUser(email);
   }
 
   login(event: any) {
