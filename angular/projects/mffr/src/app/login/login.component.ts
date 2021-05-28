@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { User } from '../shared/models/user';
 import { Observable } from 'rxjs';
 import { header } from '../shared/http/config';
 import { AppState } from './../app.state';
-import { LoginService } from '../shared/login.service';
+import { UserService } from '../shared/user.service';
 
 @Component({
   selector: 'app-login',
@@ -23,21 +22,18 @@ export class LoginComponent implements OnInit {
 
   constructor(private http: HttpClient,
     private store: Store<AppState>,
-    private router: Router,
-    private loginService: LoginService,) {
+    private userService: UserService,) {
       this.user = this.store.select(state => state.user);
     }
 
   ngOnInit() {}
 
-  addUser(email: string) {
-    this.loginService.addUser(email);
-  }
-
   login(event: any) {
     this.loading = true;
+    this.userService.login(event);
+
     // name: 'U10133', pwd: 'e3$f!rt78UNml90!'
-    let name = event.detail.email ? event.detail.email.replace('.', 'dot') : event.detail.email;
+    /* let name = event.detail.email ? event.detail.email.replace('.', 'dot') : event.detail.email;
     this.http.post<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/authenticate',
       { name: name, pwd: event.detail.pwd }, this.httpOptions)
       .subscribe((data: any) => {
@@ -48,12 +44,12 @@ export class LoginComponent implements OnInit {
         this.http.get<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/rankings',
         { params: { 'token': data.token } })
         .subscribe((data: any) => {
-          if (!data.succes) {
+          if (!data.success) {
             this.errorMessage = data.message;
           }
           console.log(data);
           this.loading = false;
         });
-      });
+      }); */
   }
 }
