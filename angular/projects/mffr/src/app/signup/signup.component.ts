@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { header } from '../shared/http/config';
+import { UserService } from '../shared/user.service';
 
 @Component({
   selector: 'app-signup',
@@ -16,16 +17,27 @@ export class SignupComponent implements OnInit {
   public loading: boolean = false;
   public errorMessage: string;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,
+    private userService: UserService) { }
 
   ngOnInit() {}
 
   signUp(event: any) {
     this.postSignup(event)
       .subscribe((data: any) => {
-        this.errorMessage = data.message;
-        //console.log(data.message);
-        this.loading = false;
+        if (data.success) {
+          this.userService.login({
+            detail: {
+              email: event.detail.email,
+              pwd: event.detail.pwd1
+            }
+          }).subscribe((data: any) => {
+            if (!data.success) {
+              this.errorMessage = data.message;
+            }
+            this.loading = false;
+          });
+        }
       });
   }
 

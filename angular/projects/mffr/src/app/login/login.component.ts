@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
 
   constructor(private http: HttpClient,
     private store: Store<AppState>,
-    private userService: UserService,) {
+    private userService: UserService) {
       this.user = this.store.select(state => state.user);
     }
 
