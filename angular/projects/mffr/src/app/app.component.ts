@@ -62,7 +62,12 @@ export class AppComponent implements OnInit, OnDestroy {
     ];
 
     this.username$ = this.store.select(state => state.user);
-    this.username$.subscribe(name => this.user = name[0]);
+    this.username$.subscribe((name) => {
+      this.user = name[0];
+      this.navigation = this.navigation.filter((navItems) => {
+        return navItems.route !== 'login' && navItems.route !== 'signup';
+      });
+    });
   }
 
   animateTarget(time: number) {
