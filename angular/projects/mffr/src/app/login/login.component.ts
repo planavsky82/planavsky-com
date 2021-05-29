@@ -29,27 +29,13 @@ export class LoginComponent implements OnInit {
   ngOnInit() {}
 
   login(event: any) {
-    this.loading = true;
-    this.userService.login(event);
-
     // name: 'U10133', pwd: 'e3$f!rt78UNml90!'
-    /* let name = event.detail.email ? event.detail.email.replace('.', 'dot') : event.detail.email;
-    this.http.post<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/authenticate',
-      { name: name, pwd: event.detail.pwd }, this.httpOptions)
-      .subscribe((data: any) => {
-        if (data.success) {
-          this.addUser(event.detail.email);
-          this.router.navigate(['/']);
-        }
-        this.http.get<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/rankings',
-        { params: { 'token': data.token } })
-        .subscribe((data: any) => {
-          if (!data.success) {
-            this.errorMessage = data.message;
-          }
-          console.log(data);
-          this.loading = false;
-        });
-      }); */
+    this.loading = true;
+    this.userService.login(event).subscribe((data: any) => {
+      if (!data.success) {
+        this.errorMessage = data.message;
+      }
+      this.loading = false;
+    });
   }
 }
