@@ -15,6 +15,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   public timeoutId: any;
   public targetOn: boolean = true;
+  public fullNavigation: Navigation;
   public navigation: Navigation;
   public route: string;
   public user: User;
@@ -33,7 +34,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.animateTarget(4000);
-    this.navigation = [
+    this.fullNavigation = [
       {
         route: '',
         name: 'Home',
@@ -64,9 +65,15 @@ export class AppComponent implements OnInit, OnDestroy {
     this.username$ = this.store.select(state => state.user);
     this.username$.subscribe((name) => {
       this.user = name[0];
-      this.navigation = this.navigation.filter((navItems) => {
-        return navItems.route !== 'login' && navItems.route !== 'signup';
-      });
+      if (this.user) {
+        this.navigation = this.fullNavigation.filter((navItems) => {
+          return navItems.route !== 'login' && navItems.route !== 'signup';
+        });
+      } else {
+        this.navigation = this.fullNavigation.filter((navItems) => {
+          return navItems.route !== 'main' && navItems.route !== 'rankings';
+        });
+      }
     });
   }
 
