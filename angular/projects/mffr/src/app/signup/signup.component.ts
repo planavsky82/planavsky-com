@@ -31,12 +31,15 @@ export class SignupComponent implements OnInit {
               email: event.detail.email,
               pwd: event.detail.pwd1
             }
-          }).subscribe((data: any) => {
-            if (!data.success) {
-              this.errorMessage = data.message;
+          }).subscribe((loginData: any) => {
+            if (!loginData.success) {
+              this.errorMessage = loginData.message;
             }
             this.loading = false;
           });
+        } else {
+          this.errorMessage = data.message;
+          this.loading = false;
         }
       });
   }
