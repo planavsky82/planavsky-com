@@ -48,6 +48,10 @@ export class UserService {
       );
   }
 
+  logout() {
+    console.log('logout');
+  }
+
   getRankings(data: any) {
     return this.http.get<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/rankings',
       { params: { 'token': data.token } });

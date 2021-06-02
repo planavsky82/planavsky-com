@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { AppState } from './app.state';
 import { Navigation } from '@models/navigation';
 import { User } from './shared/models/user';
+import { UserService } from './shared/user.service';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +25,8 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(private elementRef: ElementRef,
     private renderer: Renderer2,
     private router: Router,
-    private store: Store<AppState>) {
+    private store: Store<AppState>,
+    private userService: UserService) {
       router.events.subscribe((event: RouterEvent) => {
         if (event instanceof NavigationEnd) {
           this.route = event.url;
@@ -114,6 +116,10 @@ export class AppComponent implements OnInit, OnDestroy {
 
   navigate(event: any) {
     this.router.navigate([event.detail.route]);
+  }
+
+  logout() {
+    this.userService.logout();
   }
 
   ngOnDestroy() {
