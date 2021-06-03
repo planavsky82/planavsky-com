@@ -64,9 +64,8 @@ export class AppComponent implements OnInit, OnDestroy {
       }
     ];
 
-    this.username$ = this.store.select(state => state.user);
-    this.username$.subscribe((name) => {
-      this.user = name[0];
+    this.userService.getUserData().subscribe((user) => {
+      this.user = user[0];
       if (this.user) {
         this.navigation = this.fullNavigation.filter((navItems) => {
           return navItems.route !== 'login' && navItems.route !== 'signup';

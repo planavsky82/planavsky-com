@@ -59,6 +59,7 @@ export class UserService {
         loggedIn: false
       }
     });
+    this.router.navigate(['/']);
   }
 
   getUserData() {
