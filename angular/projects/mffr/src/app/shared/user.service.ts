@@ -41,7 +41,7 @@ export class UserService {
         map((data) => {
           if (data.success) {
             this.addUserState(event.detail.email);
-            this.router.navigate(['/']);
+            this.router.navigate(['/rankings']);
           }
           return data;
         })
@@ -62,9 +62,7 @@ export class UserService {
   }
 
   getUserData() {
-    return this.user.subscribe((name) => {
-      return name[0];
-    });
+    return this.user;
   }
 
   getRankings(data: any) {
