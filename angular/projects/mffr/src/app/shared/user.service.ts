@@ -49,7 +49,22 @@ export class UserService {
   }
 
   logout() {
-    console.log('logout');
+    this.store.dispatch({
+      type: 'LOGOUT',
+      payload: <User> {
+        name: '',
+        pwd: 'inactive',
+        admin: false,
+        email: '',
+        loggedIn: false
+      }
+    });
+  }
+
+  getUserData() {
+    return this.user.subscribe((name) => {
+      return name[0];
+    });
   }
 
   getRankings(data: any) {

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavigationService } from '../shared/navigation.service'
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { UserService } from '../shared/user.service';
 
 @Component({
   selector: 'app-home',
@@ -9,15 +9,12 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providers: [NavigationService]
 })
 export class HomeComponent {
-  public httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-  };
-
   public openModal: boolean = false;
 
   constructor(
     private navigation: NavigationService,
-    private http: HttpClient) {
+    private userService: UserService) {
+
   }
 
   navigate(route: string) {
