@@ -1,8 +1,5 @@
 import { Component, OnInit, OnDestroy, ElementRef, Renderer2 } from '@angular/core';
 import { Router, RouterEvent, NavigationEnd } from '@angular/router';
-import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs';
-import { AppState } from './app.state';
 import { Navigation } from '@models/navigation';
 import { User } from './shared/models/user';
 import { UserService } from './shared/user.service';
@@ -20,12 +17,10 @@ export class AppComponent implements OnInit, OnDestroy {
   public navigation: Navigation;
   public route: string;
   public user: User;
-  public username$: Observable<User[]>;
 
   constructor(private elementRef: ElementRef,
     private renderer: Renderer2,
     private router: Router,
-    private store: Store<AppState>,
     private userService: UserService) {
       router.events.subscribe((event: RouterEvent) => {
         if (event instanceof NavigationEnd) {
