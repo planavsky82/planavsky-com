@@ -1,4 +1,4 @@
-:host {
+:host(.global) {
   color: var(--error);
   border: var(--error-border);
   font-size: var(--font-size-base);
@@ -7,4 +7,15 @@
   margin-bottom: var(--spacing-md);
   opacity: var(--low-opacity);
   background: var(--grey-2);
+}
+
+:host(.local) {
+  color: var(--error);
+  text-align: left;
+  background: var(--grey-2);
+  padding: var(--spacing-md);
+  display: block;
+  margin-bottom: var(--spacing-lg);
+  margin-top: calc(var(--spacing-md) * -1);
+  border: var(--error-border-inline);
 }

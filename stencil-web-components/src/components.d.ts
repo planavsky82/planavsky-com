@@ -27,6 +27,7 @@ export namespace Components {
         "type": "button" | "submit" | "reset";
     }
     interface PowerError {
+        "inline": boolean;
     }
     interface PowerLogin {
         "labelEmailAddress": string;
@@ -137,6 +138,7 @@ declare namespace LocalJSX {
         "type"?: "button" | "submit" | "reset";
     }
     interface PowerError {
+        "inline"?: boolean;
     }
     interface PowerLogin {
         "labelEmailAddress"?: string;

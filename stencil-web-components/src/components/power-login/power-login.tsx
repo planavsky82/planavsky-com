@@ -1,4 +1,5 @@
 import { Component, ComponentInterface, Host, h, Prop, Event, EventEmitter, State } from '@stencil/core';
+import { Validator } from '../../utils/validator';
 
 export interface LoginEvent {
   email: string;
@@ -19,6 +20,10 @@ export class PowerLogin implements ComponentInterface {
   @State() email: string;
   @State() pwd: string;
 
+  private validator: Validator = new Validator();
+
+  public emailErrorMessage: string;
+
   constructor() {}
 
   handleSubmit(event: Event) {
@@ -30,8 +35,13 @@ export class PowerLogin implements ComponentInterface {
   }
 
   handleEmailChange(event: Event) {
+    this.emailErrorMessage = undefined;
     const target = event.target as HTMLInputElement;
     this.email = target.value;
+    let value = this.validator.hasValue(this.email);
+    if (!value.valid) {
+      this.emailErrorMessage = value.message;
+    }
   }
 
   handlePwdChange(event: Event) {
@@ -53,6 +63,10 @@ export class PowerLogin implements ComponentInterface {
         <form>
           <label htmlFor="email">{this.labelEmailAddress}:</label>
           <input type="text" name="email" value={this.email} onInput={(event) => this.handleEmailChange(event)}></input>
+          {this.emailErrorMessage
+            ? <power-error inline>{this.emailErrorMessage}</power-error>
+            : <span></span>
+          }
           <label htmlFor="pwd">{this.labelPassword}:</label>
           <input type="password" name="pwd" onInput={(event) => this.handlePwdChange(event)}></input>
 

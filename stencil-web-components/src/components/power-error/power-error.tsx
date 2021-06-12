@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Host, h } from '@stencil/core';
+import { Component, ComponentInterface, Host, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'power-error',
@@ -6,10 +6,15 @@ import { Component, ComponentInterface, Host, h } from '@stencil/core';
   shadow: true,
 })
 export class PowerError implements ComponentInterface {
+  @Prop() inline: boolean = false;
 
   render() {
     return (
-      <Host role="alert">
+      <Host role="alert"
+        class={{
+          'local': this.inline,
+          'global': !this.inline
+        }}>
         <slot></slot>
       </Host>
     );
