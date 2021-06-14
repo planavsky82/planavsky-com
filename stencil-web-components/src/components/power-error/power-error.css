@@ -1,4 +1,4 @@
-:host(.global) {
+:host(.global) div {
   color: var(--error);
   border: var(--error-border);
   font-size: var(--font-size-base);
@@ -9,13 +9,23 @@
   background: var(--grey-2);
 }
 
-:host(.local) {
+:host(.local) div {
   color: var(--error);
   text-align: left;
   background: var(--grey-2);
   padding: var(--spacing-md);
   display: block;
   margin-bottom: var(--spacing-lg);
+  border-bottom: var(--error-border-inline);
+}
+
+:host(.local) {
+  transition: height 0.5s;
+  height: 0;
+  overflow: hidden;
   margin-top: calc(var(--spacing-md) * -1);
-  border: var(--error-border-inline);
+}
+
+:host(.local.display) {
+  height: 60px;
 }

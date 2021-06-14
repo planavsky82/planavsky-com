@@ -15,7 +15,9 @@ export class PowerError implements ComponentInterface {
           'local': this.inline,
           'global': !this.inline
         }}>
-        <slot></slot>
+        <div>
+          <slot></slot>
+        </div>
       </Host>
     );
   }

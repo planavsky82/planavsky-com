@@ -7,7 +7,7 @@
   --white: #fff;
   --error: var(--white);
   --error-border: 2px solid #d30101;
-  --error-border-inline: 1px solid #f56f6f;
+  --error-border-inline: 3px solid #f56f6f;
 
   --focus: var(--primary);
   --focus-shadow: 0 0 0 0 var(--focus), 0px 0px 3px 3px var(--focus);

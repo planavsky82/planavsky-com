@@ -63,10 +63,10 @@ export class PowerLogin implements ComponentInterface {
         <form>
           <label htmlFor="email">{this.labelEmailAddress}:</label>
           <input type="text" name="email" value={this.email} onInput={(event) => this.handleEmailChange(event)}></input>
-          {this.emailErrorMessage
-            ? <power-error inline>{this.emailErrorMessage}</power-error>
-            : <span></span>
-          }
+          <power-error inline class={{
+            'display': !!this.emailErrorMessage
+          }}>{this.emailErrorMessage}</power-error>
+
           <label htmlFor="pwd">{this.labelPassword}:</label>
           <input type="password" name="pwd" onInput={(event) => this.handlePwdChange(event)}></input>
 
