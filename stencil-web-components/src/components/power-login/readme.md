@@ -24,11 +24,13 @@
 
 ### Depends on
 
+- [power-error](../power-error)
 - [power-button](../power-button)
 
 ### Graph
 ```mermaid
 graph TD;
+  power-login --> power-error
   power-login --> power-button
   style power-login fill:#f9f,stroke:#333,stroke-width:4px
 ```
