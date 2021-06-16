@@ -1,4 +1,4 @@
-// import { test } from 'owasp-password-strength-test';
+import * as owasp from 'owasp-password-strength-test';
 
 export interface ValidatorResponse {
   valid: boolean;
@@ -34,23 +34,14 @@ export class Validator {
   isValidPassword(value: string): ValidatorResponse {
     console.log(value);
     let valid = true;
-    // test(value);
+    console.log(owasp.test(value));
     return {
       valid,
       message: valid ? 'OK' : 'This field is required.'
     }
   }
 
-  passwordsMatch(value: string): ValidatorResponse {
-    console.log(value);
-    let valid = true;
-    return {
-      valid,
-      message: valid ? 'OK' : 'This field is required.'
-    }
-  }
-
-  emailAddressesMatch(value: string): ValidatorResponse {
+  valuesMatch(value: string): ValidatorResponse {
     console.log(value);
     let valid = true;
     return {
