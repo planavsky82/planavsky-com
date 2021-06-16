@@ -40,6 +40,9 @@ export class PowerLogin implements ComponentInterface {
     const target = event.target as HTMLInputElement;
     this.email = target.value;
     let value = this.validator.hasValue(this.email);
+    if (value.valid) {
+      value = this.validator.isValidEmail(this.email);
+    }
     if (!value.valid) {
       this.emailErrorMessage = value.message;
     }

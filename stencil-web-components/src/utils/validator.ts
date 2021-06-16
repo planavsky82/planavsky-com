@@ -4,23 +4,29 @@ export interface ValidatorResponse {
 }
 
 export class Validator {
+  private validState: ValidatorResponse = {
+    valid: true,
+    message: 'OK'
+  };
+
   constructor() {}
 
   hasValue(value: string): ValidatorResponse {
     let valid = value !== '' && value !== undefined;
-    return {
+    this.validState = {
       valid,
       message: valid ? 'OK' : 'This field is required.'
     }
+    return this.validState;
   }
 
   isValidEmail(value: string): ValidatorResponse {
-    console.log(value);
-    let valid = true;
-    return {
+    let valid = /\S+@\S+\.\S+/.test(value);
+    this.validState = {
       valid,
-      message: valid ? 'OK' : 'This field is required.'
+      message: valid ? 'OK' : 'Please enter a valid email address.'
     }
+    return this.validState;
   }
 
   isValidPassword(value: string): ValidatorResponse {
