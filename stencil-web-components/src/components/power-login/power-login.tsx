@@ -23,6 +23,7 @@ export class PowerLogin implements ComponentInterface {
   private validator: Validator = new Validator();
 
   public emailErrorMessage: string;
+  public pwdErrorMessage: string;
 
   constructor() {}
 
@@ -45,8 +46,14 @@ export class PowerLogin implements ComponentInterface {
   }
 
   handlePwdChange(event: Event) {
+    this.pwdErrorMessage = undefined;
     const target = event.target as HTMLInputElement;
     this.pwd = target.value;
+    let value = this.validator.hasValue(this.pwd);
+    console.log(value.valid);
+    if (!value.valid) {
+      this.pwdErrorMessage = value.message;
+    }
   }
 
   render() {
@@ -69,6 +76,9 @@ export class PowerLogin implements ComponentInterface {
 
           <label htmlFor="pwd">{this.labelPassword}:</label>
           <input type="password" name="pwd" onInput={(event) => this.handlePwdChange(event)}></input>
+          <power-error inline class={{
+            'display': !!this.pwdErrorMessage
+          }}>{this.pwdErrorMessage}</power-error>
 
           <power-button type="submit" onClick={(event) => this.handleSubmit(event)}>Login</power-button>
         </form>
