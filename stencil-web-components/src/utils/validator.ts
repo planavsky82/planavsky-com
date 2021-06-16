@@ -1,3 +1,5 @@
+import { test } from 'owasp-password-strength-test';
+
 export interface ValidatorResponse {
   valid: boolean;
   message: string;
@@ -32,6 +34,7 @@ export class Validator {
   isValidPassword(value: string): ValidatorResponse {
     console.log(value);
     let valid = true;
+    test(value);
     return {
       valid,
       message: valid ? 'OK' : 'This field is required.'
