@@ -35,6 +35,7 @@ export class Validator {
 
   isValidPassword(value: string): ValidatorResponse {
     let valid = true;
+    console.log(value);
     /* const passwordResult = owasp.test(value);
     if (passwordResult.errors.length === 0) {
 

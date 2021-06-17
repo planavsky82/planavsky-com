@@ -29,6 +29,8 @@ export class PowerSignup implements ComponentInterface {
   public pwd1ErrorMessage: string;
   public pwd2ErrorMessage: string;
 
+  constructor() {}
+
   handleSubmit(event: Event) {
     event.preventDefault();
     this.submitSignup.emit({
@@ -55,6 +57,8 @@ export class PowerSignup implements ComponentInterface {
     this.pwd1ErrorMessage = undefined;
     const target = event.target as HTMLInputElement;
     this.pwd1 = target.value;
+
+    console.log(this.validator);
     let value = this.validator.hasValue(this.pwd1);
     if (value.valid) {
       value = this.validator.isValidPassword(this.pwd1);
