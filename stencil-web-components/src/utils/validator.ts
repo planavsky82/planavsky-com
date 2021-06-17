@@ -1,4 +1,4 @@
-import * as owasp from 'owasp-password-strength-test';
+//import * as owasp from 'owasp-password-strength-test';
 
 export interface ValidatorResponse {
   valid: boolean;
@@ -12,7 +12,7 @@ export class Validator {
   };
 
   constructor() {
-    console.log(owasp.test('12345'));
+    //console.log(owasp.test('12345'));
   }
 
   hasValue(value: string): ValidatorResponse {
