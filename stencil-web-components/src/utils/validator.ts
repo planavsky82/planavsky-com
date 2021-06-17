@@ -12,7 +12,7 @@ export class Validator {
   };
 
   constructor() {
-    console.log(owasp.test('xxxx'));
+    console.log(owasp.test('12345'));
   }
 
   hasValue(value: string): ValidatorResponse {
