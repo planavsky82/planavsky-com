@@ -53,7 +53,6 @@ export class PowerLogin implements ComponentInterface {
     const target = event.target as HTMLInputElement;
     this.pwd = target.value;
     let value = this.validator.hasValue(this.pwd);
-    console.log(value.valid);
     if (!value.valid) {
       this.pwdErrorMessage = value.message;
     }

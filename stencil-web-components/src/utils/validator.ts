@@ -11,7 +11,9 @@ export class Validator {
     message: 'OK'
   };
 
-  constructor() {}
+  constructor() {
+    console.log(owasp.test('xxxx'));
+  }
 
   hasValue(value: string): ValidatorResponse {
     let valid = value !== '' && value !== undefined;
@@ -32,18 +34,19 @@ export class Validator {
   }
 
   isValidPassword(value: string): ValidatorResponse {
-    console.log(value);
     let valid = true;
-    console.log(owasp.test(value));
+    /* const passwordResult = owasp.test(value);
+    if (passwordResult.errors.length === 0) {
+
+    } */
     return {
       valid,
       message: valid ? 'OK' : 'This field is required.'
     }
   }
 
-  valuesMatch(value: string): ValidatorResponse {
-    console.log(value);
-    let valid = true;
+  valuesMatch(value1: string, value2: string): ValidatorResponse {
+    let valid = value1 === value2;
     return {
       valid,
       message: valid ? 'OK' : 'This field is required.'

@@ -1,4 +1,5 @@
 import { Component, ComponentInterface, Host, h, Prop, Event, EventEmitter, State } from '@stencil/core';
+import { Validator } from '../../utils/validator';
 
 export interface SignUpEvent {
   email: string;
@@ -22,6 +23,12 @@ export class PowerSignup implements ComponentInterface {
   @State() pwd1: string;
   @State() pwd2: string;
 
+  private validator: Validator = new Validator();
+
+  public emailErrorMessage: string;
+  public pwd1ErrorMessage: string;
+  public pwd2ErrorMessage: string;
+
   handleSubmit(event: Event) {
     event.preventDefault();
     this.submitSignup.emit({
@@ -32,18 +39,42 @@ export class PowerSignup implements ComponentInterface {
   }
 
   handleEmailChange(event: Event) {
+    this.emailErrorMessage = undefined;
     const target = event.target as HTMLInputElement;
     this.email = target.value;
+    let value = this.validator.hasValue(this.email);
+    if (value.valid) {
+      value = this.validator.isValidEmail(this.email);
+    }
+    if (!value.valid) {
+      this.emailErrorMessage = value.message;
+    }
   }
 
   handlePwd1Change(event: Event) {
+    this.pwd1ErrorMessage = undefined;
     const target = event.target as HTMLInputElement;
     this.pwd1 = target.value;
+    let value = this.validator.hasValue(this.pwd1);
+    if (value.valid) {
+      value = this.validator.isValidPassword(this.pwd1);
+    }
+    if (!value.valid) {
+      this.pwd1ErrorMessage = value.message;
+    }
   }
 
   handlePwd2Change(event: Event) {
+    this.pwd2ErrorMessage = undefined;
     const target = event.target as HTMLInputElement;
     this.pwd2 = target.value;
+    let value = this.validator.hasValue(this.pwd2);
+    if (value.valid) {
+      value = this.validator.isValidPassword(this.pwd2);
+    }
+    if (!value.valid) {
+      this.pwd2ErrorMessage = value.message;
+    }
   }
 
   render() {
