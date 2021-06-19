@@ -1,11 +1,11 @@
 import { test } from 'owasp-password-strength-test';
 
+export type ValidatorMessages = string[];
+
 export interface ValidatorResponse {
   valid: boolean;
-  message: string[];
+  message: ValidatorMessages;
 }
-
-export type ValidatorMessages = string[];
 
 export class Validator {
   private validState: ValidatorResponse = {
