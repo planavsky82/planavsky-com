@@ -43,11 +43,11 @@ export class Validator {
     }
   }
 
-  valuesMatch(value1: string, value2: string): ValidatorResponse {
+  valuesMatch(value1: string, value2: string, label: string): ValidatorResponse {
     let valid = value1 === value2;
     return {
       valid,
-      message: valid ? ['OK'] : ['This field is required.']
+      message: valid ? ['OK'] : ['The ' + label + ' fields do not match.']
     }
   }
 }

@@ -61,6 +61,9 @@ export class PowerSignup implements ComponentInterface {
     if (value.valid) {
       value = this.validator.isValidPassword(this.pwd1);
     }
+    if (value.valid) {
+      value = this.validator.valuesMatch(this.pwd1, this.pwd2, 'Password');
+    }
     if (!value.valid) {
       this.pwd1ErrorMessage = value.message;
     }
@@ -73,6 +76,9 @@ export class PowerSignup implements ComponentInterface {
     let value = this.validator.hasValue(this.pwd2);
     if (value.valid) {
       value = this.validator.isValidPassword(this.pwd2);
+    }
+    if (value.valid) {
+      value = this.validator.valuesMatch(this.pwd1, this.pwd2, 'Password');
     }
     if (!value.valid) {
       this.pwd2ErrorMessage = value.message;
