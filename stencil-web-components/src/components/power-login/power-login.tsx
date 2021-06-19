@@ -81,10 +81,9 @@ export class PowerLogin implements ComponentInterface {
           <power-error inline class={{
             'display': !!this.pwdErrorMessage
           }}>{this.pwdErrorMessage}</power-error>
-
-          <power-button type="submit" onClick={(event: Event) => this.handleSubmit(event)}>Login</power-button>
         </form>
 
+        <power-button type="submit" onClick={(event: Event) => this.handleSubmit(event)}>Login</power-button>
         <div class="signup">
           <slot name="signup"></slot>
         </div>
