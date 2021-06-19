@@ -2,13 +2,15 @@ import { test } from 'owasp-password-strength-test';
 
 export interface ValidatorResponse {
   valid: boolean;
-  message: string;
+  message: string[];
 }
+
+export type ValidatorMessages = string[];
 
 export class Validator {
   private validState: ValidatorResponse = {
     valid: true,
-    message: 'OK'
+    message: ['OK']
   };
 
   constructor() {}
@@ -17,7 +19,7 @@ export class Validator {
     let valid = value !== '' && value !== undefined;
     this.validState = {
       valid,
-      message: valid ? 'OK' : 'This field is required.'
+      message: valid ? ['OK'] : ['This field is required.']
     }
     return this.validState;
   }
@@ -26,7 +28,7 @@ export class Validator {
     let valid = /\S+@\S+\.\S+/.test(value);
     this.validState = {
       valid,
-      message: valid ? 'OK' : 'Please enter a valid email address.'
+      message: valid ? ['OK'] : ['Please enter a valid email address.']
     }
     return this.validState;
   }
@@ -34,13 +36,10 @@ export class Validator {
   isValidPassword(value: string): ValidatorResponse {
     let valid = true;
     const passwordResult = test(value);
-    console.log(passwordResult);
-    /* if (passwordResult.errors.length === 0) {
-
-    } */
+    valid = passwordResult.errors.length === 0;
     return {
       valid,
-      message: valid ? 'OK' : 'This field is required.'
+      message: valid ? ['OK'] : passwordResult.errors
     }
   }
 
@@ -48,7 +47,7 @@ export class Validator {
     let valid = value1 === value2;
     return {
       valid,
-      message: valid ? 'OK' : 'This field is required.'
+      message: valid ? ['OK'] : ['This field is required.']
     }
   }
 }

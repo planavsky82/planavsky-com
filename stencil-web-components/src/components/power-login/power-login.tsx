@@ -1,5 +1,5 @@
 import { Component, ComponentInterface, Host, h, Prop, Event, EventEmitter, State } from '@stencil/core';
-import { Validator } from '../../utils/validator';
+import { Validator, ValidatorMessages } from '../../utils/validator';
 
 export interface LoginEvent {
   email: string;
@@ -22,8 +22,8 @@ export class PowerLogin implements ComponentInterface {
 
   private validator: Validator = new Validator();
 
-  public emailErrorMessage: string;
-  public pwdErrorMessage: string;
+  public emailErrorMessage: ValidatorMessages;
+  public pwdErrorMessage: ValidatorMessages;
 
   constructor() {}
 
@@ -82,7 +82,7 @@ export class PowerLogin implements ComponentInterface {
             'display': !!this.pwdErrorMessage
           }}>{this.pwdErrorMessage}</power-error>
 
-          <power-button type="submit" onClick={(event) => this.handleSubmit(event)}>Login</power-button>
+          <power-button type="submit" onClick={(event: Event) => this.handleSubmit(event)}>Login</power-button>
         </form>
 
         <div class="signup">

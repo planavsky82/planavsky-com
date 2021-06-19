@@ -1,5 +1,5 @@
 import { Component, ComponentInterface, Host, h, Prop, Event, EventEmitter, State } from '@stencil/core';
-import { Validator } from '../../utils/validator';
+import { Validator, ValidatorMessages } from '../../utils/validator';
 
 export interface SignUpEvent {
   email: string;
@@ -25,9 +25,9 @@ export class PowerSignup implements ComponentInterface {
 
   private validator: Validator = new Validator();
 
-  public emailErrorMessage: string;
-  public pwd1ErrorMessage: string;
-  public pwd2ErrorMessage: string;
+  public emailErrorMessage: ValidatorMessages;
+  public pwd1ErrorMessage: ValidatorMessages;
+  public pwd2ErrorMessage: ValidatorMessages;
 
   constructor() {}
 
@@ -93,13 +93,40 @@ export class PowerSignup implements ComponentInterface {
         <form>
           <label htmlFor="email">{this.labelEmailAddress}:</label>
           <input type="text" value="" name="email" onInput={(event) => this.handleEmailChange(event)}></input>
+          <power-error inline class={{
+            'display': !!this.emailErrorMessage
+          }}>{this.emailErrorMessage}</power-error>
           <label htmlFor="pwd1">{this.labelPassword1}:</label>
           <input type="password" value="" name="pwd1" onInput={(event) => this.handlePwd1Change(event)}></input>
+          <power-error inline class={{
+            'display': !!this.pwd1ErrorMessage
+          }}>
+            {this.pwd1ErrorMessage
+              ? <div>
+                {this.pwd1ErrorMessage.map((error: string) =>
+                  <div>{error}</div>
+                )}
+                </div>
+              : <span></span>
+            }
+          </power-error>
           <label htmlFor="pwd2">{this.labelPassword2}:</label>
           <input type="password" value="" name="pwd2" onInput={(event) => this.handlePwd2Change(event)}></input>
+          <power-error inline class={{
+            'display': !!this.pwd2ErrorMessage
+          }}>
+            {this.pwd2ErrorMessage
+              ? <div>
+                {this.pwd2ErrorMessage.map((error: string) =>
+                  <div>{error}</div>
+                )}
+                </div>
+              : <span></span>
+            }
+          </power-error>
         </form>
 
-        <power-button type="submit" onClick={(event) => this.handleSubmit(event)}>Sign Up</power-button>
+        <power-button type="submit" onClick={(event: Event) => this.handleSubmit(event)}>Sign Up</power-button>
         <slot name="footer"></slot>
       </Host>
     );

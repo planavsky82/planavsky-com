@@ -20,12 +20,16 @@
 }
 
 :host(.local) {
-  transition: height 0.5s;
+  /* transition: height 0.5s;
   height: 0;
-  overflow: hidden;
+  overflow: hidden; */
   margin-top: calc(var(--spacing-md) * -1);
+  display: none;
 }
 
 :host(.local.display) {
-  height: 60px;
+  /* height: 60px; */
+  /* TODO: figure out how to animate the error message height transition with variable height */
+  min-height: 60px;
+  display: block;
 }
