@@ -57,8 +57,6 @@ export class PowerSignup implements ComponentInterface {
     this.pwd1ErrorMessage = undefined;
     const target = event.target as HTMLInputElement;
     this.pwd1 = target.value;
-
-    console.log(this.validator);
     let value = this.validator.hasValue(this.pwd1);
     if (value.valid) {
       value = this.validator.isValidPassword(this.pwd1);

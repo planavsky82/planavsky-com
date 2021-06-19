@@ -11,10 +11,7 @@ export class Validator {
     message: 'OK'
   };
 
-  constructor() {
-    console.log(test('1234567890'));
-    //console.log(owasp.test('12345'));
-  }
+  constructor() {}
 
   hasValue(value: string): ValidatorResponse {
     let valid = value !== '' && value !== undefined;
@@ -36,9 +33,9 @@ export class Validator {
 
   isValidPassword(value: string): ValidatorResponse {
     let valid = true;
-    console.log(value);
-    /* const passwordResult = owasp.test(value);
-    if (passwordResult.errors.length === 0) {
+    const passwordResult = test(value);
+    console.log(passwordResult);
+    /* if (passwordResult.errors.length === 0) {
 
     } */
     return {
