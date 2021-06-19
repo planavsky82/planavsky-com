@@ -5,9 +5,9 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { LoginEvent, } from "./components/power-login/power-login";
-import { Navigation, NavigationItem, } from "@models/navigation";
-import { SignUpEvent, } from "./components/power-signup/power-signup";
+import { LoginEvent } from "./components/power-login/power-login";
+import { Navigation, NavigationItem } from "@models/navigation";
+import { SignUpEvent } from "./components/power-signup/power-signup";
 export namespace Components {
     interface MyComponent {
         /**
@@ -24,7 +24,7 @@ export namespace Components {
         "middle": string;
     }
     interface PowerButton {
-        "type": "button" | "submit" | "reset";
+        "type": 'button' | 'submit' | 'reset';
     }
     interface PowerError {
         "inline": boolean;
@@ -135,7 +135,7 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface PowerButton {
-        "type"?: "button" | "submit" | "reset";
+        "type"?: 'button' | 'submit' | 'reset';
     }
     interface PowerError {
         "inline"?: boolean;
