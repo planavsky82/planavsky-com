@@ -53,10 +53,12 @@ export class PowerSignup implements ComponentInterface {
     }
   }
 
-  handlePwd1Change(event: Event) {
+  handlePwd1Change(event?: Event) {
     this.pwd1ErrorMessage = undefined;
-    const target = event.target as HTMLInputElement;
-    this.pwd1 = target.value;
+    if (event) {
+      const target = event.target as HTMLInputElement;
+      this.pwd1 = target.value;
+    }
     let value = this.validator.hasValue(this.pwd1);
     if (value.valid) {
       value = this.validator.isValidPassword(this.pwd1);
@@ -67,12 +69,17 @@ export class PowerSignup implements ComponentInterface {
     if (!value.valid) {
       this.pwd1ErrorMessage = value.message;
     }
+    if (event) {
+      this.handlePwd2Change();
+    }
   }
 
-  handlePwd2Change(event: Event) {
+  handlePwd2Change(event?: Event) {
     this.pwd2ErrorMessage = undefined;
-    const target = event.target as HTMLInputElement;
-    this.pwd2 = target.value;
+    if (event) {
+      const target = event.target as HTMLInputElement;
+      this.pwd2 = target.value;
+    }
     let value = this.validator.hasValue(this.pwd2);
     if (value.valid) {
       value = this.validator.isValidPassword(this.pwd2);
@@ -82,6 +89,9 @@ export class PowerSignup implements ComponentInterface {
     }
     if (!value.valid) {
       this.pwd2ErrorMessage = value.message;
+    }
+    if (event) {
+      this.handlePwd1Change();
     }
   }
 
