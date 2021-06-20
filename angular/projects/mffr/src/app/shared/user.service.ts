@@ -8,6 +8,8 @@ import { AppState } from './../app.state';
 import { Router } from '@angular/router';
 import { map } from 'rxjs/operators';
 
+/* TODO: remove any types */
+
 @Injectable( { providedIn: 'root' } )
 export class UserService {
   public httpOptions = {

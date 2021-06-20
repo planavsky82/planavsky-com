@@ -5,6 +5,8 @@ import { catchError } from 'rxjs/operators';
 import { header } from '../shared/http/config';
 import { UserService } from '../shared/user.service';
 
+/* TODO: remove any types */
+
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',

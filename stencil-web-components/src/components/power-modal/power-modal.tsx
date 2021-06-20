@@ -12,7 +12,7 @@ export class PowerModal implements ComponentInterface {
   @State() display: boolean = false;
 
   @Watch('opened')
-  open(display: any) {
+  open(display: boolean) {
     this.display = display;
   }
 

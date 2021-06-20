@@ -4,6 +4,8 @@ import { Navigation } from '@models/navigation';
 import { User } from './shared/models/user';
 import { UserService } from './shared/user.service';
 
+/* TODO: remove any types */
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

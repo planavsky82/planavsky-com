@@ -28,9 +28,11 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {}
 
-  login(event: any) {
+  login(event: Event) {
     // name: 'U10133', pwd: 'e3$f!rt78UNml90!'
     this.loading = true;
+
+    /* TODO: replace any wtih a shared type that exists in the API - functions/src/app/user.ts */
     this.userService.login(event).subscribe((data: any) => {
       if (!data.success) {
         this.errorMessage = data.message;
