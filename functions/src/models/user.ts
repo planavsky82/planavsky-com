@@ -4,3 +4,21 @@ export interface UserModel {
   admin: boolean;
   email: string;
 }
+
+export interface UserRequest {
+  name: string;
+  pwd: string;
+}
+
+export interface UserResponse {
+  success: boolean;
+  message: string;
+}
+
+export interface UserAuth {
+  success: boolean;
+  message: string;
+  token: string;
+  id: string;
+  match: boolean;
+}

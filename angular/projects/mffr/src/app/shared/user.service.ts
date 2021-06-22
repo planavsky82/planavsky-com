@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { User } from '../shared/models/user';
+import { User, UserAuth, Rankings } from '../shared/models/user';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable,  } from 'rxjs';
 import { header } from '../shared/http/config';
@@ -36,11 +36,12 @@ export class UserService {
     });
   }
 
+  // TODO: replace any type
   login(event: any) {
     let name = event.detail.email ? event.detail.email.replace('.', 'dot') : event.detail.email;
-    return this.http.post<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/authenticate',
+    return this.http.post<UserAuth>('https://us-central1-planavsky-com.cloudfunctions.net/app/authenticate',
       { name: name, pwd: event.detail.pwd }, this.httpOptions).pipe(
-        map((data) => {
+        map((data: UserAuth) => {
           if (data.success) {
             this.addUserState(event.detail.email);
             this.router.navigate(['/rankings']);
@@ -68,8 +69,8 @@ export class UserService {
     return this.user;
   }
 
-  getRankings(data: any) {
-    return this.http.get<any>('https://us-central1-planavsky-com.cloudfunctions.net/app/rankings',
+  getRankings(data: UserAuth) {
+    return this.http.get<Rankings>('https://us-central1-planavsky-com.cloudfunctions.net/app/rankings',
       { params: { 'token': data.token } });
   }
 }
