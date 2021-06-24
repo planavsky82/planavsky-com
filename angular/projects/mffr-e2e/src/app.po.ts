@@ -1,8 +1,11 @@
 import { browser, by, element } from 'protractor';
 
 export class AppPage {
-  navigateTo() {
-    return browser.get('/');
+  navigateTo(route?) {
+    if (!route) {
+      route = '';
+    }
+    return browser.get('/' + route);
   }
 
   getIntroText() {
