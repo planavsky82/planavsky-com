@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 cd angular
+npm run e2e:mffr:clean
 npm run build:mffr
 cd ..
 cd blog

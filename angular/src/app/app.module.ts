@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { MainModule } from './main/main.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faAngular, faGithub, faJs, faCss3Alt, faHtml5, 
+import { faAngular, faGithub, faJs, faCss3Alt, faHtml5,
   faNodeJs, faJenkins, faNpm, faGit, faSass, faLess, faLinux } from '@fortawesome/free-brands-svg-icons';
 
 library.add(faAngular);
