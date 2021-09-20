@@ -4,7 +4,7 @@ const fs = require('fs');
 const positions = ['QB', 'RB', 'WR', 'TE'];
 
 let playerData = {
-  position: [
+  positions: [
     {
       type: 'qb',
       players: [
