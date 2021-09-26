@@ -1,1 +1,1356 @@
-{"persons":[{"name":"John","city":"New York"},{"name":"Phil","city":"Ohio"}]}
+{
+  "positions": [
+    {
+      "type": "QB",
+      "players": [
+        {
+          "name": "Kyler Murray",
+          "id": "kyler-murray-qb"
+        },
+        {
+          "name": "Daniel Jones",
+          "id": "daniel-jones-qb"
+        },
+        {
+          "name": "Russell Wilson",
+          "id": "russell-wilson-qb"
+        },
+        {
+          "name": "Jared Goff",
+          "id": "jared-goff-qb"
+        },
+        {
+          "name": "Lamar Jackson",
+          "id": "lamar-jackson-qb"
+        },
+        {
+          "name": "Carson Wentz",
+          "id": "carson-wentz-qb"
+        },
+        {
+          "name": "Jalen Hurts",
+          "id": "jalen-hurts-qb"
+        },
+        {
+          "name": "Tom Brady",
+          "id": "tom-brady-qb"
+        },
+        {
+          "name": "Matthew Stafford",
+          "id": "matthew-stafford-qb"
+        },
+        {
+          "name": "Jimmy Garoppolo",
+          "id": "jimmy-garoppolo-qb"
+        },
+        {
+          "name": "Kirk Cousins",
+          "id": "kirk-cousins-qb"
+        },
+        {
+          "name": "Derek Carr",
+          "id": "derek-carr-qb"
+        },
+        {
+          "name": "Aaron Rodgers",
+          "id": "aaron-rodgers-qb"
+        },
+        {
+          "name": "Josh Allen",
+          "id": "josh-allen-qb"
+        },
+        {
+          "name": "Patrick Mahomes",
+          "id": "patrick-mahomes-qb"
+        },
+        {
+          "name": "Sam Darnold",
+          "id": "sam-darnold-qb"
+        },
+        {
+          "name": "Justin Herbert",
+          "id": "justin-herbert-qb"
+        },
+        {
+          "name": "Ryan Tannehill",
+          "id": "ryan-tannehill-qb"
+        },
+        {
+          "name": "Joe Burrow",
+          "id": "joe-burrow-qb"
+        },
+        {
+          "name": "Andy Dalton",
+          "id": "andy-dalton-qb"
+        },
+        {
+          "name": "Teddy Bridgewater",
+          "id": "teddy-bridgewater-qb"
+        },
+        {
+          "name": "Justin Fields",
+          "id": "justin-fields-qb"
+        },
+        {
+          "name": "Trevor Lawrence",
+          "id": "trevor-lawrence-qb"
+        },
+        {
+          "name": "Baker Mayfield",
+          "id": "baker-mayfield-qb"
+        },
+        {
+          "name": "Matt Ryan",
+          "id": "matt-ryan-qb"
+        },
+        {
+          "name": "Dak Prescott",
+          "id": "dak-prescott-qb"
+        },
+        {
+          "name": "Ben Roethlisberger",
+          "id": "ben-roethlisberger-qb"
+        },
+        {
+          "name": "Trey Lance",
+          "id": "trey-lance-qb"
+        },
+        {
+          "name": "Jameis Winston",
+          "id": "jameis-winston-qb"
+        },
+        {
+          "name": "Jacob Eason",
+          "id": "jacob-eason-qb"
+        },
+        {
+          "name": "Jordan Love",
+          "id": "jordan-love-qb"
+        },
+        {
+          "name": "Zach Wilson",
+          "id": "zach-wilson-qb"
+        },
+        {
+          "name": "Taylor Heinicke",
+          "id": "taylor-heinicke-qb"
+        },
+        {
+          "name": "Mac Jones",
+          "id": "mac-jones-qb"
+        },
+        {
+          "name": "Davis Mills",
+          "id": "davis-mills-qb"
+        },
+        {
+          "name": "Jacoby Brissett",
+          "id": "jacoby-brissett-qb"
+        },
+        {
+          "name": "Taysom Hill",
+          "id": "taysom-hill-qb"
+        },
+        {
+          "name": "Josh Rosen",
+          "id": "josh-rosen-qb"
+        }
+      ]
+    },
+    {
+      "type": "RB",
+      "players": [
+        {
+          "name": "Dalvin Cook",
+          "id": "dalvin-cook-rb"
+        },
+        {
+          "name": "Derrick Henry ",
+          "id": "derrick-henry -rb"
+        },
+        {
+          "name": "Christian McCaffrey",
+          "id": "christian-mccaffrey-rb"
+        },
+        {
+          "name": "Aaron Jones",
+          "id": "aaron-jones-rb"
+        },
+        {
+          "name": "Austin Ekeler",
+          "id": "austin-ekeler-rb"
+        },
+        {
+          "name": "Darrell Henderson",
+          "id": "darrell-henderson-rb"
+        },
+        {
+          "name": "Chris Carson",
+          "id": "chris-carson-rb"
+        },
+        {
+          "name": "Nick Chubb",
+          "id": "nick-chubb-rb"
+        },
+        {
+          "name": "Ty'Son Williams",
+          "id": "ty'son-williams-rb"
+        },
+        {
+          "name": "Joe Mixon",
+          "id": "joe-mixon-rb"
+        },
+        {
+          "name": "Melvin Gordon",
+          "id": "melvin-gordon-rb"
+        },
+        {
+          "name": "Damien Harris",
+          "id": "damien-harris-rb"
+        },
+        {
+          "name": "Josh Jacobs",
+          "id": "josh-jacobs-rb"
+        },
+        {
+          "name": "David Montgomery",
+          "id": "david-montgomery-rb"
+        },
+        {
+          "name": "Clyde Edwards-Helaire",
+          "id": "clyde-edwards-helaire-rb"
+        },
+        {
+          "name": "Elijah Mitchell",
+          "id": "elijah-mitchell-rb"
+        },
+        {
+          "name": "Cordarrelle Patterson",
+          "id": "cordarrelle-patterson-rb"
+        },
+        {
+          "name": "Najee Harris",
+          "id": "najee-harris-rb"
+        },
+        {
+          "name": "D'Andre Swift",
+          "id": "d'andre-swift-rb"
+        },
+        {
+          "name": "Jonathan Taylor",
+          "id": "jonathan-taylor-rb"
+        },
+        {
+          "name": "Mike Davis",
+          "id": "mike-davis-rb"
+        },
+        {
+          "name": "Ezekiel Elliott",
+          "id": "ezekiel-elliott-rb"
+        },
+        {
+          "name": "Chase Edmonds",
+          "id": "chase-edmonds-rb"
+        },
+        {
+          "name": "Latavius Murray",
+          "id": "latavius-murray-rb"
+        },
+        {
+          "name": "Tony Pollard",
+          "id": "tony-pollard-rb"
+        },
+        {
+          "name": "Devin Singletary",
+          "id": "devin-singletary-rb"
+        },
+        {
+          "name": "Alvin Kamara",
+          "id": "alvin-kamara-rb"
+        },
+        {
+          "name": "Javonte Williams",
+          "id": "javonte-williams-rb"
+        },
+        {
+          "name": "Jamaal Williams",
+          "id": "jamaal-williams-rb"
+        },
+        {
+          "name": "Leonard Fournette",
+          "id": "leonard-fournette-rb"
+        },
+        {
+          "name": "Zack Moss",
+          "id": "zack-moss-rb"
+        },
+        {
+          "name": "Miles Sanders",
+          "id": "miles-sanders-rb"
+        },
+        {
+          "name": "James Conner",
+          "id": "james-conner-rb"
+        },
+        {
+          "name": "Saquon Barkley",
+          "id": "saquon-barkley-rb"
+        },
+        {
+          "name": "Kareem Hunt",
+          "id": "kareem-hunt-rb"
+        },
+        {
+          "name": "James Robinson",
+          "id": "james-robinson-rb"
+        },
+        {
+          "name": "Myles Gaskin",
+          "id": "myles-gaskin-rb"
+        },
+        {
+          "name": "Antonio Gibson ",
+          "id": "antonio-gibson -rb"
+        },
+        {
+          "name": "Kenyan Drake",
+          "id": "kenyan-drake-rb"
+        },
+        {
+          "name": "Mark Ingram",
+          "id": "mark-ingram-rb"
+        },
+        {
+          "name": "James White",
+          "id": "james-white-rb"
+        },
+        {
+          "name": "Kenneth Gainwell",
+          "id": "kenneth-gainwell-rb"
+        },
+        {
+          "name": "Phillip Lindsay",
+          "id": "phillip-lindsay-rb"
+        },
+        {
+          "name": "Peyton Barber",
+          "id": "peyton-barber-rb"
+        },
+        {
+          "name": "J.D. McKissic",
+          "id": "j.d.-mckissic-rb"
+        },
+        {
+          "name": "Nyheim Hines",
+          "id": "nyheim-hines-rb"
+        },
+        {
+          "name": "Carlos Hyde",
+          "id": "carlos-hyde-rb"
+        },
+        {
+          "name": "David Johnson",
+          "id": "david-johnson-rb"
+        },
+        {
+          "name": "Michael Carter",
+          "id": "michael-carter-rb"
+        },
+        {
+          "name": "AJ Dillon ",
+          "id": "aj-dillon -rb"
+        },
+        {
+          "name": "Larry Rountree",
+          "id": "larry-rountree-rb"
+        },
+        {
+          "name": "Malcolm Brown",
+          "id": "malcolm-brown-rb"
+        },
+        {
+          "name": "Salvon Ahmed",
+          "id": "salvon-ahmed-rb"
+        },
+        {
+          "name": "Tony Jones",
+          "id": "tony-jones-rb"
+        },
+        {
+          "name": "Sony Michel",
+          "id": "sony-michel-rb"
+        },
+        {
+          "name": "Ronald Jones II",
+          "id": "ronald-jones ii-rb"
+        },
+        {
+          "name": "Ty Johnson",
+          "id": "ty-johnson-rb"
+        },
+        {
+          "name": "Chuba Hubbard",
+          "id": "chuba-hubbard-rb"
+        },
+        {
+          "name": "Justin Jackson",
+          "id": "justin-jackson-rb"
+        },
+        {
+          "name": "Kylin Hill",
+          "id": "kylin-hill-rb"
+        },
+        {
+          "name": "Alexander Mattison",
+          "id": "alexander-mattison-rb"
+        },
+        {
+          "name": "Tevin Coleman",
+          "id": "tevin-coleman-rb"
+        },
+        {
+          "name": "Damien Williams",
+          "id": "damien-williams-rb"
+        },
+        {
+          "name": "Jeremy McNichols",
+          "id": "jeremy-mcnichols-rb"
+        },
+        {
+          "name": "Devonta Freeman",
+          "id": "devonta-freeman-rb"
+        },
+        {
+          "name": "Keith Smith",
+          "id": "keith-smith-rb"
+        },
+        {
+          "name": "Devontae Booker",
+          "id": "devontae-booker-rb"
+        },
+        {
+          "name": "Andy Janovich",
+          "id": "andy-janovich-rb"
+        },
+        {
+          "name": "Marlon Mack",
+          "id": "marlon-mack-rb"
+        },
+        {
+          "name": "Alex Collins",
+          "id": "alex-collins-rb"
+        },
+        {
+          "name": "Darrel Williams",
+          "id": "darrel-williams-rb"
+        },
+        {
+          "name": "Samaje Perine",
+          "id": "samaje-perine-rb"
+        },
+        {
+          "name": "Ameer Abdullah",
+          "id": "ameer-abdullah-rb"
+        },
+        {
+          "name": "Rashaad Penny",
+          "id": "rashaad-penny-rb"
+        },
+        {
+          "name": "Kyle Juszczyk",
+          "id": "kyle-juszczyk-rb"
+        },
+        {
+          "name": "Patrick Ricard",
+          "id": "patrick-ricard-rb"
+        },
+        {
+          "name": "Michael Burton",
+          "id": "michael-burton-rb"
+        },
+        {
+          "name": "Matt Breida",
+          "id": "matt-breida-rb"
+        },
+        {
+          "name": "Elijhaa Penny",
+          "id": "elijhaa-penny-rb"
+        },
+        {
+          "name": "Trey Sermon",
+          "id": "trey-sermon-rb"
+        },
+        {
+          "name": "DeeJay Dallas",
+          "id": "deejay-dallas-rb"
+        },
+        {
+          "name": "Benny Snell Jr.",
+          "id": "benny-snell jr.-rb"
+        },
+        {
+          "name": "J.J. Taylor",
+          "id": "j.j.-taylor-rb"
+        },
+        {
+          "name": "Jaret Patterson",
+          "id": "jaret-patterson-rb"
+        },
+        {
+          "name": "Gabe Nabers",
+          "id": "gabe-nabers-rb"
+        },
+        {
+          "name": "Reggie Gilliam",
+          "id": "reggie-gilliam-rb"
+        },
+        {
+          "name": "Brandon Bolden",
+          "id": "brandon-bolden-rb"
+        },
+        {
+          "name": "Trenton Cannon",
+          "id": "trenton-cannon-rb"
+        },
+        {
+          "name": "Mekhi Sargent",
+          "id": "mekhi-sargent-rb"
+        },
+        {
+          "name": "Rhamondre Stevenson",
+          "id": "rhamondre-stevenson-rb"
+        }
+      ]
+    },
+    {
+      "type": "WR",
+      "players": [
+        {
+          "name": "Cooper Kupp",
+          "id": "cooper-kupp-wr"
+        },
+        {
+          "name": "Tyler Lockett",
+          "id": "tyler-lockett-wr"
+        },
+        {
+          "name": "Deebo Samuel",
+          "id": "deebo-samuel-wr"
+        },
+        {
+          "name": "Sterling Shepard",
+          "id": "sterling-shepard-wr"
+        },
+        {
+          "name": "Marquise Brown",
+          "id": "marquise-brown-wr"
+        },
+        {
+          "name": "Zach Pascal",
+          "id": "zach-pascal-wr"
+        },
+        {
+          "name": "DeAndre Hopkins",
+          "id": "deandre-hopkins-wr"
+        },
+        {
+          "name": "Adam Thielen",
+          "id": "adam-thielen-wr"
+        },
+        {
+          "name": "Brandin Cooks",
+          "id": "brandin-cooks-wr"
+        },
+        {
+          "name": "Marvin Jones",
+          "id": "marvin-jones-wr"
+        },
+        {
+          "name": "Mike Williams",
+          "id": "mike-williams-wr"
+        },
+        {
+          "name": "Ja'Marr Chase",
+          "id": "ja'marr-chase-wr"
+        },
+        {
+          "name": "Michael Pittman Jr.",
+          "id": "michael-pittman jr.-wr"
+        },
+        {
+          "name": "Diontae Johnson",
+          "id": "diontae-johnson-wr"
+        },
+        {
+          "name": "D.K. Metcalf",
+          "id": "d.k.-metcalf-wr"
+        },
+        {
+          "name": "Chris Godwin",
+          "id": "chris-godwin-wr"
+        },
+        {
+          "name": "Tee Higgins",
+          "id": "tee-higgins-wr"
+        },
+        {
+          "name": "Rondale Moore",
+          "id": "rondale-moore-wr"
+        },
+        {
+          "name": "Tyreek Hill",
+          "id": "tyreek-hill-wr"
+        },
+        {
+          "name": "Stefon Diggs",
+          "id": "stefon-diggs-wr"
+        },
+        {
+          "name": "D.J. Moore",
+          "id": "d.j.-moore-wr"
+        },
+        {
+          "name": "Amari Cooper",
+          "id": "amari-cooper-wr"
+        },
+        {
+          "name": "Christian Kirk",
+          "id": "christian-kirk-wr"
+        },
+        {
+          "name": "Terry McLaurin",
+          "id": "terry-mclaurin-wr"
+        },
+        {
+          "name": "K.J. Osborn",
+          "id": "k.j.-osborn-wr"
+        },
+        {
+          "name": "CeeDee Lamb",
+          "id": "ceedee-lamb-wr"
+        },
+        {
+          "name": "Corey Davis",
+          "id": "corey-davis-wr"
+        },
+        {
+          "name": "Keenan Allen",
+          "id": "keenan-allen-wr"
+        },
+        {
+          "name": "Robert Woods",
+          "id": "robert-woods-wr"
+        },
+        {
+          "name": "Julio Jones",
+          "id": "julio-jones-wr"
+        },
+        {
+          "name": "Davante Adams",
+          "id": "davante-adams-wr"
+        },
+        {
+          "name": "Quintez Cephus",
+          "id": "quintez-cephus-wr"
+        },
+        {
+          "name": "DeVonta Smith",
+          "id": "devonta-smith-wr"
+        },
+        {
+          "name": "Justin Jefferson",
+          "id": "justin-jefferson-wr"
+        },
+        {
+          "name": "Mike Evans",
+          "id": "mike-evans-wr"
+        },
+        {
+          "name": "Calvin Ridley",
+          "id": "calvin-ridley-wr"
+        },
+        {
+          "name": "Jaylen Waddle",
+          "id": "jaylen-waddle-wr"
+        },
+        {
+          "name": "JuJu Smith-Schuster",
+          "id": "juju-smith-schuster-wr"
+        },
+        {
+          "name": "Henry Ruggs III",
+          "id": "henry-ruggs iii-wr"
+        },
+        {
+          "name": "Freddie Swain",
+          "id": "freddie-swain-wr"
+        },
+        {
+          "name": "Darius Slayton",
+          "id": "darius-slayton-wr"
+        },
+        {
+          "name": "Braxton Berrios",
+          "id": "braxton-berrios-wr"
+        },
+        {
+          "name": "A.J. Brown",
+          "id": "a.j.-brown-wr"
+        },
+        {
+          "name": "Tyler Boyd",
+          "id": "tyler-boyd-wr"
+        },
+        {
+          "name": "Jalen Reagor",
+          "id": "jalen-reagor-wr"
+        },
+        {
+          "name": "Cole Beasley",
+          "id": "cole-beasley-wr"
+        },
+        {
+          "name": "Sammy Watkins",
+          "id": "sammy-watkins-wr"
+        },
+        {
+          "name": "Tim Patrick",
+          "id": "tim-patrick-wr"
+        },
+        {
+          "name": "DeVante Parker",
+          "id": "devante-parker-wr"
+        },
+        {
+          "name": "Courtland Sutton",
+          "id": "courtland-sutton-wr"
+        },
+        {
+          "name": "Nelson Agholor",
+          "id": "nelson-agholor-wr"
+        },
+        {
+          "name": "Quez Watkins",
+          "id": "quez-watkins-wr"
+        },
+        {
+          "name": "DJ Chark",
+          "id": "dj-chark-wr"
+        },
+        {
+          "name": "Darnell Mooney",
+          "id": "darnell-mooney-wr"
+        },
+        {
+          "name": "Allen Robinson",
+          "id": "allen-robinson-wr"
+        },
+        {
+          "name": "Chase Claypool",
+          "id": "chase-claypool-wr"
+        },
+        {
+          "name": "Van Jefferson",
+          "id": "van-jefferson-wr"
+        },
+        {
+          "name": "Hunter Renfrow",
+          "id": "hunter-renfrow-wr"
+        },
+        {
+          "name": "Kenny Golladay",
+          "id": "kenny-golladay-wr"
+        },
+        {
+          "name": "Laviska Shenault Jr.",
+          "id": "laviska-shenault jr.-wr"
+        },
+        {
+          "name": "Deonte Harris",
+          "id": "deonte-harris-wr"
+        },
+        {
+          "name": "A.J. Green",
+          "id": "a.j.-green-wr"
+        },
+        {
+          "name": "Robby Anderson",
+          "id": "robby-anderson-wr"
+        },
+        {
+          "name": "Emmanuel Sanders",
+          "id": "emmanuel-sanders-wr"
+        },
+        {
+          "name": "Chester Rogers",
+          "id": "chester-rogers-wr"
+        },
+        {
+          "name": "Jakobi Meyers",
+          "id": "jakobi-meyers-wr"
+        },
+        {
+          "name": "Bryan Edwards",
+          "id": "bryan-edwards-wr"
+        },
+        {
+          "name": "Byron Pringle",
+          "id": "byron-pringle-wr"
+        },
+        {
+          "name": "Danny Amendola",
+          "id": "danny-amendola-wr"
+        },
+        {
+          "name": "Anthony Schwartz",
+          "id": "anthony-schwartz-wr"
+        },
+        {
+          "name": "Demarcus Robinson",
+          "id": "demarcus-robinson-wr"
+        },
+        {
+          "name": "Kalif Raymond",
+          "id": "kalif-raymond-wr"
+        },
+        {
+          "name": "Gabriel Davis",
+          "id": "gabriel-davis-wr"
+        },
+        {
+          "name": "Trent Sherfield",
+          "id": "trent-sherfield-wr"
+        },
+        {
+          "name": "Brandon Zylstra",
+          "id": "brandon-zylstra-wr"
+        },
+        {
+          "name": "Zay Jones",
+          "id": "zay-jones-wr"
+        },
+        {
+          "name": "Chris Hogan",
+          "id": "chris-hogan-wr"
+        },
+        {
+          "name": "Marquise Goodwin",
+          "id": "marquise-goodwin-wr"
+        },
+        {
+          "name": "Mecole Hardman",
+          "id": "mecole-hardman-wr"
+        },
+        {
+          "name": "Adam Humphries",
+          "id": "adam-humphries-wr"
+        },
+        {
+          "name": "Jalen Guyton",
+          "id": "jalen-guyton-wr"
+        },
+        {
+          "name": "Elijah Moore",
+          "id": "elijah-moore-wr"
+        },
+        {
+          "name": "Jauan Jennings",
+          "id": "jauan-jennings-wr"
+        },
+        {
+          "name": "Terrace Marshall Jr.",
+          "id": "terrace-marshall jr.-wr"
+        },
+        {
+          "name": "Randall Cobb",
+          "id": "randall-cobb-wr"
+        },
+        {
+          "name": "Denzel Mims",
+          "id": "denzel-mims-wr"
+        },
+        {
+          "name": "Amon-Ra St. Brown",
+          "id": "amon-ra-st. brown-wr"
+        },
+        {
+          "name": "Ashton Dulin",
+          "id": "ashton-dulin-wr"
+        },
+        {
+          "name": "Trinity Benson",
+          "id": "trinity-benson-wr"
+        },
+        {
+          "name": "D'Wayne Eskridge",
+          "id": "d'wayne-eskridge-wr"
+        },
+        {
+          "name": "Kendrick Bourne",
+          "id": "kendrick-bourne-wr"
+        },
+        {
+          "name": "Russell Gage",
+          "id": "russell-gage-wr"
+        },
+        {
+          "name": "Albert Wilson",
+          "id": "albert-wilson-wr"
+        },
+        {
+          "name": "KJ Hamler",
+          "id": "kj-hamler-wr"
+        },
+        {
+          "name": "Cedrick Wilson Jr.",
+          "id": "cedrick-wilson jr.-wr"
+        },
+        {
+          "name": "Parris Campbell",
+          "id": "parris-campbell-wr"
+        },
+        {
+          "name": "Mike Strachan",
+          "id": "mike-strachan-wr"
+        },
+        {
+          "name": "Marquez Callaway",
+          "id": "marquez-callaway-wr"
+        },
+        {
+          "name": "Rashard Higgins",
+          "id": "rashard-higgins-wr"
+        },
+        {
+          "name": "Josh Palmer",
+          "id": "josh-palmer-wr"
+        },
+        {
+          "name": "Chris Conley",
+          "id": "chris-conley-wr"
+        },
+        {
+          "name": "Dyami Brown",
+          "id": "dyami-brown-wr"
+        },
+        {
+          "name": "DeSean Jackson",
+          "id": "desean-jackson-wr"
+        },
+        {
+          "name": "Damiere Byrd",
+          "id": "damiere-byrd-wr"
+        },
+        {
+          "name": "K.J. Hill",
+          "id": "k.j.-hill-wr"
+        },
+        {
+          "name": "Jeff Smith",
+          "id": "jeff-smith-wr"
+        },
+        {
+          "name": "Nick Westbrook-Ikhine",
+          "id": "nick-westbrook-ikhine-wr"
+        },
+        {
+          "name": "Marquez Valdes-Scantling",
+          "id": "marquez-valdes-scantling-wr"
+        },
+        {
+          "name": "Lil'Jordan Humphrey",
+          "id": "lil'jordan-humphrey-wr"
+        },
+        {
+          "name": "Olamide Zaccheaus",
+          "id": "olamide-zaccheaus-wr"
+        },
+        {
+          "name": "Kendall Hinton",
+          "id": "kendall-hinton-wr"
+        },
+        {
+          "name": "Ty Montgomery",
+          "id": "ty-montgomery-wr"
+        },
+        {
+          "name": "James Washington",
+          "id": "james-washington-wr"
+        },
+        {
+          "name": "Donovan Peoples-Jones",
+          "id": "donovan-peoples-jones-wr"
+        },
+        {
+          "name": "Allen Lazard ",
+          "id": "allen-lazard -wr"
+        },
+        {
+          "name": "Malik Taylor",
+          "id": "malik-taylor-wr"
+        },
+        {
+          "name": "Amari Rodgers",
+          "id": "amari-rodgers-wr"
+        },
+        {
+          "name": "C.J. Board",
+          "id": "c.j.-board-wr"
+        },
+        {
+          "name": "Cam Sims",
+          "id": "cam-sims-wr"
+        },
+        {
+          "name": "Andre Roberts",
+          "id": "andre-roberts-wr"
+        },
+        {
+          "name": "Mike Thomas",
+          "id": "mike-thomas-wr"
+        },
+        {
+          "name": "Willie Snead",
+          "id": "willie-snead-wr"
+        },
+        {
+          "name": "Tyron Johnson",
+          "id": "tyron-johnson-wr"
+        },
+        {
+          "name": "Dede Westbrook",
+          "id": "dede-westbrook-wr"
+        },
+        {
+          "name": "Devin Duvernay",
+          "id": "devin-duvernay-wr"
+        },
+        {
+          "name": "Mohamed Sanu",
+          "id": "mohamed-sanu-wr"
+        },
+        {
+          "name": "Preston Williams",
+          "id": "preston-williams-wr"
+        },
+        {
+          "name": "Tajae Sharpe",
+          "id": "tajae-sharpe-wr"
+        },
+        {
+          "name": "Christian Blake",
+          "id": "christian-blake-wr"
+        },
+        {
+          "name": "Brandon Aiyuk",
+          "id": "brandon-aiyuk-wr"
+        },
+        {
+          "name": "Isaiah McKenzie",
+          "id": "isaiah-mckenzie-wr"
+        },
+        {
+          "name": "Tyler Johnson",
+          "id": "tyler-johnson-wr"
+        },
+        {
+          "name": "Kadarius Toney",
+          "id": "kadarius-toney-wr"
+        },
+        {
+          "name": "Equanimeous St. Brown",
+          "id": "equanimeous-st. brown-wr"
+        },
+        {
+          "name": "Jakeem Grant",
+          "id": "jakeem-grant-wr"
+        }
+      ]
+    },
+    {
+      "type": "TE",
+      "players": [
+        {
+          "name": "Rob Gronkowski",
+          "id": "rob-gronkowski-te"
+        },
+        {
+          "name": "Travis Kelce",
+          "id": "travis-kelce-te"
+        },
+        {
+          "name": "T.J. Hockenson",
+          "id": "t.j.-hockenson-te"
+        },
+        {
+          "name": "Darren Waller",
+          "id": "darren-waller-te"
+        },
+        {
+          "name": "Noah Fant",
+          "id": "noah-fant-te"
+        },
+        {
+          "name": "Juwan Johnson",
+          "id": "juwan-johnson-te"
+        },
+        {
+          "name": "Dallas Goedert",
+          "id": "dallas-goedert-te"
+        },
+        {
+          "name": "George Kittle",
+          "id": "george-kittle-te"
+        },
+        {
+          "name": "Logan Thomas",
+          "id": "logan-thomas-te"
+        },
+        {
+          "name": "Robert Tonyan",
+          "id": "robert-tonyan-te"
+        },
+        {
+          "name": "Kyle Pitts",
+          "id": "kyle-pitts-te"
+        },
+        {
+          "name": "Dawson Knox",
+          "id": "dawson-knox-te"
+        },
+        {
+          "name": "Maxx Williams",
+          "id": "maxx-williams-te"
+        },
+        {
+          "name": "Mark Andrews",
+          "id": "mark-andrews-te"
+        },
+        {
+          "name": "Jared Cook",
+          "id": "jared-cook-te"
+        },
+        {
+          "name": "Jack Doyle",
+          "id": "jack-doyle-te"
+        },
+        {
+          "name": "David Njoku",
+          "id": "david-njoku-te"
+        },
+        {
+          "name": "Tyler Higbee",
+          "id": "tyler-higbee-te"
+        },
+        {
+          "name": "Foster Moreau",
+          "id": "foster-moreau-te"
+        },
+        {
+          "name": "Gerald Everett",
+          "id": "gerald-everett-te"
+        },
+        {
+          "name": "Albert Okwuegbunam",
+          "id": "albert-okwuegbunam-te"
+        },
+        {
+          "name": "Jonnu Smith",
+          "id": "jonnu-smith-te"
+        },
+        {
+          "name": "Dan Arnold",
+          "id": "dan-arnold-te"
+        },
+        {
+          "name": "Hunter Henry",
+          "id": "hunter-henry-te"
+        },
+        {
+          "name": "Chris Manhertz",
+          "id": "chris-manhertz-te"
+        },
+        {
+          "name": "Austin Hooper",
+          "id": "austin-hooper-te"
+        },
+        {
+          "name": "Ricky Seals-Jones",
+          "id": "ricky-seals-jones-te"
+        },
+        {
+          "name": "Harrison Bryant",
+          "id": "harrison-bryant-te"
+        },
+        {
+          "name": "Pharaoh Brown",
+          "id": "pharaoh-brown-te"
+        },
+        {
+          "name": "Dalton Schultz",
+          "id": "dalton-schultz-te"
+        },
+        {
+          "name": "Cole Kmet",
+          "id": "cole-kmet-te"
+        },
+        {
+          "name": "Blake Jarwin",
+          "id": "blake-jarwin-te"
+        },
+        {
+          "name": "Tyler Conklin",
+          "id": "tyler-conklin-te"
+        },
+        {
+          "name": "Pat Freiermuth",
+          "id": "pat-freiermuth-te"
+        },
+        {
+          "name": "Kyle Rudolph",
+          "id": "kyle-rudolph-te"
+        },
+        {
+          "name": "C.J. Uzomah",
+          "id": "c.j.-uzomah-te"
+        },
+        {
+          "name": "Zach Ertz",
+          "id": "zach-ertz-te"
+        },
+        {
+          "name": "Hayden Hurst",
+          "id": "hayden-hurst-te"
+        },
+        {
+          "name": "MyCole Pruitt",
+          "id": "mycole-pruitt-te"
+        },
+        {
+          "name": "Will Dissly",
+          "id": "will-dissly-te"
+        },
+        {
+          "name": "Mike Gesicki",
+          "id": "mike-gesicki-te"
+        },
+        {
+          "name": "Anthony Firkser",
+          "id": "anthony-firkser-te"
+        },
+        {
+          "name": "Kaden Smith",
+          "id": "kaden-smith-te"
+        },
+        {
+          "name": "Tyler Kroft",
+          "id": "tyler-kroft-te"
+        },
+        {
+          "name": "Ryan Griffin",
+          "id": "ryan-griffin-te"
+        },
+        {
+          "name": "Blake Bell",
+          "id": "blake-bell-te"
+        },
+        {
+          "name": "Tommy Hudson",
+          "id": "tommy-hudson-te"
+        },
+        {
+          "name": "Ian Thomas",
+          "id": "ian-thomas-te"
+        },
+        {
+          "name": "Jordan Akins",
+          "id": "jordan-akins-te"
+        },
+        {
+          "name": "Marcedes Lewis",
+          "id": "marcedes-lewis-te"
+        },
+        {
+          "name": "O.J. Howard",
+          "id": "o.j.-howard-te"
+        },
+        {
+          "name": "Adam Trautman",
+          "id": "adam-trautman-te"
+        },
+        {
+          "name": "Eric Ebron",
+          "id": "eric-ebron-te"
+        },
+        {
+          "name": "Derek Carrier",
+          "id": "derek-carrier-te"
+        },
+        {
+          "name": "Stephen Anderson",
+          "id": "stephen-anderson-te"
+        },
+        {
+          "name": "Mo Alie-Cox",
+          "id": "mo-alie-cox-te"
+        },
+        {
+          "name": "Eric Saubert",
+          "id": "eric-saubert-te"
+        },
+        {
+          "name": "Jimmy Graham",
+          "id": "jimmy-graham-te"
+        },
+        {
+          "name": "Geoff Swaim",
+          "id": "geoff-swaim-te"
+        },
+        {
+          "name": "Josh Oliver",
+          "id": "josh-oliver-te"
+        },
+        {
+          "name": "Joe Fortson",
+          "id": "joe-fortson-te"
+        },
+        {
+          "name": "Lee Smith",
+          "id": "lee-smith-te"
+        },
+        {
+          "name": "Durham Smythe",
+          "id": "durham-smythe-te"
+        },
+        {
+          "name": "Cameron Brate",
+          "id": "cameron-brate-te"
+        },
+        {
+          "name": "Cethan Carter",
+          "id": "cethan-carter-te"
+        },
+        {
+          "name": "Darren Fells",
+          "id": "darren-fells-te"
+        },
+        {
+          "name": "Luke Farrell",
+          "id": "luke-farrell-te"
+        },
+        {
+          "name": "Zach Gentry",
+          "id": "zach-gentry-te"
+        }
+      ]
+    },
+    {
+      "type": "DST",
+      "players": []
+    },
+    {
+      "type": "K",
+      "players": []
+    }
+  ]
+}
