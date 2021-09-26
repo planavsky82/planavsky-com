@@ -29,6 +29,9 @@ let playerJSON = {
       type: 'K',
       players: []
     }
+  ],
+  teams: [
+    { id: 'PIT', name: 'Pittsburgh Steelers '}
   ]
 };
 
@@ -40,17 +43,27 @@ let getPlayers = (position) => {
     console.log('---------------------------------------');
     const delim = '</a></th><td class="left "';
     const rows = response.data.split(delim);
+    let team;
     const positionIndex = positions.findIndex(value => {
       return value === position;
     })
     rows.forEach((playerData, index) => {
       let playerDataSplit = playerData.split('.htm">');
+      console.log('----------------------');
+      try {
+        team = rows[index + 1].split('/teams/')[1].split('/')[0];
+        console.log(team);
+      }
+      catch(err) {
+        console.log('no data');
+      }
       let player = playerDataSplit[playerDataSplit.length - 1];
       if (index !== (rows.length - 1)) {
         console.log(player);
         playerJSON.positions[positionIndex].players.push({
           name: player,
-          id: (player + '-' + position).toLowerCase().trim().replace(' ', '-', /g/)
+          id: (player + '-' + position).toLowerCase().trim().replace(' ', '-', /g/),
+          team: team.toUpperCase()
         });
       }
     });

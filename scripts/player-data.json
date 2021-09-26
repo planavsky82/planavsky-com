@@ -5,155 +5,193 @@
       "players": [
         {
           "name": "Kyler Murray",
-          "id": "kyler-murray-qb"
+          "id": "kyler-murray-qb",
+          "team": "CRD"
         },
         {
           "name": "Daniel Jones",
-          "id": "daniel-jones-qb"
+          "id": "daniel-jones-qb",
+          "team": "NYG"
         },
         {
           "name": "Russell Wilson",
-          "id": "russell-wilson-qb"
+          "id": "russell-wilson-qb",
+          "team": "SEA"
         },
         {
           "name": "Jared Goff",
-          "id": "jared-goff-qb"
+          "id": "jared-goff-qb",
+          "team": "DET"
         },
         {
           "name": "Lamar Jackson",
-          "id": "lamar-jackson-qb"
+          "id": "lamar-jackson-qb",
+          "team": "RAV"
         },
         {
           "name": "Carson Wentz",
-          "id": "carson-wentz-qb"
+          "id": "carson-wentz-qb",
+          "team": "CLT"
         },
         {
           "name": "Jalen Hurts",
-          "id": "jalen-hurts-qb"
+          "id": "jalen-hurts-qb",
+          "team": "PHI"
         },
         {
           "name": "Tom Brady",
-          "id": "tom-brady-qb"
+          "id": "tom-brady-qb",
+          "team": "TAM"
         },
         {
           "name": "Matthew Stafford",
-          "id": "matthew-stafford-qb"
+          "id": "matthew-stafford-qb",
+          "team": "RAM"
         },
         {
           "name": "Jimmy Garoppolo",
-          "id": "jimmy-garoppolo-qb"
+          "id": "jimmy-garoppolo-qb",
+          "team": "SFO"
         },
         {
           "name": "Kirk Cousins",
-          "id": "kirk-cousins-qb"
+          "id": "kirk-cousins-qb",
+          "team": "MIN"
         },
         {
           "name": "Derek Carr",
-          "id": "derek-carr-qb"
+          "id": "derek-carr-qb",
+          "team": "RAI"
         },
         {
           "name": "Aaron Rodgers",
-          "id": "aaron-rodgers-qb"
+          "id": "aaron-rodgers-qb",
+          "team": "GNB"
         },
         {
           "name": "Josh Allen",
-          "id": "josh-allen-qb"
+          "id": "josh-allen-qb",
+          "team": "BUF"
         },
         {
           "name": "Patrick Mahomes",
-          "id": "patrick-mahomes-qb"
+          "id": "patrick-mahomes-qb",
+          "team": "KAN"
         },
         {
           "name": "Sam Darnold",
-          "id": "sam-darnold-qb"
+          "id": "sam-darnold-qb",
+          "team": "CAR"
         },
         {
           "name": "Justin Herbert",
-          "id": "justin-herbert-qb"
+          "id": "justin-herbert-qb",
+          "team": "SDG"
         },
         {
           "name": "Ryan Tannehill",
-          "id": "ryan-tannehill-qb"
+          "id": "ryan-tannehill-qb",
+          "team": "OTI"
         },
         {
           "name": "Joe Burrow",
-          "id": "joe-burrow-qb"
+          "id": "joe-burrow-qb",
+          "team": "CIN"
         },
         {
           "name": "Andy Dalton",
-          "id": "andy-dalton-qb"
+          "id": "andy-dalton-qb",
+          "team": "CHI"
         },
         {
           "name": "Teddy Bridgewater",
-          "id": "teddy-bridgewater-qb"
+          "id": "teddy-bridgewater-qb",
+          "team": "DEN"
         },
         {
           "name": "Justin Fields",
-          "id": "justin-fields-qb"
+          "id": "justin-fields-qb",
+          "team": "CHI"
         },
         {
           "name": "Trevor Lawrence",
-          "id": "trevor-lawrence-qb"
+          "id": "trevor-lawrence-qb",
+          "team": "JAX"
         },
         {
           "name": "Baker Mayfield",
-          "id": "baker-mayfield-qb"
+          "id": "baker-mayfield-qb",
+          "team": "CLE"
         },
         {
           "name": "Matt Ryan",
-          "id": "matt-ryan-qb"
+          "id": "matt-ryan-qb",
+          "team": "ATL"
         },
         {
           "name": "Dak Prescott",
-          "id": "dak-prescott-qb"
+          "id": "dak-prescott-qb",
+          "team": "DAL"
         },
         {
           "name": "Ben Roethlisberger",
-          "id": "ben-roethlisberger-qb"
+          "id": "ben-roethlisberger-qb",
+          "team": "PIT"
         },
         {
           "name": "Trey Lance",
-          "id": "trey-lance-qb"
+          "id": "trey-lance-qb",
+          "team": "SFO"
         },
         {
           "name": "Jameis Winston",
-          "id": "jameis-winston-qb"
+          "id": "jameis-winston-qb",
+          "team": "NOR"
         },
         {
           "name": "Jacob Eason",
-          "id": "jacob-eason-qb"
+          "id": "jacob-eason-qb",
+          "team": "CLT"
         },
         {
           "name": "Jordan Love",
-          "id": "jordan-love-qb"
+          "id": "jordan-love-qb",
+          "team": "GNB"
         },
         {
           "name": "Zach Wilson",
-          "id": "zach-wilson-qb"
+          "id": "zach-wilson-qb",
+          "team": "NYJ"
         },
         {
           "name": "Taylor Heinicke",
-          "id": "taylor-heinicke-qb"
+          "id": "taylor-heinicke-qb",
+          "team": "WAS"
         },
         {
           "name": "Mac Jones",
-          "id": "mac-jones-qb"
+          "id": "mac-jones-qb",
+          "team": "NWE"
         },
         {
           "name": "Davis Mills",
-          "id": "davis-mills-qb"
+          "id": "davis-mills-qb",
+          "team": "HTX"
         },
         {
           "name": "Jacoby Brissett",
-          "id": "jacoby-brissett-qb"
+          "id": "jacoby-brissett-qb",
+          "team": "MIA"
         },
         {
           "name": "Taysom Hill",
-          "id": "taysom-hill-qb"
+          "id": "taysom-hill-qb",
+          "team": "NOR"
         },
         {
           "name": "Josh Rosen",
-          "id": "josh-rosen-qb"
+          "id": "josh-rosen-qb",
+          "team": "ATL"
         }
       ]
     },
@@ -162,363 +200,453 @@
       "players": [
         {
           "name": "Dalvin Cook",
-          "id": "dalvin-cook-rb"
+          "id": "dalvin-cook-rb",
+          "team": "MIN"
         },
         {
           "name": "Derrick Henry ",
-          "id": "derrick-henry -rb"
+          "id": "derrick-henry -rb",
+          "team": "OTI"
         },
         {
           "name": "Christian McCaffrey",
-          "id": "christian-mccaffrey-rb"
+          "id": "christian-mccaffrey-rb",
+          "team": "CAR"
         },
         {
           "name": "Aaron Jones",
-          "id": "aaron-jones-rb"
+          "id": "aaron-jones-rb",
+          "team": "GNB"
         },
         {
           "name": "Austin Ekeler",
-          "id": "austin-ekeler-rb"
+          "id": "austin-ekeler-rb",
+          "team": "SDG"
         },
         {
           "name": "Darrell Henderson",
-          "id": "darrell-henderson-rb"
+          "id": "darrell-henderson-rb",
+          "team": "RAM"
         },
         {
           "name": "Chris Carson",
-          "id": "chris-carson-rb"
+          "id": "chris-carson-rb",
+          "team": "SEA"
         },
         {
           "name": "Nick Chubb",
-          "id": "nick-chubb-rb"
+          "id": "nick-chubb-rb",
+          "team": "CLE"
         },
         {
           "name": "Ty'Son Williams",
-          "id": "ty'son-williams-rb"
+          "id": "ty'son-williams-rb",
+          "team": "RAV"
         },
         {
           "name": "Joe Mixon",
-          "id": "joe-mixon-rb"
+          "id": "joe-mixon-rb",
+          "team": "CIN"
         },
         {
           "name": "Melvin Gordon",
-          "id": "melvin-gordon-rb"
+          "id": "melvin-gordon-rb",
+          "team": "DEN"
         },
         {
           "name": "Damien Harris",
-          "id": "damien-harris-rb"
+          "id": "damien-harris-rb",
+          "team": "NWE"
         },
         {
           "name": "Josh Jacobs",
-          "id": "josh-jacobs-rb"
+          "id": "josh-jacobs-rb",
+          "team": "RAI"
         },
         {
           "name": "David Montgomery",
-          "id": "david-montgomery-rb"
+          "id": "david-montgomery-rb",
+          "team": "CHI"
         },
         {
           "name": "Clyde Edwards-Helaire",
-          "id": "clyde-edwards-helaire-rb"
+          "id": "clyde-edwards-helaire-rb",
+          "team": "KAN"
         },
         {
           "name": "Elijah Mitchell",
-          "id": "elijah-mitchell-rb"
+          "id": "elijah-mitchell-rb",
+          "team": "SFO"
         },
         {
           "name": "Cordarrelle Patterson",
-          "id": "cordarrelle-patterson-rb"
+          "id": "cordarrelle-patterson-rb",
+          "team": "ATL"
         },
         {
           "name": "Najee Harris",
-          "id": "najee-harris-rb"
+          "id": "najee-harris-rb",
+          "team": "PIT"
         },
         {
           "name": "D'Andre Swift",
-          "id": "d'andre-swift-rb"
+          "id": "d'andre-swift-rb",
+          "team": "DET"
         },
         {
           "name": "Jonathan Taylor",
-          "id": "jonathan-taylor-rb"
+          "id": "jonathan-taylor-rb",
+          "team": "CLT"
         },
         {
           "name": "Mike Davis",
-          "id": "mike-davis-rb"
+          "id": "mike-davis-rb",
+          "team": "ATL"
         },
         {
           "name": "Ezekiel Elliott",
-          "id": "ezekiel-elliott-rb"
+          "id": "ezekiel-elliott-rb",
+          "team": "DAL"
         },
         {
           "name": "Chase Edmonds",
-          "id": "chase-edmonds-rb"
+          "id": "chase-edmonds-rb",
+          "team": "CRD"
         },
         {
           "name": "Latavius Murray",
-          "id": "latavius-murray-rb"
+          "id": "latavius-murray-rb",
+          "team": "RAV"
         },
         {
           "name": "Tony Pollard",
-          "id": "tony-pollard-rb"
+          "id": "tony-pollard-rb",
+          "team": "DAL"
         },
         {
           "name": "Devin Singletary",
-          "id": "devin-singletary-rb"
+          "id": "devin-singletary-rb",
+          "team": "BUF"
         },
         {
           "name": "Alvin Kamara",
-          "id": "alvin-kamara-rb"
+          "id": "alvin-kamara-rb",
+          "team": "NOR"
         },
         {
           "name": "Javonte Williams",
-          "id": "javonte-williams-rb"
+          "id": "javonte-williams-rb",
+          "team": "DEN"
         },
         {
           "name": "Jamaal Williams",
-          "id": "jamaal-williams-rb"
+          "id": "jamaal-williams-rb",
+          "team": "DET"
         },
         {
           "name": "Leonard Fournette",
-          "id": "leonard-fournette-rb"
+          "id": "leonard-fournette-rb",
+          "team": "TAM"
         },
         {
           "name": "Zack Moss",
-          "id": "zack-moss-rb"
+          "id": "zack-moss-rb",
+          "team": "BUF"
         },
         {
           "name": "Miles Sanders",
-          "id": "miles-sanders-rb"
+          "id": "miles-sanders-rb",
+          "team": "PHI"
         },
         {
           "name": "James Conner",
-          "id": "james-conner-rb"
+          "id": "james-conner-rb",
+          "team": "CRD"
         },
         {
           "name": "Saquon Barkley",
-          "id": "saquon-barkley-rb"
+          "id": "saquon-barkley-rb",
+          "team": "NYG"
         },
         {
           "name": "Kareem Hunt",
-          "id": "kareem-hunt-rb"
+          "id": "kareem-hunt-rb",
+          "team": "CLE"
         },
         {
           "name": "James Robinson",
-          "id": "james-robinson-rb"
+          "id": "james-robinson-rb",
+          "team": "JAX"
         },
         {
           "name": "Myles Gaskin",
-          "id": "myles-gaskin-rb"
+          "id": "myles-gaskin-rb",
+          "team": "MIA"
         },
         {
           "name": "Antonio Gibson ",
-          "id": "antonio-gibson -rb"
+          "id": "antonio-gibson -rb",
+          "team": "WAS"
         },
         {
           "name": "Kenyan Drake",
-          "id": "kenyan-drake-rb"
+          "id": "kenyan-drake-rb",
+          "team": "RAI"
         },
         {
           "name": "Mark Ingram",
-          "id": "mark-ingram-rb"
+          "id": "mark-ingram-rb",
+          "team": "HTX"
         },
         {
           "name": "James White",
-          "id": "james-white-rb"
+          "id": "james-white-rb",
+          "team": "NWE"
         },
         {
           "name": "Kenneth Gainwell",
-          "id": "kenneth-gainwell-rb"
+          "id": "kenneth-gainwell-rb",
+          "team": "PHI"
         },
         {
           "name": "Phillip Lindsay",
-          "id": "phillip-lindsay-rb"
+          "id": "phillip-lindsay-rb",
+          "team": "HTX"
         },
         {
           "name": "Peyton Barber",
-          "id": "peyton-barber-rb"
+          "id": "peyton-barber-rb",
+          "team": "RAI"
         },
         {
           "name": "J.D. McKissic",
-          "id": "j.d.-mckissic-rb"
+          "id": "j.d.-mckissic-rb",
+          "team": "WAS"
         },
         {
           "name": "Nyheim Hines",
-          "id": "nyheim-hines-rb"
+          "id": "nyheim-hines-rb",
+          "team": "CLT"
         },
         {
           "name": "Carlos Hyde",
-          "id": "carlos-hyde-rb"
+          "id": "carlos-hyde-rb",
+          "team": "JAX"
         },
         {
           "name": "David Johnson",
-          "id": "david-johnson-rb"
+          "id": "david-johnson-rb",
+          "team": "HTX"
         },
         {
           "name": "Michael Carter",
-          "id": "michael-carter-rb"
+          "id": "michael-carter-rb",
+          "team": "NYJ"
         },
         {
           "name": "AJ Dillon ",
-          "id": "aj-dillon -rb"
+          "id": "aj-dillon -rb",
+          "team": "GNB"
         },
         {
           "name": "Larry Rountree",
-          "id": "larry-rountree-rb"
+          "id": "larry-rountree-rb",
+          "team": "SDG"
         },
         {
           "name": "Malcolm Brown",
-          "id": "malcolm-brown-rb"
+          "id": "malcolm-brown-rb",
+          "team": "MIA"
         },
         {
           "name": "Salvon Ahmed",
-          "id": "salvon-ahmed-rb"
+          "id": "salvon-ahmed-rb",
+          "team": "MIA"
         },
         {
           "name": "Tony Jones",
-          "id": "tony-jones-rb"
+          "id": "tony-jones-rb",
+          "team": "NOR"
         },
         {
           "name": "Sony Michel",
-          "id": "sony-michel-rb"
+          "id": "sony-michel-rb",
+          "team": "RAM"
         },
         {
           "name": "Ronald Jones II",
-          "id": "ronald-jones ii-rb"
+          "id": "ronald-jones ii-rb",
+          "team": "TAM"
         },
         {
           "name": "Ty Johnson",
-          "id": "ty-johnson-rb"
+          "id": "ty-johnson-rb",
+          "team": "NYJ"
         },
         {
           "name": "Chuba Hubbard",
-          "id": "chuba-hubbard-rb"
+          "id": "chuba-hubbard-rb",
+          "team": "CAR"
         },
         {
           "name": "Justin Jackson",
-          "id": "justin-jackson-rb"
+          "id": "justin-jackson-rb",
+          "team": "SDG"
         },
         {
           "name": "Kylin Hill",
-          "id": "kylin-hill-rb"
+          "id": "kylin-hill-rb",
+          "team": "GNB"
         },
         {
           "name": "Alexander Mattison",
-          "id": "alexander-mattison-rb"
+          "id": "alexander-mattison-rb",
+          "team": "MIN"
         },
         {
           "name": "Tevin Coleman",
-          "id": "tevin-coleman-rb"
+          "id": "tevin-coleman-rb",
+          "team": "NYJ"
         },
         {
           "name": "Damien Williams",
-          "id": "damien-williams-rb"
+          "id": "damien-williams-rb",
+          "team": "CHI"
         },
         {
           "name": "Jeremy McNichols",
-          "id": "jeremy-mcnichols-rb"
+          "id": "jeremy-mcnichols-rb",
+          "team": "OTI"
         },
         {
           "name": "Devonta Freeman",
-          "id": "devonta-freeman-rb"
+          "id": "devonta-freeman-rb",
+          "team": "RAV"
         },
         {
           "name": "Keith Smith",
-          "id": "keith-smith-rb"
+          "id": "keith-smith-rb",
+          "team": "ATL"
         },
         {
           "name": "Devontae Booker",
-          "id": "devontae-booker-rb"
+          "id": "devontae-booker-rb",
+          "team": "NYG"
         },
         {
           "name": "Andy Janovich",
-          "id": "andy-janovich-rb"
+          "id": "andy-janovich-rb",
+          "team": "CLE"
         },
         {
           "name": "Marlon Mack",
-          "id": "marlon-mack-rb"
+          "id": "marlon-mack-rb",
+          "team": "CLT"
         },
         {
           "name": "Alex Collins",
-          "id": "alex-collins-rb"
+          "id": "alex-collins-rb",
+          "team": "SEA"
         },
         {
           "name": "Darrel Williams",
-          "id": "darrel-williams-rb"
+          "id": "darrel-williams-rb",
+          "team": "KAN"
         },
         {
           "name": "Samaje Perine",
-          "id": "samaje-perine-rb"
+          "id": "samaje-perine-rb",
+          "team": "CIN"
         },
         {
           "name": "Ameer Abdullah",
-          "id": "ameer-abdullah-rb"
+          "id": "ameer-abdullah-rb",
+          "team": "MIN"
         },
         {
           "name": "Rashaad Penny",
-          "id": "rashaad-penny-rb"
+          "id": "rashaad-penny-rb",
+          "team": "SEA"
         },
         {
           "name": "Kyle Juszczyk",
-          "id": "kyle-juszczyk-rb"
+          "id": "kyle-juszczyk-rb",
+          "team": "SFO"
         },
         {
           "name": "Patrick Ricard",
-          "id": "patrick-ricard-rb"
+          "id": "patrick-ricard-rb",
+          "team": "RAV"
         },
         {
           "name": "Michael Burton",
-          "id": "michael-burton-rb"
+          "id": "michael-burton-rb",
+          "team": "KAN"
         },
         {
           "name": "Matt Breida",
-          "id": "matt-breida-rb"
+          "id": "matt-breida-rb",
+          "team": "BUF"
         },
         {
           "name": "Elijhaa Penny",
-          "id": "elijhaa-penny-rb"
+          "id": "elijhaa-penny-rb",
+          "team": "NYG"
         },
         {
           "name": "Trey Sermon",
-          "id": "trey-sermon-rb"
+          "id": "trey-sermon-rb",
+          "team": "SFO"
         },
         {
           "name": "DeeJay Dallas",
-          "id": "deejay-dallas-rb"
+          "id": "deejay-dallas-rb",
+          "team": "SEA"
         },
         {
           "name": "Benny Snell Jr.",
-          "id": "benny-snell jr.-rb"
+          "id": "benny-snell jr.-rb",
+          "team": "PIT"
         },
         {
           "name": "J.J. Taylor",
-          "id": "j.j.-taylor-rb"
+          "id": "j.j.-taylor-rb",
+          "team": "NWE"
         },
         {
           "name": "Jaret Patterson",
-          "id": "jaret-patterson-rb"
+          "id": "jaret-patterson-rb",
+          "team": "WAS"
         },
         {
           "name": "Gabe Nabers",
-          "id": "gabe-nabers-rb"
+          "id": "gabe-nabers-rb",
+          "team": "SDG"
         },
         {
           "name": "Reggie Gilliam",
-          "id": "reggie-gilliam-rb"
+          "id": "reggie-gilliam-rb",
+          "team": "BUF"
         },
         {
           "name": "Brandon Bolden",
-          "id": "brandon-bolden-rb"
+          "id": "brandon-bolden-rb",
+          "team": "NWE"
         },
         {
           "name": "Trenton Cannon",
-          "id": "trenton-cannon-rb"
+          "id": "trenton-cannon-rb",
+          "team": "SFO"
         },
         {
           "name": "Mekhi Sargent",
-          "id": "mekhi-sargent-rb"
+          "id": "mekhi-sargent-rb",
+          "team": "OTI"
         },
         {
           "name": "Rhamondre Stevenson",
-          "id": "rhamondre-stevenson-rb"
+          "id": "rhamondre-stevenson-rb",
+          "team": "NWE"
         }
       ]
     },
@@ -527,543 +655,678 @@
       "players": [
         {
           "name": "Cooper Kupp",
-          "id": "cooper-kupp-wr"
+          "id": "cooper-kupp-wr",
+          "team": "RAM"
         },
         {
           "name": "Tyler Lockett",
-          "id": "tyler-lockett-wr"
+          "id": "tyler-lockett-wr",
+          "team": "SEA"
         },
         {
           "name": "Deebo Samuel",
-          "id": "deebo-samuel-wr"
+          "id": "deebo-samuel-wr",
+          "team": "SFO"
         },
         {
           "name": "Sterling Shepard",
-          "id": "sterling-shepard-wr"
+          "id": "sterling-shepard-wr",
+          "team": "NYG"
         },
         {
           "name": "Marquise Brown",
-          "id": "marquise-brown-wr"
+          "id": "marquise-brown-wr",
+          "team": "RAV"
         },
         {
           "name": "Zach Pascal",
-          "id": "zach-pascal-wr"
+          "id": "zach-pascal-wr",
+          "team": "CLT"
         },
         {
           "name": "DeAndre Hopkins",
-          "id": "deandre-hopkins-wr"
+          "id": "deandre-hopkins-wr",
+          "team": "CRD"
         },
         {
           "name": "Adam Thielen",
-          "id": "adam-thielen-wr"
+          "id": "adam-thielen-wr",
+          "team": "MIN"
         },
         {
           "name": "Brandin Cooks",
-          "id": "brandin-cooks-wr"
+          "id": "brandin-cooks-wr",
+          "team": "HTX"
         },
         {
           "name": "Marvin Jones",
-          "id": "marvin-jones-wr"
+          "id": "marvin-jones-wr",
+          "team": "JAX"
         },
         {
           "name": "Mike Williams",
-          "id": "mike-williams-wr"
+          "id": "mike-williams-wr",
+          "team": "SDG"
         },
         {
           "name": "Ja'Marr Chase",
-          "id": "ja'marr-chase-wr"
+          "id": "ja'marr-chase-wr",
+          "team": "CIN"
         },
         {
           "name": "Michael Pittman Jr.",
-          "id": "michael-pittman jr.-wr"
+          "id": "michael-pittman jr.-wr",
+          "team": "CLT"
         },
         {
           "name": "Diontae Johnson",
-          "id": "diontae-johnson-wr"
+          "id": "diontae-johnson-wr",
+          "team": "PIT"
         },
         {
           "name": "D.K. Metcalf",
-          "id": "d.k.-metcalf-wr"
+          "id": "d.k.-metcalf-wr",
+          "team": "SEA"
         },
         {
           "name": "Chris Godwin",
-          "id": "chris-godwin-wr"
+          "id": "chris-godwin-wr",
+          "team": "TAM"
         },
         {
           "name": "Tee Higgins",
-          "id": "tee-higgins-wr"
+          "id": "tee-higgins-wr",
+          "team": "CIN"
         },
         {
           "name": "Rondale Moore",
-          "id": "rondale-moore-wr"
+          "id": "rondale-moore-wr",
+          "team": "CRD"
         },
         {
           "name": "Tyreek Hill",
-          "id": "tyreek-hill-wr"
+          "id": "tyreek-hill-wr",
+          "team": "KAN"
         },
         {
           "name": "Stefon Diggs",
-          "id": "stefon-diggs-wr"
+          "id": "stefon-diggs-wr",
+          "team": "BUF"
         },
         {
           "name": "D.J. Moore",
-          "id": "d.j.-moore-wr"
+          "id": "d.j.-moore-wr",
+          "team": "CAR"
         },
         {
           "name": "Amari Cooper",
-          "id": "amari-cooper-wr"
+          "id": "amari-cooper-wr",
+          "team": "DAL"
         },
         {
           "name": "Christian Kirk",
-          "id": "christian-kirk-wr"
+          "id": "christian-kirk-wr",
+          "team": "CRD"
         },
         {
           "name": "Terry McLaurin",
-          "id": "terry-mclaurin-wr"
+          "id": "terry-mclaurin-wr",
+          "team": "WAS"
         },
         {
           "name": "K.J. Osborn",
-          "id": "k.j.-osborn-wr"
+          "id": "k.j.-osborn-wr",
+          "team": "MIN"
         },
         {
           "name": "CeeDee Lamb",
-          "id": "ceedee-lamb-wr"
+          "id": "ceedee-lamb-wr",
+          "team": "DAL"
         },
         {
           "name": "Corey Davis",
-          "id": "corey-davis-wr"
+          "id": "corey-davis-wr",
+          "team": "NYJ"
         },
         {
           "name": "Keenan Allen",
-          "id": "keenan-allen-wr"
+          "id": "keenan-allen-wr",
+          "team": "SDG"
         },
         {
           "name": "Robert Woods",
-          "id": "robert-woods-wr"
+          "id": "robert-woods-wr",
+          "team": "RAM"
         },
         {
           "name": "Julio Jones",
-          "id": "julio-jones-wr"
+          "id": "julio-jones-wr",
+          "team": "OTI"
         },
         {
           "name": "Davante Adams",
-          "id": "davante-adams-wr"
+          "id": "davante-adams-wr",
+          "team": "GNB"
         },
         {
           "name": "Quintez Cephus",
-          "id": "quintez-cephus-wr"
+          "id": "quintez-cephus-wr",
+          "team": "DET"
         },
         {
           "name": "DeVonta Smith",
-          "id": "devonta-smith-wr"
+          "id": "devonta-smith-wr",
+          "team": "PHI"
         },
         {
           "name": "Justin Jefferson",
-          "id": "justin-jefferson-wr"
+          "id": "justin-jefferson-wr",
+          "team": "MIN"
         },
         {
           "name": "Mike Evans",
-          "id": "mike-evans-wr"
+          "id": "mike-evans-wr",
+          "team": "TAM"
         },
         {
           "name": "Calvin Ridley",
-          "id": "calvin-ridley-wr"
+          "id": "calvin-ridley-wr",
+          "team": "ATL"
         },
         {
           "name": "Jaylen Waddle",
-          "id": "jaylen-waddle-wr"
+          "id": "jaylen-waddle-wr",
+          "team": "MIA"
         },
         {
           "name": "JuJu Smith-Schuster",
-          "id": "juju-smith-schuster-wr"
+          "id": "juju-smith-schuster-wr",
+          "team": "PIT"
         },
         {
           "name": "Henry Ruggs III",
-          "id": "henry-ruggs iii-wr"
+          "id": "henry-ruggs iii-wr",
+          "team": "RAI"
         },
         {
           "name": "Freddie Swain",
-          "id": "freddie-swain-wr"
+          "id": "freddie-swain-wr",
+          "team": "SEA"
         },
         {
           "name": "Darius Slayton",
-          "id": "darius-slayton-wr"
+          "id": "darius-slayton-wr",
+          "team": "NYG"
         },
         {
           "name": "Braxton Berrios",
-          "id": "braxton-berrios-wr"
+          "id": "braxton-berrios-wr",
+          "team": "NYJ"
         },
         {
           "name": "A.J. Brown",
-          "id": "a.j.-brown-wr"
+          "id": "a.j.-brown-wr",
+          "team": "OTI"
         },
         {
           "name": "Tyler Boyd",
-          "id": "tyler-boyd-wr"
+          "id": "tyler-boyd-wr",
+          "team": "CIN"
         },
         {
           "name": "Jalen Reagor",
-          "id": "jalen-reagor-wr"
+          "id": "jalen-reagor-wr",
+          "team": "PHI"
         },
         {
           "name": "Cole Beasley",
-          "id": "cole-beasley-wr"
+          "id": "cole-beasley-wr",
+          "team": "BUF"
         },
         {
           "name": "Sammy Watkins",
-          "id": "sammy-watkins-wr"
+          "id": "sammy-watkins-wr",
+          "team": "RAV"
         },
         {
           "name": "Tim Patrick",
-          "id": "tim-patrick-wr"
+          "id": "tim-patrick-wr",
+          "team": "DEN"
         },
         {
           "name": "DeVante Parker",
-          "id": "devante-parker-wr"
+          "id": "devante-parker-wr",
+          "team": "MIA"
         },
         {
           "name": "Courtland Sutton",
-          "id": "courtland-sutton-wr"
+          "id": "courtland-sutton-wr",
+          "team": "DEN"
         },
         {
           "name": "Nelson Agholor",
-          "id": "nelson-agholor-wr"
+          "id": "nelson-agholor-wr",
+          "team": "NWE"
         },
         {
           "name": "Quez Watkins",
-          "id": "quez-watkins-wr"
+          "id": "quez-watkins-wr",
+          "team": "PHI"
         },
         {
           "name": "DJ Chark",
-          "id": "dj-chark-wr"
+          "id": "dj-chark-wr",
+          "team": "JAX"
         },
         {
           "name": "Darnell Mooney",
-          "id": "darnell-mooney-wr"
+          "id": "darnell-mooney-wr",
+          "team": "CHI"
         },
         {
           "name": "Allen Robinson",
-          "id": "allen-robinson-wr"
+          "id": "allen-robinson-wr",
+          "team": "CHI"
         },
         {
           "name": "Chase Claypool",
-          "id": "chase-claypool-wr"
+          "id": "chase-claypool-wr",
+          "team": "PIT"
         },
         {
           "name": "Van Jefferson",
-          "id": "van-jefferson-wr"
+          "id": "van-jefferson-wr",
+          "team": "RAM"
         },
         {
           "name": "Hunter Renfrow",
-          "id": "hunter-renfrow-wr"
+          "id": "hunter-renfrow-wr",
+          "team": "RAI"
         },
         {
           "name": "Kenny Golladay",
-          "id": "kenny-golladay-wr"
+          "id": "kenny-golladay-wr",
+          "team": "NYG"
         },
         {
           "name": "Laviska Shenault Jr.",
-          "id": "laviska-shenault jr.-wr"
+          "id": "laviska-shenault jr.-wr",
+          "team": "JAX"
         },
         {
           "name": "Deonte Harris",
-          "id": "deonte-harris-wr"
+          "id": "deonte-harris-wr",
+          "team": "NOR"
         },
         {
           "name": "A.J. Green",
-          "id": "a.j.-green-wr"
+          "id": "a.j.-green-wr",
+          "team": "CRD"
         },
         {
           "name": "Robby Anderson",
-          "id": "robby-anderson-wr"
+          "id": "robby-anderson-wr",
+          "team": "CAR"
         },
         {
           "name": "Emmanuel Sanders",
-          "id": "emmanuel-sanders-wr"
+          "id": "emmanuel-sanders-wr",
+          "team": "BUF"
         },
         {
           "name": "Chester Rogers",
-          "id": "chester-rogers-wr"
+          "id": "chester-rogers-wr",
+          "team": "OTI"
         },
         {
           "name": "Jakobi Meyers",
-          "id": "jakobi-meyers-wr"
+          "id": "jakobi-meyers-wr",
+          "team": "NWE"
         },
         {
           "name": "Bryan Edwards",
-          "id": "bryan-edwards-wr"
+          "id": "bryan-edwards-wr",
+          "team": "RAI"
         },
         {
           "name": "Byron Pringle",
-          "id": "byron-pringle-wr"
+          "id": "byron-pringle-wr",
+          "team": "KAN"
         },
         {
           "name": "Danny Amendola",
-          "id": "danny-amendola-wr"
+          "id": "danny-amendola-wr",
+          "team": "HTX"
         },
         {
           "name": "Anthony Schwartz",
-          "id": "anthony-schwartz-wr"
+          "id": "anthony-schwartz-wr",
+          "team": "CLE"
         },
         {
           "name": "Demarcus Robinson",
-          "id": "demarcus-robinson-wr"
+          "id": "demarcus-robinson-wr",
+          "team": "KAN"
         },
         {
           "name": "Kalif Raymond",
-          "id": "kalif-raymond-wr"
+          "id": "kalif-raymond-wr",
+          "team": "DET"
         },
         {
           "name": "Gabriel Davis",
-          "id": "gabriel-davis-wr"
+          "id": "gabriel-davis-wr",
+          "team": "BUF"
         },
         {
           "name": "Trent Sherfield",
-          "id": "trent-sherfield-wr"
+          "id": "trent-sherfield-wr",
+          "team": "SFO"
         },
         {
           "name": "Brandon Zylstra",
-          "id": "brandon-zylstra-wr"
+          "id": "brandon-zylstra-wr",
+          "team": "CAR"
         },
         {
           "name": "Zay Jones",
-          "id": "zay-jones-wr"
+          "id": "zay-jones-wr",
+          "team": "RAI"
         },
         {
           "name": "Chris Hogan",
-          "id": "chris-hogan-wr"
+          "id": "chris-hogan-wr",
+          "team": "NOR"
         },
         {
           "name": "Marquise Goodwin",
-          "id": "marquise-goodwin-wr"
+          "id": "marquise-goodwin-wr",
+          "team": "CHI"
         },
         {
           "name": "Mecole Hardman",
-          "id": "mecole-hardman-wr"
+          "id": "mecole-hardman-wr",
+          "team": "KAN"
         },
         {
           "name": "Adam Humphries",
-          "id": "adam-humphries-wr"
+          "id": "adam-humphries-wr",
+          "team": "WAS"
         },
         {
           "name": "Jalen Guyton",
-          "id": "jalen-guyton-wr"
+          "id": "jalen-guyton-wr",
+          "team": "SDG"
         },
         {
           "name": "Elijah Moore",
-          "id": "elijah-moore-wr"
+          "id": "elijah-moore-wr",
+          "team": "NYJ"
         },
         {
           "name": "Jauan Jennings",
-          "id": "jauan-jennings-wr"
+          "id": "jauan-jennings-wr",
+          "team": "SFO"
         },
         {
           "name": "Terrace Marshall Jr.",
-          "id": "terrace-marshall jr.-wr"
+          "id": "terrace-marshall jr.-wr",
+          "team": "CAR"
         },
         {
           "name": "Randall Cobb",
-          "id": "randall-cobb-wr"
+          "id": "randall-cobb-wr",
+          "team": "GNB"
         },
         {
           "name": "Denzel Mims",
-          "id": "denzel-mims-wr"
+          "id": "denzel-mims-wr",
+          "team": "NYJ"
         },
         {
           "name": "Amon-Ra St. Brown",
-          "id": "amon-ra-st. brown-wr"
+          "id": "amon-ra-st. brown-wr",
+          "team": "DET"
         },
         {
           "name": "Ashton Dulin",
-          "id": "ashton-dulin-wr"
+          "id": "ashton-dulin-wr",
+          "team": "CLT"
         },
         {
           "name": "Trinity Benson",
-          "id": "trinity-benson-wr"
+          "id": "trinity-benson-wr",
+          "team": "DET"
         },
         {
           "name": "D'Wayne Eskridge",
-          "id": "d'wayne-eskridge-wr"
+          "id": "d'wayne-eskridge-wr",
+          "team": "SEA"
         },
         {
           "name": "Kendrick Bourne",
-          "id": "kendrick-bourne-wr"
+          "id": "kendrick-bourne-wr",
+          "team": "NWE"
         },
         {
           "name": "Russell Gage",
-          "id": "russell-gage-wr"
+          "id": "russell-gage-wr",
+          "team": "ATL"
         },
         {
           "name": "Albert Wilson",
-          "id": "albert-wilson-wr"
+          "id": "albert-wilson-wr",
+          "team": "MIA"
         },
         {
           "name": "KJ Hamler",
-          "id": "kj-hamler-wr"
+          "id": "kj-hamler-wr",
+          "team": "DEN"
         },
         {
           "name": "Cedrick Wilson Jr.",
-          "id": "cedrick-wilson jr.-wr"
+          "id": "cedrick-wilson jr.-wr",
+          "team": "DAL"
         },
         {
           "name": "Parris Campbell",
-          "id": "parris-campbell-wr"
+          "id": "parris-campbell-wr",
+          "team": "CLT"
         },
         {
           "name": "Mike Strachan",
-          "id": "mike-strachan-wr"
+          "id": "mike-strachan-wr",
+          "team": "CLT"
         },
         {
           "name": "Marquez Callaway",
-          "id": "marquez-callaway-wr"
+          "id": "marquez-callaway-wr",
+          "team": "NOR"
         },
         {
           "name": "Rashard Higgins",
-          "id": "rashard-higgins-wr"
+          "id": "rashard-higgins-wr",
+          "team": "CLE"
         },
         {
           "name": "Josh Palmer",
-          "id": "josh-palmer-wr"
+          "id": "josh-palmer-wr",
+          "team": "SDG"
         },
         {
           "name": "Chris Conley",
-          "id": "chris-conley-wr"
+          "id": "chris-conley-wr",
+          "team": "HTX"
         },
         {
           "name": "Dyami Brown",
-          "id": "dyami-brown-wr"
+          "id": "dyami-brown-wr",
+          "team": "WAS"
         },
         {
           "name": "DeSean Jackson",
-          "id": "desean-jackson-wr"
+          "id": "desean-jackson-wr",
+          "team": "RAM"
         },
         {
           "name": "Damiere Byrd",
-          "id": "damiere-byrd-wr"
+          "id": "damiere-byrd-wr",
+          "team": "CHI"
         },
         {
           "name": "K.J. Hill",
-          "id": "k.j.-hill-wr"
+          "id": "k.j.-hill-wr",
+          "team": "SDG"
         },
         {
           "name": "Jeff Smith",
-          "id": "jeff-smith-wr"
+          "id": "jeff-smith-wr",
+          "team": "NYJ"
         },
         {
           "name": "Nick Westbrook-Ikhine",
-          "id": "nick-westbrook-ikhine-wr"
+          "id": "nick-westbrook-ikhine-wr",
+          "team": "OTI"
         },
         {
           "name": "Marquez Valdes-Scantling",
-          "id": "marquez-valdes-scantling-wr"
+          "id": "marquez-valdes-scantling-wr",
+          "team": "GNB"
         },
         {
           "name": "Lil'Jordan Humphrey",
-          "id": "lil'jordan-humphrey-wr"
+          "id": "lil'jordan-humphrey-wr",
+          "team": "NOR"
         },
         {
           "name": "Olamide Zaccheaus",
-          "id": "olamide-zaccheaus-wr"
+          "id": "olamide-zaccheaus-wr",
+          "team": "ATL"
         },
         {
           "name": "Kendall Hinton",
-          "id": "kendall-hinton-wr"
+          "id": "kendall-hinton-wr",
+          "team": "DEN"
         },
         {
           "name": "Ty Montgomery",
-          "id": "ty-montgomery-wr"
+          "id": "ty-montgomery-wr",
+          "team": "NOR"
         },
         {
           "name": "James Washington",
-          "id": "james-washington-wr"
+          "id": "james-washington-wr",
+          "team": "PIT"
         },
         {
           "name": "Donovan Peoples-Jones",
-          "id": "donovan-peoples-jones-wr"
+          "id": "donovan-peoples-jones-wr",
+          "team": "CLE"
         },
         {
           "name": "Allen Lazard ",
-          "id": "allen-lazard -wr"
+          "id": "allen-lazard -wr",
+          "team": "GNB"
         },
         {
           "name": "Malik Taylor",
-          "id": "malik-taylor-wr"
+          "id": "malik-taylor-wr",
+          "team": "GNB"
         },
         {
           "name": "Amari Rodgers",
-          "id": "amari-rodgers-wr"
+          "id": "amari-rodgers-wr",
+          "team": "GNB"
         },
         {
           "name": "C.J. Board",
-          "id": "c.j.-board-wr"
+          "id": "c.j.-board-wr",
+          "team": "NYG"
         },
         {
           "name": "Cam Sims",
-          "id": "cam-sims-wr"
+          "id": "cam-sims-wr",
+          "team": "WAS"
         },
         {
           "name": "Andre Roberts",
-          "id": "andre-roberts-wr"
+          "id": "andre-roberts-wr",
+          "team": "HTX"
         },
         {
           "name": "Mike Thomas",
-          "id": "mike-thomas-wr"
+          "id": "mike-thomas-wr",
+          "team": "CIN"
         },
         {
           "name": "Willie Snead",
-          "id": "willie-snead-wr"
+          "id": "willie-snead-wr",
+          "team": "RAI"
         },
         {
           "name": "Tyron Johnson",
-          "id": "tyron-johnson-wr"
+          "id": "tyron-johnson-wr",
+          "team": "JAX"
         },
         {
           "name": "Dede Westbrook",
-          "id": "dede-westbrook-wr"
+          "id": "dede-westbrook-wr",
+          "team": "MIN"
         },
         {
           "name": "Devin Duvernay",
-          "id": "devin-duvernay-wr"
+          "id": "devin-duvernay-wr",
+          "team": "RAV"
         },
         {
           "name": "Mohamed Sanu",
-          "id": "mohamed-sanu-wr"
+          "id": "mohamed-sanu-wr",
+          "team": "SFO"
         },
         {
           "name": "Preston Williams",
-          "id": "preston-williams-wr"
+          "id": "preston-williams-wr",
+          "team": "MIA"
         },
         {
           "name": "Tajae Sharpe",
-          "id": "tajae-sharpe-wr"
+          "id": "tajae-sharpe-wr",
+          "team": "ATL"
         },
         {
           "name": "Christian Blake",
-          "id": "christian-blake-wr"
+          "id": "christian-blake-wr",
+          "team": "ATL"
         },
         {
           "name": "Brandon Aiyuk",
-          "id": "brandon-aiyuk-wr"
+          "id": "brandon-aiyuk-wr",
+          "team": "SFO"
         },
         {
           "name": "Isaiah McKenzie",
-          "id": "isaiah-mckenzie-wr"
+          "id": "isaiah-mckenzie-wr",
+          "team": "BUF"
         },
         {
           "name": "Tyler Johnson",
-          "id": "tyler-johnson-wr"
+          "id": "tyler-johnson-wr",
+          "team": "TAM"
         },
         {
           "name": "Kadarius Toney",
-          "id": "kadarius-toney-wr"
+          "id": "kadarius-toney-wr",
+          "team": "NYG"
         },
         {
           "name": "Equanimeous St. Brown",
-          "id": "equanimeous-st. brown-wr"
+          "id": "equanimeous-st. brown-wr",
+          "team": "GNB"
         },
         {
           "name": "Jakeem Grant",
-          "id": "jakeem-grant-wr"
+          "id": "jakeem-grant-wr",
+          "team": "MIA"
         }
       ]
     },
@@ -1072,275 +1335,343 @@
       "players": [
         {
           "name": "Rob Gronkowski",
-          "id": "rob-gronkowski-te"
+          "id": "rob-gronkowski-te",
+          "team": "TAM"
         },
         {
           "name": "Travis Kelce",
-          "id": "travis-kelce-te"
+          "id": "travis-kelce-te",
+          "team": "KAN"
         },
         {
           "name": "T.J. Hockenson",
-          "id": "t.j.-hockenson-te"
+          "id": "t.j.-hockenson-te",
+          "team": "DET"
         },
         {
           "name": "Darren Waller",
-          "id": "darren-waller-te"
+          "id": "darren-waller-te",
+          "team": "RAI"
         },
         {
           "name": "Noah Fant",
-          "id": "noah-fant-te"
+          "id": "noah-fant-te",
+          "team": "DEN"
         },
         {
           "name": "Juwan Johnson",
-          "id": "juwan-johnson-te"
+          "id": "juwan-johnson-te",
+          "team": "NOR"
         },
         {
           "name": "Dallas Goedert",
-          "id": "dallas-goedert-te"
+          "id": "dallas-goedert-te",
+          "team": "PHI"
         },
         {
           "name": "George Kittle",
-          "id": "george-kittle-te"
+          "id": "george-kittle-te",
+          "team": "SFO"
         },
         {
           "name": "Logan Thomas",
-          "id": "logan-thomas-te"
+          "id": "logan-thomas-te",
+          "team": "WAS"
         },
         {
           "name": "Robert Tonyan",
-          "id": "robert-tonyan-te"
+          "id": "robert-tonyan-te",
+          "team": "GNB"
         },
         {
           "name": "Kyle Pitts",
-          "id": "kyle-pitts-te"
+          "id": "kyle-pitts-te",
+          "team": "ATL"
         },
         {
           "name": "Dawson Knox",
-          "id": "dawson-knox-te"
+          "id": "dawson-knox-te",
+          "team": "BUF"
         },
         {
           "name": "Maxx Williams",
-          "id": "maxx-williams-te"
+          "id": "maxx-williams-te",
+          "team": "CRD"
         },
         {
           "name": "Mark Andrews",
-          "id": "mark-andrews-te"
+          "id": "mark-andrews-te",
+          "team": "RAV"
         },
         {
           "name": "Jared Cook",
-          "id": "jared-cook-te"
+          "id": "jared-cook-te",
+          "team": "SDG"
         },
         {
           "name": "Jack Doyle",
-          "id": "jack-doyle-te"
+          "id": "jack-doyle-te",
+          "team": "CLT"
         },
         {
           "name": "David Njoku",
-          "id": "david-njoku-te"
+          "id": "david-njoku-te",
+          "team": "CLE"
         },
         {
           "name": "Tyler Higbee",
-          "id": "tyler-higbee-te"
+          "id": "tyler-higbee-te",
+          "team": "RAM"
         },
         {
           "name": "Foster Moreau",
-          "id": "foster-moreau-te"
+          "id": "foster-moreau-te",
+          "team": "RAI"
         },
         {
           "name": "Gerald Everett",
-          "id": "gerald-everett-te"
+          "id": "gerald-everett-te",
+          "team": "SEA"
         },
         {
           "name": "Albert Okwuegbunam",
-          "id": "albert-okwuegbunam-te"
+          "id": "albert-okwuegbunam-te",
+          "team": "DEN"
         },
         {
           "name": "Jonnu Smith",
-          "id": "jonnu-smith-te"
+          "id": "jonnu-smith-te",
+          "team": "NWE"
         },
         {
           "name": "Dan Arnold",
-          "id": "dan-arnold-te"
+          "id": "dan-arnold-te",
+          "team": "CAR"
         },
         {
           "name": "Hunter Henry",
-          "id": "hunter-henry-te"
+          "id": "hunter-henry-te",
+          "team": "NWE"
         },
         {
           "name": "Chris Manhertz",
-          "id": "chris-manhertz-te"
+          "id": "chris-manhertz-te",
+          "team": "JAX"
         },
         {
           "name": "Austin Hooper",
-          "id": "austin-hooper-te"
+          "id": "austin-hooper-te",
+          "team": "CLE"
         },
         {
           "name": "Ricky Seals-Jones",
-          "id": "ricky-seals-jones-te"
+          "id": "ricky-seals-jones-te",
+          "team": "WAS"
         },
         {
           "name": "Harrison Bryant",
-          "id": "harrison-bryant-te"
+          "id": "harrison-bryant-te",
+          "team": "CLE"
         },
         {
           "name": "Pharaoh Brown",
-          "id": "pharaoh-brown-te"
+          "id": "pharaoh-brown-te",
+          "team": "HTX"
         },
         {
           "name": "Dalton Schultz",
-          "id": "dalton-schultz-te"
+          "id": "dalton-schultz-te",
+          "team": "DAL"
         },
         {
           "name": "Cole Kmet",
-          "id": "cole-kmet-te"
+          "id": "cole-kmet-te",
+          "team": "CHI"
         },
         {
           "name": "Blake Jarwin",
-          "id": "blake-jarwin-te"
+          "id": "blake-jarwin-te",
+          "team": "DAL"
         },
         {
           "name": "Tyler Conklin",
-          "id": "tyler-conklin-te"
+          "id": "tyler-conklin-te",
+          "team": "MIN"
         },
         {
           "name": "Pat Freiermuth",
-          "id": "pat-freiermuth-te"
+          "id": "pat-freiermuth-te",
+          "team": "PIT"
         },
         {
           "name": "Kyle Rudolph",
-          "id": "kyle-rudolph-te"
+          "id": "kyle-rudolph-te",
+          "team": "NYG"
         },
         {
           "name": "C.J. Uzomah",
-          "id": "c.j.-uzomah-te"
+          "id": "c.j.-uzomah-te",
+          "team": "CIN"
         },
         {
           "name": "Zach Ertz",
-          "id": "zach-ertz-te"
+          "id": "zach-ertz-te",
+          "team": "PHI"
         },
         {
           "name": "Hayden Hurst",
-          "id": "hayden-hurst-te"
+          "id": "hayden-hurst-te",
+          "team": "ATL"
         },
         {
           "name": "MyCole Pruitt",
-          "id": "mycole-pruitt-te"
+          "id": "mycole-pruitt-te",
+          "team": "OTI"
         },
         {
           "name": "Will Dissly",
-          "id": "will-dissly-te"
+          "id": "will-dissly-te",
+          "team": "SEA"
         },
         {
           "name": "Mike Gesicki",
-          "id": "mike-gesicki-te"
+          "id": "mike-gesicki-te",
+          "team": "MIA"
         },
         {
           "name": "Anthony Firkser",
-          "id": "anthony-firkser-te"
+          "id": "anthony-firkser-te",
+          "team": "OTI"
         },
         {
           "name": "Kaden Smith",
-          "id": "kaden-smith-te"
+          "id": "kaden-smith-te",
+          "team": "NYG"
         },
         {
           "name": "Tyler Kroft",
-          "id": "tyler-kroft-te"
+          "id": "tyler-kroft-te",
+          "team": "NYJ"
         },
         {
           "name": "Ryan Griffin",
-          "id": "ryan-griffin-te"
+          "id": "ryan-griffin-te",
+          "team": "NYJ"
         },
         {
           "name": "Blake Bell",
-          "id": "blake-bell-te"
+          "id": "blake-bell-te",
+          "team": "KAN"
         },
         {
           "name": "Tommy Hudson",
-          "id": "tommy-hudson-te"
+          "id": "tommy-hudson-te",
+          "team": "OTI"
         },
         {
           "name": "Ian Thomas",
-          "id": "ian-thomas-te"
+          "id": "ian-thomas-te",
+          "team": "CAR"
         },
         {
           "name": "Jordan Akins",
-          "id": "jordan-akins-te"
+          "id": "jordan-akins-te",
+          "team": "HTX"
         },
         {
           "name": "Marcedes Lewis",
-          "id": "marcedes-lewis-te"
+          "id": "marcedes-lewis-te",
+          "team": "GNB"
         },
         {
           "name": "O.J. Howard",
-          "id": "o.j.-howard-te"
+          "id": "o.j.-howard-te",
+          "team": "TAM"
         },
         {
           "name": "Adam Trautman",
-          "id": "adam-trautman-te"
+          "id": "adam-trautman-te",
+          "team": "NOR"
         },
         {
           "name": "Eric Ebron",
-          "id": "eric-ebron-te"
+          "id": "eric-ebron-te",
+          "team": "PIT"
         },
         {
           "name": "Derek Carrier",
-          "id": "derek-carrier-te"
+          "id": "derek-carrier-te",
+          "team": "RAI"
         },
         {
           "name": "Stephen Anderson",
-          "id": "stephen-anderson-te"
+          "id": "stephen-anderson-te",
+          "team": "SDG"
         },
         {
           "name": "Mo Alie-Cox",
-          "id": "mo-alie-cox-te"
+          "id": "mo-alie-cox-te",
+          "team": "CLT"
         },
         {
           "name": "Eric Saubert",
-          "id": "eric-saubert-te"
+          "id": "eric-saubert-te",
+          "team": "DEN"
         },
         {
           "name": "Jimmy Graham",
-          "id": "jimmy-graham-te"
+          "id": "jimmy-graham-te",
+          "team": "CHI"
         },
         {
           "name": "Geoff Swaim",
-          "id": "geoff-swaim-te"
+          "id": "geoff-swaim-te",
+          "team": "OTI"
         },
         {
           "name": "Josh Oliver",
-          "id": "josh-oliver-te"
+          "id": "josh-oliver-te",
+          "team": "RAV"
         },
         {
           "name": "Joe Fortson",
-          "id": "joe-fortson-te"
+          "id": "joe-fortson-te",
+          "team": "KAN"
         },
         {
           "name": "Lee Smith",
-          "id": "lee-smith-te"
+          "id": "lee-smith-te",
+          "team": "ATL"
         },
         {
           "name": "Durham Smythe",
-          "id": "durham-smythe-te"
+          "id": "durham-smythe-te",
+          "team": "MIA"
         },
         {
           "name": "Cameron Brate",
-          "id": "cameron-brate-te"
+          "id": "cameron-brate-te",
+          "team": "TAM"
         },
         {
           "name": "Cethan Carter",
-          "id": "cethan-carter-te"
+          "id": "cethan-carter-te",
+          "team": "MIA"
         },
         {
           "name": "Darren Fells",
-          "id": "darren-fells-te"
+          "id": "darren-fells-te",
+          "team": "DET"
         },
         {
           "name": "Luke Farrell",
-          "id": "luke-farrell-te"
+          "id": "luke-farrell-te",
+          "team": "JAX"
         },
         {
           "name": "Zach Gentry",
-          "id": "zach-gentry-te"
+          "id": "zach-gentry-te",
+          "team": "PIT"
         }
       ]
     },
@@ -1352,5 +1683,6 @@
       "type": "K",
       "players": []
     }
-  ]
+  ],
+  "teams": []
 }
