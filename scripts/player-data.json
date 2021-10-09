@@ -1892,7 +1892,136 @@
     },
     {
       "type": "DST",
-      "players": []
+      "players": [
+        {
+          "id": "PIT",
+          "name": "Pittsburgh Steelers"
+        },
+        {
+          "id": "CIN",
+          "name": "Cincinnati Bengals"
+        },
+        {
+          "id": "RAV",
+          "name": "Baltimore Ravens"
+        },
+        {
+          "id": "CLE",
+          "name": "Cleveland Browns"
+        },
+        {
+          "id": "MIA",
+          "name": "Miami Dolphins"
+        },
+        {
+          "id": "NWE",
+          "name": "New England Patriots"
+        },
+        {
+          "id": "BUF",
+          "name": "Buffalo Bills"
+        },
+        {
+          "id": "NYJ",
+          "name": "New York Jets"
+        },
+        {
+          "id": "CLT",
+          "name": "Indianapolis Colts"
+        },
+        {
+          "id": "JAX",
+          "name": "Jacksonville Jaguars"
+        },
+        {
+          "id": "OTI",
+          "name": "Tennessee Titans"
+        },
+        {
+          "id": "HTX",
+          "name": "Houston Texans"
+        },
+        {
+          "id": "SDG",
+          "name": "Los Angelos Chargers"
+        },
+        {
+          "id": "KAN",
+          "name": "Kansas City Chiefs"
+        },
+        {
+          "id": "DEN",
+          "name": "Denver Broncos"
+        },
+        {
+          "id": "RAI",
+          "name": "Lav Vegas Raiders"
+        },
+        {
+          "id": "GNB",
+          "name": "Green Bay Packers"
+        },
+        {
+          "id": "CHI",
+          "name": "Chicago Bears"
+        },
+        {
+          "id": "MIN",
+          "name": "Minnesota Vikings"
+        },
+        {
+          "id": "DET",
+          "name": "Detroit Lions"
+        },
+        {
+          "id": "WAS",
+          "name": "Washington Football Team"
+        },
+        {
+          "id": "DAL",
+          "name": "Dallas Cowboys"
+        },
+        {
+          "id": "NYG",
+          "name": "New York Giants"
+        },
+        {
+          "id": "PHI",
+          "name": "Philadelphia Eagles"
+        },
+        {
+          "id": "NOR",
+          "name": "New Orleans Saints"
+        },
+        {
+          "id": "TAM",
+          "name": "Tampa Bay Buccaneers"
+        },
+        {
+          "id": "ATL",
+          "name": "Atlanta Falcons"
+        },
+        {
+          "id": "CAR",
+          "name": "Carolina Panthers"
+        },
+        {
+          "id": "SFO",
+          "name": "San Francisco 49ers"
+        },
+        {
+          "id": "RAM",
+          "name": "Los Angelos Rams"
+        },
+        {
+          "id": "SEA",
+          "name": "Seattle Seahawks"
+        },
+        {
+          "id": "CRD",
+          "name": "Arizona Cardinals"
+        }
+      ]
     },
     {
       "type": "K",
@@ -1902,7 +2031,131 @@
   "teams": [
     {
       "id": "PIT",
-      "name": "Pittsburgh Steelers "
+      "name": "Pittsburgh Steelers"
+    },
+    {
+      "id": "CIN",
+      "name": "Cincinnati Bengals"
+    },
+    {
+      "id": "RAV",
+      "name": "Baltimore Ravens"
+    },
+    {
+      "id": "CLE",
+      "name": "Cleveland Browns"
+    },
+    {
+      "id": "MIA",
+      "name": "Miami Dolphins"
+    },
+    {
+      "id": "NWE",
+      "name": "New England Patriots"
+    },
+    {
+      "id": "BUF",
+      "name": "Buffalo Bills"
+    },
+    {
+      "id": "NYJ",
+      "name": "New York Jets"
+    },
+    {
+      "id": "CLT",
+      "name": "Indianapolis Colts"
+    },
+    {
+      "id": "JAX",
+      "name": "Jacksonville Jaguars"
+    },
+    {
+      "id": "OTI",
+      "name": "Tennessee Titans"
+    },
+    {
+      "id": "HTX",
+      "name": "Houston Texans"
+    },
+    {
+      "id": "SDG",
+      "name": "Los Angelos Chargers"
+    },
+    {
+      "id": "KAN",
+      "name": "Kansas City Chiefs"
+    },
+    {
+      "id": "DEN",
+      "name": "Denver Broncos"
+    },
+    {
+      "id": "RAI",
+      "name": "Lav Vegas Raiders"
+    },
+    {
+      "id": "GNB",
+      "name": "Green Bay Packers"
+    },
+    {
+      "id": "CHI",
+      "name": "Chicago Bears"
+    },
+    {
+      "id": "MIN",
+      "name": "Minnesota Vikings"
+    },
+    {
+      "id": "DET",
+      "name": "Detroit Lions"
+    },
+    {
+      "id": "WAS",
+      "name": "Washington Football Team"
+    },
+    {
+      "id": "DAL",
+      "name": "Dallas Cowboys"
+    },
+    {
+      "id": "NYG",
+      "name": "New York Giants"
+    },
+    {
+      "id": "PHI",
+      "name": "Philadelphia Eagles"
+    },
+    {
+      "id": "NOR",
+      "name": "New Orleans Saints"
+    },
+    {
+      "id": "TAM",
+      "name": "Tampa Bay Buccaneers"
+    },
+    {
+      "id": "ATL",
+      "name": "Atlanta Falcons"
+    },
+    {
+      "id": "CAR",
+      "name": "Carolina Panthers"
+    },
+    {
+      "id": "SFO",
+      "name": "San Francisco 49ers"
+    },
+    {
+      "id": "RAM",
+      "name": "Los Angelos Rams"
+    },
+    {
+      "id": "SEA",
+      "name": "Seattle Seahawks"
+    },
+    {
+      "id": "CRD",
+      "name": "Arizona Cardinals"
     }
   ]
 }

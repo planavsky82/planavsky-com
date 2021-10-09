@@ -111,6 +111,7 @@ let getPlayers = (position) => {
   });
 }
 
+playerJSON.positions[4].players = playerJSON.teams;
 positions.forEach(position => {
   getPlayers(position);
 });
