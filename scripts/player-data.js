@@ -3,7 +3,7 @@
 const axios = require('axios');
 const fs = require('fs');
 
-const positions = ['QB', 'RB', 'WR', 'TE'];
+const positions = ['QB', 'RB', 'WR', 'TE', 'K'];
 
 let playerJSON = {
   positions: [
