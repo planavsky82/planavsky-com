@@ -4,244 +4,324 @@
       "type": "QB",
       "players": [
         {
+          "name": "Kyler Murray",
+          "id": "kyler-murray-qb",
+          "team": "CRD",
+          "dateAdded": "2021-10-10T04:57:48.844Z",
+          "dateUpdated": null,
+          "previousTeams": []
+        },
+        {
           "name": "Josh Allen",
           "id": "josh-allen-qb",
           "team": "BUF",
-          "dateAdded": "2021-10-09T21:14:51.663Z"
+          "dateAdded": "2021-10-10T04:57:48.844Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Daniel Jones",
           "id": "daniel-jones-qb",
           "team": "NYG",
-          "dateAdded": "2021-10-09T21:14:51.663Z"
+          "dateAdded": "2021-10-10T04:57:48.844Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Matthew Stafford",
           "id": "matthew-stafford-qb",
           "team": "RAM",
-          "dateAdded": "2021-10-09T21:14:51.663Z"
+          "dateAdded": "2021-10-10T04:57:48.844Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jameis Winston",
           "id": "jameis-winston-qb",
           "team": "NOR",
-          "dateAdded": "2021-10-09T21:14:51.663Z"
+          "dateAdded": "2021-10-10T04:57:48.844Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Sam Darnold",
           "id": "sam-darnold-qb",
           "team": "CAR",
-          "dateAdded": "2021-10-09T21:14:51.663Z"
+          "dateAdded": "2021-10-10T04:57:48.844Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Russell Wilson",
           "id": "russell-wilson-qb",
           "team": "SEA",
-          "dateAdded": "2021-10-09T21:14:51.663Z"
+          "dateAdded": "2021-10-10T04:57:48.844Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Lamar Jackson",
           "id": "lamar-jackson-qb",
           "team": "RAV",
-          "dateAdded": "2021-10-09T21:14:51.663Z"
+          "dateAdded": "2021-10-10T04:57:48.844Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tom Brady",
           "id": "tom-brady-qb",
           "team": "TAM",
-          "dateAdded": "2021-10-09T21:14:51.663Z"
+          "dateAdded": "2021-10-10T04:57:48.844Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Dak Prescott",
           "id": "dak-prescott-qb",
           "team": "DAL",
-          "dateAdded": "2021-10-09T21:14:51.663Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jalen Hurts",
           "id": "jalen-hurts-qb",
           "team": "PHI",
-          "dateAdded": "2021-10-09T21:14:51.663Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Kirk Cousins",
           "id": "kirk-cousins-qb",
           "team": "MIN",
-          "dateAdded": "2021-10-09T21:14:51.663Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Ryan Tannehill",
           "id": "ryan-tannehill-qb",
           "team": "OTI",
-          "dateAdded": "2021-10-09T21:14:51.663Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Derek Carr",
           "id": "derek-carr-qb",
           "team": "RAI",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jared Goff",
           "id": "jared-goff-qb",
           "team": "DET",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Justin Herbert",
           "id": "justin-herbert-qb",
           "team": "SDG",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Joe Burrow",
           "id": "joe-burrow-qb",
           "team": "CIN",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Patrick Mahomes",
           "id": "patrick-mahomes-qb",
           "team": "KAN",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Zach Wilson",
           "id": "zach-wilson-qb",
           "team": "NYJ",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Teddy Bridgewater",
           "id": "teddy-bridgewater-qb",
           "team": "DEN",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Mac Jones",
           "id": "mac-jones-qb",
           "team": "NWE",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Taysom Hill",
           "id": "taysom-hill-qb",
           "team": "NOR",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Taylor Heinicke",
           "id": "taylor-heinicke-qb",
           "team": "WAS",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Aaron Rodgers",
           "id": "aaron-rodgers-qb",
           "team": "GNB",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Trevor Lawrence",
           "id": "trevor-lawrence-qb",
           "team": "JAX",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Carson Wentz",
           "id": "carson-wentz-qb",
           "team": "CLT",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jacoby Brissett",
           "id": "jacoby-brissett-qb",
           "team": "MIA",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Matt Ryan",
           "id": "matt-ryan-qb",
           "team": "ATL",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jimmy Garoppolo",
           "id": "jimmy-garoppolo-qb",
           "team": "SFO",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Mitchell Trubisky",
           "id": "mitchell-trubisky-qb",
           "team": "BUF",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.845Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Baker Mayfield",
           "id": "baker-mayfield-qb",
           "team": "CLE",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.846Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Trey Lance",
           "id": "trey-lance-qb",
           "team": "SFO",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.846Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Andy Dalton",
           "id": "andy-dalton-qb",
           "team": "CHI",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.846Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Ben Roethlisberger",
           "id": "ben-roethlisberger-qb",
           "team": "PIT",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.846Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Justin Fields",
           "id": "justin-fields-qb",
           "team": "CHI",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.846Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Drew Lock",
           "id": "drew-lock-qb",
           "team": "DEN",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.846Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Davis Mills",
           "id": "davis-mills-qb",
           "team": "HTX",
-          "dateAdded": "2021-10-09T21:14:51.664Z"
+          "dateAdded": "2021-10-10T04:57:48.846Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jordan Love",
           "id": "jordan-love-qb",
           "team": "GNB",
-          "dateAdded": "2021-10-09T21:14:51.665Z"
+          "dateAdded": "2021-10-10T04:57:48.846Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jacob Eason",
           "id": "jacob-eason-qb",
           "team": "CLT",
-          "dateAdded": "2021-10-09T21:14:51.665Z"
+          "dateAdded": "2021-10-10T04:57:48.846Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Josh Rosen",
           "id": "josh-rosen-qb",
           "team": "ATL",
-          "dateAdded": "2021-10-09T21:14:51.665Z"
-        },
-        {
-          "name": "Kyler Murray",
-          "id": "kyler-murray-qb",
-          "team": "CRD",
-          "dateAdded": "2021-10-09T21:15:10.563Z"
+          "dateAdded": "2021-10-10T04:57:48.846Z",
+          "dateUpdated": null,
+          "previousTeams": []
         }
       ]
     },
@@ -252,625 +332,833 @@
           "name": "Derrick Henry ",
           "id": "derrick-henry -rb",
           "team": "OTI",
-          "dateAdded": "2021-10-09T21:14:51.681Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "David Montgomery",
           "id": "david-montgomery-rb",
           "team": "CHI",
-          "dateAdded": "2021-10-09T21:14:51.681Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Joe Mixon",
           "id": "joe-mixon-rb",
           "team": "CIN",
-          "dateAdded": "2021-10-09T21:14:51.681Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Ezekiel Elliott",
           "id": "ezekiel-elliott-rb",
           "team": "DAL",
-          "dateAdded": "2021-10-09T21:14:51.681Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Darrell Henderson",
           "id": "darrell-henderson-rb",
           "team": "RAM",
-          "dateAdded": "2021-10-09T21:14:51.681Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Dalvin Cook",
           "id": "dalvin-cook-rb",
           "team": "MIN",
-          "dateAdded": "2021-10-09T21:14:51.681Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Christian McCaffrey",
           "id": "christian-mccaffrey-rb",
           "team": "CAR",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Alvin Kamara",
           "id": "alvin-kamara-rb",
           "team": "NOR",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Cordarrelle Patterson",
           "id": "cordarrelle-patterson-rb",
           "team": "ATL",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Aaron Jones",
           "id": "aaron-jones-rb",
           "team": "GNB",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Nick Chubb",
           "id": "nick-chubb-rb",
           "team": "CLE",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "James Robinson",
           "id": "james-robinson-rb",
           "team": "JAX",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Austin Ekeler",
           "id": "austin-ekeler-rb",
           "team": "SDG",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Leonard Fournette",
           "id": "leonard-fournette-rb",
           "team": "TAM",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Mike Davis",
           "id": "mike-davis-rb",
           "team": "ATL",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jonathan Taylor",
           "id": "jonathan-taylor-rb",
           "team": "CLT",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "D'Andre Swift",
           "id": "d'andre-swift-rb",
           "team": "DET",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Zack Moss",
           "id": "zack-moss-rb",
           "team": "BUF",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Damien Harris",
           "id": "damien-harris-rb",
           "team": "NWE",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Antonio Gibson ",
           "id": "antonio-gibson -rb",
           "team": "WAS",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.027Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Chris Carson",
           "id": "chris-carson-rb",
           "team": "SEA",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "James Conner",
           "id": "james-conner-rb",
           "team": "CRD",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Kareem Hunt",
           "id": "kareem-hunt-rb",
           "team": "CLE",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jamaal Williams",
           "id": "jamaal-williams-rb",
           "team": "DET",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Saquon Barkley",
           "id": "saquon-barkley-rb",
           "team": "NYG",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Najee Harris",
           "id": "najee-harris-rb",
           "team": "PIT",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Devin Singletary",
           "id": "devin-singletary-rb",
           "team": "BUF",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Chase Edmonds",
           "id": "chase-edmonds-rb",
           "team": "CRD",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Melvin Gordon",
           "id": "melvin-gordon-rb",
           "team": "DEN",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Clyde Edwards-Helaire",
           "id": "clyde-edwards-helaire-rb",
           "team": "KAN",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Elijah Mitchell",
           "id": "elijah-mitchell-rb",
           "team": "SFO",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Alexander Mattison",
           "id": "alexander-mattison-rb",
           "team": "MIN",
-          "dateAdded": "2021-10-09T21:14:51.682Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tony Pollard",
           "id": "tony-pollard-rb",
           "team": "DAL",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Josh Jacobs",
           "id": "josh-jacobs-rb",
           "team": "RAI",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Mark Ingram",
           "id": "mark-ingram-rb",
           "team": "HTX",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Michael Carter",
           "id": "michael-carter-rb",
           "team": "NYJ",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Peyton Barber",
           "id": "peyton-barber-rb",
           "team": "RAI",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Latavius Murray",
           "id": "latavius-murray-rb",
           "team": "RAV",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Ty'Son Williams",
           "id": "ty'son-williams-rb",
           "team": "RAV",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Javonte Williams",
           "id": "javonte-williams-rb",
           "team": "DEN",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Miles Sanders",
           "id": "miles-sanders-rb",
           "team": "PHI",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Sony Michel",
           "id": "sony-michel-rb",
           "team": "RAM",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Kenneth Gainwell",
           "id": "kenneth-gainwell-rb",
           "team": "PHI",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Alex Collins",
           "id": "alex-collins-rb",
           "team": "SEA",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.028Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Trey Sermon",
           "id": "trey-sermon-rb",
           "team": "SFO",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Chuba Hubbard",
           "id": "chuba-hubbard-rb",
           "team": "CAR",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "J.D. McKissic",
           "id": "j.d.-mckissic-rb",
           "team": "WAS",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Ronald Jones II",
           "id": "ronald-jones ii-rb",
           "team": "TAM",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Myles Gaskin",
           "id": "myles-gaskin-rb",
           "team": "MIA",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Nyheim Hines",
           "id": "nyheim-hines-rb",
           "team": "CLT",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "AJ Dillon ",
           "id": "aj-dillon -rb",
           "team": "GNB",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Phillip Lindsay",
           "id": "phillip-lindsay-rb",
           "team": "HTX",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Kenyan Drake",
           "id": "kenyan-drake-rb",
           "team": "RAI",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Ty Johnson",
           "id": "ty-johnson-rb",
           "team": "NYJ",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "David Johnson",
           "id": "david-johnson-rb",
           "team": "HTX",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Damien Williams",
           "id": "damien-williams-rb",
           "team": "CHI",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Malcolm Brown",
           "id": "malcolm-brown-rb",
           "team": "MIA",
-          "dateAdded": "2021-10-09T21:14:51.683Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Carlos Hyde",
           "id": "carlos-hyde-rb",
           "team": "JAX",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tevin Coleman",
           "id": "tevin-coleman-rb",
           "team": "NYJ",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jeremy McNichols",
           "id": "jeremy-mcnichols-rb",
           "team": "OTI",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Darrel Williams",
           "id": "darrel-williams-rb",
           "team": "KAN",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Kyle Juszczyk",
           "id": "kyle-juszczyk-rb",
           "team": "SFO",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tony Jones",
           "id": "tony-jones-rb",
           "team": "NOR",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Marlon Mack",
           "id": "marlon-mack-rb",
           "team": "CLT",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Wayne Gallman",
           "id": "wayne-gallman-rb",
           "team": "ATL",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Larry Rountree",
           "id": "larry-rountree-rb",
           "team": "SDG",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Brandon Bolden",
           "id": "brandon-bolden-rb",
           "team": "NWE",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.029Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Salvon Ahmed",
           "id": "salvon-ahmed-rb",
           "team": "MIA",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Samaje Perine",
           "id": "samaje-perine-rb",
           "team": "CIN",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Ameer Abdullah",
           "id": "ameer-abdullah-rb",
           "team": "MIN",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Royce Freeman",
           "id": "royce-freeman-rb",
           "team": "CAR",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Alec Ingold",
           "id": "alec-ingold-rb",
           "team": "RAI",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Keith Smith",
           "id": "keith-smith-rb",
           "team": "ATL",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Justin Jackson",
           "id": "justin-jackson-rb",
           "team": "SDG",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Devonta Freeman",
           "id": "devonta-freeman-rb",
           "team": "RAV",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Travis Homer",
           "id": "travis-homer-rb",
           "team": "SEA",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Devontae Booker",
           "id": "devontae-booker-rb",
           "team": "NYG",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Andy Janovich",
           "id": "andy-janovich-rb",
           "team": "CLE",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Kylin Hill",
           "id": "kylin-hill-rb",
           "team": "GNB",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jacques Patrick",
           "id": "jacques-patrick-rb",
           "team": "SFO",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "DeeJay Dallas",
           "id": "deejay-dallas-rb",
           "team": "SEA",
-          "dateAdded": "2021-10-09T21:14:51.684Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "C.J. Ham",
           "id": "c.j.-ham-rb",
           "team": "MIN",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jaret Patterson",
           "id": "jaret-patterson-rb",
           "team": "WAS",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Reggie Gilliam",
           "id": "reggie-gilliam-rb",
           "team": "BUF",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Matt Breida",
           "id": "matt-breida-rb",
           "team": "BUF",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Khalil Herbert",
           "id": "khalil-herbert-rb",
           "team": "CHI",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Elijhaa Penny",
           "id": "elijhaa-penny-rb",
           "team": "NYG",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Michael Burton",
           "id": "michael-burton-rb",
           "team": "KAN",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "J.J. Taylor",
           "id": "j.j.-taylor-rb",
           "team": "NWE",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.030Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Patrick Ricard",
           "id": "patrick-ricard-rb",
           "team": "RAV",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.031Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Damarea Crockett",
           "id": "damarea-crockett-rb",
           "team": "DEN",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.031Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Alex Armah",
           "id": "alex-armah-rb",
           "team": "NOR",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.031Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Dare Ogunbowale",
           "id": "dare-ogunbowale-rb",
           "team": "JAX",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.031Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Rex Burkhead",
           "id": "rex-burkhead-rb",
           "team": "HTX",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.031Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Dwayne Washington",
           "id": "dwayne-washington-rb",
           "team": "NOR",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.031Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "D'Ernest Johnson",
           "id": "d'ernest-johnson-rb",
           "team": "CLE",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.031Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Gary Brightwell",
           "id": "gary-brightwell-rb",
           "team": "NYG",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.031Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Mekhi Sargent",
           "id": "mekhi-sargent-rb",
           "team": "OTI",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.031Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Gabe Nabers",
           "id": "gabe-nabers-rb",
           "team": "SDG",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.031Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jake Funk",
           "id": "jake-funk-rb",
           "team": "RAM",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.031Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Benny Snell Jr.",
           "id": "benny-snell jr.-rb",
           "team": "PIT",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.031Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Corey Clement",
           "id": "corey-clement-rb",
           "team": "DAL",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.031Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Trenton Cannon",
           "id": "trenton-cannon-rb",
           "team": "SFO",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.031Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Rhamondre Stevenson",
           "id": "rhamondre-stevenson-rb",
           "team": "NWE",
-          "dateAdded": "2021-10-09T21:14:51.685Z"
+          "dateAdded": "2021-10-10T04:57:49.031Z",
+          "dateUpdated": null,
+          "previousTeams": []
         }
       ]
     },
@@ -881,925 +1169,1233 @@
           "name": "Cooper Kupp",
           "id": "cooper-kupp-wr",
           "team": "RAM",
-          "dateAdded": "2021-10-09T21:14:51.689Z"
+          "dateAdded": "2021-10-10T04:57:49.016Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Deebo Samuel",
           "id": "deebo-samuel-wr",
           "team": "SFO",
-          "dateAdded": "2021-10-09T21:14:51.689Z"
+          "dateAdded": "2021-10-10T04:57:49.016Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "D.J. Moore",
           "id": "d.j.-moore-wr",
           "team": "CAR",
-          "dateAdded": "2021-10-09T21:14:51.689Z"
+          "dateAdded": "2021-10-10T04:57:49.016Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Terry McLaurin",
           "id": "terry-mclaurin-wr",
           "team": "WAS",
-          "dateAdded": "2021-10-09T21:14:51.689Z"
+          "dateAdded": "2021-10-10T04:57:49.016Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tyreek Hill",
           "id": "tyreek-hill-wr",
           "team": "KAN",
-          "dateAdded": "2021-10-09T21:14:51.689Z"
+          "dateAdded": "2021-10-10T04:57:49.016Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Marquise Brown",
           "id": "marquise-brown-wr",
           "team": "RAV",
-          "dateAdded": "2021-10-09T21:14:51.689Z"
+          "dateAdded": "2021-10-10T04:57:49.016Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Davante Adams",
           "id": "davante-adams-wr",
           "team": "GNB",
-          "dateAdded": "2021-10-09T21:14:51.689Z"
+          "dateAdded": "2021-10-10T04:57:49.016Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tyler Lockett",
           "id": "tyler-lockett-wr",
           "team": "SEA",
-          "dateAdded": "2021-10-09T21:14:51.689Z"
+          "dateAdded": "2021-10-10T04:57:49.016Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Justin Jefferson",
           "id": "justin-jefferson-wr",
           "team": "MIN",
-          "dateAdded": "2021-10-09T21:14:51.689Z"
+          "dateAdded": "2021-10-10T04:57:49.016Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Mike Williams",
           "id": "mike-williams-wr",
           "team": "SDG",
-          "dateAdded": "2021-10-09T21:14:51.689Z"
+          "dateAdded": "2021-10-10T04:57:49.016Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Brandin Cooks",
           "id": "brandin-cooks-wr",
           "team": "HTX",
-          "dateAdded": "2021-10-09T21:14:51.689Z"
+          "dateAdded": "2021-10-10T04:57:49.016Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Ja'Marr Chase",
           "id": "ja'marr-chase-wr",
           "team": "CIN",
-          "dateAdded": "2021-10-09T21:14:51.689Z"
+          "dateAdded": "2021-10-10T04:57:49.016Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "D.K. Metcalf",
           "id": "d.k.-metcalf-wr",
           "team": "SEA",
-          "dateAdded": "2021-10-09T21:14:51.689Z"
+          "dateAdded": "2021-10-10T04:57:49.016Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Marvin Jones",
           "id": "marvin-jones-wr",
           "team": "JAX",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.016Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Corey Davis",
           "id": "corey-davis-wr",
           "team": "NYJ",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.016Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Taysom Hill",
           "id": "taysom-hill-wr",
           "team": "NOR",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Adam Thielen",
           "id": "adam-thielen-wr",
           "team": "MIN",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Diontae Johnson",
           "id": "diontae-johnson-wr",
           "team": "PIT",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Amari Cooper",
           "id": "amari-cooper-wr",
           "team": "DAL",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Stefon Diggs",
           "id": "stefon-diggs-wr",
           "team": "BUF",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Chris Godwin",
           "id": "chris-godwin-wr",
           "team": "TAM",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Hunter Renfrow",
           "id": "hunter-renfrow-wr",
           "team": "RAI",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jaylen Waddle",
           "id": "jaylen-waddle-wr",
           "team": "MIA",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Sterling Shepard",
           "id": "sterling-shepard-wr",
           "team": "NYG",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jamison Crowder",
           "id": "jamison-crowder-wr",
           "team": "NYJ",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "John Ross",
           "id": "john-ross-wr",
           "team": "NYG",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Mike Evans",
           "id": "mike-evans-wr",
           "team": "TAM",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Emmanuel Sanders",
           "id": "emmanuel-sanders-wr",
           "team": "BUF",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tyler Boyd",
           "id": "tyler-boyd-wr",
           "team": "CIN",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Robert Woods",
           "id": "robert-woods-wr",
           "team": "RAM",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "DeAndre Hopkins",
           "id": "deandre-hopkins-wr",
           "team": "CRD",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Laviska Shenault Jr.",
           "id": "laviska-shenault jr.-wr",
           "team": "JAX",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "DeVante Parker",
           "id": "devante-parker-wr",
           "team": "MIA",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Keenan Allen",
           "id": "keenan-allen-wr",
           "team": "SDG",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.017Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tee Higgins",
           "id": "tee-higgins-wr",
           "team": "CIN",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "CeeDee Lamb",
           "id": "ceedee-lamb-wr",
           "team": "DAL",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Henry Ruggs III",
           "id": "henry-ruggs iii-wr",
           "team": "RAI",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tim Patrick",
           "id": "tim-patrick-wr",
           "team": "DEN",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Christian Kirk",
           "id": "christian-kirk-wr",
           "team": "CRD",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "A.J. Green",
           "id": "a.j.-green-wr",
           "team": "CRD",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Sammy Watkins",
           "id": "sammy-watkins-wr",
           "team": "RAV",
-          "dateAdded": "2021-10-09T21:14:51.690Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Kenny Golladay",
           "id": "kenny-golladay-wr",
           "team": "NYG",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Calvin Ridley",
           "id": "calvin-ridley-wr",
           "team": "ATL",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Michael Pittman Jr.",
           "id": "michael-pittman jr.-wr",
           "team": "CLT",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Courtland Sutton",
           "id": "courtland-sutton-wr",
           "team": "DEN",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Van Jefferson",
           "id": "van-jefferson-wr",
           "team": "RAM",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Cole Beasley",
           "id": "cole-beasley-wr",
           "team": "BUF",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Zach Pascal",
           "id": "zach-pascal-wr",
           "team": "CLT",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jakobi Meyers",
           "id": "jakobi-meyers-wr",
           "team": "NWE",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Kalif Raymond",
           "id": "kalif-raymond-wr",
           "team": "DET",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Antonio Brown",
           "id": "antonio-brown-wr",
           "team": "TAM",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "DeVonta Smith",
           "id": "devonta-smith-wr",
           "team": "PHI",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Darnell Mooney",
           "id": "darnell-mooney-wr",
           "team": "CHI",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Chase Claypool",
           "id": "chase-claypool-wr",
           "team": "PIT",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Deonte Harris",
           "id": "deonte-harris-wr",
           "team": "NOR",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.018Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Rondale Moore",
           "id": "rondale-moore-wr",
           "team": "CRD",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "K.J. Osborn",
           "id": "k.j.-osborn-wr",
           "team": "MIN",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Quintez Cephus",
           "id": "quintez-cephus-wr",
           "team": "DET",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Julio Jones",
           "id": "julio-jones-wr",
           "team": "OTI",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Braxton Berrios",
           "id": "braxton-berrios-wr",
           "team": "NYJ",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Marquez Callaway",
           "id": "marquez-callaway-wr",
           "team": "NOR",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Freddie Swain",
           "id": "freddie-swain-wr",
           "team": "SEA",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Allen Robinson",
           "id": "allen-robinson-wr",
           "team": "CHI",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Kendrick Bourne",
           "id": "kendrick-bourne-wr",
           "team": "NWE",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Randall Cobb",
           "id": "randall-cobb-wr",
           "team": "GNB",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Chester Rogers",
           "id": "chester-rogers-wr",
           "team": "OTI",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Bryan Edwards",
           "id": "bryan-edwards-wr",
           "team": "RAI",
-          "dateAdded": "2021-10-09T21:14:51.691Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Darius Slayton",
           "id": "darius-slayton-wr",
           "team": "NYG",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Nelson Agholor",
           "id": "nelson-agholor-wr",
           "team": "NWE",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "JuJu Smith-Schuster",
           "id": "juju-smith-schuster-wr",
           "team": "PIT",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jalen Reagor",
           "id": "jalen-reagor-wr",
           "team": "PHI",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Cedrick Wilson Jr.",
           "id": "cedrick-wilson jr.-wr",
           "team": "DAL",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Quez Watkins",
           "id": "quez-watkins-wr",
           "team": "PHI",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Robby Anderson",
           "id": "robby-anderson-wr",
           "team": "CAR",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Odell Beckham Jr.",
           "id": "odell-beckham jr.-wr",
           "team": "CLE",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "A.J. Brown",
           "id": "a.j.-brown-wr",
           "team": "OTI",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.019Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "DeSean Jackson",
           "id": "desean-jackson-wr",
           "team": "RAM",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Danny Amendola",
           "id": "danny-amendola-wr",
           "team": "HTX",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Mecole Hardman",
           "id": "mecole-hardman-wr",
           "team": "KAN",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Keelan Cole",
           "id": "keelan-cole-wr",
           "team": "NYJ",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Nick Westbrook-Ikhine",
           "id": "nick-westbrook-ikhine-wr",
           "team": "OTI",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Amon-Ra St. Brown",
           "id": "amon-ra-st. brown-wr",
           "team": "DET",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Kadarius Toney",
           "id": "kadarius-toney-wr",
           "team": "NYG",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Adam Humphries",
           "id": "adam-humphries-wr",
           "team": "WAS",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Elijah Moore",
           "id": "elijah-moore-wr",
           "team": "NYJ",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Devin Duvernay",
           "id": "devin-duvernay-wr",
           "team": "RAV",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Brandon Zylstra",
           "id": "brandon-zylstra-wr",
           "team": "CAR",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Brandon Aiyuk",
           "id": "brandon-aiyuk-wr",
           "team": "SFO",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "James Proche",
           "id": "james-proche-wr",
           "team": "RAV",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Byron Pringle",
           "id": "byron-pringle-wr",
           "team": "KAN",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Terrace Marshall Jr.",
           "id": "terrace-marshall jr.-wr",
           "team": "CAR",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Mohamed Sanu",
           "id": "mohamed-sanu-wr",
           "team": "SFO",
-          "dateAdded": "2021-10-09T21:14:51.692Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Josh Reynolds",
           "id": "josh-reynolds-wr",
           "team": "OTI",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Rashard Higgins",
           "id": "rashard-higgins-wr",
           "team": "CLE",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Chris Hogan",
           "id": "chris-hogan-wr",
           "team": "NOR",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Cameron Batson",
           "id": "cameron-batson-wr",
           "team": "OTI",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.020Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "James Washington",
           "id": "james-washington-wr",
           "team": "PIT",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Zay Jones",
           "id": "zay-jones-wr",
           "team": "RAI",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Greg Ward",
           "id": "greg-ward-wr",
           "team": "PHI",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Collin Johnson",
           "id": "collin-johnson-wr",
           "team": "NYG",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Olamide Zaccheaus",
           "id": "olamide-zaccheaus-wr",
           "team": "ATL",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Ty Montgomery",
           "id": "ty-montgomery-wr",
           "team": "NOR",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Demarcus Robinson",
           "id": "demarcus-robinson-wr",
           "team": "KAN",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Gabriel Davis",
           "id": "gabriel-davis-wr",
           "team": "BUF",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jalen Guyton",
           "id": "jalen-guyton-wr",
           "team": "SDG",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Allen Lazard ",
           "id": "allen-lazard -wr",
           "team": "GNB",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jauan Jennings",
           "id": "jauan-jennings-wr",
           "team": "SFO",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Trent Sherfield",
           "id": "trent-sherfield-wr",
           "team": "SFO",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Curtis Samuel",
           "id": "curtis-samuel-wr",
           "team": "WAS",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Parris Campbell",
           "id": "parris-campbell-wr",
           "team": "CLT",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Marquise Goodwin",
           "id": "marquise-goodwin-wr",
           "team": "CHI",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Trinity Benson",
           "id": "trinity-benson-wr",
           "team": "DET",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Dyami Brown",
           "id": "dyami-brown-wr",
           "team": "WAS",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Albert Wilson",
           "id": "albert-wilson-wr",
           "team": "MIA",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Anthony Schwartz",
           "id": "anthony-schwartz-wr",
           "team": "CLE",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.021Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Ashton Dulin",
           "id": "ashton-dulin-wr",
           "team": "CLT",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.022Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "DeAndre Carter",
           "id": "deandre-carter-wr",
           "team": "WAS",
-          "dateAdded": "2021-10-09T21:14:51.693Z"
+          "dateAdded": "2021-10-10T04:57:49.022Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tyler Johnson",
           "id": "tyler-johnson-wr",
           "team": "TAM",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.022Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Denzel Mims",
           "id": "denzel-mims-wr",
           "team": "NYJ",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.022Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jeff Smith",
           "id": "jeff-smith-wr",
           "team": "NYJ",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.022Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Russell Gage",
           "id": "russell-gage-wr",
           "team": "ATL",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.022Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "C.J. Board",
           "id": "c.j.-board-wr",
           "team": "NYG",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Lil'Jordan Humphrey",
           "id": "lil'jordan-humphrey-wr",
           "team": "NOR",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Chris Conley",
           "id": "chris-conley-wr",
           "team": "HTX",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Ray-Ray McCloud",
           "id": "ray-ray-mccloud-wr",
           "team": "PIT",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Donovan Peoples-Jones",
           "id": "donovan-peoples-jones-wr",
           "team": "CLE",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Cam Sims",
           "id": "cam-sims-wr",
           "team": "WAS",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Trenton Irwin",
           "id": "trenton-irwin-wr",
           "team": "CIN",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Kendall Hinton",
           "id": "kendall-hinton-wr",
           "team": "DEN",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Josh Palmer",
           "id": "josh-palmer-wr",
           "team": "SDG",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jamal Agnew",
           "id": "jamal-agnew-wr",
           "team": "JAX",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Mike Thomas",
           "id": "mike-thomas-wr",
           "team": "CIN",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Damiere Byrd",
           "id": "damiere-byrd-wr",
           "team": "CHI",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tajae Sharpe",
           "id": "tajae-sharpe-wr",
           "team": "ATL",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Mike Strachan",
           "id": "mike-strachan-wr",
           "team": "CLT",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Auden Tate",
           "id": "auden-tate-wr",
           "team": "CIN",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "K.J. Hill",
           "id": "k.j.-hill-wr",
           "team": "SDG",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Willie Snead",
           "id": "willie-snead-wr",
           "team": "RAI",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tavon Austin",
           "id": "tavon-austin-wr",
           "team": "JAX",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "KhaDarel Hodge",
           "id": "khadarel-hodge-wr",
           "team": "DET",
-          "dateAdded": "2021-10-09T21:14:51.694Z"
+          "dateAdded": "2021-10-10T04:57:49.023Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "N'Keal Harry",
           "id": "n'keal-harry-wr",
           "team": "NWE",
-          "dateAdded": "2021-10-09T21:14:51.695Z"
+          "dateAdded": "2021-10-10T04:57:49.024Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Dede Westbrook",
           "id": "dede-westbrook-wr",
           "team": "MIN",
-          "dateAdded": "2021-10-09T21:14:51.695Z"
+          "dateAdded": "2021-10-10T04:57:49.024Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Malik Taylor",
           "id": "malik-taylor-wr",
           "team": "GNB",
-          "dateAdded": "2021-10-09T21:14:51.695Z"
+          "dateAdded": "2021-10-10T04:57:49.024Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Penny Hart",
           "id": "penny-hart-wr",
           "team": "SEA",
-          "dateAdded": "2021-10-09T21:14:51.695Z"
+          "dateAdded": "2021-10-10T04:57:49.024Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Amari Rodgers",
           "id": "amari-rodgers-wr",
           "team": "GNB",
-          "dateAdded": "2021-10-09T21:14:51.695Z"
+          "dateAdded": "2021-10-10T04:57:49.024Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Andre Roberts",
           "id": "andre-roberts-wr",
           "team": "HTX",
-          "dateAdded": "2021-10-09T21:14:51.695Z"
+          "dateAdded": "2021-10-10T04:57:49.024Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tyron Johnson",
           "id": "tyron-johnson-wr",
           "team": "JAX",
-          "dateAdded": "2021-10-09T21:14:51.695Z"
+          "dateAdded": "2021-10-10T04:57:49.024Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Preston Williams",
           "id": "preston-williams-wr",
           "team": "MIA",
-          "dateAdded": "2021-10-09T21:14:51.695Z"
+          "dateAdded": "2021-10-10T04:57:49.024Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Noah Brown",
           "id": "noah-brown-wr",
           "team": "DAL",
-          "dateAdded": "2021-10-09T21:14:51.695Z"
+          "dateAdded": "2021-10-10T04:57:49.024Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Isaiah McKenzie",
           "id": "isaiah-mckenzie-wr",
           "team": "BUF",
-          "dateAdded": "2021-10-09T21:14:51.695Z"
+          "dateAdded": "2021-10-10T04:57:49.024Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Christian Blake",
           "id": "christian-blake-wr",
           "team": "ATL",
-          "dateAdded": "2021-10-09T21:14:51.695Z"
+          "dateAdded": "2021-10-10T04:57:49.024Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jaelon Darden",
           "id": "jaelon-darden-wr",
           "team": "TAM",
-          "dateAdded": "2021-10-09T21:14:51.695Z"
+          "dateAdded": "2021-10-10T04:57:49.024Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Diontae Spencer",
           "id": "diontae-spencer-wr",
           "team": "DEN",
-          "dateAdded": "2021-10-09T21:14:51.695Z"
+          "dateAdded": "2021-10-10T04:57:49.024Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jakeem Grant",
           "id": "jakeem-grant-wr",
           "team": "CHI",
-          "dateAdded": "2021-10-09T21:14:51.695Z"
+          "dateAdded": "2021-10-10T04:57:49.024Z",
+          "dateUpdated": null,
+          "previousTeams": []
         }
       ]
     },
@@ -1810,457 +2406,609 @@
           "name": "Rob Gronkowski",
           "id": "rob-gronkowski-te",
           "team": "TAM",
-          "dateAdded": "2021-10-09T21:14:51.668Z"
+          "dateAdded": "2021-10-10T04:57:48.849Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Travis Kelce",
           "id": "travis-kelce-te",
           "team": "KAN",
-          "dateAdded": "2021-10-09T21:14:51.668Z"
+          "dateAdded": "2021-10-10T04:57:48.849Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Dalton Schultz",
           "id": "dalton-schultz-te",
           "team": "DAL",
-          "dateAdded": "2021-10-09T21:14:51.668Z"
+          "dateAdded": "2021-10-10T04:57:48.849Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Dawson Knox",
           "id": "dawson-knox-te",
           "team": "BUF",
-          "dateAdded": "2021-10-09T21:14:51.668Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Darren Waller",
           "id": "darren-waller-te",
           "team": "RAI",
-          "dateAdded": "2021-10-09T21:14:51.668Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "T.J. Hockenson",
           "id": "t.j.-hockenson-te",
           "team": "DET",
-          "dateAdded": "2021-10-09T21:14:51.668Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Dallas Goedert",
           "id": "dallas-goedert-te",
           "team": "PHI",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Mike Gesicki",
           "id": "mike-gesicki-te",
           "team": "MIA",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Noah Fant",
           "id": "noah-fant-te",
           "team": "DEN",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Mark Andrews",
           "id": "mark-andrews-te",
           "team": "RAV",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "C.J. Uzomah",
           "id": "c.j.-uzomah-te",
           "team": "CIN",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jared Cook",
           "id": "jared-cook-te",
           "team": "SDG",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Juwan Johnson",
           "id": "juwan-johnson-te",
           "team": "NOR",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Maxx Williams",
           "id": "maxx-williams-te",
           "team": "CRD",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Hunter Henry",
           "id": "hunter-henry-te",
           "team": "NWE",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tyler Higbee",
           "id": "tyler-higbee-te",
           "team": "RAM",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "George Kittle",
           "id": "george-kittle-te",
           "team": "SFO",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Zach Ertz",
           "id": "zach-ertz-te",
           "team": "PHI",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tyler Conklin",
           "id": "tyler-conklin-te",
           "team": "MIN",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Mo Alie-Cox",
           "id": "mo-alie-cox-te",
           "team": "CLT",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Austin Hooper",
           "id": "austin-hooper-te",
           "team": "CLE",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jonnu Smith",
           "id": "jonnu-smith-te",
           "team": "NWE",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Kyle Pitts",
           "id": "kyle-pitts-te",
           "team": "ATL",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jack Doyle",
           "id": "jack-doyle-te",
           "team": "CLT",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Blake Jarwin",
           "id": "blake-jarwin-te",
           "team": "DAL",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.850Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Pat Freiermuth",
           "id": "pat-freiermuth-te",
           "team": "PIT",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "David Njoku",
           "id": "david-njoku-te",
           "team": "CLE",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Robert Tonyan",
           "id": "robert-tonyan-te",
           "team": "GNB",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Joe Fortson",
           "id": "joe-fortson-te",
           "team": "KAN",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Albert Okwuegbunam",
           "id": "albert-okwuegbunam-te",
           "team": "DEN",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Dan Arnold",
           "id": "dan-arnold-te",
           "team": "JAX",
-          "dateAdded": "2021-10-09T21:14:51.669Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Will Dissly",
           "id": "will-dissly-te",
           "team": "SEA",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Cole Kmet",
           "id": "cole-kmet-te",
           "team": "CHI",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Anthony Firkser",
           "id": "anthony-firkser-te",
           "team": "OTI",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Foster Moreau",
           "id": "foster-moreau-te",
           "team": "RAI",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Ricky Seals-Jones",
           "id": "ricky-seals-jones-te",
           "team": "WAS",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "MyCole Pruitt",
           "id": "mycole-pruitt-te",
           "team": "OTI",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Harrison Bryant",
           "id": "harrison-bryant-te",
           "team": "CLE",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Donald Parham",
           "id": "donald-parham-te",
           "team": "SDG",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tommy Tremble",
           "id": "tommy-tremble-te",
           "team": "CAR",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Cameron Brate",
           "id": "cameron-brate-te",
           "team": "TAM",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Chris Manhertz",
           "id": "chris-manhertz-te",
           "team": "JAX",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Evan Engram",
           "id": "evan-engram-te",
           "team": "NYG",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Kyle Rudolph",
           "id": "kyle-rudolph-te",
           "team": "NYG",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Lee Smith",
           "id": "lee-smith-te",
           "team": "ATL",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Pharaoh Brown",
           "id": "pharaoh-brown-te",
           "team": "HTX",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Ross Dwelley",
           "id": "ross-dwelley-te",
           "team": "SFO",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.851Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Hayden Hurst",
           "id": "hayden-hurst-te",
           "team": "ATL",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Ryan Griffin",
           "id": "ryan-griffin-te",
           "team": "NYJ",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tyler Kroft",
           "id": "tyler-kroft-te",
           "team": "NYJ",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Ian Thomas",
           "id": "ian-thomas-te",
           "team": "CAR",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Geoff Swaim",
           "id": "geoff-swaim-te",
           "team": "OTI",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tommy Hudson",
           "id": "tommy-hudson-te",
           "team": "OTI",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Stephen Anderson",
           "id": "stephen-anderson-te",
           "team": "SDG",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jordan Akins",
           "id": "jordan-akins-te",
           "team": "HTX",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Kaden Smith",
           "id": "kaden-smith-te",
           "team": "NYG",
-          "dateAdded": "2021-10-09T21:14:51.670Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Darren Fells",
           "id": "darren-fells-te",
           "team": "DET",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jacob Hollister",
           "id": "jacob-hollister-te",
           "team": "JAX",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Adam Trautman",
           "id": "adam-trautman-te",
           "team": "NOR",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "O.J. Howard",
           "id": "o.j.-howard-te",
           "team": "TAM",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Blake Bell",
           "id": "blake-bell-te",
           "team": "KAN",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Marcedes Lewis",
           "id": "marcedes-lewis-te",
           "team": "GNB",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Eric Ebron",
           "id": "eric-ebron-te",
           "team": "PIT",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Durham Smythe",
           "id": "durham-smythe-te",
           "team": "MIA",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Josh Oliver",
           "id": "josh-oliver-te",
           "team": "RAV",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Eric Saubert",
           "id": "eric-saubert-te",
           "team": "DEN",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Jimmy Graham",
           "id": "jimmy-graham-te",
           "team": "CHI",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Derek Carrier",
           "id": "derek-carrier-te",
           "team": "RAI",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.852Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Zach Gentry",
           "id": "zach-gentry-te",
           "team": "PIT",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.853Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Luke Farrell",
           "id": "luke-farrell-te",
           "team": "JAX",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.853Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Cethan Carter",
           "id": "cethan-carter-te",
           "team": "MIA",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.853Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Tommy Sweeney",
           "id": "tommy-sweeney-te",
           "team": "BUF",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.853Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Johnny Mundt",
           "id": "johnny-mundt-te",
           "team": "RAM",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.853Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Kylen Granson",
           "id": "kylen-granson-te",
           "team": "CLT",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.853Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Josiah Deguara",
           "id": "josiah-deguara-te",
           "team": "GNB",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.853Z",
+          "dateUpdated": null,
+          "previousTeams": []
         },
         {
           "name": "Noah Gray",
           "id": "noah-gray-te",
           "team": "KAN",
-          "dateAdded": "2021-10-09T21:14:51.671Z"
+          "dateAdded": "2021-10-10T04:57:48.853Z",
+          "dateUpdated": null,
+          "previousTeams": []
         }
       ]
     },

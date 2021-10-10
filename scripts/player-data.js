@@ -111,10 +111,21 @@ let getPlayers = (position) => {
             name: player,
             id: playerId,
             team: team.toUpperCase(),
-            dateAdded: new Date()
+            dateAdded: new Date(),
+            dateUpdated: null,
+            previousTeams: []
           });
           console.log('----------------------');
           console.log(player + ' from ' + team.toUpperCase() + ' added.');
+        } else {
+          // check for a new team
+          let currentPlayer = playerJSON.positions[positionIndex].players[exists];
+          if (currentPlayer.team !== team.toUpperCase()) {
+            console.log('----------------------');
+            console.log(player + ' team updated to ' + team.toUpperCase() + '.');
+            currentPlayer.previousTeams.push(currentPlayer.team);
+            currentPlayer.team = team.toUpperCase();
+          }
         }
       }
     });
