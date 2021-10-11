@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate-data": "node player-data.js"
+    "generate-player-data": "node player-data.js",
+    "publish-player-data": "firebase database:set /mffr-player-data ./player-data.json"
   },
   "author": "",
   "license": "ISC",
