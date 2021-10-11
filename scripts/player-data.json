@@ -2396,6 +2396,30 @@
           "dateAdded": "2021-10-10T04:57:49.024Z",
           "dateUpdated": null,
           "previousTeams": []
+        },
+        {
+          "name": "Kenny Stills",
+          "id": "kenny-stills-wr",
+          "team": "NOR",
+          "dateAdded": "2021-10-11T01:33:11.599Z",
+          "dateUpdated": null,
+          "previousTeams": []
+        },
+        {
+          "name": "Cody White",
+          "id": "cody-white-wr",
+          "team": "PIT",
+          "dateAdded": "2021-10-11T01:33:11.600Z",
+          "dateUpdated": null,
+          "previousTeams": []
+        },
+        {
+          "name": "Equanimeous St. Brown",
+          "id": "equanimeous-st. brown-wr",
+          "team": "GNB",
+          "dateAdded": "2021-10-11T01:33:11.600Z",
+          "dateUpdated": null,
+          "previousTeams": []
         }
       ]
     },
