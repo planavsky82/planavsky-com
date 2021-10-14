@@ -5,7 +5,7 @@ export interface UserModel {
   pwd: string;
   admin: boolean;
   email: string;
-  rankings: Rankings[];
+  rankings?: Rankings[];
 }
 
 export interface UserRequest {
