@@ -1,8 +1,4 @@
-export interface Player {
-  //userid: number;
-  //playerid: number;
-  player: string;
-}
+import { Player } from './player';
 
 export interface Rankings {
   players: Player[];

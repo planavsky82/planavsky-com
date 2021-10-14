@@ -1,6 +1,6 @@
-export interface PlayerModel {
-  id: number, 
-  name: string,
-  positionid: string,
-  teamid: string
+export interface Player {
+  id: string;
+  name: string;
+  position: string;
+  team: string;
 }

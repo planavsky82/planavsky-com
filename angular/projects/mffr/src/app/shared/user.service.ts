@@ -23,7 +23,7 @@ export class UserService {
       this.user = this.store.select(state => state.user);
     }
 
-  addUserState(email: string) {
+  addUserState(email: string, rankings: Rankings[]) {
     this.store.dispatch({
       type: 'ADD_USER',
       payload: <User> {
@@ -31,7 +31,8 @@ export class UserService {
         pwd: 'active',
         admin: false,
         email: email,
-        loggedIn: true
+        loggedIn: true,
+        rankings: rankings
       }
     });
   }
@@ -43,7 +44,8 @@ export class UserService {
       { name: name, pwd: event.detail.pwd }, this.httpOptions).pipe(
         map((data: UserAuth) => {
           if (data.success) {
-            this.addUserState(event.detail.email);
+            console.log(data.rankings);
+            this.addUserState(event.detail.email, data.rankings);
             this.router.navigate(['/rankings']);
           }
           return data;

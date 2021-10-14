@@ -125,7 +125,10 @@ export class User {
                     message: 'Enjoy your token!',
                     token: token,
                     id: req.param('name'),
-                    match: result
+                    match: result,
+                    rankings: [
+                      1,2,3,4
+                    ]
                   });
                 } else {
                   res.json(error);
@@ -179,47 +182,5 @@ export class User {
         ]
       });
     });
-    /* exports.getUserRankings = function (router) {
-        // on routes that end in /users/:user_id
-        // ----------------------------------------------------
-        return router.route('/users/:user_id/rankings')
-
-            .get(function(req, res) {
-
-                var options = {
-                    host: 'api.fantasy.nfl.com',
-                    path: '/v1/players/stats?statType=seasonProjectedStats&position=QB',
-                    method: 'GET'
-                };
-
-                var reqData = http.request(options, function(resData) {
-                    console.log('STATUS: ' + resData.statusCode);
-                    console.log('HEADERS: ' + JSON.stringify(resData.headers));
-                    resData.setEncoding('utf8');
-                    resData.on('data', function (chunk) {
-                        console.log('BODY: ' + chunk);
-                        resData.json({
-                            rankings: [chunk]
-                        });
-                    });
-                });
-
-                reqData.on('error', function(e) {
-                    console.log('problem with request: ' + e.message);
-                });
-
-                // write data to request body
-                reqData.write('data\n');
-                reqData.write('data\n');
-                reqData.end();
-
-                /* User.findById(req.params.user_id, function(err, user) {
-                    if (err)
-                        res.json(err);
-                    res.json(user);
-                }); *\/
-
-            });
-    }; */
   }
 }
