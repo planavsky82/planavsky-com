@@ -124,6 +124,7 @@ export class User {
 
                   let rankings: Rankings[] = [];
                   if (!ref.rankings) {
+                    // generate initial rankings if none exist
                     rankings = [
                       {
                         position: 'QB',
