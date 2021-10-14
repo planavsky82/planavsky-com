@@ -6,6 +6,7 @@ import * as bcrypt from 'bcrypt';
 import * as EmailValidator from 'email-validator';
 
 import { UserModel } from '../models/user';
+import { Rankings } from '../models/ranking';
 
 // TODO: remove 'any' types
 
@@ -120,15 +121,31 @@ export class User {
                   const token = jwt.sign({ user: req.param('name') }, config.secret, {
                     expiresIn: 60*60*24 // expires in 24 hours
                   });
+
+                  let rankings: Rankings[] = [];
+                  if (!ref.rankings) {
+                    rankings = [
+                      {
+                        position: 'QB',
+                        players: [
+                          {
+                            id: 'xxxxx',
+                            name: 'xxxxx',
+                            team: 'DEV',
+                            position: 'QB'
+                          }
+                        ]
+                      }
+                    ];
+                  }
+
                   res.json({
                     success: true,
                     message: 'Enjoy your token!',
                     token: token,
                     id: req.param('name'),
                     match: result,
-                    rankings: [
-                      1,2,3,4
-                    ]
+                    rankings: rankings
                   });
                 } else {
                   res.json(error);

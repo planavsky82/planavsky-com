@@ -44,7 +44,6 @@ export class UserService {
       { name: name, pwd: event.detail.pwd }, this.httpOptions).pipe(
         map((data: UserAuth) => {
           if (data.success) {
-            console.log(data.rankings);
             this.addUserState(event.detail.email, data.rankings);
             this.router.navigate(['/rankings']);
           }
