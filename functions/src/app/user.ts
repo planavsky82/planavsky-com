@@ -112,6 +112,7 @@ export class User {
       const error = { success: false, message: 'Authentication failed. Username and/or password do not match.' };
       const config = require('../../config'); // get config file
       const ref = this.db.ref('/users/' + req.param('name'));
+      const players = this.db.ref('/mffr-player-data');
       ref.on('value', function (snapshot: any) {
           if (snapshot.exists()) {
             if (snapshot.val().pwd) {
@@ -125,9 +126,12 @@ export class User {
                   let rankings: Rankings[] = [];
                   if (!ref.rankings) {
                     // generate initial rankings if none exist
+                    players.forEach((position: Rankings) => {
+                      res.json(position);
+                    });
                     rankings = [
                       {
-                        position: 'QB',
+                        type: 'QB',
                         players: [
                           {
                             id: 'xxxxx',
