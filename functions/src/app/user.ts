@@ -112,7 +112,7 @@ export class User {
       const error = { success: false, message: 'Authentication failed. Username and/or password do not match.' };
       const config = require('../../config'); // get config file
       const ref = this.db.ref('/users/' + req.param('name'));
-      const players = this.db.ref('/mffr-player-data');
+      const players = this.db.ref('/mffr-player-data/positions');
       ref.on('value', function (snapshot: any) {
           if (snapshot.exists()) {
             if (snapshot.val().pwd) {
@@ -123,34 +123,21 @@ export class User {
                     expiresIn: 60*60*24 // expires in 24 hours
                   });
 
-                  let rankings: Rankings[] = [];
-                  if (!ref.rankings) {
-                    // generate initial rankings if none exist
-                    players.forEach((position: Rankings) => {
-                      res.json(position);
-                    });
-                    rankings = [
-                      {
-                        type: 'QB',
-                        players: [
-                          {
-                            id: 'xxxxx',
-                            name: 'xxxxx',
-                            team: 'DEV',
-                            position: 'QB'
-                          }
-                        ]
-                      }
-                    ];
-                  }
+                  players.on('value', function (playerSnapshot: any) {
+                    let rankings: Rankings[] = [];
+                    if (!ref.rankings) {
+                      // generate initial rankings if none exist
+                      rankings = playerSnapshot;
+                    }
 
-                  res.json({
-                    success: true,
-                    message: 'Enjoy your token!',
-                    token: token,
-                    id: req.param('name'),
-                    match: result,
-                    rankings: rankings
+                    res.json({
+                      success: true,
+                      message: 'Enjoy your token!',
+                      token: token,
+                      id: req.param('name'),
+                      match: result,
+                      rankings: rankings
+                    });
                   });
                 } else {
                   res.json(error);
