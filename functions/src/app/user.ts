@@ -129,14 +129,6 @@ export class User {
                     if (!ref.rankings) {
                       // generate initial rankings if none exist
                       rankings = playerSnapshot;
-                      /* rankings = playerSnapshot[0].players.map((player: Player) => {
-                        delete player.dateAdded;
-                        delete player.dateUpdated;
-                        delete player.previousTeams;
-                        delete player.team;
-                        delete player.name;
-                        return player;
-                      }); */
                     }
 
                     res.json({
