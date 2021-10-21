@@ -127,7 +127,7 @@ export class User {
                   players.on('value', function (playerSnapshot: any) {
                     let rankings: Rankings[] = [];
                     if (!ref.rankings) {
-                      // generate initial rankings if none exist
+                      // generate initial rankings arrays if none exist
                       rankings = playerSnapshot;
                     }
 
