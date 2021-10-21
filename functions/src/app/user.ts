@@ -129,6 +129,9 @@ export class User {
                     if (!ref.rankings) {
                       // generate initial rankings arrays if none exist
                       rankings = playerSnapshot;
+                    } else {
+                      // get rankings from database
+                      rankings = ref.rankings;
                     }
 
                     res.json({
