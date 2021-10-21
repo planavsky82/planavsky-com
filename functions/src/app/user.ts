@@ -6,8 +6,7 @@ import * as bcrypt from 'bcrypt';
 import * as EmailValidator from 'email-validator';
 
 import { UserModel } from '../models/user';
-import { Rankings } from '../models/ranking';
-//import { Player } from '../models/player';
+import { Rankings, RankingsData } from '../models/ranking';
 
 // TODO: remove 'any' types
 
@@ -127,8 +126,11 @@ export class User {
                   players.on('value', function (playerSnapshot: any) {
                     let rankings: Rankings[] = [];
                     if (!ref.rankings) {
+                      let baseModel = playerSnapshot.forEach((positionType: RankingsData, index: number) => {
+                        playerSnapshot[index].players = [];
+                      })
                       // generate initial rankings arrays if none exist
-                      rankings = playerSnapshot;
+                      rankings = baseModel;
                     } else {
                       // get rankings from database
                       rankings = ref.rankings;
