@@ -124,13 +124,13 @@ export class User {
                   });
 
                   players.on('value', function (playerSnapshot: any) {
-                    let rankings: Rankings[] = [];
+                    let rankings: Rankings[] | RankingsData[] = [];
                     if (!ref.rankings) {
-                      let baseModel = playerSnapshot.forEach((positionType: RankingsData, index: number) => {
-                        playerSnapshot[index].players = [];
-                      })
                       // generate initial rankings arrays if none exist
-                      rankings = baseModel;
+                      playerSnapshot.forEach((positionType: RankingsData, index: number) => {
+                        rankings[index] = positionType;
+                        rankings[index].players = [];
+                      });
                     } else {
                       // get rankings from database
                       rankings = ref.rankings;
