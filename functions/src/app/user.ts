@@ -6,7 +6,7 @@ import * as bcrypt from 'bcrypt';
 import * as EmailValidator from 'email-validator';
 
 import { UserModel } from '../models/user';
-import { Rankings, RankingsData } from '../models/ranking';
+import { Rankings } from '../models/ranking';
 
 // TODO: remove 'any' types
 
@@ -112,7 +112,6 @@ export class User {
       const error = { success: false, message: 'Authentication failed. Username and/or password do not match.' };
       const config = require('../../config'); // get config file
       const ref = this.db.ref('/users/' + req.param('name'));
-      const players = this.db.ref('/mffr-player-data/positions');
       ref.on('value', function (snapshot: any) {
           if (snapshot.exists()) {
             if (snapshot.val().pwd) {
@@ -123,30 +122,29 @@ export class User {
                     expiresIn: 60*60*24 // expires in 24 hours
                   });
 
-                  players.on('value', function (playerSnapshot: any) {
-                    let rankings: Rankings[] | any = [];
-                    if (!ref.rankings) {
-                      // generate initial rankings arrays if none exist
-                      playerSnapshot.forEach((positionSet: RankingsData, index: number) => {
-                        let pos: Rankings | any = {
-                          players: [],
-                          type: 'QB'
-                        };
-                        rankings.push(pos);
-                      });
-                    } else {
-                      // get rankings from database
-                      rankings = ref.rankings;
-                    }
+                  let rankings: Rankings[] = [];
+                  if (!ref.rankings) {
+                    // generate initial rankings arrays if none exist
+                    rankings = [
+                      { players: [], type: 'QB' },
+                      { players: [], type: 'RB' },
+                      { players: [], type: 'WR' },
+                      { players: [], type: 'TE' },
+                      { players: [], type: 'DST' },
+                      { players: [], type: 'K' }
+                    ];
+                  } else {
+                    // get rankings from database
+                    rankings = ref.rankings;
+                  }
 
-                    res.json({
-                      success: true,
-                      message: 'Enjoy your token!',
-                      token: token,
-                      id: req.param('name'),
-                      match: result,
-                      rankings: rankings
-                    });
+                  res.json({
+                    success: true,
+                    message: 'Enjoy your token!',
+                    token: token,
+                    id: req.param('name'),
+                    match: result,
+                    rankings: rankings
                   });
                 } else {
                   res.json(error);
