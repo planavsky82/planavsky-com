@@ -123,7 +123,7 @@ export class User {
                   });
 
                   let rankings: Rankings[] = [];
-                  if (!ref.rankings) {
+                  if (!snapshot.val().rankings) {
                     // generate initial rankings arrays if none exist
                     rankings = [
                       { players: [], type: 'QB' },
@@ -135,7 +135,7 @@ export class User {
                     ];
                   } else {
                     // get rankings from database
-                    rankings = ref.rankings;
+                    rankings = snapshot.val().rankings;
                   }
 
                   res.json({
