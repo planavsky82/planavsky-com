@@ -7,6 +7,7 @@ import * as EmailValidator from 'email-validator';
 
 import { UserModel } from '../models/user';
 import { Rankings } from '../models/ranking';
+import { PlayerRankings } from './rankings';
 
 // TODO: remove 'any' types
 
@@ -134,8 +135,10 @@ export class User {
                       { players: [], type: 'K' }
                     ];
                   } else {
+                    let playerRankings = new PlayerRankings();
                     // get rankings from database
                     rankings = snapshot.val().rankings;
+                    playerRankings.completeRankings();
                   }
 
                   res.json({
