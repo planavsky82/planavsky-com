@@ -113,54 +113,61 @@ export class User {
       const error = { success: false, message: 'Authentication failed. Username and/or password do not match.' };
       const config = require('../../config'); // get config file
       const ref = this.db.ref('/users/' + req.param('name'));
-      ref.on('value', function (snapshot: any) {
-          if (snapshot.exists()) {
-            if (snapshot.val().pwd) {
-              bcrypt.compare(req.param('pwd'), snapshot.val().pwd).then((result: any) => {
-                if (result === true) {
-                  // create a token
-                  const token = jwt.sign({ user: req.param('name') }, config.secret, {
-                    expiresIn: 60*60*24 // expires in 24 hours
-                  });
+      const baseRef = this.db.ref('/mffr-player-data');
+      baseRef.on('value', function (baseSnapshot: any) {
+        if (baseSnapshot.exists()) {
+          ref.on('value', function (snapshot: any) {
+            if (snapshot.exists()) {
+              if (snapshot.val().pwd) {
+                bcrypt.compare(req.param('pwd'), snapshot.val().pwd).then((result: any) => {
+                  if (result === true) {
+                    // create a token
+                    const token = jwt.sign({ user: req.param('name') }, config.secret, {
+                      expiresIn: 60*60*24 // expires in 24 hours
+                    });
 
-                  let rankings: Rankings[] = [];
-                  if (!snapshot.val().rankings) {
-                    // generate initial rankings arrays if none exist
-                    rankings = [
-                      { players: [], type: 'QB' },
-                      { players: [], type: 'RB' },
-                      { players: [], type: 'WR' },
-                      { players: [], type: 'TE' },
-                      { players: [], type: 'DST' },
-                      { players: [], type: 'K' }
-                    ];
+                    let rankings: Rankings[] = [];
+                    if (!snapshot.val().rankings) {
+                      // generate initial rankings arrays if none exist
+                      rankings = [
+                        { players: [], type: 'QB' },
+                        { players: [], type: 'RB' },
+                        { players: [], type: 'WR' },
+                        { players: [], type: 'TE' },
+                        { players: [], type: 'DST' },
+                        { players: [], type: 'K' }
+                      ];
+                    } else {
+                      let playerRankings = new PlayerRankings();
+                      // get rankings from database
+                      rankings = snapshot.val().rankings;
+                      playerRankings.completeRankings(rankings, baseSnapshot.val().positions);
+                    }
+
+                    res.json({
+                      success: true,
+                      message: 'Enjoy your token!',
+                      token: token,
+                      id: req.param('name'),
+                      match: result,
+                      rankings: rankings
+                    });
                   } else {
-                    let playerRankings = new PlayerRankings();
-                    // get rankings from database
-                    rankings = snapshot.val().rankings;
-                    playerRankings.completeRankings(rankings);
+                    res.json(error);
                   }
-
-                  res.json({
-                    success: true,
-                    message: 'Enjoy your token!',
-                    token: token,
-                    id: req.param('name'),
-                    match: result,
-                    rankings: rankings
-                  });
-                } else {
+                }, () => {
                   res.json(error);
-                }
-              }, () => {
+                });
+              } else {
                 res.json(error);
-              });
+              }
             } else {
               res.json(error);
             }
-          } else {
-            res.json(error);
-          }
+          });
+        } else {
+          res.json(error);
+        }
       });
     });
   }
