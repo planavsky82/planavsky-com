@@ -4,7 +4,7 @@
 
 ## Deploy to Production
 
-- **Deploy:** `npm run deploy`
+- Run `npm run deploy`.
 
 ## Run Node Application Locally
 
