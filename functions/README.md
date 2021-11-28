@@ -2,7 +2,7 @@
 
 - [Deployment URL](https://us-central1-planavsky-com.cloudfunctions.net/app/)
 
-## Commands
+## Deploy to Production
 
 - **Deploy:** `npm run deploy`
 
