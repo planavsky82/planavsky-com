@@ -138,7 +138,7 @@ export class User {
                     let playerRankings = new PlayerRankings();
                     // get rankings from database
                     rankings = snapshot.val().rankings;
-                    playerRankings.completeRankings();
+                    playerRankings.completeRankings(rankings);
                   }
 
                   res.json({
