@@ -138,11 +138,10 @@ export class User {
                         { players: [], type: 'K' }
                       ];
                     } else {
-                      let playerRankings = new PlayerRankings();
                       // get rankings from database
                       rankings = snapshot.val().rankings;
-                      playerRankings.completeRankings(rankings, baseSnapshot.val().positions);
                     }
+                    let playerRankings = new PlayerRankings(rankings, baseSnapshot.val().positions);
 
                     res.json({
                       success: true,
@@ -150,7 +149,7 @@ export class User {
                       token: token,
                       id: req.param('name'),
                       match: result,
-                      rankings: rankings
+                      rankings: playerRankings.completeRankings
                     });
                   } else {
                     res.json(error);
