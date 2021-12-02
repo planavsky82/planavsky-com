@@ -4,6 +4,10 @@ export class PlayerRankings {
   public completeRankings: Rankings[] = [];
 
   constructor(userRankings: Rankings[], baseRankings: Rankings[]) {
-    this.completeRankings = userRankings;
+    this.completeRankings = this.createRankings(userRankings, baseRankings);
+  }
+
+  private createRankings = (userRankings: Rankings[], baseRankings: Rankings[]): Rankings[] => {
+    return userRankings;
   }
 }
