@@ -9,6 +9,7 @@ export class PlayerRankings {
   }
 
   private createRankings = (userRankings: Rankings[], baseRankings: RankingsData[]): Rankings[] => {
+    //let completeRankings: Rankings[] = [];
     baseRankings.forEach((rankings: RankingsData) => {
       console.log(rankings.type);
       if (rankings.players) {
@@ -16,11 +17,15 @@ export class PlayerRankings {
           return player.id;
         });
         let userPositionRanking = userRankings.find((userRanking: Rankings) => {
-          return userRanking.type === rankings.type
-        })
+          return userRanking.type === rankings.type;
+        });
         console.log(baseRankingIDs);
-        console.log(userPositionRanking);
-        //let completeRankings = Array.from(new Set(baseRankingIDs.concat(array2)))
+        if (userPositionRanking) {
+          console.log(userPositionRanking.players);
+        }
+        /* if (userPositionRanking) {
+          completeRankings = Array.from(new Set(baseRankingIDs.concat(userPositionRanking.players)));
+        } */
       }
     });
     return userRankings;
