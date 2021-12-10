@@ -27,6 +27,6 @@ export class PlayerRankings {
         }
       }
     });
-    return userRankings;
+    return completeRankings;
   }
 }
