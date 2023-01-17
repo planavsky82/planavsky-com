@@ -46,8 +46,11 @@
     height: 300px;
     border-bottom: 1px solid $white;
 
-    background: $black url("../../images/player.png") no-repeat top left;
+    background: $black url("../../images/player.jpeg") no-repeat top left;
     background-size: contain;
+    @media only screen and (max-width: $screen-md) {
+      background-position: center 30%;
+    }
 
     > div:first-of-type {
       text-align: right;
@@ -109,12 +112,14 @@
         align-self: flex-end;
         text-align: left;
         width: 100%;
+        background: $transparent-color-darker;
       }
 
       > div:nth-child(2) {
         background: $transparent-color-dark;
         padding: 40px 20px;
         font-size: $font-size-base * 1.25;
+        margin-top: auto;
       }
     }
   }
