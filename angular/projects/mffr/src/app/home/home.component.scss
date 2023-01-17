@@ -48,9 +48,6 @@
 
     background: $black url("../../images/player.jpeg") no-repeat top left;
     background-size: contain;
-    @media only screen and (max-width: $screen-md) {
-      background-position: center 30%;
-    }
 
     > div:first-of-type {
       text-align: right;
@@ -68,6 +65,20 @@
       span {
         color: $green-1;
         font-weight: 300;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $screen-md) {
+    .leaders {
+      > div:first-of-type {
+        font-size: $font-size-h1 * 1.5;
+        padding: 20px 50px 0 0;
+      }
+
+      > div:nth-child(2) {
+        font-size: $font-size-h2;
+        padding: 40px 50px 0 150px;
       }
     }
   }
@@ -90,9 +101,7 @@
         font-weight: 200;
 			}
     }
-  }
 
-  @media only screen and (max-width: $screen-md) {
     .intro {
       box-shadow: 0 0 0 0 $gray-1, 0px 0px 5px 1px $gray-1;
       background: $transparent-color-light;
@@ -100,7 +109,7 @@
     }
 
     .leaders {
-      background-size: cover;
+      background-size: auto 100%;
       display: flex;
       justify-content: right;
       flex-direction: column-reverse;
